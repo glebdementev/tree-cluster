@@ -77,6 +77,11 @@ def sample_points(points_xyz: np.ndarray, points_per_cloud: int, rng: np.random.
     return points_xyz[idx]
 
 
+def center_points(points_xyz: np.ndarray) -> np.ndarray:
+    centroid = points_xyz.mean(axis=0, keepdims=True)
+    return points_xyz - centroid
+
+
 class LasPointCloudDataset(Dataset):
     def __init__(
         self,
@@ -97,7 +102,8 @@ class LasPointCloudDataset(Dataset):
         rec = self.records[index]
         pts = read_points_xyz(Path(rec.path))
         pts_sampled = sample_points(pts, self.points_per_cloud, self.rng)
-        x = torch.from_numpy(pts_sampled.astype(np.float32))  # (P,3)
+        pts_centered = center_points(pts_sampled)
+        x = torch.from_numpy(pts_centered.astype(np.float32))  # (P,3)
         y = torch.tensor(self.species_to_index[rec.species], dtype=torch.long)
         return x, y
 
