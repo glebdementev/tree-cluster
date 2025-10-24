@@ -8,7 +8,9 @@ import torch
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
+import seaborn as sns
 import plotly.graph_objects as go
+from sklearn.metrics import confusion_matrix
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -19,6 +21,8 @@ from classification.data import (
     build_label_mapping,
     train_val_split,
     LasPointCloudDataset,
+    PrecomputedPointCloudDataset,
+    precompute_dataset,
     read_points_xyz,
     sample_points,
     center_points,
@@ -33,7 +37,7 @@ CONFIG = TrainingConfig(
     dataset_root=Path("/home/gleb/dev/tree-cluster/dataset"),
     points_per_cloud=1024,
     batch_size=16,
-    num_epochs=150,
+    num_epochs=20,
     learning_rate=1e-3,
     train_fraction=0.85,
     exclude_unknown=True,
@@ -185,6 +189,44 @@ def evaluate(
     return avg_loss, acc
 
 
+def compute_and_save_confusion_matrix(
+    model: torch.nn.Module,
+    loader: DataLoader,
+    device: torch.device,
+    species_to_index: dict,
+    out_dir: Path,
+) -> None:
+    model.eval()
+    all_preds = []
+    all_true = []
+    with torch.no_grad():
+        for xb, yb in loader:
+            xb = xb.to(device)
+            yb = yb.to(device)
+            logits = model(xb)
+            preds = logits.argmax(dim=1)
+            all_preds.extend(preds.cpu().numpy())
+            all_true.extend(yb.cpu().numpy())
+    
+    all_preds = np.array(all_preds)
+    all_true = np.array(all_true)
+    cm = confusion_matrix(all_true, all_preds)
+    
+    np.save(out_dir / "confusion_matrix.npy", cm)
+    
+    index_to_species = {v: k for k, v in species_to_index.items()}
+    labels = [index_to_species[i].value for i in range(len(species_to_index))]
+    
+    plt.figure(figsize=(10, 8))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels)
+    plt.title('Confusion Matrix')
+    plt.ylabel('True Label')
+    plt.xlabel('Predicted Label')
+    plt.tight_layout()
+    plt.savefig(out_dir / "confusion_matrix.png", dpi=100, bbox_inches='tight')
+    plt.close()
+
+
 def main() -> None:
     seed_everything(CONFIG.seed)
     device = resolve_device(CONFIG.device)
@@ -198,8 +240,14 @@ def main() -> None:
     visualize_one_per_class_plotly(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
 
     train_records, val_records = train_val_split(records, CONFIG.train_fraction, CONFIG.seed)
-    train_ds = LasPointCloudDataset(train_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed)
-    val_ds = LasPointCloudDataset(val_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed + 1)
+    # Precompute datasets once and train from disk
+    out_dir = Path("./artifacts")
+    train_npz = out_dir / "train_points.npz"
+    val_npz = out_dir / "val_points.npz"
+    precompute_dataset(train_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed, train_npz)
+    precompute_dataset(val_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed + 1, val_npz)
+    train_ds = PrecomputedPointCloudDataset(train_npz)
+    val_ds = PrecomputedPointCloudDataset(val_npz)
 
     train_loader = DataLoader(train_ds, batch_size=CONFIG.batch_size, shuffle=True, num_workers=CONFIG.num_workers)
     val_loader = DataLoader(val_ds, batch_size=CONFIG.batch_size, shuffle=False, num_workers=CONFIG.num_workers)
@@ -260,6 +308,8 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
     fig.savefig(out_dir / "training_metrics.png", dpi=100, bbox_inches='tight')
     plt.close(fig)
+
+    compute_and_save_confusion_matrix(model, val_loader, device, species_to_index, out_dir)
 
     torch.save({
         "model_state": model.state_dict(),

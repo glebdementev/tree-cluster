@@ -176,3 +176,47 @@ def train_val_split(records: List[SampleRecord], train_fraction: float, seed: in
     return train_records, val_records
 
 
+
+# Precomputed dataset pipeline
+def precompute_dataset(
+    records: List[SampleRecord],
+    points_per_cloud: int,
+    species_to_index: Dict[Species, int],
+    seed: int,
+    out_path: Path,
+) -> Path:
+    n = len(records)
+    assert n > 0, "no records to precompute"
+    rng = np.random.RandomState(seed)
+    X = np.empty((n, points_per_cloud, 3), dtype=np.float32)
+    y = np.empty((n,), dtype=np.int64)
+    for i, rec in enumerate(records):
+        pts = read_points_xyz(Path(rec.path))
+        pts_centered_full = center_points_xy(pts)
+        assert has_points_in_all_quadrants(pts_centered_full), f"points lack all quadrants: {rec.path}"
+        # deterministic per-index sampling via independent seed stream
+        idx_rng = np.random.RandomState(rng.randint(0, 2**31 - 1))
+        pts_sampled = sample_points(pts_centered_full, points_per_cloud, idx_rng)
+        X[i] = pts_sampled.astype(np.float32)
+        y[i] = int(species_to_index[rec.species])
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    np.savez_compressed(str(out_path), X=X, y=y)
+    return out_path
+
+
+class PrecomputedPointCloudDataset(Dataset):
+    def __init__(self, npz_path: Path) -> None:
+        data = np.load(str(npz_path))
+        self.X = data["X"]
+        self.y = data["y"]
+
+    def __len__(self) -> int:
+        return int(self.X.shape[0])
+
+    def __getitem__(self, index: int) -> Tuple[torch.Tensor, torch.Tensor]:
+        x_np = self.X[index]
+        y_np = self.y[index]
+        x = torch.from_numpy(x_np.astype(np.float32))
+        y = torch.tensor(int(y_np), dtype=torch.long)
+        return x, y
+

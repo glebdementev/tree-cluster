@@ -5,3 +5,7 @@ dataset/
 __pycache__/
 *.pt
 *.npy
+*.npz
+*.npy
+assignments.npy
+embeddings.npy
