@@ -15,6 +15,8 @@ assert DATASET_ROOT.exists() and DATASET_ROOT.is_dir(), "Dataset root must exist
 
 # Only consider .las files
 LAS_SUFFIX = ".las"
+MIN_CLASS_COUNT = 5
+EXCLUDE_UNKNOWN = True
 
 
 class Species(str, Enum):
@@ -145,8 +147,19 @@ def scan_las_files(root: Path) -> List[LasFileRecord]:
     return results
 
 
+def filter_records_by_class(records: List[LasFileRecord], min_per_class: int, exclude_unknown: bool) -> List[LasFileRecord]:
+    counts = Counter(r.species for r in records)
+    allowed_species = {
+        sp
+        for sp, cnt in counts.items()
+        if cnt >= min_per_class and (sp != Species.unknown if exclude_unknown else True)
+    }
+    return [r for r in records if r.species in allowed_species]
+
+
 def main() -> None:
-    records = scan_las_files(DATASET_ROOT)
+    records_all = scan_las_files(DATASET_ROOT)
+    records = filter_records_by_class(records_all, MIN_CLASS_COUNT, EXCLUDE_UNKNOWN)
 
     # Summary by species (file counts)
     species_counts = Counter(r.species for r in records)

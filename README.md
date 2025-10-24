@@ -19,3 +19,15 @@ To deactivate when you're done:
 ```bash
 deactivate
 ```
+
+## Dataset Summary
+
+```bash
+python dataset_summary.py
+```
+
+## Train PointNetTiny Classifier
+
+```bash
+python -m training.train
+```
