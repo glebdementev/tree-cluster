@@ -8,7 +8,7 @@ import torch
 from torch.utils.data import Dataset
 import laspy
 
-from .types import Species, SampleRecord
+from training.schemas import Species, SampleRecord
 
 
 LAS_SUFFIX = ".las"

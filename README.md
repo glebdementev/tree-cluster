@@ -20,6 +20,11 @@ To deactivate when you're done:
 deactivate
 ```
 
+torch
+```bash
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+```
+
 ## Dataset Summary
 
 ```bash

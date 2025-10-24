@@ -2,3 +2,5 @@ dataset
 dataset/
 .venv
 .venv/
+__pycache__/
+*.pt

@@ -1,4 +1,5 @@
 from __future__ import annotations
+import sys
 from pathlib import Path
 from typing import Tuple
 
@@ -6,16 +7,19 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
+import matplotlib.pyplot as plt
 
-from .config import TrainingConfig, PointNetParams
-from .data import (
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from training.config import TrainingConfig, PointNetParams
+from training.data import (
     scan_records,
     filter_records,
     build_label_mapping,
     train_val_split,
     LasPointCloudDataset,
 )
-from .model import PointNetTiny
+from training.model import PointNetTiny
 
 
 # User-configurable parameters at the top
@@ -130,6 +134,14 @@ def main() -> None:
     ).to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=CONFIG.learning_rate)
 
+    train_losses = []
+    val_losses = []
+    train_accs = []
+    val_accs = []
+
+    fig, (ax_loss, ax_acc) = plt.subplots(1, 2, figsize=(12, 4))
+    plt.ion()
+
     for epoch in range(1, CONFIG.num_epochs + 1):
         train_loss, train_acc = train_one_epoch(model, train_loader, optimizer, device)
         val_loss, val_acc = evaluate(model, val_loader, device)
@@ -137,8 +149,40 @@ def main() -> None:
             f"epoch={epoch} train_loss={train_loss:.4f} train_acc={train_acc:.4f} val_loss={val_loss:.4f} val_acc={val_acc:.4f}"
         )
 
+        train_losses.append(train_loss)
+        val_losses.append(val_loss)
+        train_accs.append(train_acc)
+        val_accs.append(val_acc)
+
+        epochs = list(range(1, epoch + 1))
+
+        ax_loss.clear()
+        ax_loss.plot(epochs, train_losses, marker='o', label='Train Loss', color='blue')
+        ax_loss.plot(epochs, val_losses, marker='s', label='Val Loss', color='red')
+        ax_loss.set_xlabel('Epoch')
+        ax_loss.set_ylabel('Loss')
+        ax_loss.set_title('Training and Validation Loss')
+        ax_loss.legend()
+        ax_loss.grid(True, alpha=0.3)
+
+        ax_acc.clear()
+        ax_acc.plot(epochs, train_accs, marker='o', label='Train Acc', color='blue')
+        ax_acc.plot(epochs, val_accs, marker='s', label='Val Acc', color='red')
+        ax_acc.set_xlabel('Epoch')
+        ax_acc.set_ylabel('Accuracy')
+        ax_acc.set_title('Training and Validation Accuracy')
+        ax_acc.legend()
+        ax_acc.grid(True, alpha=0.3)
+
+        plt.tight_layout()
+        plt.pause(0.1)
+
+    plt.ioff()
     out_dir = Path("./artifacts")
     out_dir.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_dir / "training_metrics.png", dpi=100, bbox_inches='tight')
+    plt.close(fig)
+
     torch.save({
         "model_state": model.state_dict(),
         "species_to_index": {k.value: v for k, v in species_to_index.items()},
