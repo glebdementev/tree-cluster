@@ -82,6 +82,37 @@ def center_points(points_xyz: np.ndarray) -> np.ndarray:
     return points_xyz - centroid
 
 
+def center_points_xy(points_xyz: np.ndarray) -> np.ndarray:
+    # Compute centering in float64 to avoid precision loss with large UTM coordinates
+    orig_dtype = points_xyz.dtype
+    pts64 = points_xyz.astype(np.float64, copy=False)
+    centroid_xy = pts64[:, :2].mean(axis=0, keepdims=True)
+    # Debug prints to inspect centroid and raw XY means
+    print(
+        f"center_points_xy: raw_xy_mean=({float(centroid_xy[0,0]):.6f}, {float(centroid_xy[0,1]):.6f})",
+        flush=True,
+    )
+    centered64 = pts64.copy()
+    centered64[:, 0] = centered64[:, 0] - centroid_xy[0, 0]
+    centered64[:, 1] = centered64[:, 1] - centroid_xy[0, 1]
+    centered_xy_mean = centered64[:, :2].mean(axis=0, keepdims=True)
+    print(
+        f"center_points_xy: centered_xy_mean=({float(centered_xy_mean[0,0]):.6f}, {float(centered_xy_mean[0,1]):.6f})",
+        flush=True,
+    )
+    return centered64.astype(orig_dtype, copy=False)
+
+
+def has_points_in_all_quadrants(points_xyz: np.ndarray) -> bool:
+    x = points_xyz[:, 0]
+    y = points_xyz[:, 1]
+    q1 = np.any((x > 0.0) & (y > 0.0))
+    q2 = np.any((x > 0.0) & (y < 0.0))
+    q3 = np.any((x < 0.0) & (y > 0.0))
+    q4 = np.any((x < 0.0) & (y < 0.0))
+    return bool(q1 and q2 and q3 and q4)
+
+
 class LasPointCloudDataset(Dataset):
     def __init__(
         self,
@@ -101,8 +132,31 @@ class LasPointCloudDataset(Dataset):
     def __getitem__(self, index: int) -> Tuple[torch.Tensor, torch.Tensor]:
         rec = self.records[index]
         pts = read_points_xyz(Path(rec.path))
-        pts_sampled = sample_points(pts, self.points_per_cloud, self.rng)
-        pts_centered = center_points(pts_sampled)
+        # Debug prints: raw stats before centering
+        raw_mean = pts.mean(axis=0)
+        raw_min = pts.min(axis=0)
+        raw_max = pts.max(axis=0)
+        print(
+            f"sample path={rec.path}\n"
+            f"raw_xyz_mean=({float(raw_mean[0]):.6f}, {float(raw_mean[1]):.6f}, {float(raw_mean[2]):.6f})\n"
+            f"raw_xyz_min=({float(raw_min[0]):.6f}, {float(raw_min[1]):.6f}, {float(raw_min[2]):.6f})\n"
+            f"raw_xyz_max=({float(raw_max[0]):.6f}, {float(raw_max[1]):.6f}, {float(raw_max[2]):.6f})",
+            flush=True,
+        )
+        pts_centered_full = center_points_xy(pts)
+        # Debug prints: stats after XY centering
+        cen_mean = pts_centered_full.mean(axis=0)
+        cen_min = pts_centered_full.min(axis=0)
+        cen_max = pts_centered_full.max(axis=0)
+        print(
+            f"after_center_xy_xyz_mean=({float(cen_mean[0]):.6f}, {float(cen_mean[1]):.6f}, {float(cen_mean[2]):.6f})\n"
+            f"after_center_xy_xyz_min=({float(cen_min[0]):.6f}, {float(cen_min[1]):.6f}, {float(cen_min[2]):.6f})\n"
+            f"after_center_xy_xyz_max=({float(cen_max[0]):.6f}, {float(cen_max[1]):.6f}, {float(cen_max[2]):.6f})",
+            flush=True,
+        )
+        assert has_points_in_all_quadrants(pts_centered_full), f"points lack all quadrants: {rec.path}"
+        pts_sampled = sample_points(pts_centered_full, self.points_per_cloud, self.rng)
+        pts_centered = pts_sampled
         x = torch.from_numpy(pts_centered.astype(np.float32))  # (P,3)
         y = torch.tensor(self.species_to_index[rec.species], dtype=torch.long)
         return x, y

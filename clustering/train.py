@@ -20,7 +20,8 @@ from classification.data import (
     LasPointCloudDataset,
     read_points_xyz,
     sample_points,
-    center_points,
+    center_points_xy,
+    has_points_in_all_quadrants,
 )
 from classification.schemas import Species
 from clustering.config import ClusteringConfig, HeadParams
@@ -72,8 +73,10 @@ class UnlabeledDataset(Dataset):
     def __getitem__(self, index: int):
         rec = self.records[index]
         pts = read_points_xyz(Path(rec.path))
-        pts_sampled = sample_points(pts, self.points_per_cloud, self.rng)
-        pts_centered = center_points(pts_sampled)
+        pts_centered_full = center_points_xy(pts)
+        assert has_points_in_all_quadrants(pts_centered_full), f"points lack all quadrants: {rec.path}"
+        pts_sampled = sample_points(pts_centered_full, self.points_per_cloud, self.rng)
+        pts_centered = pts_sampled
         x = torch.from_numpy(pts_centered.astype(np.float32))  # (P,3)
         return x
 

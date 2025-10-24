@@ -22,6 +22,7 @@ from classification.data import (
     read_points_xyz,
     sample_points,
     center_points,
+    center_points_xy,
 )
 from classification.model import PointNetTiny
  
@@ -32,7 +33,7 @@ CONFIG = TrainingConfig(
     dataset_root=Path("/home/gleb/dev/tree-cluster/dataset"),
     points_per_cloud=1024,
     batch_size=16,
-    num_epochs=10,
+    num_epochs=150,
     learning_rate=1e-3,
     train_fraction=0.85,
     exclude_unknown=True,
@@ -86,11 +87,10 @@ def visualize_one_per_class_plotly(
     samples: list[tuple[int, np.ndarray]] = []
     for idx, p in sorted(chosen_paths.items()):
         pts = read_points_xyz(p)
+        pts = center_points_xy(pts)
         pts = sample_points(pts, points_per_cloud, rng)
-        pts = center_points(pts)
         samples.append((idx, pts))
 
-    gap = 4.0
     fig = go.Figure()
     colors = [
         "#e41a1c",
@@ -103,14 +103,12 @@ def visualize_one_per_class_plotly(
         "#b2df8a",
     ]
     for i, (idx, pts) in enumerate(samples):
-        offset = np.array([i * gap, 0.0, 0.0], dtype=np.float32)
-        shifted = pts + offset
         sp = index_to_species[idx]
         fig.add_trace(
             go.Scatter3d(
-                x=shifted[:, 0],
-                y=shifted[:, 1],
-                z=shifted[:, 2],
+                x=pts[:, 0],
+                y=pts[:, 1],
+                z=pts[:, 2],
                 mode="markers",
                 marker=dict(size=2, color=colors[i % len(colors)]),
                 name=str(sp.value),
