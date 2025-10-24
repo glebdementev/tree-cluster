@@ -1,7 +1,6 @@
 from __future__ import annotations
 from pathlib import Path
 from pydantic import BaseModel
-from training.schemas import Visualizer
 
 
 class TrainingConfig(BaseModel):
@@ -16,8 +15,6 @@ class TrainingConfig(BaseModel):
     num_workers: int = 2
     seed: int = 42
     device: str = "auto"  # "auto" | "cpu" | "cuda"
-    visualize_one_sample_per_class: bool = False
-    visualizer: Visualizer = Visualizer.plotly
 
 
 class PointNetParams(BaseModel):

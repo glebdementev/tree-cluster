@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from training.config import TrainingConfig
-from training.data import (
+from classification.config import TrainingConfig
+from classification.data import (
     scan_records,
     filter_records,
     build_label_mapping,
@@ -22,7 +22,7 @@ from training.data import (
     sample_points,
     center_points,
 )
-from training.schemas import Species
+from classification.schemas import Species
 from clustering.config import ClusteringConfig, HeadParams
 from clustering.model import PointNetEncoder
 

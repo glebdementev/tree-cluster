@@ -8,13 +8,12 @@ import torch
 from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
-import open3d as o3d
 import plotly.graph_objects as go
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from training.config import TrainingConfig, PointNetParams
-from training.data import (
+from classification.config import TrainingConfig, PointNetParams
+from classification.data import (
     scan_records,
     filter_records,
     build_label_mapping,
@@ -24,8 +23,8 @@ from training.data import (
     sample_points,
     center_points,
 )
-from training.model import PointNetTiny
-from training.schemas import Visualizer
+from classification.model import PointNetTiny
+ 
 
 
 # User-configurable parameters at the top
@@ -65,67 +64,7 @@ def seed_everything(seed: int) -> None:
         torch.cuda.manual_seed_all(seed)
 
 
-def visualize_one_per_class(
-    records: list,
-    species_to_index: dict,
-    points_per_cloud: int,
-    seed: int,
-) -> None:
-    # Pick first record per species
-    index_to_species = {v: k for k, v in species_to_index.items()}
-    chosen_paths: dict[int, Path] = {}
-    for r in records:
-        idx = species_to_index[r.species]
-        if idx not in chosen_paths:
-            chosen_paths[idx] = Path(r.path)
-        if len(chosen_paths) == len(species_to_index):
-            break
-
-    rng = np.random.RandomState(seed)
-    samples: list[tuple[int, np.ndarray]] = []
-    for idx, p in sorted(chosen_paths.items()):
-        pts = read_points_xyz(p)
-        pts = sample_points(pts, points_per_cloud, rng)
-        pts = center_points(pts)
-        samples.append((idx, pts))
-
-    # Arrange clouds side-by-side along X for a clean comparison
-    gap = 4.0
-    geometries: list[o3d.geometry.Geometry] = []
-    colors = np.array([
-        [0.89, 0.10, 0.11],
-        [0.12, 0.47, 0.71],
-        [0.17, 0.63, 0.17],
-        [0.84, 0.15, 0.16],
-        [0.58, 0.40, 0.74],
-        [1.00, 0.50, 0.00],
-        [0.65, 0.81, 0.89],
-        [0.70, 0.87, 0.54],
-    ], dtype=np.float64)
-    for i, (idx, pts) in enumerate(samples):
-        offset = np.array([i * gap, 0.0, 0.0], dtype=np.float32)
-        shifted = pts + offset
-        pcd = o3d.geometry.PointCloud()
-        pcd.points = o3d.utility.Vector3dVector(shifted.astype(np.float64))
-        color = colors[i % len(colors)]
-        pcd.colors = o3d.utility.Vector3dVector(np.repeat(color[None, :], shifted.shape[0], axis=0))
-        geometries.append(pcd)
-
-        # Add a small text label with species name using a 3D coordinate frame + geometry
-        # Open3D lacks native 3D text; we add a coordinate frame as a marker near each cloud
-        frame = o3d.geometry.TriangleMesh.create_coordinate_frame(size=0.5)
-        frame.translate((float(offset[0]), -2.0, 0.0))
-        geometries.append(frame)
-
-    o3d.visualization.draw_geometries(
-        geometries,
-        window_name="One sample per class (close to start training)",
-        width=1280,
-        height=720,
-        left=100,
-        top=100,
-        point_show_normal=False,
-    )
+ 
 
 
 def visualize_one_per_class_plotly(
@@ -194,6 +133,7 @@ def visualize_one_per_class_plotly(
     out_dir.mkdir(parents=True, exist_ok=True)
     html_path = out_dir / "one_sample_per_class.html"
     fig.write_html(str(html_path), auto_open=True, include_plotlyjs="cdn")
+    print(f"Saved visualization to {html_path}")
 
 
 def train_one_epoch(
@@ -256,12 +196,8 @@ def main() -> None:
     species_to_index = build_label_mapping(records)
     num_classes = len(species_to_index)
 
-    # Optional visualization (Open3D or Plotly)
-    if CONFIG.visualize_one_sample_per_class:
-        if CONFIG.visualizer == Visualizer.open3d:
-            visualize_one_per_class(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
-        else:
-            visualize_one_per_class_plotly(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
+    # Optional visualization (Plotly only)
+    visualize_one_per_class_plotly(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
 
     train_records, val_records = train_val_split(records, CONFIG.train_fraction, CONFIG.seed)
     train_ds = LasPointCloudDataset(train_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed)

@@ -4,3 +4,4 @@ dataset/
 .venv/
 __pycache__/
 *.pt
+*.npy
