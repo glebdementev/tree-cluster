@@ -19,4 +19,8 @@ class SampleRecord(BaseModel):
     num_points: int
 
 
+class Visualizer(str, Enum):
+    open3d = "open3d"
+    plotly = "plotly"
+
 

@@ -9,6 +9,7 @@ from torch.utils.data import DataLoader
 import torch.nn.functional as F
 import matplotlib.pyplot as plt
 import open3d as o3d
+import plotly.graph_objects as go
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
@@ -24,6 +25,7 @@ from training.data import (
     center_points,
 )
 from training.model import PointNetTiny
+from training.schemas import Visualizer
 
 
 # User-configurable parameters at the top
@@ -126,6 +128,74 @@ def visualize_one_per_class(
     )
 
 
+def visualize_one_per_class_plotly(
+    records: list,
+    species_to_index: dict,
+    points_per_cloud: int,
+    seed: int,
+) -> None:
+    index_to_species = {v: k for k, v in species_to_index.items()}
+    chosen_paths: dict[int, Path] = {}
+    for r in records:
+        idx = species_to_index[r.species]
+        if idx not in chosen_paths:
+            chosen_paths[idx] = Path(r.path)
+        if len(chosen_paths) == len(species_to_index):
+            break
+
+    rng = np.random.RandomState(seed)
+    samples: list[tuple[int, np.ndarray]] = []
+    for idx, p in sorted(chosen_paths.items()):
+        pts = read_points_xyz(p)
+        pts = sample_points(pts, points_per_cloud, rng)
+        pts = center_points(pts)
+        samples.append((idx, pts))
+
+    gap = 4.0
+    fig = go.Figure()
+    colors = [
+        "#e41a1c",
+        "#1f77b4",
+        "#2ca02c",
+        "#d62728",
+        "#9467bd",
+        "#ff7f0e",
+        "#a6cee3",
+        "#b2df8a",
+    ]
+    for i, (idx, pts) in enumerate(samples):
+        offset = np.array([i * gap, 0.0, 0.0], dtype=np.float32)
+        shifted = pts + offset
+        sp = index_to_species[idx]
+        fig.add_trace(
+            go.Scatter3d(
+                x=shifted[:, 0],
+                y=shifted[:, 1],
+                z=shifted[:, 2],
+                mode="markers",
+                marker=dict(size=2, color=colors[i % len(colors)]),
+                name=str(sp.value),
+            )
+        )
+
+    fig.update_layout(
+        title="One sample per class",
+        scene=dict(
+            xaxis_title="X",
+            yaxis_title="Y",
+            zaxis_title="Z",
+            aspectmode="data",
+        ),
+        width=1200,
+        height=700,
+        legend=dict(orientation="h"),
+    )
+    out_dir = Path("./artifacts")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    html_path = out_dir / "one_sample_per_class.html"
+    fig.write_html(str(html_path), auto_open=True, include_plotlyjs="cdn")
+
+
 def train_one_epoch(
     model: torch.nn.Module,
     loader: DataLoader,
@@ -186,8 +256,12 @@ def main() -> None:
     species_to_index = build_label_mapping(records)
     num_classes = len(species_to_index)
 
-    # Block and visualize one centered sample per class before training
-    visualize_one_per_class(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
+    # Optional visualization (Open3D or Plotly)
+    if CONFIG.visualize_one_sample_per_class:
+        if CONFIG.visualizer == Visualizer.open3d:
+            visualize_one_per_class(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
+        else:
+            visualize_one_per_class_plotly(records, species_to_index, CONFIG.points_per_cloud, CONFIG.seed)
 
     train_records, val_records = train_val_split(records, CONFIG.train_fraction, CONFIG.seed)
     train_ds = LasPointCloudDataset(train_records, CONFIG.points_per_cloud, species_to_index, CONFIG.seed)

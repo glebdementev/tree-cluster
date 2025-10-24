@@ -3,23 +3,20 @@ from pathlib import Path
 from pydantic import BaseModel
 
 
-class TrainingConfig(BaseModel):
+class ClusteringConfig(BaseModel):
     dataset_root: Path
     points_per_cloud: int = 1024
-    batch_size: int = 16
+    batch_size: int = 32
     num_epochs: int = 20
     learning_rate: float = 1e-3
-    train_fraction: float = 0.85
     exclude_unknown: bool = True
     min_class_count: int = 5
     num_workers: int = 2
     seed: int = 42
     device: str = "auto"  # "auto" | "cpu" | "cuda"
+    num_clusters: int = 6
+    embedding_dim: int = 256
 
 
-class PointNetParams(BaseModel):
-    conv_channels: tuple[int, int, int] = (64, 128, 256)
-    fc_dims: tuple[int, int] = (128, 64)
-    dropout: float = 0.2
-
-
+class HeadParams(BaseModel):
+    dropout: float = 0.1
