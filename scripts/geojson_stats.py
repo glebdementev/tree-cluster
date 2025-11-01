@@ -25,6 +25,7 @@ def canonicalize_species(species_eng: Optional[str], species_local: Optional[str
         "aspen": "aspen",
         "fir": "fir",
         "lipa": "linden",
+        "tilted birch": "birch",
         "linden": "linden",
         "unknown": "unknown",
     }
