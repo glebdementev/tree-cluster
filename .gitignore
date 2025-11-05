@@ -10,3 +10,5 @@ __pycache__/
 assignments.npy
 embeddings.npy
 las_cylinders_5m/
+las_cylinders_5m_voxel/
+*.las
