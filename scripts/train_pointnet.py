@@ -4,6 +4,7 @@ import json
 import math
 import random
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
@@ -52,7 +53,7 @@ def compute_point_counts(files: List[Path]) -> List[int]:
 
 def print_stats_point_counts(counts: List[int]) -> None:
     if not counts:
-        print("No LAS files found for stats.")
+        log("No LAS files found for stats.")
         return
     total = len(counts)
     sorted_counts = sorted(counts)
@@ -62,8 +63,8 @@ def print_stats_point_counts(counts: List[int]) -> None:
     median = float(np.median(sorted_counts))
     p25 = float(np.percentile(sorted_counts, 25))
     p75 = float(np.percentile(sorted_counts, 75))
-    print("Point counts per cylinder (files):")
-    print(
+    log("Point counts per cylinder (files):")
+    log(
         "  count=", total,
         "min=", minimum,
         "p25=", f"{p25:.1f}",
@@ -72,6 +73,14 @@ def print_stats_point_counts(counts: List[int]) -> None:
         "max=", maximum,
         "mean=", f"{mean:.1f}",
     )
+
+
+def ts() -> str:
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+
+def log(*args: object) -> None:
+    print(f"[{ts()}]", *args, flush=True)
 
 
 class CylinderDataset(Dataset):
@@ -92,6 +101,7 @@ class CylinderDataset(Dataset):
         self._fps_idx_cache: Dict[Path, np.ndarray] = {}
         self._pre_points_cache: Dict[Path, np.ndarray] = {}
         self._max_pre_points = 8192
+        self._logged_files: Dict[Path, bool] = {}
 
     def __len__(self) -> int:
         return len(self.files)
@@ -157,9 +167,13 @@ class CylinderDataset(Dataset):
             center = pre_t.mean(dim=1, keepdim=True)  # (1,1,3)
             d2 = ((pre_t - center) ** 2).sum(-1).squeeze(0)  # (M,)
             start_idx = int(torch.argmax(d2).item())
+            if not self._logged_files.get(path, False):
+                log("Computing FPS for file:", str(path), "M=", int(M), "start_idx=", int(start_idx))
             idx = farthest_point_sampling(pre_t, self.points_per_sample, start_idx=start_idx).squeeze(0)
             fps_idx = idx.cpu().numpy().astype(np.int64)
             self._fps_idx_cache[path] = fps_idx
+            self._logged_files[path] = True
+            log("Cached FPS indices for:", str(path))
 
         pts = pre_t.squeeze(0)[fps_idx]  # (N,3) with N=points_per_sample
         if self.aug:
@@ -336,7 +350,8 @@ def train_loop(
         running_loss = 0.0
         correct = 0
         total = 0
-        for batch in train_loader:
+        log("Starting epoch", epoch, "/", epochs, "- iterating train loader ... batches:", len(train_loader))
+        for batch_idx, batch in enumerate(train_loader):
             pts, labels = batch
             pts = pts.to(device)
             labels = labels.to(device)
@@ -351,6 +366,8 @@ def train_loop(
             preds = torch.argmax(logits, dim=1)
             correct += int((preds == labels).sum().item())
             total += int(pts.size(0))
+            if batch_idx == 0:
+                log("First train batch done - batch_size=", int(pts.size(0)), "loss=", float(loss.item()))
         train_loss = running_loss / max(1, total)
         train_acc = correct / max(1, total)
 
@@ -358,6 +375,7 @@ def train_loop(
         val_correct = 0
         val_total = 0
         with torch.no_grad():
+            log("Evaluating val set ... batches:", len(val_loader))
             for pts, labels in val_loader:
                 pts = pts.to(device)
                 labels = labels.to(device)
@@ -366,7 +384,7 @@ def train_loop(
                 val_correct += int((preds == labels).sum().item())
                 val_total += int(pts.size(0))
         val_acc = val_correct / max(1, val_total)
-        print(f"Epoch {epoch}/{epochs} - train_loss={train_loss:.4f} train_acc={train_acc:.3f} val_acc={val_acc:.3f}")
+        log(f"Epoch {epoch}/{epochs} - train_loss={train_loss:.4f} train_acc={train_acc:.3f} val_acc={val_acc:.3f}")
 
 
 def main() -> None:
@@ -389,16 +407,16 @@ def main() -> None:
         feature_reg_weight=0.001,
     )
 
-    print("Step 1: Scanning LAS cylinders recursively...")
+    log("Step 1: Scanning LAS cylinders recursively...")
     files = find_all_las_files(cfg.data_root)
-    print("  Found files:", len(files))
+    log("  Found files:", len(files))
     if not files:
-        print("No LAS files found in", cfg.data_root)
+        log("No LAS files found in", cfg.data_root)
         return
 
-    print("Step 2: Deriving species labels from filenames, selecting target classes, and computing stats...")
+    log("Step 2: Deriving species labels from filenames, selecting target classes, and computing stats...")
     species_names_all: List[str] = [extract_species_from_filename(p) for p in files]
-    target_classes_order = ["aspen", "birch", "spruce", "pine"]
+    target_classes_order = ["birch", "spruce"]
     selected: List[Tuple[Path, str]] = [
         (p, s) for p, s in zip(files, species_names_all) if s in set(target_classes_order)
     ]
@@ -406,30 +424,42 @@ def main() -> None:
     species_names: List[str] = [s for _, s in selected]
     unique_species = [s for s in target_classes_order if s in set(species_names)]
     species_to_index: Dict[str, int] = {s: i for i, s in enumerate(unique_species)}
-    print("  Target classes (species):", unique_species)
+    log("  Target classes (species):", unique_species)
 
     files_by_class: Dict[int, List[Path]] = {i: [] for i in range(len(unique_species))}
     for p, s in zip(files, species_names):
         files_by_class[species_to_index[s]].append(p)
 
-    print("  Samples per class (by file count):")
+    log("  Samples per class (by file count):")
     for s in unique_species:
         c = species_to_index[s]
-        print("   ", s, "->", len(files_by_class[c]))
+        log("   ", s, "->", len(files_by_class[c]))
 
     counts = compute_point_counts(files)
     print_stats_point_counts(counts)
 
-    print("Step 3: Splitting train/val...")
+    log("Step 3: Splitting train/val...")
     train_samples, val_samples = split_train_val(files_by_class, cfg.train_split, cfg.seed)
-    print("  Train files:", len(train_samples), " Val files:", len(val_samples))
+    log("  Train files:", len(train_samples), " Val files:", len(val_samples))
 
-    print("Step 4: Balancing classes")
+    log("Step 4: Balancing classes")
     balanced_train = build_balanced_index(train_samples, len(unique_species), cfg.seed)
-    print("  Balanced train samples:", len(balanced_train))
+    log("  Balanced train samples:", len(balanced_train))
+
+    # Limit dataset size for diagnosis
+    limit_train = 100
+    limit_val = 32
+    rng = random.Random(cfg.seed)
+    if len(balanced_train) > limit_train:
+        rng.shuffle(balanced_train)
+        balanced_train = balanced_train[:limit_train]
+    if len(val_samples) > limit_val:
+        rng.shuffle(val_samples)
+        val_samples = val_samples[:limit_val]
+    log("  Using limited dataset: train=", len(balanced_train), " val=", len(val_samples))
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    print("Step 5: Building datasets and model (device:", device.type, ") ...")
+    log("Step 5: Building datasets and model (device:", device.type, ") ...")
     train_ds = CylinderDataset(balanced_train, len(unique_species), cfg.points_per_sample, cfg.seed, aug=True)
     val_ds = CylinderDataset(val_samples, len(unique_species), cfg.points_per_sample, cfg.seed, aug=False)
     pin = True if device.type == "cuda" else False
@@ -438,15 +468,15 @@ def main() -> None:
 
     model = PointNetClassifier(num_classes=len(unique_species)).to(device)
 
-    print("Step 6: Training PointNet...")
+    log("Step 6: Training PointNet...")
     train_loop(model, train_loader, val_loader, cfg.epochs, device, cfg.learning_rate, cfg.feature_reg_weight)
 
     model_path = cfg.output_dir / "pointnet_pointnetcls.pth"
     torch.save(model.state_dict(), model_path)
     with (cfg.output_dir / "species_index.json").open("w", encoding="utf-8") as fh:
         json.dump({"classes": unique_species}, fh, ensure_ascii=False, indent=2)
-    print("Saved model to:", model_path)
-    print("Saved class mapping to:", cfg.output_dir / "species_index.json")
+    log("Saved model to:", model_path)
+    log("Saved class mapping to:", cfg.output_dir / "species_index.json")
 
 
 if __name__ == "__main__":
