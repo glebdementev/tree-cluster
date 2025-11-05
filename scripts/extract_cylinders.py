@@ -18,6 +18,9 @@ class TreeProperties(BaseModel):
     id: int
     x: float
     y: float
+    radius: float
+    species: str
+    species_eng: str | None = None
 
 
 class Feature(BaseModel):
@@ -29,6 +32,27 @@ class Feature(BaseModel):
 class FeatureCollection(BaseModel):
     type: Literal["FeatureCollection"]
     features: List[Feature]
+
+
+def canonicalize_species(species_eng: str | None, species_local: str | None) -> str:
+    source = species_eng if species_eng else (species_local if species_local else "unknown")
+    key = source.strip().lower()
+    mapping = {
+        "birch": "birch",
+        "spruce": "spruce",
+        "pine": "pine",
+        "listvennitsa": "larch",
+        "larch": "larch",
+        "cedar": "cedar",
+        "kedr": "cedar",
+        "aspen": "aspen",
+        "fir": "fir",
+        "lipa": "linden",
+        "tilted birch": "birch",
+        "linden": "linden",
+        "unknown": "unknown",
+    }
+    return mapping[key] if key in mapping else key
 
 
 def find_single_las_in_directory(directory: Path) -> Path | None:
@@ -59,12 +83,12 @@ def extract_cylinders_for_geojson(
     base_out_dir = output_root / rel_dir / geojson_path.stem
     base_out_dir.mkdir(parents=True, exist_ok=True)
 
-    radius_sq = 25.0
-
     processed_count = 0
     for feature in fc.features:
         x0 = feature.properties.x
         y0 = feature.properties.y
+        r = feature.properties.radius
+        radius_sq = r * r
 
         dx = xs - x0
         dy = ys - y0
@@ -79,7 +103,16 @@ def extract_cylinders_for_geojson(
         subset = laspy.LasData(header)
         subset.points = source_las.points[mask]
 
-        out_path = base_out_dir / f"id_{feature.properties.id}.las"
+        def _sanitize_filename_component(text: str) -> str:
+            # Allow unicode; only replace forbidden path chars and spaces
+            forbidden = "\\/:*?\"<>|"
+            for ch in forbidden:
+                text = text.replace(ch, "_")
+            return text.strip().replace(" ", "_")
+
+        mapped = canonicalize_species(feature.properties.species_eng, feature.properties.species)
+        species_name = _sanitize_filename_component(mapped)
+        out_path = base_out_dir / f"id_{feature.properties.id}_{species_name}.las"
         subset.write(str(out_path))
         processed_count += 1
         if on_feature_processed is not None:
@@ -146,8 +179,15 @@ def main() -> None:
         sys.stdout.write("\r" + render_progress(processed, total_features))
         sys.stdout.flush()
 
-    for gj in geojson_files:
-        extract_cylinders_for_geojson(gj, output_root, dataset_root, on_feature_processed=on_progress)
+    # Parallelize per-geojson processing to speed up extraction
+    from concurrent.futures import ProcessPoolExecutor, as_completed
+
+    with ProcessPoolExecutor() as executor:
+        futures = [executor.submit(extract_cylinders_for_geojson, gj, output_root, dataset_root, None) for gj in geojson_files]
+        for fut in as_completed(futures):
+            processed += fut.result()
+            sys.stdout.write("\r" + render_progress(processed, total_features))
+            sys.stdout.flush()
 
     sys.stdout.write("\n")
     sys.stdout.flush()
