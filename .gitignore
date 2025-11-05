@@ -9,3 +9,4 @@ __pycache__/
 *.npy
 assignments.npy
 embeddings.npy
+las_cylinders_5m/
