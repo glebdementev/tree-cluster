@@ -27,6 +27,7 @@ class TrainConfig:
     train_split: float
     seed: int
     num_workers: int
+    feature_reg_weight: float
 
 
 def find_all_las_files(root: Path) -> List[Path]:
@@ -80,12 +81,17 @@ class CylinderDataset(Dataset):
         class_count: int,
         points_per_sample: int,
         seed: int,
+        aug: bool,
     ) -> None:
         self.files = files
         self.class_count = class_count
         self.points_per_sample = points_per_sample
         self.random = random.Random(seed)
+        self.aug = aug
         self._cache: Dict[Path, np.ndarray] = {}
+        self._fps_idx_cache: Dict[Path, np.ndarray] = {}
+        self._pre_points_cache: Dict[Path, np.ndarray] = {}
+        self._max_pre_points = 8192
 
     def __len__(self) -> int:
         return len(self.files)
@@ -108,52 +114,175 @@ class CylinderDataset(Dataset):
         idx = np.array([self.random.randrange(n) for _ in range(self.points_per_sample)])
         return pts[idx]
 
+    def _augment(self, pts: torch.Tensor) -> torch.Tensor:
+        theta = self.random.uniform(0.0, 2.0 * math.pi)
+        c = math.cos(theta)
+        s = math.sin(theta)
+        Rz = torch.tensor([[c, -s, 0.0], [s, c, 0.0], [0.0, 0.0, 1.0]], dtype=torch.float32, device=pts.device)
+        pts = pts @ Rz.T
+        scale = self.random.uniform(0.95, 1.05)
+        pts = pts * scale
+        pts = pts + 0.005 * torch.randn_like(pts)
+        return pts
+
     def __getitem__(self, index: int) -> Tuple[torch.Tensor, int]:
         path, label = self.files[index]
-        pts = self._load_points(path)
-        sampled = self._sample_points(pts)
-        # Normalize per-sample: subtract centroid, scale to unit sphere
-        centroid = sampled.mean(axis=0, keepdims=True)
-        centered = sampled - centroid
-        scale = np.linalg.norm(centered, axis=1).max()
-        if scale > 0:
-            centered = centered / scale
-        # Shape to (3, N) for Conv1d in PyTorch
-        tensor = torch.from_numpy(centered.T)  # (3, points_per_sample)
-        return tensor, label
+        pts_np = self._load_points(path)  # (N,3)
+        n = pts_np.shape[0]
+        if n < self.points_per_sample:
+            reps = int(math.ceil(self.points_per_sample / max(1, n)))
+            pts_np = np.tile(pts_np, (reps, 1))
+            n = pts_np.shape[0]
+
+        # Pre-truncate deterministically to speed up FPS on huge N
+        if path in self._pre_points_cache:
+            pre = self._pre_points_cache[path]
+        else:
+            if n > self._max_pre_points:
+                idx_lin = np.linspace(0, n - 1, self._max_pre_points).astype(np.int64)
+                pre = pts_np[idx_lin]
+            else:
+                pre = pts_np
+            self._pre_points_cache[path] = pre
+
+        # Normalize
+        pre_t = torch.from_numpy(pre).float().unsqueeze(0)  # (1,M,3)
+        pre_t = normalize_unit_sphere(pre_t)
+
+        # Deterministic FPS subset per file
+        if path in self._fps_idx_cache:
+            fps_idx = self._fps_idx_cache[path]
+        else:
+            M = pre_t.shape[1]
+            center = pre_t.mean(dim=1, keepdim=True)  # (1,1,3)
+            d2 = ((pre_t - center) ** 2).sum(-1).squeeze(0)  # (M,)
+            start_idx = int(torch.argmax(d2).item())
+            idx = farthest_point_sampling(pre_t, self.points_per_sample, start_idx=start_idx).squeeze(0)
+            fps_idx = idx.cpu().numpy().astype(np.int64)
+            self._fps_idx_cache[path] = fps_idx
+
+        pts = pre_t.squeeze(0)[fps_idx]  # (N,3) with N=points_per_sample
+        if self.aug:
+            pts = self._augment(pts)
+        return pts, label
 
 
-class PointNetTiny(nn.Module):
-    def __init__(self, num_classes: int) -> None:
+def normalize_unit_sphere(xyz: torch.Tensor) -> torch.Tensor:
+    center = xyz.mean(dim=1, keepdim=True)
+    xyz = xyz - center
+    scale = torch.sqrt((xyz ** 2).sum(dim=2)).max(dim=1, keepdim=True)[0].unsqueeze(-1) + 1e-9
+    return xyz / scale
+
+@torch.no_grad()
+def farthest_point_sampling(xyz: torch.Tensor, npoints: int, start_idx: Optional[int] = None) -> torch.Tensor:
+    B, N, _ = xyz.shape
+    device = xyz.device
+    idx = torch.zeros(B, npoints, dtype=torch.long, device=device)
+    dist = torch.full((B, N), 1e10, device=device)
+    if start_idx is None:
+        farthest = torch.randint(0, N, (B,), dtype=torch.long, device=device)
+    else:
+        farthest = torch.full((B,), int(start_idx), dtype=torch.long, device=device)
+    batch_arange = torch.arange(B, device=device)
+    for i in range(npoints):
+        idx[:, i] = farthest
+        centroid = xyz[batch_arange, farthest, :].view(B, 1, 3)
+        d = ((xyz - centroid) ** 2).sum(-1)
+        mask = d < dist
+        dist[mask] = d[mask]
+        farthest = dist.max(-1)[1]
+    return idx
+
+def sample_points(xyz: torch.Tensor, npoints: int, method: str = "fps") -> torch.Tensor:
+    B, N, _ = xyz.shape
+    if npoints == N:
+        return xyz
+    if method == "fps":
+        inds = farthest_point_sampling(xyz, npoints)
+    else:
+        inds = torch.randint(0, N, (B, npoints), device=xyz.device)
+    return xyz.gather(1, inds.unsqueeze(-1).expand(-1, -1, 3))
+
+class TNet(nn.Module):
+    def __init__(self, k: int):
         super().__init__()
-        # Shared MLP via Conv1d with BatchNorm
-        self.conv1 = nn.Conv1d(3, 64, kernel_size=1)
+        self.k = k
+        self.conv1 = nn.Conv1d(k, 64, 1)
+        self.conv2 = nn.Conv1d(64, 128, 1)
+        self.conv3 = nn.Conv1d(128, 1024, 1)
         self.bn1 = nn.BatchNorm1d(64)
-        self.conv2 = nn.Conv1d(64, 128, kernel_size=1)
         self.bn2 = nn.BatchNorm1d(128)
-        self.conv3 = nn.Conv1d(128, 256, kernel_size=1)
-        self.bn3 = nn.BatchNorm1d(256)
-
-        self.fc1 = nn.Linear(256, 128)
-        self.bn4 = nn.BatchNorm1d(128)
-        self.drop1 = nn.Dropout(p=0.3)
-        self.fc2 = nn.Linear(128, 64)
-        self.bn5 = nn.BatchNorm1d(64)
-        self.drop2 = nn.Dropout(p=0.3)
-        self.fc3 = nn.Linear(64, num_classes)
+        self.bn3 = nn.BatchNorm1d(1024)
+        self.fc1 = nn.Linear(1024, 512)
+        self.fc2 = nn.Linear(512, 256)
+        self.fc3 = nn.Linear(256, k * k)
+        self.bn4 = nn.BatchNorm1d(512)
+        self.bn5 = nn.BatchNorm1d(256)
+        nn.init.zeros_(self.fc3.weight)
+        nn.init.zeros_(self.fc3.bias)
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        # x: (B, 3, N)
+        B = x.size(0)
         x = F.relu(self.bn1(self.conv1(x)))
         x = F.relu(self.bn2(self.conv2(x)))
         x = F.relu(self.bn3(self.conv3(x)))
-        x = torch.max(x, dim=2)[0]  # global max pool -> (B, 256)
+        x = torch.max(x, 2)[0]
         x = F.relu(self.bn4(self.fc1(x)))
-        x = self.drop1(x)
         x = F.relu(self.bn5(self.fc2(x)))
-        x = self.drop2(x)
+        x = self.fc3(x)
+        iden = torch.eye(self.k, device=x.device).view(1, self.k * self.k).repeat(B, 1)
+        x = x + iden
+        x = x.view(-1, self.k, self.k)
+        return x
+
+def feature_transform_regularizer(trans: torch.Tensor) -> torch.Tensor:
+    K = trans.size(1)
+    I = torch.eye(K, device=trans.device).unsqueeze(0)
+    return torch.mean(torch.norm(torch.bmm(trans, trans.transpose(2, 1)) - I, dim=(1, 2)))
+
+class PointNetClassifier(nn.Module):
+    def __init__(self, num_classes: int, feature_transform: bool = True):
+        super().__init__()
+        self.feature_transform = feature_transform
+        self.input_tnet = TNet(k=3)
+        self.conv1 = nn.Conv1d(3, 64, 1)
+        self.bn1 = nn.BatchNorm1d(64)
+        self.conv2 = nn.Conv1d(64, 64, 1)
+        self.bn2 = nn.BatchNorm1d(64)
+        self.feature_tnet = TNet(k=64)
+        self.conv3 = nn.Conv1d(64, 64, 1)
+        self.conv4 = nn.Conv1d(64, 128, 1)
+        self.conv5 = nn.Conv1d(128, 1024, 1)
+        self.bn3 = nn.BatchNorm1d(64)
+        self.bn4 = nn.BatchNorm1d(128)
+        self.bn5 = nn.BatchNorm1d(1024)
+        self.fc1 = nn.Linear(1024, 512)
+        self.fc2 = nn.Linear(512, 256)
+        self.fc3 = nn.Linear(256, num_classes)
+        self.bn6 = nn.BatchNorm1d(512)
+        self.bn7 = nn.BatchNorm1d(256)
+        self.dropout = nn.Dropout(p=0.3)
+
+    def forward(self, xyz: torch.Tensor):
+        x = xyz.transpose(2, 1)
+        trans_in = self.input_tnet(x)
+        x = torch.bmm(trans_in, x)
+        x = F.relu(self.bn1(self.conv1(x)))
+        x = F.relu(self.bn2(self.conv2(x)))
+        if self.feature_transform:
+            trans_feat = self.feature_tnet(x)
+            x = torch.bmm(trans_feat, x)
+        else:
+            trans_feat = None
+        x = F.relu(self.bn3(self.conv3(x)))
+        x = F.relu(self.bn4(self.conv4(x)))
+        x = self.bn5(self.conv5(x))
+        x = torch.max(x, 2)[0]
+        x = F.relu(self.bn6(self.fc1(x)))
+        x = F.relu(self.bn7(self.fc2(x)))
+        x = self.dropout(x)
         logits = self.fc3(x)
-        return logits
+        return logits, trans_in, trans_feat
 
 
 def split_train_val(files_by_class: Dict[int, List[Path]], split: float, seed: int) -> Tuple[List[Tuple[Path, int]], List[Tuple[Path, int]]]:
@@ -198,6 +327,7 @@ def train_loop(
     epochs: int,
     device: torch.device,
     lr: float,
+    feature_reg_weight: float,
 ) -> None:
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     criterion = nn.CrossEntropyLoss()
@@ -211,8 +341,10 @@ def train_loop(
             pts = pts.to(device)
             labels = labels.to(device)
             optimizer.zero_grad(set_to_none=True)
-            logits = model(pts)
+            logits, _t_in, t_feat = model(pts)
             loss = criterion(logits, labels)
+            if t_feat is not None:
+                loss = loss + feature_reg_weight * feature_transform_regularizer(t_feat)
             loss.backward()
             optimizer.step()
             running_loss += float(loss.item()) * pts.size(0)
@@ -229,7 +361,7 @@ def train_loop(
             for pts, labels in val_loader:
                 pts = pts.to(device)
                 labels = labels.to(device)
-                logits = model(pts)
+                logits, _t_in, _t_feat = model(pts)
                 preds = torch.argmax(logits, dim=1)
                 val_correct += int((preds == labels).sum().item())
                 val_total += int(pts.size(0))
@@ -247,13 +379,14 @@ def main() -> None:
         repo_root=repo_root,
         data_root=data_root,
         output_dir=output_dir,
-        points_per_sample=512,
+        points_per_sample=1024,
         batch_size=16,
         epochs=25,
         learning_rate=1e-3,
         train_split=0.85,
         seed=42,
         num_workers=0,
+        feature_reg_weight=0.001,
     )
 
     print("Step 1: Scanning LAS cylinders recursively...")
@@ -291,24 +424,24 @@ def main() -> None:
     train_samples, val_samples = split_train_val(files_by_class, cfg.train_split, cfg.seed)
     print("  Train files:", len(train_samples), " Val files:", len(val_samples))
 
-    print("Step 4: Balancing classes by oversampling rarer classes with different point subsets...")
+    print("Step 4: Balancing classes")
     balanced_train = build_balanced_index(train_samples, len(unique_species), cfg.seed)
     print("  Balanced train samples:", len(balanced_train))
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print("Step 5: Building datasets and model (device:", device.type, ") ...")
-    train_ds = CylinderDataset(balanced_train, len(unique_species), cfg.points_per_sample, cfg.seed)
-    val_ds = CylinderDataset(val_samples, len(unique_species), cfg.points_per_sample, cfg.seed)
+    train_ds = CylinderDataset(balanced_train, len(unique_species), cfg.points_per_sample, cfg.seed, aug=True)
+    val_ds = CylinderDataset(val_samples, len(unique_species), cfg.points_per_sample, cfg.seed, aug=False)
     pin = True if device.type == "cuda" else False
     train_loader = DataLoader(train_ds, batch_size=cfg.batch_size, shuffle=True, num_workers=cfg.num_workers, pin_memory=pin)
     val_loader = DataLoader(val_ds, batch_size=cfg.batch_size, shuffle=False, num_workers=cfg.num_workers, pin_memory=pin)
 
-    model = PointNetTiny(num_classes=len(unique_species)).to(device)
+    model = PointNetClassifier(num_classes=len(unique_species)).to(device)
 
     print("Step 6: Training PointNet...")
-    train_loop(model, train_loader, val_loader, cfg.epochs, device, cfg.learning_rate)
+    train_loop(model, train_loader, val_loader, cfg.epochs, device, cfg.learning_rate, cfg.feature_reg_weight)
 
-    model_path = cfg.output_dir / "pointnet_tiny.pth"
+    model_path = cfg.output_dir / "pointnet_pointnetcls.pth"
     torch.save(model.state_dict(), model_path)
     with (cfg.output_dir / "species_index.json").open("w", encoding="utf-8") as fh:
         json.dump({"classes": unique_species}, fh, ensure_ascii=False, indent=2)
