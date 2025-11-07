@@ -7,16 +7,15 @@ import laspy
 import numpy as np
 
 from .config import PipelineConfig, PipelineStage, OutputMode
-from .z_filter import filter_below_z
 from .precision import quantize_points
-from .decimate import voxel_downsample
-from .noise_filter import filter_statistical_outliers
+from .decimate import voxel_downsample_indices
+from .noise_filter import filter_statistical_outliers_mask
 from .tiling import (
     header_xy_bounds,
     data_xy_bounds,
     generate_tiles,
-    collect_points_in_bbox,
-    write_points_las_like,
+    collect_points_and_records_in_bbox,
+    write_points_with_attrs,
 )
 
 from treeiso.largest_segment import process_las_file_largest
@@ -117,7 +116,7 @@ def _clean_and_tile_file(file_path: str, output_dir: str, config: PipelineConfig
     for i, bbox in enumerate(tiles):
         with laspy.open(file_path) as reader:
             header = reader.header
-            pts = collect_points_in_bbox(reader, bbox)
+            pts, recs = collect_points_and_records_in_bbox(reader, bbox)
             logger.info(
                 "Tile %s[%04d]: bbox(x0=%.3f, x1=%.3f, y0=%.3f, y1=%.3f) | points=%d",
                 base,
@@ -132,13 +131,15 @@ def _clean_and_tile_file(file_path: str, output_dir: str, config: PipelineConfig
                 logger.info("Tile %s[%04d] skipped: no points in bbox", base, i)
                 continue
 
-            pts = filter_below_z(pts, config.z_min_m)
-            if len(pts) == 0:
+            mask_z = pts[:, 2] >= config.z_min_m
+            if not np.any(mask_z):
                 logger.info("Tile %s[%04d] skipped: all points below z_min=%.3f", base, i, config.z_min_m)
                 continue
+            pts = pts[mask_z]
+            recs = recs[mask_z]
 
-            pts = filter_statistical_outliers(pts, config.sor_neighbors, config.sor_std_ratio)
-            if len(pts) == 0:
+            mask_sor = filter_statistical_outliers_mask(pts, config.sor_neighbors, config.sor_std_ratio)
+            if not np.any(mask_sor):
                 logger.info(
                     "Tile %s[%04d] skipped: removed as outliers (neighbors=%d, std_ratio=%.3f)",
                     base,
@@ -147,30 +148,34 @@ def _clean_and_tile_file(file_path: str, output_dir: str, config: PipelineConfig
                     config.sor_std_ratio,
                 )
                 continue
+            pts = pts[mask_sor]
+            recs = recs[mask_sor]
 
-            pts = quantize_points(pts, config.voxel_size_m)
-            pts = voxel_downsample(pts, config.voxel_size_m)
-            if len(pts) < config.min_points_per_tile:
+            pts_q = quantize_points(pts, config.voxel_size_m)
+            keep_idx = voxel_downsample_indices(pts_q, config.voxel_size_m)
+            if keep_idx.size < config.min_points_per_tile:
                 logger.info(
                     "Tile %s[%04d] skipped: %d points < min_points_per_tile=%d after quantize+downsample (voxel=%.3f)",
                     base,
                     i,
-                    len(pts),
+                    int(keep_idx.size),
                     config.min_points_per_tile,
                     config.voxel_size_m,
                 )
                 continue
+            pts_out = pts_q[keep_idx]
+            recs_out = recs[keep_idx]
 
             out_name = f"{base}_tile_{i:04d}.laz"
             out_path = os.path.join(output_dir, out_name)
-            actual_path = write_points_las_like(header, out_path, pts)
+            actual_path = write_points_with_attrs(header, out_path, recs_out, xyz_override=pts_out)
             tiles_written.append(actual_path)
             logger.info(
                 "Tile %s[%04d] written: %s | kept points=%d",
                 base,
                 i,
                 actual_path,
-                len(pts),
+                int(keep_idx.size),
             )
 
     return tiles_written

@@ -111,8 +111,9 @@ def mask_bbox_xy(xs: np.ndarray, ys: np.ndarray, bbox: BBox) -> np.ndarray:
     return (xs >= x0) & (xs < x1) & (ys >= y0) & (ys < y1)
 
 
-def collect_points_in_bbox(reader: laspy.LasReader, bbox: BBox) -> np.ndarray:
+def collect_points_and_records_in_bbox(reader: laspy.LasReader, bbox: BBox) -> Tuple[np.ndarray, np.ndarray]:
     points_list: List[np.ndarray] = []
+    records_list: List[np.ndarray] = []
     for chunk in reader.chunk_iterator(5_000_000):
         xs = chunk.x
         ys = chunk.y
@@ -121,12 +122,21 @@ def collect_points_in_bbox(reader: laspy.LasReader, bbox: BBox) -> np.ndarray:
         if np.any(mask):
             pts = np.stack([xs[mask], ys[mask], zs[mask]], axis=1)
             points_list.append(pts)
+            records_list.append(chunk.points[mask])
     if len(points_list) == 0:
-        return np.empty((0, 3), dtype=float)
-    return np.vstack(points_list)
+        return np.empty((0, 3), dtype=float), np.empty((0,), dtype=np.float64)
+    return np.vstack(points_list), np.concatenate(records_list)
 
 
-def write_points_las_like(template_header: laspy.LasHeader, output_path: str, points_xyz: np.ndarray) -> str:
+ 
+
+
+def write_points_with_attrs(
+    template_header: laspy.LasHeader,
+    output_path: str,
+    points_structured: np.ndarray,
+    xyz_override: np.ndarray | None = None,
+) -> str:
     available_backends = list(laspy.LazBackend.detect_available())
     out_dir = os.path.dirname(output_path)
     if out_dir:
@@ -134,10 +144,12 @@ def write_points_las_like(template_header: laspy.LasHeader, output_path: str, po
     las = laspy.create(file_version=template_header.version, point_format=template_header.point_format)
     las.header.scales = template_header.scales
     las.header.offsets = template_header.offsets
-    if len(points_xyz) > 0:
-        las.x = points_xyz[:, 0]
-        las.y = points_xyz[:, 1]
-        las.z = points_xyz[:, 2]
+    if len(points_structured) > 0:
+        las.points = points_structured
+        if xyz_override is not None and len(xyz_override) > 0:
+            las.x = xyz_override[:, 0]
+            las.y = xyz_override[:, 1]
+            las.z = xyz_override[:, 2]
     if output_path.lower().endswith(".laz") and len(available_backends) > 0:
         las.write(output_path, do_compress=True, laz_backend=available_backends[0])
         return output_path
