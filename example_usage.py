@@ -1,8 +1,11 @@
+import logging
 from pipeline.config import PipelineConfig, PipelineStage, OutputMode
 from pipeline.run_pipeline import run_pipeline
 
 
 def main() -> None:
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
+    logging.getLogger("pipeline.tiling").setLevel(logging.INFO)
     # Set your absolute paths here
     input_path = "dataset/sample/117.las"
     clean_tiles_dir = "dataset/sample/117_tiles"

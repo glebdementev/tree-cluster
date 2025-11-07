@@ -1,21 +1,90 @@
 from typing import Generator, Iterable, List, Tuple
 import os
+import logging
 import numpy as np
 import laspy
 
-
 BBox = Tuple[float, float, float, float]  # xmin, xmax, ymin, ymax
+
+logger = logging.getLogger(__name__)
 
 
 def header_xy_bounds(header: laspy.LasHeader) -> BBox:
-    return (float(header.mins[0]), float(header.maxs[0]), float(header.mins[1]), float(header.maxs[1]))
+    xmin = float(header.mins[0])
+    xmax = float(header.maxs[0])
+    ymin = float(header.mins[1])
+    ymax = float(header.maxs[1])
+    logger.info(
+        "Header XY bounds computed | xmin=%.6f xmax=%.6f ymin=%.6f ymax=%.6f | scales=(%.9f, %.9f) offsets=(%.6f, %.6f)",
+        xmin,
+        xmax,
+        ymin,
+        ymax,
+        float(header.scales[0]),
+        float(header.scales[1]),
+        float(header.offsets[0]),
+        float(header.offsets[1]),
+    )
+    return (xmin, xmax, ymin, ymax)
+
+
+def data_xy_bounds(reader: laspy.LasReader) -> BBox:
+    xmin = float("inf")
+    xmax = float("-inf")
+    ymin = float("inf")
+    ymax = float("-inf")
+    total = 0
+    for chunk in reader.chunk_iterator(5_000_000):
+        if len(chunk.x) == 0:
+            continue
+        total += len(chunk.x)
+        cxmin = float(np.min(chunk.x))
+        cxmax = float(np.max(chunk.x))
+        cymin = float(np.min(chunk.y))
+        cymax = float(np.max(chunk.y))
+        if cxmin < xmin:
+            xmin = cxmin
+        if cxmax > xmax:
+            xmax = cxmax
+        if cymin < ymin:
+            ymin = cymin
+        if cymax > ymax:
+            ymax = cymax
+    logger.info(
+        "Data XY bounds scanned over %d points | xmin=%.6f xmax=%.6f ymin=%.6f ymax=%.6f",
+        total,
+        xmin,
+        xmax,
+        ymin,
+        ymax,
+    )
+    return (xmin, xmax, ymin, ymax)
 
 
 def generate_tiles(bounds_xy: BBox, tile_size_m: float, overlap_m: float) -> List[BBox]:
     xmin, xmax, ymin, ymax = bounds_xy
     step = tile_size_m - overlap_m
-    nx = int(np.ceil((xmax - xmin) / step))
-    ny = int(np.ceil((ymax - ymin) / step))
+    dx = float(xmax - xmin)
+    dy = float(ymax - ymin)
+    if step <= 0:
+        logger.warning(
+            "Invalid tiling parameters: step<=0 | tile_size=%.6f overlap=%.6f",
+            tile_size_m,
+            overlap_m,
+        )
+        return [(xmin, xmin + tile_size_m, ymin, ymin + tile_size_m)]
+    nx = int(np.ceil(dx / step))
+    ny = int(np.ceil(dy / step))
+    logger.info(
+        "Tiling grid: dx=%.6f dy=%.6f | tile_size=%.6f overlap=%.6f step=%.6f | nx=%d ny=%d",
+        dx,
+        dy,
+        tile_size_m,
+        overlap_m,
+        step,
+        nx,
+        ny,
+    )
     tiles: List[BBox] = []
     for iy in range(ny):
         y0 = ymin + iy * step
@@ -23,7 +92,17 @@ def generate_tiles(bounds_xy: BBox, tile_size_m: float, overlap_m: float) -> Lis
         for ix in range(nx):
             x0 = xmin + ix * step
             x1 = x0 + tile_size_m
-            tiles.append((x0, x1, y0, y1))
+            tile = (x0, x1, y0, y1)
+            tiles.append(tile)
+            logger.info(
+                "Tile[%d,%d]: x0=%.6f x1=%.6f y0=%.6f y1=%.6f",
+                ix,
+                iy,
+                x0,
+                x1,
+                y0,
+                y1,
+            )
     return tiles
 
 

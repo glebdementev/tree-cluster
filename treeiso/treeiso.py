@@ -474,29 +474,10 @@ def process_las_file(path_to_las, if_isolate_outlier=False):
     print('*******Processing LAS/LAZ******* ' + path_to_las)
     las = laspy.read(path_to_las)
 
-    # Extract point cloud
-    pcd = np.transpose([las.x, las.y, las.z])
+    # Default behavior: assign a unique point_id to each point (no segmentation)
+    las.add_extra_dim(laspy.ExtraBytesParams(name="point_id", type="int32", description="unique point identifier"))
+    las.point_id = np.arange(len(las.points), dtype=np.int32)
 
-    # Process the point cloud
-    init_labels, intermediate_labels, final_labels, dec_inverse_idx, dec_inverse_idx2 = process_point_cloud(pcd)
-
-    # Add labels to LAS file
-    las.add_extra_dim(laspy.ExtraBytesParams(name="init_segs", type="int32", description="init_segs"))
-    las.init_segs = init_labels[dec_inverse_idx]
-
-    las.add_extra_dim(laspy.ExtraBytesParams(name="intermediate_segs", type="int32", description="intermediate_segs"))
-    las.intermediate_segs = intermediate_labels[dec_inverse_idx2]
-
-    las.add_extra_dim(laspy.ExtraBytesParams(name="final_segs", type="int32", description="final_segs"))
-    las.final_segs = final_labels[dec_inverse_idx]
-
-    if if_isolate_outlier:
-        pcd_centered = pcd - np.mean(pcd, axis=0)
-        dec_idx_uidx, _ = decimate_pcd(pcd_centered, PR_DECIMATE_RES1)
-        pcd_dec = pcd_centered[dec_idx_uidx]
-        connected_labels=isolate_gaps(pcd_dec, PR_MAX_OUTLIER_GAP)
-        _,final_labels=np.unique(np.transpose([final_labels,connected_labels]),axis=0,return_inverse=True)
-    
     # Save output: prefer LAZ if a backend is available, otherwise fallback to LAS
     output_base = path_to_las[:-4] + "_treeiso"
     available_backends = list(laspy.LazBackend.detect_available())
@@ -507,50 +488,23 @@ def process_las_file(path_to_las, if_isolate_outlier=False):
     print('*******End processing*******')
 
 
-def process_las_file_largest(path_to_las, output_path=None):
-    """Process a LAS/LAZ file and save only the points from the largest final segment.
-    
-    Args:
-        path_to_las: Path to input LAS/LAZ file
-        output_path: Optional output path. If None, auto-generates from input path.
-    """
-    print('*******Processing LAS/LAZ (largest segment only)******* ' + path_to_las)
+def write_point_ids_file(path_to_las: str, output_path: str | None = None) -> None:
+    print('*******Assigning point_id (no segmentation)******* ' + path_to_las)
     las = laspy.read(path_to_las)
-
-    # Extract point cloud
-    pcd = np.transpose([las.x, las.y, las.z])
-
-    # Process the point cloud
-    _, _, final_labels, dec_inverse_idx, _ = process_point_cloud(pcd)
-
-    # Map final labels back to original point indices
-    per_point_final = final_labels[dec_inverse_idx]
-
-    # Find the label with the most points
-    labels, counts = np.unique(per_point_final, return_counts=True)
-    largest_label = labels[np.argmax(counts)]
-    mask = per_point_final == largest_label
-
-    # Keep only points belonging to the largest final segment
-    las.points = las.points[mask]
-
-    # Determine output path
+    las.add_extra_dim(laspy.ExtraBytesParams(name="point_id", type="int32", description="unique point identifier"))
+    las.point_id = np.arange(len(las.points), dtype=np.int32)
+    available_backends = list(laspy.LazBackend.detect_available())
     if output_path is None:
-        output_base = path_to_las[:-4] + "_treeiso_largest"
-        available_backends = list(laspy.LazBackend.detect_available())
+        output_base = path_to_las[:-4] + "_ids"
         if available_backends:
-            output_path = output_base + ".laz"
+            las.write(output_base + ".laz", do_compress=True, laz_backend=available_backends[0])
         else:
-            output_path = output_base + ".las"
-    else:
-        available_backends = list(laspy.LazBackend.detect_available())
-    
-    # Create output directory if it doesn't exist
+            las.write(output_base + ".las")
+        print('*******End processing*******')
+        return
     output_dir = os.path.dirname(output_path)
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
-    
-    # Save output: prefer LAZ if a backend is available, otherwise fallback to LAS
     if output_path.lower().endswith('.laz') and available_backends:
         las.write(output_path, do_compress=True, laz_backend=available_backends[0])
     else:
@@ -560,27 +514,41 @@ def process_las_file_largest(path_to_las, output_path=None):
     print('*******End processing*******')
 
 
-def run_treeiso(path_input: str, output_path=None):
-    """Caller that accepts a path (file or directory) and saves only the largest final segment.
-    
-    Args:
-        path_input: Path to input LAS/LAZ file or directory
-        output_path: Optional output path. Only used for single file input.
-    """
-    if os.path.isfile(path_input) and path_input.lower().endswith(('.las', '.laz')):
-        # Process single file
-        process_las_file_largest(path_input, output_path)
-    elif os.path.isdir(path_input):
-        # Process all LAS/LAZ files in directory
-        pathes_to_las = glob(os.path.join(path_input, "*.la[sz]"))
-        for path_to_las in pathes_to_las:
-            process_las_file_largest(path_to_las)
-        if len(pathes_to_las) == 0:
-            print('Failed to find the las/laz files from your input directory')
-            return
-    else:
-        print(f'PATH_INPUT "{path_input}" is not a valid file or directory')
+def write_segment_labels_file(path_to_las: str, output_path: str | None = None) -> None:
+    print('*******Segmenting LAS/LAZ (full)******* ' + path_to_las)
+    las = laspy.read(path_to_las)
+
+    pcd = np.transpose([las.x, las.y, las.z])
+    init_labels, intermediate_labels, final_labels, dec_inverse_idx, dec_inverse_idx2 = process_point_cloud(pcd)
+
+    las.add_extra_dim(laspy.ExtraBytesParams(name="init_segs", type="int32", description="init_segs"))
+    las.init_segs = init_labels[dec_inverse_idx]
+
+    las.add_extra_dim(laspy.ExtraBytesParams(name="intermediate_segs", type="int32", description="intermediate_segs"))
+    las.intermediate_segs = intermediate_labels[dec_inverse_idx2]
+
+    las.add_extra_dim(laspy.ExtraBytesParams(name="final_segs", type="int32", description="final_segs"))
+    las.final_segs = final_labels[dec_inverse_idx]
+
+    available_backends = list(laspy.LazBackend.detect_available())
+    if output_path is None:
+        output_base = path_to_las[:-4] + "_seg"
+        if available_backends:
+            las.write(output_base + ".laz", do_compress=True, laz_backend=available_backends[0])
+        else:
+            las.write(output_base + ".las")
+        print('*******End processing*******')
         return
+    output_dir = os.path.dirname(output_path)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+    if output_path.lower().endswith('.laz') and available_backends:
+        las.write(output_path, do_compress=True, laz_backend=available_backends[0])
+    else:
+        if output_path.lower().endswith('.laz'):
+            output_path = output_path[:-4] + ".las"
+        las.write(output_path)
+    print('*******End processing*******')
 
 def isolate_gaps(pcd,max_gap,search_K=20):
     pcd = pcd[:, :3] - np.mean(pcd[:, :3], axis=0)
@@ -613,13 +581,11 @@ def main():
     """Main function to process laser scanning point clouds."""
     # Check if PATH_INPUT is a file or directory
     if os.path.isfile(PATH_INPUT) and PATH_INPUT.lower().endswith(('.las', '.laz')):
-        # Process single file
-        process_las_file(PATH_INPUT)
+        write_point_ids_file(PATH_INPUT)
     elif os.path.isdir(PATH_INPUT):
-        # Process all LAS/LAZ files in directory
         pathes_to_las = glob(os.path.join(PATH_INPUT, "*.la[sz]"))
         for path_to_las in pathes_to_las:
-            process_las_file(path_to_las)
+            write_point_ids_file(path_to_las)
         if len(pathes_to_las) == 0:
             print('Failed to find the las/laz files from your input directory')
             return
