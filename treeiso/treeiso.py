@@ -13,7 +13,7 @@ from scipy.sparse.csgraph import connected_components
 from skimage import draw
 
 # Parameters
-PATH_INPUT = "dataset/sample/117.las"  # Path to directory containing LAS/LAZ files
+PATH_INPUT = "dataset/sample/117_treeiso/id_814_aspen.las"  # Path to directory containing LAS/LAZ files
 
 PR_REG_STRENGTH1 = 1.0  # lambda1
 PR_MIN_NN1 = 5  # K1: key parameter
