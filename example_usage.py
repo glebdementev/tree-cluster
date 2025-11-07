@@ -13,8 +13,8 @@ def main() -> None:
     final_output_path = "dataset/sample/117_merged.laz"
 
     config = PipelineConfig(
-        tile_size_m=36.0,
-        tile_overlap_m=1.0,
+        tile_size_m=30.0,
+        tile_overlap_m=2.0,
         z_min_m=0.1,
         sor_neighbors=10,
         sor_std_ratio=1.0,

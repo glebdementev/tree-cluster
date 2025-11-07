@@ -19,16 +19,18 @@ def _stack_points_and_labels(paths: List[str]) -> Tuple[np.ndarray, np.ndarray, 
     labels: List[np.ndarray] = []
     tile_ids: List[np.ndarray] = []
     template_header: laspy.LasHeader | None = None
+    label_offset = 0
     for tile_idx, p in enumerate(paths):
         las = laspy.read(p)
         if template_header is None:
             template_header = las.header
-        if not hasattr(las, "final_segs"):
-            raise ValueError(f"Segmented tile missing 'final_segs': {p}")
-        xs.append(las.x.astype(float))
-        ys.append(las.y.astype(float))
-        zs.append(las.z.astype(float))
-        labels.append(las.final_segs.astype(np.int64))
+        xs.append(np.asarray(las.x, dtype=float))
+        ys.append(np.asarray(las.y, dtype=float))
+        zs.append(np.asarray(las.z, dtype=float))
+        tile_labels = np.asarray(las.final_segs, dtype=np.int64)
+        unique_tile_labels, inverse_tile = np.unique(tile_labels, return_inverse=True)
+        labels.append(inverse_tile.astype(np.int64) + label_offset)
+        label_offset += unique_tile_labels.size
         tile_ids.append(np.full(len(las.x), tile_idx, dtype=np.int32))
     assert template_header is not None
     x = np.concatenate(xs)
@@ -39,46 +41,70 @@ def _stack_points_and_labels(paths: List[str]) -> Tuple[np.ndarray, np.ndarray, 
     return np.stack([x, y, z], axis=1), label, tile_id, template_header
 
 
-def _merge_label_overlaps(points_xyz: np.ndarray, labels: np.ndarray, tile_ids: np.ndarray, radius_m: float) -> np.ndarray:
-    # Normalize labels to start at 0 and be contiguous, then offset is identity
-    unique_labels, inverse = np.unique(labels, return_inverse=True)
+def _merge_label_overlaps(points_xyz: np.ndarray, labels: np.ndarray, tile_ids: np.ndarray, header: laspy.LasHeader) -> np.ndarray:
+    unique_labels, inverse_labels = np.unique(labels, return_inverse=True)
     num_labels = len(unique_labels)
-    if num_labels == 0:
+    if num_labels == 0 or points_xyz.shape[0] == 0:
         return labels
 
-    tree = cKDTree(points_xyz[:, :2])
-    # Find close point pairs (2D proximity) to detect duplicate trees across overlapping tiles
-    pairs = tree.query_pairs(r=radius_m)
-    if len(pairs) == 0:
-        # Nothing to merge
-        return inverse.astype(np.int64)
+    # Convert to integer LAS coordinates for exact matching
+    scales = np.asarray(header.scales, dtype=np.float64)
+    offsets = np.asarray(header.offsets, dtype=np.float64)
+    xyz_int = np.rint((points_xyz - offsets) / scales).astype(np.int64)
 
-    pairs_arr = np.fromiter((i for ij in pairs for i in ij), dtype=np.int64)
-    pairs_arr = pairs_arr.reshape(-1, 2)
-    # Only consider pairs from different tiles (overlap zones)
-    diff_tile = tile_ids[pairs_arr[:, 0]] != tile_ids[pairs_arr[:, 1]]
-    if not np.any(diff_tile):
-        return inverse.astype(np.int64)
-    pairs_arr = pairs_arr[diff_tile]
+    xi = xyz_int[:, 0]
+    yi = xyz_int[:, 1]
+    zi = xyz_int[:, 2]
 
-    li = inverse[pairs_arr[:, 0]]
-    lj = inverse[pairs_arr[:, 1]]
-    diff_label = li != lj
-    if not np.any(diff_label):
-        return inverse.astype(np.int64)
-    li = li[diff_label]
-    lj = lj[diff_label]
+    order = np.lexsort((zi, yi, xi))
+    xi = xi[order]
+    yi = yi[order]
+    zi = zi[order]
+    tiles_sorted = tile_ids[order]
+    labels_sorted = inverse_labels[order]
 
-    # Build label adjacency and compute connected components
-    data = np.ones(len(li), dtype=np.int8)
-    adj = csr_matrix((data, (li, lj)), shape=(num_labels, num_labels))
-    # Make it undirected
+    if xi.size <= 1:
+        return inverse_labels.astype(np.int64)
+
+    eq_adj = (xi[1:] == xi[:-1]) & (yi[1:] == yi[:-1]) & (zi[1:] == zi[:-1])
+    if not np.any(eq_adj):
+        return inverse_labels.astype(np.int64)
+
+    starts = np.empty(xi.size, dtype=bool)
+    starts[0] = True
+    starts[1:] = ~eq_adj
+    start_idx = np.flatnonzero(starts)
+    end_idx = np.empty_like(start_idx)
+    end_idx[:-1] = start_idx[1:]
+    end_idx[-1] = xi.size
+
+    rows: list[int] = []
+    cols: list[int] = []
+    for s, e in zip(start_idx, end_idx):
+        if e - s <= 1:
+            continue
+        # Require duplicates across different tiles
+        tiles_here = tiles_sorted[s:e]
+        if np.unique(tiles_here).size < 2:
+            continue
+        labs = labels_sorted[s:e]
+        labs_unique = np.unique(labs)
+        if labs_unique.size <= 1:
+            continue
+        base = labs_unique[0]
+        others = labs_unique[1:]
+        rows.extend(np.broadcast_to(base, others.shape).tolist())
+        cols.extend(others.tolist())
+
+    if len(rows) == 0:
+        return inverse_labels.astype(np.int64)
+
+    data = np.ones(len(rows), dtype=np.int8)
+    adj = csr_matrix((data, (np.asarray(rows), np.asarray(cols))), shape=(num_labels, num_labels))
     adj = adj + adj.T
     _, comp_ids = connected_components(csgraph=adj, directed=False, connection='weak', return_labels=True)
-
-    # Map components to contiguous ids
-    comp_unique, comp_new = np.unique(comp_ids, return_inverse=True)
-    merged_labels = comp_new[inverse]
+    _, comp_new = np.unique(comp_ids, return_inverse=True)
+    merged_labels = comp_new[inverse_labels]
     return merged_labels.astype(np.int64)
 
 
@@ -90,9 +116,9 @@ def merge_segmented_tiles(segmented_tiles: List[str], output_path: str, merge_ra
     points_xyz, labels, tile_ids, template_header = _stack_points_and_labels(segmented_tiles)
     logger.info("Stacked points: %d | initial unique labels: %d", len(points_xyz), len(np.unique(labels)))
 
-    merged_labels = _merge_label_overlaps(points_xyz, labels, tile_ids, merge_radius_m)
+    merged_labels = _merge_label_overlaps(points_xyz, labels, tile_ids, template_header)
     num_merged = len(np.unique(merged_labels))
-    logger.info("Merged unique labels: %d (radius=%.3f m)", num_merged, merge_radius_m)
+    logger.info("Merged unique labels: %d (by identical coordinates)", num_merged)
 
     # Scramble label ids to avoid spatially monotonic ids
     if num_merged > 0:
@@ -113,7 +139,8 @@ def merge_segmented_tiles(segmented_tiles: List[str], output_path: str, merge_ra
         las.x = points_xyz[:, 0]
         las.y = points_xyz[:, 1]
         las.z = points_xyz[:, 2]
-    las.add_extra_dim(laspy.ExtraBytesParams(name="final_segs", type="int32", description="final_segs"))
+    if "final_segs" not in las.point_format.dimension_names:
+        las.add_extra_dim(laspy.ExtraBytesParams(name="final_segs", type="int32", description="final_segs"))
     las.final_segs = merged_labels.astype(np.int32)
 
     if output_path.lower().endswith('.laz') and len(available_backends) > 0:

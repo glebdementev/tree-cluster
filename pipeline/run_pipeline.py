@@ -32,6 +32,31 @@ def _ensure_dir(path: str) -> None:
         os.makedirs(path, exist_ok=True)
 
 
+def _find_cleaned_tiles(directory: str) -> List[str]:
+    if not directory:
+        return []
+    return glob(os.path.join(directory, "*.la[sz]"))
+
+
+def _find_segmented_tiles(directory: str) -> List[str]:
+    if not directory:
+        return []
+    seg = glob(os.path.join(directory, "*_seg.la[sz]"))
+    seg_largest = glob(os.path.join(directory, "*_seg_largest.la[sz]"))
+    return sorted(seg + seg_largest)
+
+
+def _path_exists_either_laz_or_las(path: str) -> bool:
+    if len(path) == 0:
+        return False
+    if os.path.exists(path):
+        return True
+    if path.lower().endswith(".laz"):
+        alt = path[:-4] + ".las"
+        return os.path.exists(alt)
+    return False
+
+
 def clean_and_tile_input(input_path: str, output_dir: str, config: PipelineConfig) -> List[str]:
     _ensure_dir(output_dir)
     written: List[str] = []
@@ -170,9 +195,11 @@ def segment_tiles_normal(tiles: List[str], output_dir: str) -> List[str]:
     logger.info("Segmenting %d tile(s) (full segmentation)", len(tiles))
     for tile_path in tiles:
         base = os.path.splitext(os.path.basename(tile_path))[0]
-        out_base = os.path.join(output_dir, base + "_seg.laz")
-        write_segment_labels_file(tile_path, out_base)
-        outputs.append(out_base if out_base.lower().endswith(".laz") else out_base[:-4] + ".las")
+        base_noext = os.path.join(output_dir, base + "_seg")
+        available_backends = list(laspy.LazBackend.detect_available())
+        out_path = base_noext + (".laz" if len(available_backends) > 0 else ".las")
+        write_segment_labels_file(tile_path, out_path)
+        outputs.append(out_path)
         logger.info("Segmented tile written: %s", outputs[-1])
     return outputs
 
@@ -189,22 +216,37 @@ def run_pipeline(
     tiles: List[str] = []
     if stage in (PipelineStage.clean, PipelineStage.all):
         logger.info("Stage: CLEAN | output_dir=%s", clean_tiles_dir)
-        tiles = clean_and_tile_input(input_path, clean_tiles_dir, config)
+        existing_clean = _find_cleaned_tiles(clean_tiles_dir)
+        if len(existing_clean) > 0:
+            logger.info("Reusing %d existing cleaned tile(s)", len(existing_clean))
+            tiles = sorted(existing_clean)
+        else:
+            tiles = clean_and_tile_input(input_path, clean_tiles_dir, config)
 
     if stage in (PipelineStage.segment, PipelineStage.all):
         if output_mode == OutputMode.segmented_largest_per_tile:
             logger.info("Stage: SEGMENT (normal: per-point ids) | output_dir=%s", segmented_output_dir)
-            if len(tiles) == 0:
-                tiles = glob(os.path.join(clean_tiles_dir, "*.la[sz]"))
-            logger.info("Found %d cleaned tile(s) to segment", len(tiles))
-            if len(tiles) == 0:
-                raise ValueError(f"No cleaned tiles found in: {clean_tiles_dir}")
-            segmented_tiles = segment_tiles_normal(tiles, segmented_output_dir)
+            segmented_tiles = _find_segmented_tiles(segmented_output_dir)
+            if len(segmented_tiles) > 0:
+                logger.info("Reusing %d existing segmented tile(s)", len(segmented_tiles))
+            else:
+                if len(tiles) == 0:
+                    tiles = glob(os.path.join(clean_tiles_dir, "*.la[sz]"))
+                logger.info("Found %d cleaned tile(s) to segment", len(tiles))
+                if len(tiles) == 0:
+                    raise ValueError(f"No cleaned tiles found in: {clean_tiles_dir}")
+                segmented_tiles = segment_tiles_normal(tiles, segmented_output_dir)
+
             if final_output_path is not None and len(final_output_path) > 0:
                 merged_out = final_output_path
             else:
                 base_name = os.path.splitext(os.path.basename(input_path if os.path.isfile(input_path) else clean_tiles_dir.rstrip(os.sep)))[0]
                 merged_out = os.path.join(segmented_output_dir, f"{base_name}_merged.laz")
+
+            if _path_exists_either_laz_or_las(merged_out):
+                logger.info("Merged output already exists: %s | skipping merge", merged_out)
+                return
+
             merge_radius = max(0.05, config.voxel_size_m * 2.0)
             merged_path = merge_segmented_tiles(segmented_tiles, merged_out, merge_radius)
             logger.info("Merged segmented output: %s", merged_path)
