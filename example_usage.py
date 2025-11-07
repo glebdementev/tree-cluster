@@ -10,6 +10,7 @@ def main() -> None:
     input_path = "dataset/sample/117.las"
     clean_tiles_dir = "dataset/sample/117_tiles"
     segmented_output_dir = "dataset/sample/117_segmented"
+    final_output_path = "dataset/sample/117_merged.laz"
 
     config = PipelineConfig(
         tile_size_m=36.0,
@@ -28,6 +29,7 @@ def main() -> None:
         stage=PipelineStage.all,
         output_mode=OutputMode.segmented_largest_per_tile,
         config=config,
+        final_output_path=final_output_path,
     )
 
 

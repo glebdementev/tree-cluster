@@ -1,7 +1,7 @@
 import os
 import logging
 from glob import glob
-from typing import List
+from typing import List, Optional
 
 import laspy
 import numpy as np
@@ -21,6 +21,7 @@ from .tiling import (
 
 from treeiso.largest_segment import process_las_file_largest
 from treeiso.treeiso import write_point_ids_file, write_segment_labels_file
+from .merge_tiles import merge_segmented_tiles
 
 
 logger = logging.getLogger(__name__)
@@ -183,6 +184,7 @@ def run_pipeline(
     stage: PipelineStage,
     output_mode: OutputMode,
     config: PipelineConfig,
+    final_output_path: Optional[str] = None,
 ) -> None:
     tiles: List[str] = []
     if stage in (PipelineStage.clean, PipelineStage.all):
@@ -197,6 +199,14 @@ def run_pipeline(
             logger.info("Found %d cleaned tile(s) to segment", len(tiles))
             if len(tiles) == 0:
                 raise ValueError(f"No cleaned tiles found in: {clean_tiles_dir}")
-            _ = segment_tiles_normal(tiles, segmented_output_dir)
+            segmented_tiles = segment_tiles_normal(tiles, segmented_output_dir)
+            if final_output_path is not None and len(final_output_path) > 0:
+                merged_out = final_output_path
+            else:
+                base_name = os.path.splitext(os.path.basename(input_path if os.path.isfile(input_path) else clean_tiles_dir.rstrip(os.sep)))[0]
+                merged_out = os.path.join(segmented_output_dir, f"{base_name}_merged.laz")
+            merge_radius = max(0.05, config.voxel_size_m * 2.0)
+            merged_path = merge_segmented_tiles(segmented_tiles, merged_out, merge_radius)
+            logger.info("Merged segmented output: %s", merged_path)
 
 
