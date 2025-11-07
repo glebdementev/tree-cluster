@@ -13,7 +13,7 @@ from scipy.sparse.csgraph import connected_components
 from skimage import draw
 
 # Parameters
-PATH_INPUT = "dataset/sample/117_treeiso/id_814_aspen.las"  # Path to directory containing LAS/LAZ files
+PATH_INPUT = "dataset/sample/117_treeiso/id_666_pine.las"  # Path to directory containing LAS/LAZ files
 
 PR_REG_STRENGTH1 = 1.0  # lambda1
 PR_MIN_NN1 = 5  # K1: key parameter
@@ -497,10 +497,90 @@ def process_las_file(path_to_las, if_isolate_outlier=False):
         connected_labels=isolate_gaps(pcd_dec, PR_MAX_OUTLIER_GAP)
         _,final_labels=np.unique(np.transpose([final_labels,connected_labels]),axis=0,return_inverse=True)
     
-    # Save output
-    las.write(path_to_las[:-4] + "_treeiso.laz")
+    # Save output: prefer LAZ if a backend is available, otherwise fallback to LAS
+    output_base = path_to_las[:-4] + "_treeiso"
+    available_backends = list(laspy.LazBackend.detect_available())
+    if available_backends:
+        las.write(output_base + ".laz", do_compress=True, laz_backend=available_backends[0])
+    else:
+        las.write(output_base + ".las")
     print('*******End processing*******')
 
+
+def process_las_file_largest(path_to_las, output_path=None):
+    """Process a LAS/LAZ file and save only the points from the largest final segment.
+    
+    Args:
+        path_to_las: Path to input LAS/LAZ file
+        output_path: Optional output path. If None, auto-generates from input path.
+    """
+    print('*******Processing LAS/LAZ (largest segment only)******* ' + path_to_las)
+    las = laspy.read(path_to_las)
+
+    # Extract point cloud
+    pcd = np.transpose([las.x, las.y, las.z])
+
+    # Process the point cloud
+    _, _, final_labels, dec_inverse_idx, _ = process_point_cloud(pcd)
+
+    # Map final labels back to original point indices
+    per_point_final = final_labels[dec_inverse_idx]
+
+    # Find the label with the most points
+    labels, counts = np.unique(per_point_final, return_counts=True)
+    largest_label = labels[np.argmax(counts)]
+    mask = per_point_final == largest_label
+
+    # Keep only points belonging to the largest final segment
+    las.points = las.points[mask]
+
+    # Determine output path
+    if output_path is None:
+        output_base = path_to_las[:-4] + "_treeiso_largest"
+        available_backends = list(laspy.LazBackend.detect_available())
+        if available_backends:
+            output_path = output_base + ".laz"
+        else:
+            output_path = output_base + ".las"
+    else:
+        available_backends = list(laspy.LazBackend.detect_available())
+    
+    # Create output directory if it doesn't exist
+    output_dir = os.path.dirname(output_path)
+    if output_dir:
+        os.makedirs(output_dir, exist_ok=True)
+    
+    # Save output: prefer LAZ if a backend is available, otherwise fallback to LAS
+    if output_path.lower().endswith('.laz') and available_backends:
+        las.write(output_path, do_compress=True, laz_backend=available_backends[0])
+    else:
+        if output_path.lower().endswith('.laz'):
+            output_path = output_path[:-4] + ".las"
+        las.write(output_path)
+    print('*******End processing*******')
+
+
+def run_treeiso(path_input: str, output_path=None):
+    """Caller that accepts a path (file or directory) and saves only the largest final segment.
+    
+    Args:
+        path_input: Path to input LAS/LAZ file or directory
+        output_path: Optional output path. Only used for single file input.
+    """
+    if os.path.isfile(path_input) and path_input.lower().endswith(('.las', '.laz')):
+        # Process single file
+        process_las_file_largest(path_input, output_path)
+    elif os.path.isdir(path_input):
+        # Process all LAS/LAZ files in directory
+        pathes_to_las = glob(os.path.join(path_input, "*.la[sz]"))
+        for path_to_las in pathes_to_las:
+            process_las_file_largest(path_to_las)
+        if len(pathes_to_las) == 0:
+            print('Failed to find the las/laz files from your input directory')
+            return
+    else:
+        print(f'PATH_INPUT "{path_input}" is not a valid file or directory')
+        return
 
 def isolate_gaps(pcd,max_gap,search_K=20):
     pcd = pcd[:, :3] - np.mean(pcd[:, :3], axis=0)
