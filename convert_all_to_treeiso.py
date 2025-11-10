@@ -19,6 +19,9 @@ def list_las_files(root: Path) -> List[Path]:
             continue
         if any(parent.name.endswith("_tiles_tmp") or parent.name.endswith("_seg_tmp") for parent in p.parents):
             continue
+        # Only process files whose path includes a 'complete' directory
+        if not any("complete" in parent.name for parent in p.parents):
+            continue
         result.append(p)
     return result
 
