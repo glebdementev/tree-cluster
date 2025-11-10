@@ -1,5 +1,7 @@
 dataset
 dataset/
+dataset_depr
+dataset_depr/
 .venv
 .venv/
 __pycache__/

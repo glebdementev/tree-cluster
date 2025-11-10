@@ -160,7 +160,9 @@ def create_node_edges(points, k=10, max_distance=0.4):
 
     centroids = np.array([np.mean(points[idx, :3], 0) for idx in v_group])
     kdtree = cKDTree(centroids[:, :3])
-    _, indices = kdtree.query(centroids[:, :3], k=min(k + 1,len(centroids)))
+    _, indices = kdtree.query(centroids[:, :3], k=min(k + 1, len(centroids)))
+    if np.ndim(indices) == 1:
+        indices = indices[:, np.newaxis]
     distance_matrix = np.zeros([len(centroids), len(centroids)])-1  #
     for i, v in enumerate(v_group):
         nn_idx = indices[i, 1:]
@@ -172,12 +174,20 @@ def create_node_edges(points, k=10, max_distance=0.4):
             nn_dist = tree.query(points[v_group[nv], :3], k=1)
             distance_matrix[i, nv] = np.min(nn_dist)
 
-    kdtree = cKDTree(points[:,:3])
-    nn_D, nn_idx = kdtree.query(points[:,:3], k=min(k + 1,len(points)))
+    kdtree = cKDTree(points[:, :3])
+    k_query = min(k + 1, len(points))
+    nn_D, nn_idx = kdtree.query(points[:, :3], k=k_query)
+    if np.ndim(nn_idx) == 1:
+        nn_idx = nn_idx[:, np.newaxis]
     indices = nn_idx[:, 1:]
 
-    eu = np.repeat(np.arange(len(points)), k)
-    ev = indices.ravel()
+    k_eff = indices.shape[1]
+    if k_eff == 0:
+        eu = np.array([], dtype=np.int64)
+        ev = np.array([], dtype=np.int64)
+    else:
+        eu = np.repeat(np.arange(len(points)), k_eff)
+        ev = indices.ravel()
 
     eu_node=inverse_idx[eu]
     ev_node=inverse_idx[ev]

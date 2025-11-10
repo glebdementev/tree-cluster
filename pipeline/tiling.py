@@ -122,7 +122,7 @@ def collect_points_and_records_in_bbox(reader: laspy.LasReader, bbox: BBox) -> T
         if np.any(mask):
             pts = np.stack([xs[mask], ys[mask], zs[mask]], axis=1)
             points_list.append(pts)
-            records_list.append(chunk.points[mask])
+            records_list.append(chunk.array[mask])
     if len(points_list) == 0:
         return np.empty((0, 3), dtype=float), np.empty((0,), dtype=np.float64)
     return np.vstack(points_list), np.concatenate(records_list)
@@ -144,12 +144,10 @@ def write_points_with_attrs(
     las = laspy.create(file_version=template_header.version, point_format=template_header.point_format)
     las.header.scales = template_header.scales
     las.header.offsets = template_header.offsets
-    if len(points_structured) > 0:
-        las.points = points_structured
-        if xyz_override is not None and len(xyz_override) > 0:
-            las.x = xyz_override[:, 0]
-            las.y = xyz_override[:, 1]
-            las.z = xyz_override[:, 2]
+    if xyz_override is not None and len(xyz_override) > 0:
+        las.x = xyz_override[:, 0]
+        las.y = xyz_override[:, 1]
+        las.z = xyz_override[:, 2]
     if output_path.lower().endswith(".laz") and len(available_backends) > 0:
         las.write(output_path, do_compress=True, laz_backend=available_backends[0])
         return output_path

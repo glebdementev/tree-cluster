@@ -12,13 +12,12 @@ from scipy.sparse.csgraph import connected_components
 logger = logging.getLogger(__name__)
 
 
-def _stack_points_and_labels(paths: List[str]) -> Tuple[np.ndarray, np.ndarray, np.ndarray, laspy.LasHeader, np.ndarray]:
+def _stack_points_and_labels(paths: List[str]) -> Tuple[np.ndarray, np.ndarray, np.ndarray, laspy.LasHeader]:
     xs: List[np.ndarray] = []
     ys: List[np.ndarray] = []
     zs: List[np.ndarray] = []
     labels: List[np.ndarray] = []
     tile_ids: List[np.ndarray] = []
-    records: List[np.ndarray] = []
     template_header: laspy.LasHeader | None = None
     label_offset = 0
     for tile_idx, p in enumerate(paths):
@@ -33,15 +32,13 @@ def _stack_points_and_labels(paths: List[str]) -> Tuple[np.ndarray, np.ndarray, 
         labels.append(inverse_tile.astype(np.int64) + label_offset)
         label_offset += unique_tile_labels.size
         tile_ids.append(np.full(len(las.x), tile_idx, dtype=np.int32))
-        records.append(las.points)
     assert template_header is not None
     x = np.concatenate(xs)
     y = np.concatenate(ys)
     z = np.concatenate(zs)
     label = np.concatenate(labels)
     tile_id = np.concatenate(tile_ids)
-    recs = np.concatenate(records)
-    return np.stack([x, y, z], axis=1), label, tile_id, template_header, recs
+    return np.stack([x, y, z], axis=1), label, tile_id, template_header
 
 
 def _merge_label_overlaps(points_xyz: np.ndarray, labels: np.ndarray, tile_ids: np.ndarray, header: laspy.LasHeader) -> np.ndarray:
@@ -116,7 +113,7 @@ def merge_segmented_tiles(segmented_tiles: List[str], output_path: str, merge_ra
         raise ValueError("No segmented tiles provided for merging")
     logger.info("Merging %d segmented tile(s) into: %s", len(segmented_tiles), output_path)
 
-    points_xyz, labels, tile_ids, template_header, points_structured = _stack_points_and_labels(segmented_tiles)
+    points_xyz, labels, tile_ids, template_header = _stack_points_and_labels(segmented_tiles)
     logger.info("Stacked points: %d | initial unique labels: %d", len(points_xyz), len(np.unique(labels)))
 
     merged_labels = _merge_label_overlaps(points_xyz, labels, tile_ids, template_header)
@@ -138,8 +135,10 @@ def merge_segmented_tiles(segmented_tiles: List[str], output_path: str, merge_ra
     las = laspy.create(file_version=template_header.version, point_format=template_header.point_format)
     las.header.scales = template_header.scales
     las.header.offsets = template_header.offsets
-    if len(points_structured) > 0:
-        las.points = points_structured
+    if points_xyz.size > 0:
+        las.x = points_xyz[:, 0]
+        las.y = points_xyz[:, 1]
+        las.z = points_xyz[:, 2]
     if "final_segs" not in las.point_format.dimension_names:
         las.add_extra_dim(laspy.ExtraBytesParams(name="final_segs", type="int32", description="final_segs"))
     las.final_segs = merged_labels.astype(np.int32)

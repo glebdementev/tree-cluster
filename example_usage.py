@@ -7,10 +7,10 @@ def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     logging.getLogger("pipeline.tiling").setLevel(logging.INFO)
     # Set your absolute paths here
-    input_path = "dataset/sample/117.las"
-    clean_tiles_dir = "dataset/sample/117_tiles"
-    segmented_output_dir = "dataset/sample/117_segmented"
-    final_output_path = "dataset/sample/117_merged.laz"
+    input_path = "dataset/summer_irkutsk2025/complete_CH435/prob1.las"
+    clean_tiles_dir = "dataset/summer_irkutsk2025/complete_CH435/prob1_tiles"
+    segmented_output_dir = "dataset/summer_irkutsk2025/complete_CH435/prob1_segmented"
+    final_output_path = "dataset/summer_irkutsk2025/complete_CH435/prob1_merged.laz"
 
     config = PipelineConfig(
         tile_size_m=30.0,
