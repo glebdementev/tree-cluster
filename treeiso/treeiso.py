@@ -287,7 +287,12 @@ def final_segs(pcd):
         # Extract features for each tree segment (e.g. convexhull)
         nGroups=len(groupVGroup)
         if nGroups==1:
-            return np.zeros(len(pcd))
+            # Fall back to using the initial segment ids to avoid collapsing
+            # the entire tile into a single label, which later causes giant merges
+            # across tiles in the tiling merger.
+            init_ids = pcd[:, -3].astype(np.int64)
+            _, init_inverse = np.unique(init_ids, return_inverse=True)
+            return init_inverse
         
         groupFeatures=np.zeros([nGroups,5])
         groupHulls=[None]*nGroups

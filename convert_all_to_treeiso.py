@@ -15,7 +15,7 @@ def list_las_files(root: Path) -> List[Path]:
     for p in files:
         name = p.name
         # Skip already-converted outputs and temporary working directories
-        if name.endswith("_treeiso.las"):
+        if "_treeiso" in name:
             continue
         if any(parent.name.endswith("_tiles_tmp") or parent.name.endswith("_seg_tmp") for parent in p.parents):
             continue
@@ -40,14 +40,20 @@ def main() -> None:
     print(f"Found {len(las_files)} .las file(s) under {dataset_root}")
 
     for fpath in las_files:
-        print(f"Processing input: {fpath}")
-        clean_tiles_dir = fpath.parent / f"{fpath.stem}_tiles_tmp"
-        segmented_output_dir = fpath.parent / f"{fpath.stem}_seg_tmp"
+        # Skip if any sibling LAS with '_treeiso' appended exists (e.g., x_treeiso.las, x_treeiso_filtered.las)
+        existing_treeiso_variants = list(fpath.parent.glob(f"{fpath.stem}_treeiso*.las"))
+        if existing_treeiso_variants:
+            print(f"Skipping (has _treeiso variant): {fpath} -> {existing_treeiso_variants[0].name}")
+            continue
+
         final_output_path = fpath.with_name(f"{fpath.stem}_treeiso.las")
 
         if final_output_path.exists():
             print(f"Skipping (exists): {final_output_path}")
             continue
+        print(f"Processing input: {fpath}")
+        clean_tiles_dir = fpath.parent / f"{fpath.stem}_tiles_tmp"
+        segmented_output_dir = fpath.parent / f"{fpath.stem}_seg_tmp"
 
         config = PipelineConfig(
             tile_size_m=30.0,
