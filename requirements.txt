@@ -12,3 +12,5 @@ scikit-image
 PyMaxflow
 pandas
 cut_pursuit_py
+hdbscan>=0.8.0
+lazrs
