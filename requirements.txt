@@ -14,3 +14,4 @@ pandas
 cut_pursuit_py
 hdbscan>=0.8.0
 lazrs
+pyvista>=0.43.0
