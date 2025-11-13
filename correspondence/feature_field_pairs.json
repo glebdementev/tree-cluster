@@ -1,3931 +1,4242 @@
 {
-  "las_path": "dataset\\435_tree_itc.laz",
+  "las_path": "dataset\\resegmented_cloud.laz",
   "geojson_path": "dataset\\summer_irkutsk2025\\complete_CH435\\complete_BUR1_CH435_PROB1_markup_GIRLS.geojson",
-  "field_name": "pred_itc",
+  "field_name": "treeID",
   "assignments": [
     {
-      "feature_id": 5547,
-      "field_value": 440,
-      "points_in_cylinder": 30322
-    },
-    {
-      "feature_id": 5312,
-      "field_value": 35,
-      "points_in_cylinder": 17407
-    },
-    {
-      "feature_id": 5177,
-      "field_value": 4,
-      "points_in_cylinder": 16170
-    },
-    {
-      "feature_id": 5183,
-      "field_value": 138,
-      "points_in_cylinder": 14313
-    },
-    {
-      "feature_id": 5546,
-      "field_value": 1,
-      "points_in_cylinder": 13607
-    },
-    {
-      "feature_id": 4829,
-      "field_value": 30,
-      "points_in_cylinder": 13501
-    },
-    {
-      "feature_id": 5543,
-      "field_value": 15,
-      "points_in_cylinder": 13329
-    },
-    {
-      "feature_id": 5589,
-      "field_value": 18,
-      "points_in_cylinder": 12671
-    },
-    {
-      "feature_id": 5371,
-      "field_value": 607,
-      "points_in_cylinder": 12435
-    },
-    {
-      "feature_id": 5360,
-      "field_value": 115,
-      "points_in_cylinder": 12359
-    },
-    {
-      "feature_id": 5232,
-      "field_value": 120,
-      "points_in_cylinder": 12310
-    },
-    {
-      "feature_id": 5488,
-      "field_value": 8,
-      "points_in_cylinder": 11915
-    },
-    {
-      "feature_id": 5207,
-      "field_value": 28,
-      "points_in_cylinder": 11894
-    },
-    {
-      "feature_id": 5558,
-      "field_value": 17,
-      "points_in_cylinder": 11753
-    },
-    {
-      "feature_id": 5615,
-      "field_value": 87,
-      "points_in_cylinder": 11478
-    },
-    {
-      "feature_id": 5057,
-      "field_value": 5,
-      "points_in_cylinder": 11333
-    },
-    {
-      "feature_id": 5658,
-      "field_value": 16,
-      "points_in_cylinder": 11333
-    },
-    {
-      "feature_id": 5377,
-      "field_value": 425,
-      "points_in_cylinder": 11286
-    },
-    {
-      "feature_id": 5491,
-      "field_value": 147,
-      "points_in_cylinder": 11253
-    },
-    {
-      "feature_id": 5484,
-      "field_value": 46,
-      "points_in_cylinder": 10973
-    },
-    {
-      "feature_id": 5471,
-      "field_value": 14,
-      "points_in_cylinder": 10826
-    },
-    {
-      "feature_id": 5178,
-      "field_value": 34,
-      "points_in_cylinder": 10798
-    },
-    {
-      "feature_id": 5361,
-      "field_value": 234,
-      "points_in_cylinder": 10769
-    },
-    {
-      "feature_id": 5507,
-      "field_value": 6,
-      "points_in_cylinder": 10757
-    },
-    {
-      "feature_id": 5559,
-      "field_value": 19,
-      "points_in_cylinder": 10750
-    },
-    {
-      "feature_id": 5325,
-      "field_value": 66,
-      "points_in_cylinder": 10735
-    },
-    {
-      "feature_id": 5659,
-      "field_value": 75,
-      "points_in_cylinder": 10604
-    },
-    {
-      "feature_id": 5539,
-      "field_value": 859,
-      "points_in_cylinder": 10477
-    },
-    {
-      "feature_id": 5010,
-      "field_value": 125,
-      "points_in_cylinder": 10432
-    },
-    {
-      "feature_id": 5508,
-      "field_value": 181,
-      "points_in_cylinder": 10129
-    },
-    {
-      "feature_id": 5503,
-      "field_value": 765,
-      "points_in_cylinder": 10114
-    },
-    {
-      "feature_id": 5494,
-      "field_value": 324,
-      "points_in_cylinder": 10061
-    },
-    {
-      "feature_id": 5498,
-      "field_value": 164,
-      "points_in_cylinder": 10056
-    },
-    {
-      "feature_id": 4899,
-      "field_value": 7,
-      "points_in_cylinder": 10031
-    },
-    {
-      "feature_id": 5651,
-      "field_value": 520,
-      "points_in_cylinder": 9920
-    },
-    {
-      "feature_id": 5370,
-      "field_value": 55,
-      "points_in_cylinder": 9813
-    },
-    {
-      "feature_id": 5600,
-      "field_value": 41,
-      "points_in_cylinder": 9753
-    },
-    {
-      "feature_id": 5138,
-      "field_value": 152,
-      "points_in_cylinder": 9723
-    },
-    {
-      "feature_id": 5175,
-      "field_value": 248,
-      "points_in_cylinder": 9673
-    },
-    {
-      "feature_id": 5307,
-      "field_value": 137,
-      "points_in_cylinder": 9612
-    },
-    {
-      "feature_id": 5459,
-      "field_value": 69,
-      "points_in_cylinder": 9541
-    },
-    {
-      "feature_id": 5512,
-      "field_value": 183,
-      "points_in_cylinder": 9502
-    },
-    {
-      "feature_id": 4921,
-      "field_value": 47,
-      "points_in_cylinder": 9469
-    },
-    {
-      "feature_id": 5176,
-      "field_value": 39,
-      "points_in_cylinder": 9399
-    },
-    {
-      "feature_id": 5261,
-      "field_value": 124,
-      "points_in_cylinder": 9331
-    },
-    {
-      "feature_id": 5151,
-      "field_value": 51,
-      "points_in_cylinder": 9293
-    },
-    {
-      "feature_id": 5410,
-      "field_value": 9,
-      "points_in_cylinder": 9200
-    },
-    {
-      "feature_id": 5472,
-      "field_value": 48,
-      "points_in_cylinder": 9138
-    },
-    {
-      "feature_id": 5029,
-      "field_value": 243,
-      "points_in_cylinder": 9057
-    },
-    {
-      "feature_id": 5119,
-      "field_value": 108,
-      "points_in_cylinder": 8981
-    },
-    {
-      "feature_id": 4983,
-      "field_value": 268,
-      "points_in_cylinder": 8967
-    },
-    {
-      "feature_id": 5378,
-      "field_value": 3,
-      "points_in_cylinder": 8836
-    },
-    {
-      "feature_id": 5533,
-      "field_value": 42,
-      "points_in_cylinder": 8814
-    },
-    {
-      "feature_id": 5538,
-      "field_value": 141,
-      "points_in_cylinder": 8814
-    },
-    {
-      "feature_id": 5171,
-      "field_value": 33,
-      "points_in_cylinder": 8780
-    },
-    {
-      "feature_id": 5239,
-      "field_value": 85,
-      "points_in_cylinder": 8728
-    },
-    {
-      "feature_id": 5168,
-      "field_value": 97,
-      "points_in_cylinder": 8717
-    },
-    {
-      "feature_id": 5007,
-      "field_value": 106,
-      "points_in_cylinder": 8565
-    },
-    {
-      "feature_id": 5542,
-      "field_value": 11,
-      "points_in_cylinder": 8440
-    },
-    {
-      "feature_id": 5280,
-      "field_value": 40,
-      "points_in_cylinder": 8356
-    },
-    {
-      "feature_id": 5310,
-      "field_value": 154,
-      "points_in_cylinder": 8322
-    },
-    {
-      "feature_id": 5026,
-      "field_value": 104,
-      "points_in_cylinder": 8287
-    },
-    {
-      "feature_id": 5286,
-      "field_value": 132,
-      "points_in_cylinder": 8162
-    },
-    {
-      "feature_id": 5233,
-      "field_value": 43,
-      "points_in_cylinder": 8137
-    },
-    {
-      "feature_id": 5156,
-      "field_value": 156,
-      "points_in_cylinder": 8111
-    },
-    {
-      "feature_id": 5511,
-      "field_value": 236,
-      "points_in_cylinder": 8107
-    },
-    {
-      "feature_id": 5020,
-      "field_value": 300,
-      "points_in_cylinder": 8017
-    },
-    {
-      "feature_id": 5383,
-      "field_value": 126,
-      "points_in_cylinder": 7917
-    },
-    {
-      "feature_id": 5321,
-      "field_value": 64,
-      "points_in_cylinder": 7889
-    },
-    {
-      "feature_id": 5014,
-      "field_value": 182,
-      "points_in_cylinder": 7824
-    },
-    {
-      "feature_id": 5181,
-      "field_value": 117,
-      "points_in_cylinder": 7816
-    },
-    {
-      "feature_id": 5500,
-      "field_value": 256,
-      "points_in_cylinder": 7777
-    },
-    {
-      "feature_id": 5322,
-      "field_value": 78,
-      "points_in_cylinder": 7634
-    },
-    {
-      "feature_id": 4862,
-      "field_value": 173,
-      "points_in_cylinder": 7610
-    },
-    {
-      "feature_id": 5005,
-      "field_value": 482,
-      "points_in_cylinder": 7596
-    },
-    {
-      "feature_id": 5497,
-      "field_value": 240,
-      "points_in_cylinder": 7526
-    },
-    {
-      "feature_id": 5535,
-      "field_value": 23,
-      "points_in_cylinder": 7515
-    },
-    {
-      "feature_id": 5323,
-      "field_value": 228,
-      "points_in_cylinder": 7489
-    },
-    {
-      "feature_id": 5401,
-      "field_value": 107,
-      "points_in_cylinder": 7484
-    },
-    {
-      "feature_id": 5069,
-      "field_value": 45,
-      "points_in_cylinder": 7463
-    },
-    {
-      "feature_id": 5416,
-      "field_value": 83,
-      "points_in_cylinder": 7447
-    },
-    {
-      "feature_id": 4997,
-      "field_value": 401,
-      "points_in_cylinder": 7444
-    },
-    {
-      "feature_id": 5636,
-      "field_value": 284,
-      "points_in_cylinder": 7410
-    },
-    {
-      "feature_id": 5486,
-      "field_value": 479,
-      "points_in_cylinder": 7403
-    },
-    {
-      "feature_id": 5441,
-      "field_value": 201,
-      "points_in_cylinder": 7345
-    },
-    {
-      "feature_id": 5192,
-      "field_value": 198,
-      "points_in_cylinder": 7330
-    },
-    {
-      "feature_id": 5510,
-      "field_value": 267,
-      "points_in_cylinder": 7301
-    },
-    {
-      "feature_id": 5191,
-      "field_value": 287,
-      "points_in_cylinder": 7291
-    },
-    {
-      "feature_id": 5278,
-      "field_value": 161,
-      "points_in_cylinder": 7290
-    },
-    {
-      "feature_id": 5466,
-      "field_value": 296,
-      "points_in_cylinder": 7258
-    },
-    {
-      "feature_id": 5311,
-      "field_value": 383,
-      "points_in_cylinder": 7212
-    },
-    {
-      "feature_id": 5381,
-      "field_value": 21,
-      "points_in_cylinder": 7162
-    },
-    {
-      "feature_id": 5485,
-      "field_value": 271,
-      "points_in_cylinder": 7138
-    },
-    {
-      "feature_id": 5008,
-      "field_value": 420,
-      "points_in_cylinder": 7033
-    },
-    {
-      "feature_id": 5037,
-      "field_value": 368,
-      "points_in_cylinder": 7002
-    },
-    {
-      "feature_id": 4970,
-      "field_value": 563,
-      "points_in_cylinder": 6999
-    },
-    {
-      "feature_id": 5593,
-      "field_value": 699,
-      "points_in_cylinder": 6874
-    },
-    {
-      "feature_id": 4863,
-      "field_value": 49,
-      "points_in_cylinder": 6816
-    },
-    {
-      "feature_id": 5549,
-      "field_value": 310,
-      "points_in_cylinder": 6786
-    },
-    {
-      "feature_id": 5169,
-      "field_value": 99,
-      "points_in_cylinder": 6784
-    },
-    {
-      "feature_id": 5364,
-      "field_value": 257,
-      "points_in_cylinder": 6766
-    },
-    {
-      "feature_id": 5624,
-      "field_value": 153,
-      "points_in_cylinder": 6701
-    },
-    {
-      "feature_id": 4989,
-      "field_value": 645,
-      "points_in_cylinder": 6691
-    },
-    {
-      "feature_id": 4838,
-      "field_value": 88,
-      "points_in_cylinder": 6660
-    },
-    {
-      "feature_id": 5465,
-      "field_value": 566,
-      "points_in_cylinder": 6651
-    },
-    {
-      "feature_id": 5157,
-      "field_value": 305,
-      "points_in_cylinder": 6649
-    },
-    {
-      "feature_id": 5245,
-      "field_value": 89,
-      "points_in_cylinder": 6586
-    },
-    {
-      "feature_id": 5412,
-      "field_value": 671,
-      "points_in_cylinder": 6585
-    },
-    {
-      "feature_id": 5590,
-      "field_value": 269,
-      "points_in_cylinder": 6568
-    },
-    {
-      "feature_id": 4857,
-      "field_value": 804,
-      "points_in_cylinder": 6565
-    },
-    {
-      "feature_id": 4968,
-      "field_value": 294,
-      "points_in_cylinder": 6554
-    },
-    {
-      "feature_id": 5070,
-      "field_value": 22,
-      "points_in_cylinder": 6551
-    },
-    {
-      "feature_id": 5518,
-      "field_value": 682,
-      "points_in_cylinder": 6550
-    },
-    {
-      "feature_id": 5402,
-      "field_value": 86,
-      "points_in_cylinder": 6545
-    },
-    {
-      "feature_id": 4930,
-      "field_value": 163,
-      "points_in_cylinder": 6531
-    },
-    {
-      "feature_id": 4992,
-      "field_value": 530,
-      "points_in_cylinder": 6520
-    },
-    {
-      "feature_id": 5198,
-      "field_value": 20,
-      "points_in_cylinder": 6520
-    },
-    {
-      "feature_id": 5545,
-      "field_value": 352,
-      "points_in_cylinder": 6495
-    },
-    {
-      "feature_id": 4917,
-      "field_value": 68,
-      "points_in_cylinder": 6493
-    },
-    {
-      "feature_id": 4823,
-      "field_value": 189,
-      "points_in_cylinder": 6438
-    },
-    {
-      "feature_id": 5279,
-      "field_value": 12,
-      "points_in_cylinder": 6429
-    },
-    {
-      "feature_id": 4844,
-      "field_value": 820,
-      "points_in_cylinder": 6324
-    },
-    {
-      "feature_id": 4873,
-      "field_value": 423,
-      "points_in_cylinder": 6285
-    },
-    {
-      "feature_id": 5022,
-      "field_value": 339,
-      "points_in_cylinder": 6246
-    },
-    {
-      "feature_id": 5639,
-      "field_value": 828,
-      "points_in_cylinder": 6235
-    },
-    {
-      "feature_id": 5505,
-      "field_value": 658,
-      "points_in_cylinder": 6226
-    },
-    {
-      "feature_id": 4869,
-      "field_value": 238,
-      "points_in_cylinder": 6220
-    },
-    {
-      "feature_id": 5411,
-      "field_value": 569,
-      "points_in_cylinder": 6151
-    },
-    {
-      "feature_id": 5506,
-      "field_value": 298,
-      "points_in_cylinder": 6141
-    },
-    {
-      "feature_id": 5392,
-      "field_value": 511,
-      "points_in_cylinder": 6085
-    },
-    {
-      "feature_id": 5072,
-      "field_value": 180,
-      "points_in_cylinder": 6066
-    },
-    {
-      "feature_id": 5122,
-      "field_value": 295,
-      "points_in_cylinder": 6047
-    },
-    {
-      "feature_id": 5440,
-      "field_value": 260,
-      "points_in_cylinder": 6030
-    },
-    {
-      "feature_id": 5628,
-      "field_value": 349,
-      "points_in_cylinder": 6010
-    },
-    {
-      "feature_id": 5341,
-      "field_value": 13,
-      "points_in_cylinder": 5978
-    },
-    {
-      "feature_id": 5464,
-      "field_value": 646,
-      "points_in_cylinder": 5969
-    },
-    {
-      "feature_id": 5537,
-      "field_value": 380,
-      "points_in_cylinder": 5865
-    },
-    {
-      "feature_id": 5188,
-      "field_value": 819,
-      "points_in_cylinder": 5856
-    },
-    {
-      "feature_id": 5351,
-      "field_value": 92,
-      "points_in_cylinder": 5765
-    },
-    {
-      "feature_id": 5536,
-      "field_value": 82,
-      "points_in_cylinder": 5751
-    },
-    {
-      "feature_id": 5155,
-      "field_value": 249,
-      "points_in_cylinder": 5750
-    },
-    {
-      "feature_id": 5130,
-      "field_value": 412,
-      "points_in_cylinder": 5744
-    },
-    {
-      "feature_id": 4938,
-      "field_value": 375,
-      "points_in_cylinder": 5725
-    },
-    {
-      "feature_id": 5419,
-      "field_value": 696,
-      "points_in_cylinder": 5695
-    },
-    {
-      "feature_id": 5368,
-      "field_value": 58,
-      "points_in_cylinder": 5694
-    },
-    {
-      "feature_id": 5433,
-      "field_value": 894,
-      "points_in_cylinder": 5655
-    },
-    {
-      "feature_id": 5571,
-      "field_value": 715,
-      "points_in_cylinder": 5655
-    },
-    {
-      "feature_id": 5053,
-      "field_value": 167,
-      "points_in_cylinder": 5642
-    },
-    {
-      "feature_id": 5560,
-      "field_value": 365,
-      "points_in_cylinder": 5641
-    },
-    {
-      "feature_id": 5078,
-      "field_value": 546,
-      "points_in_cylinder": 5635
-    },
-    {
-      "feature_id": 5096,
-      "field_value": 321,
-      "points_in_cylinder": 5613
-    },
-    {
-      "feature_id": 5633,
-      "field_value": 70,
-      "points_in_cylinder": 5612
-    },
-    {
-      "feature_id": 5406,
-      "field_value": 621,
-      "points_in_cylinder": 5595
-    },
-    {
-      "feature_id": 5237,
-      "field_value": 531,
-      "points_in_cylinder": 5574
-    },
-    {
-      "feature_id": 5299,
-      "field_value": 63,
-      "points_in_cylinder": 5571
-    },
-    {
-      "feature_id": 4939,
-      "field_value": 315,
-      "points_in_cylinder": 5534
-    },
-    {
-      "feature_id": 5653,
-      "field_value": 184,
-      "points_in_cylinder": 5522
-    },
-    {
-      "feature_id": 5657,
-      "field_value": 792,
-      "points_in_cylinder": 5481
-    },
-    {
-      "feature_id": 5062,
-      "field_value": 407,
-      "points_in_cylinder": 5478
-    },
-    {
-      "feature_id": 5461,
-      "field_value": 314,
-      "points_in_cylinder": 5464
-    },
-    {
-      "feature_id": 4925,
-      "field_value": 159,
-      "points_in_cylinder": 5458
-    },
-    {
-      "feature_id": 5154,
-      "field_value": 331,
-      "points_in_cylinder": 5446
-    },
-    {
-      "feature_id": 5264,
-      "field_value": 652,
-      "points_in_cylinder": 5434
-    },
-    {
-      "feature_id": 5054,
-      "field_value": 149,
-      "points_in_cylinder": 5389
-    },
-    {
-      "feature_id": 5127,
-      "field_value": 661,
-      "points_in_cylinder": 5359
-    },
-    {
-      "feature_id": 4981,
-      "field_value": 346,
-      "points_in_cylinder": 5354
-    },
-    {
-      "feature_id": 5640,
-      "field_value": 50,
-      "points_in_cylinder": 5330
-    },
-    {
-      "feature_id": 5194,
-      "field_value": 526,
-      "points_in_cylinder": 5326
-    },
-    {
-      "feature_id": 5495,
-      "field_value": 158,
-      "points_in_cylinder": 5315
-    },
-    {
-      "feature_id": 5025,
-      "field_value": 95,
-      "points_in_cylinder": 5313
-    },
-    {
-      "feature_id": 5384,
-      "field_value": 127,
-      "points_in_cylinder": 5300
-    },
-    {
-      "feature_id": 5320,
-      "field_value": 113,
-      "points_in_cylinder": 5282
-    },
-    {
-      "feature_id": 5611,
-      "field_value": 187,
-      "points_in_cylinder": 5275
-    },
-    {
-      "feature_id": 4900,
-      "field_value": 98,
-      "points_in_cylinder": 5246
-    },
-    {
-      "feature_id": 5496,
-      "field_value": 237,
-      "points_in_cylinder": 5224
-    },
-    {
-      "feature_id": 4819,
-      "field_value": 681,
-      "points_in_cylinder": 5189
-    },
-    {
-      "feature_id": 5374,
-      "field_value": 503,
-      "points_in_cylinder": 5140
-    },
-    {
-      "feature_id": 5431,
-      "field_value": 277,
-      "points_in_cylinder": 5113
-    },
-    {
-      "feature_id": 5074,
-      "field_value": 730,
-      "points_in_cylinder": 5099
-    },
-    {
-      "feature_id": 4966,
-      "field_value": 583,
-      "points_in_cylinder": 5097
-    },
-    {
-      "feature_id": 5317,
-      "field_value": 740,
-      "points_in_cylinder": 5091
-    },
-    {
-      "feature_id": 5068,
-      "field_value": 128,
-      "points_in_cylinder": 5042
-    },
-    {
-      "feature_id": 5591,
-      "field_value": 732,
-      "points_in_cylinder": 5036
-    },
-    {
-      "feature_id": 5332,
-      "field_value": 334,
-      "points_in_cylinder": 5020
-    },
-    {
-      "feature_id": 5386,
-      "field_value": 148,
-      "points_in_cylinder": 5001
-    },
-    {
-      "feature_id": 5249,
-      "field_value": 541,
-      "points_in_cylinder": 4939
-    },
-    {
-      "feature_id": 5205,
-      "field_value": 453,
-      "points_in_cylinder": 4934
-    },
-    {
-      "feature_id": 5592,
-      "field_value": 426,
-      "points_in_cylinder": 4923
-    },
-    {
-      "feature_id": 5357,
-      "field_value": 276,
-      "points_in_cylinder": 4886
-    },
-    {
-      "feature_id": 5084,
-      "field_value": 168,
-      "points_in_cylinder": 4822
-    },
-    {
-      "feature_id": 5517,
-      "field_value": 818,
-      "points_in_cylinder": 4802
-    },
-    {
-      "feature_id": 4895,
-      "field_value": 226,
-      "points_in_cylinder": 4784
-    },
-    {
-      "feature_id": 5523,
-      "field_value": 165,
-      "points_in_cylinder": 4777
-    },
-    {
-      "feature_id": 5160,
-      "field_value": 710,
-      "points_in_cylinder": 4774
-    },
-    {
-      "feature_id": 5001,
-      "field_value": 404,
-      "points_in_cylinder": 4766
-    },
-    {
-      "feature_id": 5501,
-      "field_value": 390,
-      "points_in_cylinder": 4766
-    },
-    {
-      "feature_id": 5121,
-      "field_value": 65,
-      "points_in_cylinder": 4738
-    },
-    {
-      "feature_id": 4984,
-      "field_value": 825,
-      "points_in_cylinder": 4732
-    },
-    {
-      "feature_id": 5218,
-      "field_value": 73,
-      "points_in_cylinder": 4731
-    },
-    {
-      "feature_id": 5182,
-      "field_value": 270,
-      "points_in_cylinder": 4724
-    },
-    {
-      "feature_id": 5235,
-      "field_value": 146,
-      "points_in_cylinder": 4714
-    },
-    {
-      "feature_id": 5111,
-      "field_value": 171,
-      "points_in_cylinder": 4705
-    },
-    {
-      "feature_id": 5428,
-      "field_value": 438,
-      "points_in_cylinder": 4693
-    },
-    {
-      "feature_id": 5318,
-      "field_value": 764,
-      "points_in_cylinder": 4683
-    },
-    {
-      "feature_id": 5206,
-      "field_value": 815,
-      "points_in_cylinder": 4677
-    },
-    {
-      "feature_id": 5447,
-      "field_value": 582,
-      "points_in_cylinder": 4663
-    },
-    {
-      "feature_id": 5515,
-      "field_value": 731,
-      "points_in_cylinder": 4612
-    },
-    {
-      "feature_id": 5532,
-      "field_value": 279,
-      "points_in_cylinder": 4603
-    },
-    {
-      "feature_id": 5476,
-      "field_value": 251,
-      "points_in_cylinder": 4593
-    },
-    {
-      "feature_id": 5244,
-      "field_value": 61,
-      "points_in_cylinder": 4591
-    },
-    {
-      "feature_id": 5276,
-      "field_value": 431,
-      "points_in_cylinder": 4537
-    },
-    {
-      "feature_id": 4890,
-      "field_value": 278,
-      "points_in_cylinder": 4525
-    },
-    {
-      "feature_id": 5167,
-      "field_value": 264,
-      "points_in_cylinder": 4491
-    },
-    {
-      "feature_id": 5481,
-      "field_value": 325,
-      "points_in_cylinder": 4478
-    },
-    {
-      "feature_id": 5293,
-      "field_value": 906,
-      "points_in_cylinder": 4467
-    },
-    {
-      "feature_id": 5252,
-      "field_value": 529,
-      "points_in_cylinder": 4426
-    },
-    {
-      "feature_id": 5120,
-      "field_value": 24,
-      "points_in_cylinder": 4416
-    },
-    {
-      "feature_id": 5575,
-      "field_value": 62,
-      "points_in_cylinder": 4403
-    },
-    {
-      "feature_id": 4822,
-      "field_value": 222,
-      "points_in_cylinder": 4395
-    },
-    {
-      "feature_id": 5343,
-      "field_value": 233,
-      "points_in_cylinder": 4387
-    },
-    {
-      "feature_id": 5468,
-      "field_value": 678,
-      "points_in_cylinder": 4355
-    },
-    {
-      "feature_id": 5073,
-      "field_value": 666,
-      "points_in_cylinder": 4340
-    },
-    {
-      "feature_id": 5242,
-      "field_value": 448,
-      "points_in_cylinder": 4340
-    },
-    {
-      "feature_id": 5356,
-      "field_value": 246,
-      "points_in_cylinder": 4329
-    },
-    {
-      "feature_id": 5534,
-      "field_value": 312,
-      "points_in_cylinder": 4308
-    },
-    {
-      "feature_id": 4875,
-      "field_value": 369,
-      "points_in_cylinder": 4301
-    },
-    {
-      "feature_id": 5644,
-      "field_value": 96,
-      "points_in_cylinder": 4297
-    },
-    {
-      "feature_id": 5614,
-      "field_value": 796,
-      "points_in_cylinder": 4290
-    },
-    {
-      "feature_id": 5140,
-      "field_value": 306,
-      "points_in_cylinder": 4263
-    },
-    {
-      "feature_id": 5369,
-      "field_value": 773,
-      "points_in_cylinder": 4255
-    },
-    {
-      "feature_id": 5663,
-      "field_value": 52,
-      "points_in_cylinder": 4255
-    },
-    {
-      "feature_id": 4830,
-      "field_value": 297,
-      "points_in_cylinder": 4246
-    },
-    {
-      "feature_id": 5359,
-      "field_value": 874,
-      "points_in_cylinder": 4246
-    },
-    {
-      "feature_id": 5250,
-      "field_value": 561,
-      "points_in_cylinder": 4245
-    },
-    {
-      "feature_id": 5174,
-      "field_value": 313,
-      "points_in_cylinder": 4240
-    },
-    {
-      "feature_id": 5185,
-      "field_value": 811,
-      "points_in_cylinder": 4232
-    },
-    {
-      "feature_id": 4982,
-      "field_value": 555,
-      "points_in_cylinder": 4230
-    },
-    {
-      "feature_id": 5077,
-      "field_value": 439,
-      "points_in_cylinder": 4229
-    },
-    {
-      "feature_id": 5387,
-      "field_value": 212,
-      "points_in_cylinder": 4229
-    },
-    {
-      "feature_id": 5139,
-      "field_value": 345,
-      "points_in_cylinder": 4228
-    },
-    {
-      "feature_id": 5390,
-      "field_value": 680,
-      "points_in_cylinder": 4220
-    },
-    {
-      "feature_id": 5425,
-      "field_value": 210,
-      "points_in_cylinder": 4217
-    },
-    {
-      "feature_id": 5504,
-      "field_value": 169,
-      "points_in_cylinder": 4205
-    },
-    {
-      "feature_id": 5103,
-      "field_value": 801,
-      "points_in_cylinder": 4198
-    },
-    {
-      "feature_id": 4814,
-      "field_value": 199,
-      "points_in_cylinder": 4178
-    },
-    {
-      "feature_id": 4909,
-      "field_value": 192,
-      "points_in_cylinder": 4165
-    },
-    {
-      "feature_id": 4815,
-      "field_value": 364,
-      "points_in_cylinder": 4157
-    },
-    {
-      "feature_id": 4833,
-      "field_value": 258,
-      "points_in_cylinder": 4145
-    },
-    {
-      "feature_id": 5458,
-      "field_value": 195,
-      "points_in_cylinder": 4137
-    },
-    {
-      "feature_id": 5451,
-      "field_value": 654,
-      "points_in_cylinder": 4113
-    },
-    {
-      "feature_id": 5017,
-      "field_value": 409,
-      "points_in_cylinder": 4096
-    },
-    {
-      "feature_id": 5097,
-      "field_value": 470,
-      "points_in_cylinder": 4086
-    },
-    {
-      "feature_id": 5313,
-      "field_value": 793,
-      "points_in_cylinder": 4074
-    },
-    {
-      "feature_id": 4845,
-      "field_value": 610,
-      "points_in_cylinder": 4068
-    },
-    {
-      "feature_id": 4871,
-      "field_value": 392,
-      "points_in_cylinder": 4064
-    },
-    {
-      "feature_id": 4842,
-      "field_value": 465,
-      "points_in_cylinder": 4061
-    },
-    {
-      "feature_id": 5404,
-      "field_value": 241,
-      "points_in_cylinder": 4056
-    },
-    {
-      "feature_id": 5104,
-      "field_value": 457,
-      "points_in_cylinder": 4052
-    },
-    {
-      "feature_id": 5362,
-      "field_value": 188,
-      "points_in_cylinder": 4044
-    },
-    {
-      "feature_id": 4824,
-      "field_value": 829,
-      "points_in_cylinder": 4023
-    },
-    {
-      "feature_id": 5395,
-      "field_value": 32,
-      "points_in_cylinder": 4012
-    },
-    {
-      "feature_id": 5509,
-      "field_value": 242,
-      "points_in_cylinder": 4002
-    },
-    {
-      "feature_id": 5604,
-      "field_value": 175,
-      "points_in_cylinder": 3972
-    },
-    {
-      "feature_id": 5654,
-      "field_value": 467,
-      "points_in_cylinder": 3947
-    },
-    {
-      "feature_id": 5661,
-      "field_value": 218,
-      "points_in_cylinder": 3944
-    },
-    {
-      "feature_id": 5189,
-      "field_value": 379,
-      "points_in_cylinder": 3940
-    },
-    {
-      "feature_id": 5145,
-      "field_value": 351,
-      "points_in_cylinder": 3917
-    },
-    {
-      "feature_id": 5499,
-      "field_value": 589,
-      "points_in_cylinder": 3916
-    },
-    {
-      "feature_id": 4812,
-      "field_value": 567,
-      "points_in_cylinder": 3905
-    },
-    {
-      "feature_id": 5036,
-      "field_value": 542,
-      "points_in_cylinder": 3902
-    },
-    {
-      "feature_id": 4883,
-      "field_value": 178,
-      "points_in_cylinder": 3898
-    },
-    {
-      "feature_id": 5330,
-      "field_value": 2,
-      "points_in_cylinder": 3888
-    },
-    {
-      "feature_id": 5483,
-      "field_value": 252,
-      "points_in_cylinder": 3883
-    },
-    {
-      "feature_id": 5567,
-      "field_value": 31,
-      "points_in_cylinder": 3877
-    },
-    {
-      "feature_id": 5088,
-      "field_value": 834,
-      "points_in_cylinder": 3867
-    },
-    {
-      "feature_id": 5095,
-      "field_value": 761,
-      "points_in_cylinder": 3861
-    },
-    {
-      "feature_id": 5114,
-      "field_value": 775,
-      "points_in_cylinder": 3854
-    },
-    {
-      "feature_id": 5637,
-      "field_value": 194,
-      "points_in_cylinder": 3812
-    },
-    {
-      "feature_id": 5113,
-      "field_value": 665,
-      "points_in_cylinder": 3806
-    },
-    {
-      "feature_id": 4933,
-      "field_value": 371,
-      "points_in_cylinder": 3801
-    },
-    {
-      "feature_id": 5125,
-      "field_value": 253,
-      "points_in_cylinder": 3780
-    },
-    {
-      "feature_id": 5519,
-      "field_value": 619,
-      "points_in_cylinder": 3767
-    },
-    {
-      "feature_id": 5641,
-      "field_value": 550,
-      "points_in_cylinder": 3766
-    },
-    {
-      "feature_id": 4852,
-      "field_value": 389,
-      "points_in_cylinder": 3754
-    },
-    {
-      "feature_id": 5634,
-      "field_value": 301,
-      "points_in_cylinder": 3749
-    },
-    {
-      "feature_id": 5627,
-      "field_value": 650,
-      "points_in_cylinder": 3748
-    },
-    {
-      "feature_id": 5011,
-      "field_value": 220,
-      "points_in_cylinder": 3742
-    },
-    {
-      "feature_id": 5563,
-      "field_value": 634,
-      "points_in_cylinder": 3740
-    },
-    {
-      "feature_id": 5193,
-      "field_value": 338,
-      "points_in_cylinder": 3739
-    },
-    {
-      "feature_id": 5601,
-      "field_value": 502,
-      "points_in_cylinder": 3729
-    },
-    {
-      "feature_id": 4894,
-      "field_value": 487,
-      "points_in_cylinder": 3704
-    },
-    {
-      "feature_id": 5529,
-      "field_value": 373,
-      "points_in_cylinder": 3678
-    },
-    {
-      "feature_id": 5236,
-      "field_value": 488,
-      "points_in_cylinder": 3670
-    },
-    {
-      "feature_id": 5554,
-      "field_value": 843,
-      "points_in_cylinder": 3656
-    },
-    {
-      "feature_id": 4827,
-      "field_value": 348,
-      "points_in_cylinder": 3649
-    },
-    {
-      "feature_id": 5039,
-      "field_value": 760,
-      "points_in_cylinder": 3633
-    },
-    {
-      "feature_id": 5619,
-      "field_value": 714,
-      "points_in_cylinder": 3631
-    },
-    {
-      "feature_id": 5221,
-      "field_value": 572,
-      "points_in_cylinder": 3614
-    },
-    {
-      "feature_id": 5123,
-      "field_value": 559,
-      "points_in_cylinder": 3603
-    },
-    {
-      "feature_id": 4906,
-      "field_value": 729,
-      "points_in_cylinder": 3598
-    },
-    {
-      "feature_id": 4988,
-      "field_value": 208,
-      "points_in_cylinder": 3578
-    },
-    {
-      "feature_id": 4952,
-      "field_value": 750,
-      "points_in_cylinder": 3574
-    },
-    {
-      "feature_id": 4826,
-      "field_value": 910,
-      "points_in_cylinder": 3570
-    },
-    {
-      "feature_id": 4946,
-      "field_value": 350,
-      "points_in_cylinder": 3562
-    },
-    {
-      "feature_id": 5427,
-      "field_value": 711,
-      "points_in_cylinder": 3562
-    },
-    {
-      "feature_id": 5478,
-      "field_value": 103,
-      "points_in_cylinder": 3561
-    },
-    {
-      "feature_id": 4896,
-      "field_value": 200,
-      "points_in_cylinder": 3556
-    },
-    {
-      "feature_id": 5442,
-      "field_value": 690,
-      "points_in_cylinder": 3554
-    },
-    {
-      "feature_id": 5462,
-      "field_value": 601,
-      "points_in_cylinder": 3542
-    },
-    {
-      "feature_id": 4856,
-      "field_value": 130,
-      "points_in_cylinder": 3531
-    },
-    {
-      "feature_id": 5100,
-      "field_value": 735,
-      "points_in_cylinder": 3530
-    },
-    {
-      "feature_id": 5407,
-      "field_value": 374,
-      "points_in_cylinder": 3528
-    },
-    {
-      "feature_id": 5400,
-      "field_value": 605,
-      "points_in_cylinder": 3525
-    },
-    {
-      "feature_id": 5040,
-      "field_value": 817,
-      "points_in_cylinder": 3524
-    },
-    {
-      "feature_id": 4940,
-      "field_value": 685,
-      "points_in_cylinder": 3519
-    },
-    {
-      "feature_id": 4854,
-      "field_value": 397,
-      "points_in_cylinder": 3507
-    },
-    {
-      "feature_id": 5579,
-      "field_value": 191,
-      "points_in_cylinder": 3502
-    },
-    {
-      "feature_id": 5028,
-      "field_value": 538,
-      "points_in_cylinder": 3483
-    },
-    {
-      "feature_id": 5291,
-      "field_value": 698,
-      "points_in_cylinder": 3470
-    },
-    {
-      "feature_id": 4990,
-      "field_value": 427,
-      "points_in_cylinder": 3463
-    },
-    {
-      "feature_id": 5513,
-      "field_value": 402,
-      "points_in_cylinder": 3449
-    },
-    {
-      "feature_id": 5631,
-      "field_value": 347,
-      "points_in_cylinder": 3443
-    },
-    {
-      "feature_id": 4802,
-      "field_value": 687,
-      "points_in_cylinder": 3415
-    },
-    {
-      "feature_id": 5284,
-      "field_value": 794,
-      "points_in_cylinder": 3409
-    },
-    {
-      "feature_id": 5625,
-      "field_value": 800,
-      "points_in_cylinder": 3403
-    },
-    {
-      "feature_id": 5583,
-      "field_value": 261,
-      "points_in_cylinder": 3389
-    },
-    {
-      "feature_id": 5093,
-      "field_value": 896,
-      "points_in_cylinder": 3386
-    },
-    {
-      "feature_id": 5599,
-      "field_value": 193,
-      "points_in_cylinder": 3341
-    },
-    {
-      "feature_id": 5414,
-      "field_value": 693,
-      "points_in_cylinder": 3320
-    },
-    {
-      "feature_id": 5301,
-      "field_value": 758,
-      "points_in_cylinder": 3312
-    },
-    {
-      "feature_id": 4818,
-      "field_value": 391,
-      "points_in_cylinder": 3296
-    },
-    {
-      "feature_id": 4820,
-      "field_value": 247,
-      "points_in_cylinder": 3261
-    },
-    {
-      "feature_id": 4961,
-      "field_value": 547,
-      "points_in_cylinder": 3252
-    },
-    {
-      "feature_id": 5444,
-      "field_value": 342,
-      "points_in_cylinder": 3241
-    },
-    {
-      "feature_id": 5514,
-      "field_value": 281,
-      "points_in_cylinder": 3239
-    },
-    {
-      "feature_id": 5489,
-      "field_value": 221,
-      "points_in_cylinder": 3238
-    },
-    {
-      "feature_id": 4839,
-      "field_value": 333,
-      "points_in_cylinder": 3236
-    },
-    {
-      "feature_id": 5417,
-      "field_value": 441,
-      "points_in_cylinder": 3227
-    },
-    {
-      "feature_id": 5638,
-      "field_value": 245,
-      "points_in_cylinder": 3221
-    },
-    {
-      "feature_id": 5090,
-      "field_value": 111,
-      "points_in_cylinder": 3217
-    },
-    {
-      "feature_id": 4870,
-      "field_value": 505,
-      "points_in_cylinder": 3216
-    },
-    {
-      "feature_id": 5530,
-      "field_value": 291,
-      "points_in_cylinder": 3210
-    },
-    {
-      "feature_id": 5366,
-      "field_value": 816,
-      "points_in_cylinder": 3205
-    },
-    {
-      "feature_id": 5208,
-      "field_value": 118,
-      "points_in_cylinder": 3203
-    },
-    {
-      "feature_id": 5620,
-      "field_value": 616,
-      "points_in_cylinder": 3193
+      "feature_id": 4796,
+      "field_value": 394,
+      "points_in_cylinder": 3620
     },
     {
       "feature_id": 4797,
-      "field_value": 299,
-      "points_in_cylinder": 3190
+      "field_value": 269,
+      "points_in_cylinder": 8
     },
     {
-      "feature_id": 5432,
-      "field_value": 643,
-      "points_in_cylinder": 3190
-    },
-    {
-      "feature_id": 5238,
-      "field_value": 386,
-      "points_in_cylinder": 3175
-    },
-    {
-      "feature_id": 4996,
-      "field_value": 557,
-      "points_in_cylinder": 3167
-    },
-    {
-      "feature_id": 5116,
-      "field_value": 356,
-      "points_in_cylinder": 3167
-    },
-    {
-      "feature_id": 5306,
-      "field_value": 442,
-      "points_in_cylinder": 3160
-    },
-    {
-      "feature_id": 4936,
-      "field_value": 406,
-      "points_in_cylinder": 3154
-    },
-    {
-      "feature_id": 5215,
-      "field_value": 585,
-      "points_in_cylinder": 3147
-    },
-    {
-      "feature_id": 4910,
-      "field_value": 691,
-      "points_in_cylinder": 3136
-    },
-    {
-      "feature_id": 5164,
-      "field_value": 802,
-      "points_in_cylinder": 3134
-    },
-    {
-      "feature_id": 5246,
-      "field_value": 709,
-      "points_in_cylinder": 3130
-    },
-    {
-      "feature_id": 5480,
-      "field_value": 727,
-      "points_in_cylinder": 3108
-    },
-    {
-      "feature_id": 5263,
-      "field_value": 568,
-      "points_in_cylinder": 3103
-    },
-    {
-      "feature_id": 4919,
-      "field_value": 100,
-      "points_in_cylinder": 3101
-    },
-    {
-      "feature_id": 4800,
-      "field_value": 303,
-      "points_in_cylinder": 3096
-    },
-    {
-      "feature_id": 5645,
-      "field_value": 340,
-      "points_in_cylinder": 3095
-    },
-    {
-      "feature_id": 5201,
-      "field_value": 679,
-      "points_in_cylinder": 3082
-    },
-    {
-      "feature_id": 5605,
-      "field_value": 670,
-      "points_in_cylinder": 3068
-    },
-    {
-      "feature_id": 5115,
-      "field_value": 649,
-      "points_in_cylinder": 3061
-    },
-    {
-      "feature_id": 5405,
-      "field_value": 524,
-      "points_in_cylinder": 3060
-    },
-    {
-      "feature_id": 4928,
-      "field_value": 131,
-      "points_in_cylinder": 3059
-    },
-    {
-      "feature_id": 5316,
-      "field_value": 274,
-      "points_in_cylinder": 3045
-    },
-    {
-      "feature_id": 5487,
-      "field_value": 293,
-      "points_in_cylinder": 3042
-    },
-    {
-      "feature_id": 5329,
-      "field_value": 81,
-      "points_in_cylinder": 3026
-    },
-    {
-      "feature_id": 5066,
-      "field_value": 483,
-      "points_in_cylinder": 3023
-    },
-    {
-      "feature_id": 5273,
-      "field_value": 475,
-      "points_in_cylinder": 3021
-    },
-    {
-      "feature_id": 5006,
-      "field_value": 474,
-      "points_in_cylinder": 3009
-    },
-    {
-      "feature_id": 4874,
-      "field_value": 405,
-      "points_in_cylinder": 2997
-    },
-    {
-      "feature_id": 5179,
-      "field_value": 255,
-      "points_in_cylinder": 2989
-    },
-    {
-      "feature_id": 5124,
-      "field_value": 581,
-      "points_in_cylinder": 2985
-    },
-    {
-      "feature_id": 5446,
-      "field_value": 355,
-      "points_in_cylinder": 2971
-    },
-    {
-      "feature_id": 5262,
-      "field_value": 536,
-      "points_in_cylinder": 2965
-    },
-    {
-      "feature_id": 5152,
-      "field_value": 719,
-      "points_in_cylinder": 2958
-    },
-    {
-      "feature_id": 5380,
-      "field_value": 445,
-      "points_in_cylinder": 2935
-    },
-    {
-      "feature_id": 5581,
-      "field_value": 408,
-      "points_in_cylinder": 2933
-    },
-    {
-      "feature_id": 5629,
-      "field_value": 416,
-      "points_in_cylinder": 2933
-    },
-    {
-      "feature_id": 5492,
-      "field_value": 851,
-      "points_in_cylinder": 2932
-    },
-    {
-      "feature_id": 4884,
-      "field_value": 37,
-      "points_in_cylinder": 2922
-    },
-    {
-      "feature_id": 5474,
-      "field_value": 609,
-      "points_in_cylinder": 2910
-    },
-    {
-      "feature_id": 4807,
-      "field_value": 150,
-      "points_in_cylinder": 2905
-    },
-    {
-      "feature_id": 5266,
-      "field_value": 151,
-      "points_in_cylinder": 2890
-    },
-    {
-      "feature_id": 5612,
-      "field_value": 437,
-      "points_in_cylinder": 2887
-    },
-    {
-      "feature_id": 5423,
-      "field_value": 722,
-      "points_in_cylinder": 2880
-    },
-    {
-      "feature_id": 4881,
-      "field_value": 478,
-      "points_in_cylinder": 2851
-    },
-    {
-      "feature_id": 4808,
-      "field_value": 789,
-      "points_in_cylinder": 2841
-    },
-    {
-      "feature_id": 5422,
-      "field_value": 398,
-      "points_in_cylinder": 2839
-    },
-    {
-      "feature_id": 4805,
-      "field_value": 219,
-      "points_in_cylinder": 2818
-    },
-    {
-      "feature_id": 5225,
-      "field_value": 577,
-      "points_in_cylinder": 2818
-    },
-    {
-      "feature_id": 4825,
-      "field_value": 656,
-      "points_in_cylinder": 2789
-    },
-    {
-      "feature_id": 5584,
-      "field_value": 244,
-      "points_in_cylinder": 2787
-    },
-    {
-      "feature_id": 5180,
-      "field_value": 747,
-      "points_in_cylinder": 2785
-    },
-    {
-      "feature_id": 4999,
-      "field_value": 846,
-      "points_in_cylinder": 2783
-    },
-    {
-      "feature_id": 5646,
-      "field_value": 485,
-      "points_in_cylinder": 2777
-    },
-    {
-      "feature_id": 5287,
-      "field_value": 895,
-      "points_in_cylinder": 2775
-    },
-    {
-      "feature_id": 4962,
-      "field_value": 413,
-      "points_in_cylinder": 2769
-    },
-    {
-      "feature_id": 5397,
-      "field_value": 564,
-      "points_in_cylinder": 2766
-    },
-    {
-      "feature_id": 5228,
-      "field_value": 537,
-      "points_in_cylinder": 2761
-    },
-    {
-      "feature_id": 5448,
-      "field_value": 784,
-      "points_in_cylinder": 2750
-    },
-    {
-      "feature_id": 4841,
-      "field_value": 604,
-      "points_in_cylinder": 2747
-    },
-    {
-      "feature_id": 4932,
-      "field_value": 344,
-      "points_in_cylinder": 2737
-    },
-    {
-      "feature_id": 5342,
-      "field_value": 25,
-      "points_in_cylinder": 2729
-    },
-    {
-      "feature_id": 5002,
-      "field_value": 752,
-      "points_in_cylinder": 2724
-    },
-    {
-      "feature_id": 5463,
-      "field_value": 588,
-      "points_in_cylinder": 2699
-    },
-    {
-      "feature_id": 5197,
-      "field_value": 265,
-      "points_in_cylinder": 2694
-    },
-    {
-      "feature_id": 5253,
-      "field_value": 262,
-      "points_in_cylinder": 2683
-    },
-    {
-      "feature_id": 5391,
-      "field_value": 326,
-      "points_in_cylinder": 2682
-    },
-    {
-      "feature_id": 5345,
-      "field_value": 144,
-      "points_in_cylinder": 2675
-    },
-    {
-      "feature_id": 4907,
-      "field_value": 10,
-      "points_in_cylinder": 2673
-    },
-    {
-      "feature_id": 4908,
-      "field_value": 133,
-      "points_in_cylinder": 2673
-    },
-    {
-      "feature_id": 4832,
-      "field_value": 196,
-      "points_in_cylinder": 2664
-    },
-    {
-      "feature_id": 5662,
-      "field_value": 873,
-      "points_in_cylinder": 2654
-    },
-    {
-      "feature_id": 5435,
-      "field_value": 553,
-      "points_in_cylinder": 2639
-    },
-    {
-      "feature_id": 5153,
-      "field_value": 302,
-      "points_in_cylinder": 2607
-    },
-    {
-      "feature_id": 5564,
-      "field_value": 72,
-      "points_in_cylinder": 2602
-    },
-    {
-      "feature_id": 4853,
-      "field_value": 660,
-      "points_in_cylinder": 2600
-    },
-    {
-      "feature_id": 5610,
-      "field_value": 308,
-      "points_in_cylinder": 2586
-    },
-    {
-      "feature_id": 5550,
-      "field_value": 772,
-      "points_in_cylinder": 2582
-    },
-    {
-      "feature_id": 4945,
-      "field_value": 713,
-      "points_in_cylinder": 2581
-    },
-    {
-      "feature_id": 4964,
-      "field_value": 540,
-      "points_in_cylinder": 2580
-    },
-    {
-      "feature_id": 5455,
-      "field_value": 551,
-      "points_in_cylinder": 2575
-    },
-    {
-      "feature_id": 5187,
-      "field_value": 728,
-      "points_in_cylinder": 2574
-    },
-    {
-      "feature_id": 5089,
-      "field_value": 850,
-      "points_in_cylinder": 2565
-    },
-    {
-      "feature_id": 5101,
-      "field_value": 359,
-      "points_in_cylinder": 2565
-    },
-    {
-      "feature_id": 5303,
-      "field_value": 748,
-      "points_in_cylinder": 2554
-    },
-    {
-      "feature_id": 5094,
-      "field_value": 443,
-      "points_in_cylinder": 2546
-    },
-    {
-      "feature_id": 5018,
-      "field_value": 797,
-      "points_in_cylinder": 2542
-    },
-    {
-      "feature_id": 4985,
-      "field_value": 833,
-      "points_in_cylinder": 2538
-    },
-    {
-      "feature_id": 4876,
-      "field_value": 480,
-      "points_in_cylinder": 2537
-    },
-    {
-      "feature_id": 4855,
-      "field_value": 377,
-      "points_in_cylinder": 2530
-    },
-    {
-      "feature_id": 5324,
-      "field_value": 134,
-      "points_in_cylinder": 2529
-    },
-    {
-      "feature_id": 5300,
-      "field_value": 580,
-      "points_in_cylinder": 2518
-    },
-    {
-      "feature_id": 5660,
-      "field_value": 122,
-      "points_in_cylinder": 2515
-    },
-    {
-      "feature_id": 5470,
-      "field_value": 591,
-      "points_in_cylinder": 2506
-    },
-    {
-      "feature_id": 5403,
-      "field_value": 831,
-      "points_in_cylinder": 2503
-    },
-    {
-      "feature_id": 5058,
-      "field_value": 354,
-      "points_in_cylinder": 2501
-    },
-    {
-      "feature_id": 5577,
-      "field_value": 157,
-      "points_in_cylinder": 2486
-    },
-    {
-      "feature_id": 5580,
-      "field_value": 250,
-      "points_in_cylinder": 2482
-    },
-    {
-      "feature_id": 5230,
-      "field_value": 463,
-      "points_in_cylinder": 2470
-    },
-    {
-      "feature_id": 5574,
-      "field_value": 209,
-      "points_in_cylinder": 2470
-    },
-    {
-      "feature_id": 4950,
-      "field_value": 447,
-      "points_in_cylinder": 2451
-    },
-    {
-      "feature_id": 5042,
-      "field_value": 872,
-      "points_in_cylinder": 2434
-    },
-    {
-      "feature_id": 5565,
-      "field_value": 215,
-      "points_in_cylinder": 2431
-    },
-    {
-      "feature_id": 5596,
-      "field_value": 304,
-      "points_in_cylinder": 2428
-    },
-    {
-      "feature_id": 5454,
-      "field_value": 733,
-      "points_in_cylinder": 2426
-    },
-    {
-      "feature_id": 4901,
-      "field_value": 79,
-      "points_in_cylinder": 2412
-    },
-    {
-      "feature_id": 5555,
-      "field_value": 901,
-      "points_in_cylinder": 2409
-    },
-    {
-      "feature_id": 5363,
-      "field_value": 275,
-      "points_in_cylinder": 2408
-    },
-    {
-      "feature_id": 5443,
-      "field_value": 544,
-      "points_in_cylinder": 2407
-    },
-    {
-      "feature_id": 4872,
-      "field_value": 353,
-      "points_in_cylinder": 2404
-    },
-    {
-      "feature_id": 5186,
-      "field_value": 570,
-      "points_in_cylinder": 2402
-    },
-    {
-      "feature_id": 5595,
-      "field_value": 686,
-      "points_in_cylinder": 2401
-    },
-    {
-      "feature_id": 5108,
-      "field_value": 788,
-      "points_in_cylinder": 2400
-    },
-    {
-      "feature_id": 4836,
-      "field_value": 74,
-      "points_in_cylinder": 2388
-    },
-    {
-      "feature_id": 5195,
-      "field_value": 489,
-      "points_in_cylinder": 2372
-    },
-    {
-      "feature_id": 5258,
-      "field_value": 606,
-      "points_in_cylinder": 2357
-    },
-    {
-      "feature_id": 4916,
-      "field_value": 217,
-      "points_in_cylinder": 2356
-    },
-    {
-      "feature_id": 5626,
-      "field_value": 343,
-      "points_in_cylinder": 2347
-    },
-    {
-      "feature_id": 5000,
-      "field_value": 785,
-      "points_in_cylinder": 2328
-    },
-    {
-      "feature_id": 5418,
-      "field_value": 498,
-      "points_in_cylinder": 2321
-    },
-    {
-      "feature_id": 4817,
-      "field_value": 506,
-      "points_in_cylinder": 2312
-    },
-    {
-      "feature_id": 5415,
-      "field_value": 633,
-      "points_in_cylinder": 2310
-    },
-    {
-      "feature_id": 4902,
-      "field_value": 881,
-      "points_in_cylinder": 2309
-    },
-    {
-      "feature_id": 5337,
-      "field_value": 579,
-      "points_in_cylinder": 2291
-    },
-    {
-      "feature_id": 4840,
-      "field_value": 273,
-      "points_in_cylinder": 2278
-    },
-    {
-      "feature_id": 5477,
-      "field_value": 385,
-      "points_in_cylinder": 2275
-    },
-    {
-      "feature_id": 4809,
-      "field_value": 454,
-      "points_in_cylinder": 2271
-    },
-    {
-      "feature_id": 5655,
-      "field_value": 659,
-      "points_in_cylinder": 2250
-    },
-    {
-      "feature_id": 4903,
-      "field_value": 902,
-      "points_in_cylinder": 2240
-    },
-    {
-      "feature_id": 4848,
-      "field_value": 332,
-      "points_in_cylinder": 2234
-    },
-    {
-      "feature_id": 5449,
-      "field_value": 600,
-      "points_in_cylinder": 2229
-    },
-    {
-      "feature_id": 5227,
-      "field_value": 57,
-      "points_in_cylinder": 2227
-    },
-    {
-      "feature_id": 5034,
-      "field_value": 282,
-      "points_in_cylinder": 2220
-    },
-    {
-      "feature_id": 4929,
-      "field_value": 60,
-      "points_in_cylinder": 2219
-    },
-    {
-      "feature_id": 5350,
-      "field_value": 845,
-      "points_in_cylinder": 2217
-    },
-    {
-      "feature_id": 5460,
-      "field_value": 644,
-      "points_in_cylinder": 2214
-    },
-    {
-      "feature_id": 5344,
-      "field_value": 223,
-      "points_in_cylinder": 2210
-    },
-    {
-      "feature_id": 5226,
-      "field_value": 786,
-      "points_in_cylinder": 2206
-    },
-    {
-      "feature_id": 5033,
-      "field_value": 768,
-      "points_in_cylinder": 2195
-    },
-    {
-      "feature_id": 4986,
-      "field_value": 734,
-      "points_in_cylinder": 2194
-    },
-    {
-      "feature_id": 5024,
-      "field_value": 888,
-      "points_in_cylinder": 2189
-    },
-    {
-      "feature_id": 4972,
-      "field_value": 587,
-      "points_in_cylinder": 2184
-    },
-    {
-      "feature_id": 4865,
-      "field_value": 71,
-      "points_in_cylinder": 2182
-    },
-    {
-      "feature_id": 4957,
-      "field_value": 723,
-      "points_in_cylinder": 2161
-    },
-    {
-      "feature_id": 5473,
-      "field_value": 177,
-      "points_in_cylinder": 2161
-    },
-    {
-      "feature_id": 4880,
-      "field_value": 290,
-      "points_in_cylinder": 2157
-    },
-    {
-      "feature_id": 5257,
-      "field_value": 814,
-      "points_in_cylinder": 2137
-    },
-    {
-      "feature_id": 5110,
-      "field_value": 525,
-      "points_in_cylinder": 2132
-    },
-    {
-      "feature_id": 5079,
-      "field_value": 471,
-      "points_in_cylinder": 2122
-    },
-    {
-      "feature_id": 5372,
-      "field_value": 67,
-      "points_in_cylinder": 2107
-    },
-    {
-      "feature_id": 5158,
-      "field_value": 417,
-      "points_in_cylinder": 2101
-    },
-    {
-      "feature_id": 5475,
-      "field_value": 629,
-      "points_in_cylinder": 2100
-    },
-    {
-      "feature_id": 4980,
-      "field_value": 771,
-      "points_in_cylinder": 2098
-    },
-    {
-      "feature_id": 5059,
-      "field_value": 755,
-      "points_in_cylinder": 2098
-    },
-    {
-      "feature_id": 5493,
-      "field_value": 776,
-      "points_in_cylinder": 2096
-    },
-    {
-      "feature_id": 5479,
-      "field_value": 486,
-      "points_in_cylinder": 2093
-    },
-    {
-      "feature_id": 4987,
-      "field_value": 737,
-      "points_in_cylinder": 2092
-    },
-    {
-      "feature_id": 5302,
-      "field_value": 424,
-      "points_in_cylinder": 2089
-    },
-    {
-      "feature_id": 5421,
-      "field_value": 599,
-      "points_in_cylinder": 2089
-    },
-    {
-      "feature_id": 5224,
-      "field_value": 136,
-      "points_in_cylinder": 2084
-    },
-    {
-      "feature_id": 5648,
-      "field_value": 812,
-      "points_in_cylinder": 2081
-    },
-    {
-      "feature_id": 5082,
-      "field_value": 603,
-      "points_in_cylinder": 2043
-    },
-    {
-      "feature_id": 5102,
-      "field_value": 469,
-      "points_in_cylinder": 2041
-    },
-    {
-      "feature_id": 5270,
-      "field_value": 832,
-      "points_in_cylinder": 2039
-    },
-    {
-      "feature_id": 4868,
-      "field_value": 395,
-      "points_in_cylinder": 2027
-    },
-    {
-      "feature_id": 5035,
-      "field_value": 376,
-      "points_in_cylinder": 2015
-    },
-    {
-      "feature_id": 5060,
-      "field_value": 749,
-      "points_in_cylinder": 2011
-    },
-    {
-      "feature_id": 5616,
-      "field_value": 452,
-      "points_in_cylinder": 1992
+      "feature_id": 4798,
+      "field_value": 334,
+      "points_in_cylinder": 5108
     },
     {
       "feature_id": 4799,
-      "field_value": 307,
-      "points_in_cylinder": 1988
+      "field_value": 278,
+      "points_in_cylinder": 3159
     },
     {
-      "feature_id": 5295,
-      "field_value": 91,
-      "points_in_cylinder": 1987
-    },
-    {
-      "feature_id": 4937,
-      "field_value": 450,
-      "points_in_cylinder": 1981
-    },
-    {
-      "feature_id": 5398,
-      "field_value": 494,
-      "points_in_cylinder": 1981
-    },
-    {
-      "feature_id": 5570,
-      "field_value": 893,
-      "points_in_cylinder": 1969
-    },
-    {
-      "feature_id": 5023,
-      "field_value": 822,
-      "points_in_cylinder": 1967
-    },
-    {
-      "feature_id": 5578,
-      "field_value": 309,
-      "points_in_cylinder": 1967
-    },
-    {
-      "feature_id": 4851,
-      "field_value": 663,
-      "points_in_cylinder": 1954
-    },
-    {
-      "feature_id": 4803,
-      "field_value": 909,
-      "points_in_cylinder": 1953
-    },
-    {
-      "feature_id": 4828,
-      "field_value": 211,
-      "points_in_cylinder": 1953
-    },
-    {
-      "feature_id": 4991,
-      "field_value": 461,
-      "points_in_cylinder": 1938
-    },
-    {
-      "feature_id": 5452,
-      "field_value": 744,
-      "points_in_cylinder": 1930
-    },
-    {
-      "feature_id": 5587,
+      "feature_id": 4800,
       "field_value": 738,
-      "points_in_cylinder": 1929
-    },
-    {
-      "feature_id": 4975,
-      "field_value": 826,
-      "points_in_cylinder": 1927
-    },
-    {
-      "feature_id": 4813,
-      "field_value": 328,
-      "points_in_cylinder": 1926
-    },
-    {
-      "feature_id": 5149,
-      "field_value": 280,
-      "points_in_cylinder": 1916
-    },
-    {
-      "feature_id": 5055,
-      "field_value": 908,
-      "points_in_cylinder": 1914
-    },
-    {
-      "feature_id": 4914,
-      "field_value": 357,
-      "points_in_cylinder": 1904
-    },
-    {
-      "feature_id": 5282,
-      "field_value": 863,
-      "points_in_cylinder": 1898
-    },
-    {
-      "feature_id": 5522,
-      "field_value": 624,
-      "points_in_cylinder": 1895
-    },
-    {
-      "feature_id": 5003,
-      "field_value": 835,
-      "points_in_cylinder": 1894
-    },
-    {
-      "feature_id": 4885,
-      "field_value": 44,
-      "points_in_cylinder": 1890
-    },
-    {
-      "feature_id": 5618,
-      "field_value": 712,
-      "points_in_cylinder": 1887
-    },
-    {
-      "feature_id": 5553,
-      "field_value": 875,
-      "points_in_cylinder": 1886
-    },
-    {
-      "feature_id": 4847,
-      "field_value": 539,
-      "points_in_cylinder": 1867
-    },
-    {
-      "feature_id": 5621,
-      "field_value": 842,
-      "points_in_cylinder": 1851
-    },
-    {
-      "feature_id": 5521,
-      "field_value": 166,
-      "points_in_cylinder": 1838
-    },
-    {
-      "feature_id": 4994,
-      "field_value": 341,
-      "points_in_cylinder": 1835
-    },
-    {
-      "feature_id": 5165,
-      "field_value": 632,
-      "points_in_cylinder": 1831
-    },
-    {
-      "feature_id": 4904,
-      "field_value": 225,
-      "points_in_cylinder": 1826
-    },
-    {
-      "feature_id": 5335,
-      "field_value": 813,
-      "points_in_cylinder": 1825
-    },
-    {
-      "feature_id": 5365,
-      "field_value": 694,
-      "points_in_cylinder": 1820
-    },
-    {
-      "feature_id": 5409,
-      "field_value": 446,
-      "points_in_cylinder": 1820
-    },
-    {
-      "feature_id": 5015,
-      "field_value": 592,
-      "points_in_cylinder": 1811
-    },
-    {
-      "feature_id": 5184,
-      "field_value": 662,
-      "points_in_cylinder": 1808
-    },
-    {
-      "feature_id": 5061,
-      "field_value": 769,
-      "points_in_cylinder": 1806
+      "points_in_cylinder": 1471
     },
     {
       "feature_id": 4801,
-      "field_value": 363,
-      "points_in_cylinder": 1804
+      "field_value": 920,
+      "points_in_cylinder": 458
     },
     {
-      "feature_id": 4837,
-      "field_value": 878,
-      "points_in_cylinder": 1799
+      "feature_id": 4802,
+      "field_value": 217,
+      "points_in_cylinder": 67
     },
     {
-      "feature_id": 5456,
-      "field_value": 777,
-      "points_in_cylinder": 1796
-    },
-    {
-      "feature_id": 5319,
-      "field_value": 862,
-      "points_in_cylinder": 1774
-    },
-    {
-      "feature_id": 4920,
-      "field_value": 213,
-      "points_in_cylinder": 1766
-    },
-    {
-      "feature_id": 5231,
-      "field_value": 757,
-      "points_in_cylinder": 1748
+      "feature_id": 4803,
+      "field_value": 254,
+      "points_in_cylinder": 4217
     },
     {
       "feature_id": 4804,
-      "field_value": 174,
-      "points_in_cylinder": 1744
+      "field_value": 183,
+      "points_in_cylinder": 5380
     },
     {
-      "feature_id": 4796,
-      "field_value": 466,
-      "points_in_cylinder": 1729
+      "feature_id": 4805,
+      "field_value": 106,
+      "points_in_cylinder": 8883
     },
     {
-      "feature_id": 4973,
-      "field_value": 631,
-      "points_in_cylinder": 1727
+      "feature_id": 4806,
+      "field_value": 299,
+      "points_in_cylinder": 4508
     },
     {
-      "feature_id": 4850,
-      "field_value": 521,
-      "points_in_cylinder": 1726
+      "feature_id": 4807,
+      "field_value": 156,
+      "points_in_cylinder": 8206
     },
     {
-      "feature_id": 4843,
-      "field_value": 490,
-      "points_in_cylinder": 1725
+      "feature_id": 4808,
+      "field_value": 141,
+      "points_in_cylinder": 3662
     },
     {
-      "feature_id": 4931,
-      "field_value": 617,
-      "points_in_cylinder": 1722
+      "feature_id": 4809,
+      "field_value": 713,
+      "points_in_cylinder": 206
     },
     {
-      "feature_id": 5354,
-      "field_value": 288,
-      "points_in_cylinder": 1711
+      "feature_id": 4810,
+      "field_value": 171,
+      "points_in_cylinder": 1073
     },
     {
-      "feature_id": 5420,
-      "field_value": 848,
-      "points_in_cylinder": 1709
+      "feature_id": 4811,
+      "field_value": 247,
+      "points_in_cylinder": 3
     },
     {
-      "feature_id": 5652,
-      "field_value": 496,
-      "points_in_cylinder": 1676
+      "feature_id": 4812,
+      "field_value": 434,
+      "points_in_cylinder": 11601
     },
     {
-      "feature_id": 5128,
-      "field_value": 436,
-      "points_in_cylinder": 1671
+      "feature_id": 4813,
+      "field_value": 319,
+      "points_in_cylinder": 6716
     },
     {
-      "feature_id": 4951,
-      "field_value": 651,
-      "points_in_cylinder": 1670
+      "feature_id": 4814,
+      "field_value": 158,
+      "points_in_cylinder": 7960
     },
     {
-      "feature_id": 5048,
-      "field_value": 477,
-      "points_in_cylinder": 1655
+      "feature_id": 4815,
+      "field_value": 468,
+      "points_in_cylinder": 6588
     },
     {
-      "feature_id": 5348,
-      "field_value": 790,
-      "points_in_cylinder": 1645
+      "feature_id": 4816,
+      "field_value": 388,
+      "points_in_cylinder": 137
     },
     {
-      "feature_id": 4978,
-      "field_value": 787,
-      "points_in_cylinder": 1642
+      "feature_id": 4817,
+      "field_value": 398,
+      "points_in_cylinder": 3646
+    },
+    {
+      "feature_id": 4818,
+      "field_value": 612,
+      "points_in_cylinder": 75
+    },
+    {
+      "feature_id": 4819,
+      "field_value": 540,
+      "points_in_cylinder": 5183
+    },
+    {
+      "feature_id": 4820,
+      "field_value": 246,
+      "points_in_cylinder": 7884
+    },
+    {
+      "feature_id": 4821,
+      "field_value": 264,
+      "points_in_cylinder": 378
+    },
+    {
+      "feature_id": 4822,
+      "field_value": 195,
+      "points_in_cylinder": 8611
+    },
+    {
+      "feature_id": 4823,
+      "field_value": 109,
+      "points_in_cylinder": 6655
+    },
+    {
+      "feature_id": 4824,
+      "field_value": 181,
+      "points_in_cylinder": 9071
+    },
+    {
+      "feature_id": 4825,
+      "field_value": 241,
+      "points_in_cylinder": 7589
+    },
+    {
+      "feature_id": 4826,
+      "field_value": 131,
+      "points_in_cylinder": 13937
+    },
+    {
+      "feature_id": 4827,
+      "field_value": 384,
+      "points_in_cylinder": 6058
+    },
+    {
+      "feature_id": 4828,
+      "field_value": 591,
+      "points_in_cylinder": 127
+    },
+    {
+      "feature_id": 4829,
+      "field_value": 37,
+      "points_in_cylinder": 10634
+    },
+    {
+      "feature_id": 4830,
+      "field_value": 350,
+      "points_in_cylinder": 5487
+    },
+    {
+      "feature_id": 4831,
+      "field_value": 538,
+      "points_in_cylinder": 3968
+    },
+    {
+      "feature_id": 4832,
+      "field_value": 878,
+      "points_in_cylinder": 570
+    },
+    {
+      "feature_id": 4833,
+      "field_value": 67,
+      "points_in_cylinder": 11901
     },
     {
       "feature_id": 4834,
-      "field_value": 80,
-      "points_in_cylinder": 1639
+      "field_value": 89,
+      "points_in_cylinder": 2783
     },
     {
-      "feature_id": 4977,
-      "field_value": 683,
-      "points_in_cylinder": 1627
+      "feature_id": 4835,
+      "field_value": 314,
+      "points_in_cylinder": 3491
     },
     {
-      "feature_id": 5597,
-      "field_value": 576,
-      "points_in_cylinder": 1627
+      "feature_id": 4836,
+      "field_value": 94,
+      "points_in_cylinder": 6391
     },
     {
-      "feature_id": 4897,
-      "field_value": 501,
-      "points_in_cylinder": 1609
+      "feature_id": 4837,
+      "field_value": 835,
+      "points_in_cylinder": 818
     },
     {
-      "feature_id": 4926,
-      "field_value": 119,
-      "points_in_cylinder": 1609
+      "feature_id": 4838,
+      "field_value": 87,
+      "points_in_cylinder": 14105
     },
     {
-      "feature_id": 5525,
+      "feature_id": 4839,
+      "field_value": 339,
+      "points_in_cylinder": 10137
+    },
+    {
+      "feature_id": 4840,
+      "field_value": 244,
+      "points_in_cylinder": 8688
+    },
+    {
+      "feature_id": 4841,
+      "field_value": 346,
+      "points_in_cylinder": 255
+    },
+    {
+      "feature_id": 4842,
+      "field_value": 373,
+      "points_in_cylinder": 4431
+    },
+    {
+      "feature_id": 4843,
+      "field_value": 234,
+      "points_in_cylinder": 989
+    },
+    {
+      "feature_id": 4844,
+      "field_value": 386,
+      "points_in_cylinder": 2708
+    },
+    {
+      "feature_id": 4845,
+      "field_value": 851,
+      "points_in_cylinder": 589
+    },
+    {
+      "feature_id": 4846,
+      "field_value": 58,
+      "points_in_cylinder": 71
+    },
+    {
+      "feature_id": 4847,
+      "field_value": 400,
+      "points_in_cylinder": 3011
+    },
+    {
+      "feature_id": 4848,
+      "field_value": 362,
+      "points_in_cylinder": 8099
+    },
+    {
+      "feature_id": 4849,
+      "field_value": 492,
+      "points_in_cylinder": 2602
+    },
+    {
+      "feature_id": 4850,
+      "field_value": 491,
+      "points_in_cylinder": 2794
+    },
+    {
+      "feature_id": 4851,
+      "field_value": 619,
+      "points_in_cylinder": 3780
+    },
+    {
+      "feature_id": 4852,
+      "field_value": 322,
+      "points_in_cylinder": 10054
+    },
+    {
+      "feature_id": 4853,
+      "field_value": 709,
+      "points_in_cylinder": 535
+    },
+    {
+      "feature_id": 4854,
+      "field_value": 497,
+      "points_in_cylinder": 12689
+    },
+    {
+      "feature_id": 4855,
+      "field_value": 341,
+      "points_in_cylinder": 7601
+    },
+    {
+      "feature_id": 4856,
+      "field_value": 117,
+      "points_in_cylinder": 9741
+    },
+    {
+      "feature_id": 4857,
+      "field_value": 114,
+      "points_in_cylinder": 6576
+    },
+    {
+      "feature_id": 4858,
+      "field_value": 137,
+      "points_in_cylinder": 4123
+    },
+    {
+      "feature_id": 4859,
+      "field_value": 671,
+      "points_in_cylinder": 1138
+    },
+    {
+      "feature_id": 4860,
+      "field_value": 440,
+      "points_in_cylinder": 184
+    },
+    {
+      "feature_id": 4861,
+      "field_value": 292,
+      "points_in_cylinder": 4814
+    },
+    {
+      "feature_id": 4862,
+      "field_value": 150,
+      "points_in_cylinder": 8244
+    },
+    {
+      "feature_id": 4863,
+      "field_value": 55,
+      "points_in_cylinder": 11264
+    },
+    {
+      "feature_id": 4864,
+      "field_value": 259,
+      "points_in_cylinder": 3621
+    },
+    {
+      "feature_id": 4865,
+      "field_value": 213,
+      "points_in_cylinder": 6573
+    },
+    {
+      "feature_id": 4866,
+      "field_value": 73,
+      "points_in_cylinder": 3863
+    },
+    {
+      "feature_id": 4867,
+      "field_value": 528,
+      "points_in_cylinder": 2405
+    },
+    {
+      "feature_id": 4868,
+      "field_value": 512,
+      "points_in_cylinder": 3648
+    },
+    {
+      "feature_id": 4869,
+      "field_value": 229,
+      "points_in_cylinder": 6643
+    },
+    {
+      "feature_id": 4870,
+      "field_value": 586,
+      "points_in_cylinder": 1023
+    },
+    {
+      "feature_id": 4871,
+      "field_value": 441,
+      "points_in_cylinder": 6609
+    },
+    {
+      "feature_id": 4872,
+      "field_value": 429,
+      "points_in_cylinder": 7760
+    },
+    {
+      "feature_id": 4873,
+      "field_value": 658,
+      "points_in_cylinder": 866
+    },
+    {
+      "feature_id": 4874,
+      "field_value": 825,
+      "points_in_cylinder": 658
+    },
+    {
+      "feature_id": 4875,
+      "field_value": 504,
+      "points_in_cylinder": 125
+    },
+    {
+      "feature_id": 4876,
       "field_value": 366,
-      "points_in_cylinder": 1605
+      "points_in_cylinder": 6
+    },
+    {
+      "feature_id": 4877,
+      "field_value": 753,
+      "points_in_cylinder": 202
+    },
+    {
+      "feature_id": 4878,
+      "field_value": 687,
+      "points_in_cylinder": 982
     },
     {
       "feature_id": 4879,
-      "field_value": 754,
-      "points_in_cylinder": 1601
+      "field_value": 670,
+      "points_in_cylinder": 2922
     },
     {
-      "feature_id": 4941,
-      "field_value": 841,
-      "points_in_cylinder": 1595
+      "feature_id": 4880,
+      "field_value": 298,
+      "points_in_cylinder": 6560
     },
     {
-      "feature_id": 5049,
-      "field_value": 574,
-      "points_in_cylinder": 1595
+      "feature_id": 4881,
+      "field_value": 464,
+      "points_in_cylinder": 18
+    },
+    {
+      "feature_id": 4882,
+      "field_value": 296,
+      "points_in_cylinder": 1461
+    },
+    {
+      "feature_id": 4883,
+      "field_value": 216,
+      "points_in_cylinder": 7419
+    },
+    {
+      "feature_id": 4884,
+      "field_value": 45,
+      "points_in_cylinder": 4624
+    },
+    {
+      "feature_id": 4885,
+      "field_value": 917,
+      "points_in_cylinder": 456
+    },
+    {
+      "feature_id": 4886,
+      "field_value": 965,
+      "points_in_cylinder": 282
+    },
+    {
+      "feature_id": 4887,
+      "field_value": 231,
+      "points_in_cylinder": 2471
     },
     {
       "feature_id": 4888,
       "field_value": 102,
-      "points_in_cylinder": 1585
-    },
-    {
-      "feature_id": 5338,
-      "field_value": 889,
-      "points_in_cylinder": 1573
-    },
-    {
-      "feature_id": 4877,
-      "field_value": 655,
-      "points_in_cylinder": 1550
-    },
-    {
-      "feature_id": 4956,
-      "field_value": 799,
-      "points_in_cylinder": 1543
-    },
-    {
-      "feature_id": 5379,
-      "field_value": 648,
-      "points_in_cylinder": 1538
-    },
-    {
-      "feature_id": 4979,
-      "field_value": 688,
-      "points_in_cylinder": 1534
-    },
-    {
-      "feature_id": 4948,
-      "field_value": 435,
-      "points_in_cylinder": 1533
-    },
-    {
-      "feature_id": 5603,
-      "field_value": 774,
-      "points_in_cylinder": 1527
-    },
-    {
-      "feature_id": 5445,
-      "field_value": 720,
-      "points_in_cylinder": 1522
-    },
-    {
-      "feature_id": 5030,
-      "field_value": 870,
-      "points_in_cylinder": 1507
-    },
-    {
-      "feature_id": 5552,
-      "field_value": 869,
-      "points_in_cylinder": 1507
-    },
-    {
-      "feature_id": 5457,
-      "field_value": 807,
-      "points_in_cylinder": 1492
-    },
-    {
-      "feature_id": 5166,
-      "field_value": 560,
-      "points_in_cylinder": 1488
-    },
-    {
-      "feature_id": 5260,
-      "field_value": 611,
-      "points_in_cylinder": 1481
-    },
-    {
-      "feature_id": 5133,
-      "field_value": 323,
-      "points_in_cylinder": 1476
-    },
-    {
-      "feature_id": 5254,
-      "field_value": 317,
-      "points_in_cylinder": 1461
-    },
-    {
-      "feature_id": 5255,
-      "field_value": 708,
-      "points_in_cylinder": 1446
-    },
-    {
-      "feature_id": 5339,
-      "field_value": 142,
-      "points_in_cylinder": 1431
-    },
-    {
-      "feature_id": 5426,
-      "field_value": 746,
-      "points_in_cylinder": 1430
-    },
-    {
-      "feature_id": 4976,
-      "field_value": 468,
-      "points_in_cylinder": 1414
-    },
-    {
-      "feature_id": 5430,
-      "field_value": 783,
-      "points_in_cylinder": 1409
-    },
-    {
-      "feature_id": 5269,
-      "field_value": 160,
-      "points_in_cylinder": 1391
-    },
-    {
-      "feature_id": 5241,
-      "field_value": 533,
-      "points_in_cylinder": 1364
-    },
-    {
-      "feature_id": 4912,
-      "field_value": 535,
-      "points_in_cylinder": 1362
-    },
-    {
-      "feature_id": 5038,
-      "field_value": 227,
-      "points_in_cylinder": 1361
-    },
-    {
-      "feature_id": 5469,
-      "field_value": 803,
-      "points_in_cylinder": 1361
-    },
-    {
-      "feature_id": 5009,
-      "field_value": 701,
-      "points_in_cylinder": 1353
-    },
-    {
-      "feature_id": 5016,
-      "field_value": 823,
-      "points_in_cylinder": 1353
-    },
-    {
-      "feature_id": 5289,
-      "field_value": 318,
-      "points_in_cylinder": 1332
-    },
-    {
-      "feature_id": 5099,
-      "field_value": 491,
-      "points_in_cylinder": 1330
-    },
-    {
-      "feature_id": 4821,
-      "field_value": 361,
-      "points_in_cylinder": 1327
-    },
-    {
-      "feature_id": 5248,
-      "field_value": 460,
-      "points_in_cylinder": 1327
-    },
-    {
-      "feature_id": 5044,
-      "field_value": 912,
-      "points_in_cylinder": 1320
-    },
-    {
-      "feature_id": 5210,
-      "field_value": 892,
-      "points_in_cylinder": 1316
-    },
-    {
-      "feature_id": 5585,
-      "field_value": 399,
-      "points_in_cylinder": 1316
-    },
-    {
-      "feature_id": 5347,
-      "field_value": 202,
-      "points_in_cylinder": 1303
-    },
-    {
-      "feature_id": 5129,
-      "field_value": 283,
-      "points_in_cylinder": 1296
-    },
-    {
-      "feature_id": 5071,
-      "field_value": 598,
-      "points_in_cylinder": 1294
-    },
-    {
-      "feature_id": 4995,
-      "field_value": 367,
-      "points_in_cylinder": 1292
-    },
-    {
-      "feature_id": 5439,
-      "field_value": 885,
-      "points_in_cylinder": 1289
-    },
-    {
-      "feature_id": 5524,
-      "field_value": 664,
-      "points_in_cylinder": 1283
-    },
-    {
-      "feature_id": 4963,
-      "field_value": 675,
-      "points_in_cylinder": 1278
-    },
-    {
-      "feature_id": 5334,
-      "field_value": 827,
-      "points_in_cylinder": 1278
-    },
-    {
-      "feature_id": 5259,
-      "field_value": 641,
-      "points_in_cylinder": 1276
-    },
-    {
-      "feature_id": 4816,
-      "field_value": 372,
-      "points_in_cylinder": 1272
-    },
-    {
-      "feature_id": 5429,
-      "field_value": 756,
-      "points_in_cylinder": 1259
-    },
-    {
-      "feature_id": 5586,
-      "field_value": 805,
-      "points_in_cylinder": 1254
-    },
-    {
-      "feature_id": 4798,
-      "field_value": 396,
-      "points_in_cylinder": 1249
-    },
-    {
-      "feature_id": 5004,
-      "field_value": 853,
-      "points_in_cylinder": 1246
-    },
-    {
-      "feature_id": 5622,
-      "field_value": 821,
-      "points_in_cylinder": 1246
-    },
-    {
-      "feature_id": 5050,
-      "field_value": 780,
-      "points_in_cylinder": 1241
-    },
-    {
-      "feature_id": 5617,
-      "field_value": 861,
-      "points_in_cylinder": 1222
-    },
-    {
-      "feature_id": 5490,
-      "field_value": 716,
-      "points_in_cylinder": 1198
-    },
-    {
-      "feature_id": 4965,
-      "field_value": 428,
-      "points_in_cylinder": 1194
-    },
-    {
-      "feature_id": 5569,
-      "field_value": 232,
-      "points_in_cylinder": 1185
-    },
-    {
-      "feature_id": 5453,
-      "field_value": 779,
-      "points_in_cylinder": 1169
-    },
-    {
-      "feature_id": 5609,
-      "field_value": 703,
-      "points_in_cylinder": 1156
-    },
-    {
-      "feature_id": 5091,
-      "field_value": 516,
-      "points_in_cylinder": 1145
-    },
-    {
-      "feature_id": 5031,
-      "field_value": 879,
-      "points_in_cylinder": 1136
-    },
-    {
-      "feature_id": 5437,
-      "field_value": 868,
-      "points_in_cylinder": 1136
-    },
-    {
-      "feature_id": 4935,
-      "field_value": 464,
-      "points_in_cylinder": 1134
-    },
-    {
-      "feature_id": 5272,
-      "field_value": 497,
-      "points_in_cylinder": 1114
-    },
-    {
-      "feature_id": 4974,
-      "field_value": 778,
-      "points_in_cylinder": 1082
-    },
-    {
-      "feature_id": 5147,
-      "field_value": 903,
-      "points_in_cylinder": 1080
-    },
-    {
-      "feature_id": 5043,
-      "field_value": 907,
-      "points_in_cylinder": 1078
-    },
-    {
-      "feature_id": 5376,
-      "field_value": 700,
-      "points_in_cylinder": 1059
-    },
-    {
-      "feature_id": 4958,
-      "field_value": 736,
-      "points_in_cylinder": 1035
-    },
-    {
-      "feature_id": 4849,
-      "field_value": 519,
-      "points_in_cylinder": 1027
-    },
-    {
-      "feature_id": 5240,
-      "field_value": 139,
-      "points_in_cylinder": 1027
-    },
-    {
-      "feature_id": 5251,
-      "field_value": 625,
-      "points_in_cylinder": 1022
-    },
-    {
-      "feature_id": 5353,
-      "field_value": 866,
-      "points_in_cylinder": 1018
-    },
-    {
-      "feature_id": 4969,
-      "field_value": 575,
-      "points_in_cylinder": 1013
-    },
-    {
-      "feature_id": 5408,
-      "field_value": 637,
-      "points_in_cylinder": 1012
-    },
-    {
-      "feature_id": 5267,
-      "field_value": 476,
-      "points_in_cylinder": 1009
-    },
-    {
-      "feature_id": 5630,
-      "field_value": 810,
-      "points_in_cylinder": 1004
-    },
-    {
-      "feature_id": 5067,
-      "field_value": 571,
-      "points_in_cylinder": 994
-    },
-    {
-      "feature_id": 5438,
-      "field_value": 864,
-      "points_in_cylinder": 961
-    },
-    {
-      "feature_id": 4944,
-      "field_value": 854,
-      "points_in_cylinder": 951
-    },
-    {
-      "feature_id": 4878,
-      "field_value": 763,
-      "points_in_cylinder": 946
-    },
-    {
-      "feature_id": 5076,
-      "field_value": 513,
-      "points_in_cylinder": 919
-    },
-    {
-      "feature_id": 5613,
-      "field_value": 403,
-      "points_in_cylinder": 907
-    },
-    {
-      "feature_id": 4934,
-      "field_value": 493,
-      "points_in_cylinder": 906
-    },
-    {
-      "feature_id": 5064,
-      "field_value": 400,
-      "points_in_cylinder": 894
-    },
-    {
-      "feature_id": 5527,
-      "field_value": 852,
-      "points_in_cylinder": 888
-    },
-    {
-      "feature_id": 5107,
-      "field_value": 640,
-      "points_in_cylinder": 881
-    },
-    {
-      "feature_id": 4806,
-      "field_value": 635,
-      "points_in_cylinder": 856
-    },
-    {
-      "feature_id": 5424,
-      "field_value": 231,
-      "points_in_cylinder": 801
-    },
-    {
-      "feature_id": 5551,
-      "field_value": 886,
-      "points_in_cylinder": 792
-    },
-    {
-      "feature_id": 5217,
-      "field_value": 806,
-      "points_in_cylinder": 772
-    },
-    {
-      "feature_id": 5482,
-      "field_value": 319,
-      "points_in_cylinder": 760
-    },
-    {
-      "feature_id": 4886,
-      "field_value": 101,
-      "points_in_cylinder": 743
-    },
-    {
-      "feature_id": 5118,
-      "field_value": 857,
-      "points_in_cylinder": 726
-    },
-    {
-      "feature_id": 5087,
-      "field_value": 185,
-      "points_in_cylinder": 711
-    },
-    {
-      "feature_id": 5209,
-      "field_value": 573,
-      "points_in_cylinder": 643
-    },
-    {
-      "feature_id": 5516,
-      "field_value": 702,
-      "points_in_cylinder": 637
-    },
-    {
-      "feature_id": 4831,
-      "field_value": 781,
-      "points_in_cylinder": 633
-    },
-    {
-      "feature_id": 4898,
-      "field_value": 121,
-      "points_in_cylinder": 611
-    },
-    {
-      "feature_id": 5528,
-      "field_value": 499,
-      "points_in_cylinder": 608
-    },
-    {
-      "feature_id": 5399,
-      "field_value": 594,
-      "points_in_cylinder": 592
-    },
-    {
-      "feature_id": 5346,
-      "field_value": 382,
-      "points_in_cylinder": 584
-    },
-    {
-      "feature_id": 5608,
-      "field_value": 418,
-      "points_in_cylinder": 582
-    },
-    {
-      "feature_id": 5556,
-      "field_value": 840,
-      "points_in_cylinder": 521
-    },
-    {
-      "feature_id": 5277,
-      "field_value": 630,
-      "points_in_cylinder": 509
-    },
-    {
-      "feature_id": 5199,
-      "field_value": 292,
-      "points_in_cylinder": 484
-    },
-    {
-      "feature_id": 4955,
-      "field_value": 515,
-      "points_in_cylinder": 468
-    },
-    {
-      "feature_id": 4846,
-      "field_value": 718,
-      "points_in_cylinder": 467
+      "points_in_cylinder": 2083
     },
     {
       "feature_id": 4889,
-      "field_value": 899,
-      "points_in_cylinder": 460
+      "field_value": 146,
+      "points_in_cylinder": 1527
     },
     {
-      "feature_id": 4959,
-      "field_value": 824,
-      "points_in_cylinder": 412
+      "feature_id": 4890,
+      "field_value": 358,
+      "points_in_cylinder": 1678
     },
     {
-      "feature_id": 5112,
-      "field_value": 378,
-      "points_in_cylinder": 367
+      "feature_id": 4891,
+      "field_value": 240,
+      "points_in_cylinder": 1007
     },
     {
-      "feature_id": 5333,
-      "field_value": 204,
-      "points_in_cylinder": 364
+      "feature_id": 4892,
+      "field_value": 0,
+      "points_in_cylinder": 21
     },
     {
-      "feature_id": 5623,
-      "field_value": 837,
-      "points_in_cylinder": 346
+      "feature_id": 4894,
+      "field_value": 595,
+      "points_in_cylinder": 32
     },
     {
-      "feature_id": 5288,
-      "field_value": 414,
-      "points_in_cylinder": 344
+      "feature_id": 4895,
+      "field_value": 155,
+      "points_in_cylinder": 4998
     },
     {
-      "feature_id": 5436,
-      "field_value": 562,
-      "points_in_cylinder": 340
+      "feature_id": 4896,
+      "field_value": 12,
+      "points_in_cylinder": 16
     },
     {
-      "feature_id": 5271,
-      "field_value": 578,
-      "points_in_cylinder": 325
+      "feature_id": 4897,
+      "field_value": 53,
+      "points_in_cylinder": 1448
     },
     {
-      "feature_id": 5413,
-      "field_value": 556,
-      "points_in_cylinder": 311
+      "feature_id": 4898,
+      "field_value": 132,
+      "points_in_cylinder": 902
     },
     {
-      "feature_id": 4967,
-      "field_value": 669,
-      "points_in_cylinder": 307
+      "feature_id": 4899,
+      "field_value": 308,
+      "points_in_cylinder": 2003
     },
     {
-      "feature_id": 5588,
-      "field_value": 838,
+      "feature_id": 4900,
+      "field_value": 70,
+      "points_in_cylinder": 3517
+    },
+    {
+      "feature_id": 4901,
+      "field_value": 798,
+      "points_in_cylinder": 32
+    },
+    {
+      "feature_id": 4902,
+      "field_value": 258,
+      "points_in_cylinder": 151
+    },
+    {
+      "feature_id": 4903,
+      "field_value": 748,
+      "points_in_cylinder": 3159
+    },
+    {
+      "feature_id": 4904,
+      "field_value": 279,
+      "points_in_cylinder": 2932
+    },
+    {
+      "feature_id": 4905,
+      "field_value": 310,
+      "points_in_cylinder": 179
+    },
+    {
+      "feature_id": 4906,
+      "field_value": 1,
       "points_in_cylinder": 233
     },
     {
-      "feature_id": 5331,
-      "field_value": 224,
-      "points_in_cylinder": 230
+      "feature_id": 4907,
+      "field_value": 522,
+      "points_in_cylinder": 719
     },
     {
-      "feature_id": 5083,
-      "field_value": 549,
-      "points_in_cylinder": 181
+      "feature_id": 4908,
+      "field_value": 16,
+      "points_in_cylinder": 118
     },
     {
-      "feature_id": 4858,
-      "field_value": 94,
-      "points_in_cylinder": 134
+      "feature_id": 4909,
+      "field_value": 169,
+      "points_in_cylinder": 6546
     },
     {
-      "feature_id": 5021,
-      "field_value": 565,
-      "points_in_cylinder": 117
+      "feature_id": 4910,
+      "field_value": 161,
+      "points_in_cylinder": 5301
     },
     {
-      "feature_id": 5355,
-      "field_value": 206,
-      "points_in_cylinder": 112
+      "feature_id": 4912,
+      "field_value": 84,
+      "points_in_cylinder": 2706
+    },
+    {
+      "feature_id": 4914,
+      "field_value": 515,
+      "points_in_cylinder": 2059
+    },
+    {
+      "feature_id": 4915,
+      "field_value": 628,
+      "points_in_cylinder": 502
+    },
+    {
+      "feature_id": 4916,
+      "field_value": 9,
+      "points_in_cylinder": 2162
+    },
+    {
+      "feature_id": 4917,
+      "field_value": 90,
+      "points_in_cylinder": 3442
+    },
+    {
+      "feature_id": 4918,
+      "field_value": 72,
+      "points_in_cylinder": 1370
+    },
+    {
+      "feature_id": 4919,
+      "field_value": 184,
+      "points_in_cylinder": 5
+    },
+    {
+      "feature_id": 4920,
+      "field_value": 140,
+      "points_in_cylinder": 3
+    },
+    {
+      "feature_id": 4921,
+      "field_value": 68,
+      "points_in_cylinder": 4684
+    },
+    {
+      "feature_id": 4922,
+      "field_value": 56,
+      "points_in_cylinder": 1396
+    },
+    {
+      "feature_id": 4923,
+      "field_value": 301,
+      "points_in_cylinder": 2074
+    },
+    {
+      "feature_id": 4924,
+      "field_value": 336,
+      "points_in_cylinder": 1955
+    },
+    {
+      "feature_id": 4925,
+      "field_value": 166,
+      "points_in_cylinder": 7703
+    },
+    {
+      "feature_id": 4926,
+      "field_value": 321,
+      "points_in_cylinder": 374
+    },
+    {
+      "feature_id": 4927,
+      "field_value": 221,
+      "points_in_cylinder": 3516
+    },
+    {
+      "feature_id": 4928,
+      "field_value": 88,
+      "points_in_cylinder": 3226
+    },
+    {
+      "feature_id": 4929,
+      "field_value": 34,
+      "points_in_cylinder": 2463
+    },
+    {
+      "feature_id": 4930,
+      "field_value": 159,
+      "points_in_cylinder": 9968
+    },
+    {
+      "feature_id": 4932,
+      "field_value": 550,
+      "points_in_cylinder": 5828
+    },
+    {
+      "feature_id": 4933,
+      "field_value": 502,
+      "points_in_cylinder": 4544
+    },
+    {
+      "feature_id": 4934,
+      "field_value": 477,
+      "points_in_cylinder": 4386
+    },
+    {
+      "feature_id": 4935,
+      "field_value": 300,
+      "points_in_cylinder": 3595
+    },
+    {
+      "feature_id": 4936,
+      "field_value": 396,
+      "points_in_cylinder": 4144
+    },
+    {
+      "feature_id": 4937,
+      "field_value": 347,
+      "points_in_cylinder": 5876
+    },
+    {
+      "feature_id": 4938,
+      "field_value": 520,
+      "points_in_cylinder": 6019
+    },
+    {
+      "feature_id": 4939,
+      "field_value": 524,
+      "points_in_cylinder": 5514
+    },
+    {
+      "feature_id": 4946,
+      "field_value": 436,
+      "points_in_cylinder": 3601
+    },
+    {
+      "feature_id": 4948,
+      "field_value": 548,
+      "points_in_cylinder": 2800
     },
     {
       "feature_id": 4949,
-      "field_value": 618,
-      "points_in_cylinder": 98
+      "field_value": 364,
+      "points_in_cylinder": 829
     },
     {
-      "feature_id": 5358,
-      "field_value": 259,
-      "points_in_cylinder": 92
+      "feature_id": 4950,
+      "field_value": 537,
+      "points_in_cylinder": 3229
     },
     {
-      "feature_id": 5085,
-      "field_value": 155,
-      "points_in_cylinder": 72
+      "feature_id": 4951,
+      "field_value": 427,
+      "points_in_cylinder": 8855
     },
     {
-      "feature_id": 5098,
-      "field_value": 456,
-      "points_in_cylinder": 59
+      "feature_id": 4952,
+      "field_value": 631,
+      "points_in_cylinder": 3520
     },
     {
-      "feature_id": 4971,
-      "field_value": 676,
-      "points_in_cylinder": 58
-    },
-    {
-      "feature_id": 5540,
-      "field_value": 172,
-      "points_in_cylinder": 53
-    },
-    {
-      "feature_id": 5598,
-      "field_value": 411,
-      "points_in_cylinder": 40
-    },
-    {
-      "feature_id": 5572,
-      "field_value": 883,
-      "points_in_cylinder": 34
-    },
-    {
-      "feature_id": 5290,
-      "field_value": 595,
-      "points_in_cylinder": 28
-    },
-    {
-      "feature_id": 5200,
-      "field_value": 162,
-      "points_in_cylinder": 23
-    },
-    {
-      "feature_id": 4960,
-      "field_value": 623,
-      "points_in_cylinder": 9
-    },
-    {
-      "feature_id": 5065,
-      "field_value": 388,
-      "points_in_cylinder": 7
-    },
-    {
-      "feature_id": 5081,
-      "field_value": 504,
-      "points_in_cylinder": 7
-    },
-    {
-      "feature_id": 4998,
-      "field_value": 545,
-      "points_in_cylinder": 2
-    },
-    {
-      "feature_id": 5385,
-      "field_value": 615,
-      "points_in_cylinder": 2
+      "feature_id": 4953,
+      "field_value": 638,
+      "points_in_cylinder": 226
     },
     {
       "feature_id": 4954,
-      "field_value": 500,
+      "field_value": 260,
+      "points_in_cylinder": 10860
+    },
+    {
+      "feature_id": 4955,
+      "field_value": 688,
+      "points_in_cylinder": 158
+    },
+    {
+      "feature_id": 4956,
+      "field_value": 661,
+      "points_in_cylinder": 2218
+    },
+    {
+      "feature_id": 4957,
+      "field_value": 774,
+      "points_in_cylinder": 12
+    },
+    {
+      "feature_id": 4958,
+      "field_value": 443,
+      "points_in_cylinder": 80
+    },
+    {
+      "feature_id": 4960,
+      "field_value": 420,
+      "points_in_cylinder": 43
+    },
+    {
+      "feature_id": 4961,
+      "field_value": 413,
+      "points_in_cylinder": 3414
+    },
+    {
+      "feature_id": 4964,
+      "field_value": 573,
+      "points_in_cylinder": 3784
+    },
+    {
+      "feature_id": 4965,
+      "field_value": 571,
+      "points_in_cylinder": 323
+    },
+    {
+      "feature_id": 4966,
+      "field_value": 950,
+      "points_in_cylinder": 9
+    },
+    {
+      "feature_id": 4967,
+      "field_value": 689,
+      "points_in_cylinder": 3
+    },
+    {
+      "feature_id": 4968,
+      "field_value": 163,
+      "points_in_cylinder": 782
+    },
+    {
+      "feature_id": 4974,
+      "field_value": 447,
+      "points_in_cylinder": 3461
+    },
+    {
+      "feature_id": 4975,
+      "field_value": 746,
+      "points_in_cylinder": 1790
+    },
+    {
+      "feature_id": 4976,
+      "field_value": 549,
+      "points_in_cylinder": 2661
+    },
+    {
+      "feature_id": 4977,
+      "field_value": 609,
+      "points_in_cylinder": 2504
+    },
+    {
+      "feature_id": 4978,
+      "field_value": 409,
+      "points_in_cylinder": 2375
+    },
+    {
+      "feature_id": 4979,
+      "field_value": 908,
+      "points_in_cylinder": 80
+    },
+    {
+      "feature_id": 4981,
+      "field_value": 508,
+      "points_in_cylinder": 5564
+    },
+    {
+      "feature_id": 4982,
+      "field_value": 348,
+      "points_in_cylinder": 312
+    },
+    {
+      "feature_id": 4983,
+      "field_value": 465,
+      "points_in_cylinder": 224
+    },
+    {
+      "feature_id": 4984,
+      "field_value": 967,
+      "points_in_cylinder": 479
+    },
+    {
+      "feature_id": 4986,
+      "field_value": 654,
+      "points_in_cylinder": 2014
+    },
+    {
+      "feature_id": 4987,
+      "field_value": 543,
+      "points_in_cylinder": 2202
+    },
+    {
+      "feature_id": 4988,
+      "field_value": 252,
+      "points_in_cylinder": 5723
+    },
+    {
+      "feature_id": 4989,
+      "field_value": 561,
+      "points_in_cylinder": 484
+    },
+    {
+      "feature_id": 4990,
+      "field_value": 281,
+      "points_in_cylinder": 298
+    },
+    {
+      "feature_id": 4991,
+      "field_value": 865,
+      "points_in_cylinder": 1071
+    },
+    {
+      "feature_id": 4992,
+      "field_value": 889,
+      "points_in_cylinder": 31
+    },
+    {
+      "feature_id": 4993,
+      "field_value": 581,
       "points_in_cylinder": 1
+    },
+    {
+      "feature_id": 4994,
+      "field_value": 451,
+      "points_in_cylinder": 2452
+    },
+    {
+      "feature_id": 4995,
+      "field_value": 518,
+      "points_in_cylinder": 2423
+    },
+    {
+      "feature_id": 4996,
+      "field_value": 395,
+      "points_in_cylinder": 7062
+    },
+    {
+      "feature_id": 4997,
+      "field_value": 523,
+      "points_in_cylinder": 7569
+    },
+    {
+      "feature_id": 4998,
+      "field_value": 854,
+      "points_in_cylinder": 536
+    },
+    {
+      "feature_id": 4999,
+      "field_value": 681,
+      "points_in_cylinder": 125
+    },
+    {
+      "feature_id": 5000,
+      "field_value": 705,
+      "points_in_cylinder": 1941
+    },
+    {
+      "feature_id": 5001,
+      "field_value": 972,
+      "points_in_cylinder": 630
+    },
+    {
+      "feature_id": 5002,
+      "field_value": 676,
+      "points_in_cylinder": 1630
+    },
+    {
+      "feature_id": 5003,
+      "field_value": 363,
+      "points_in_cylinder": 1393
+    },
+    {
+      "feature_id": 5004,
+      "field_value": 173,
+      "points_in_cylinder": 587
+    },
+    {
+      "feature_id": 5007,
+      "field_value": 600,
+      "points_in_cylinder": 1529
+    },
+    {
+      "feature_id": 5008,
+      "field_value": 493,
+      "points_in_cylinder": 4200
+    },
+    {
+      "feature_id": 5009,
+      "field_value": 622,
+      "points_in_cylinder": 385
+    },
+    {
+      "feature_id": 5010,
+      "field_value": 990,
+      "points_in_cylinder": 388
+    },
+    {
+      "feature_id": 5011,
+      "field_value": 943,
+      "points_in_cylinder": 106
+    },
+    {
+      "feature_id": 5012,
+      "field_value": 182,
+      "points_in_cylinder": 20
+    },
+    {
+      "feature_id": 5013,
+      "field_value": 919,
+      "points_in_cylinder": 302
+    },
+    {
+      "feature_id": 5014,
+      "field_value": 178,
+      "points_in_cylinder": 2352
+    },
+    {
+      "feature_id": 5015,
+      "field_value": 784,
+      "points_in_cylinder": 170
+    },
+    {
+      "feature_id": 5016,
+      "field_value": 727,
+      "points_in_cylinder": 1253
+    },
+    {
+      "feature_id": 5017,
+      "field_value": 126,
+      "points_in_cylinder": 151
+    },
+    {
+      "feature_id": 5018,
+      "field_value": 164,
+      "points_in_cylinder": 42
+    },
+    {
+      "feature_id": 5019,
+      "field_value": 69,
+      "points_in_cylinder": 3242
+    },
+    {
+      "feature_id": 5020,
+      "field_value": 377,
+      "points_in_cylinder": 26
+    },
+    {
+      "feature_id": 5021,
+      "field_value": 352,
+      "points_in_cylinder": 3195
+    },
+    {
+      "feature_id": 5022,
+      "field_value": 827,
+      "points_in_cylinder": 158
+    },
+    {
+      "feature_id": 5023,
+      "field_value": 741,
+      "points_in_cylinder": 2805
+    },
+    {
+      "feature_id": 5024,
+      "field_value": 261,
+      "points_in_cylinder": 1975
+    },
+    {
+      "feature_id": 5025,
+      "field_value": 110,
+      "points_in_cylinder": 620
+    },
+    {
+      "feature_id": 5026,
+      "field_value": 584,
+      "points_in_cylinder": 2743
+    },
+    {
+      "feature_id": 5027,
+      "field_value": 121,
+      "points_in_cylinder": 171
+    },
+    {
+      "feature_id": 5028,
+      "field_value": 796,
+      "points_in_cylinder": 179
+    },
+    {
+      "feature_id": 5029,
+      "field_value": 953,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5030,
+      "field_value": 773,
+      "points_in_cylinder": 1549
+    },
+    {
+      "feature_id": 5031,
+      "field_value": 293,
+      "points_in_cylinder": 875
+    },
+    {
+      "feature_id": 5032,
+      "field_value": 289,
+      "points_in_cylinder": 906
+    },
+    {
+      "feature_id": 5033,
+      "field_value": 663,
+      "points_in_cylinder": 3286
+    },
+    {
+      "feature_id": 5034,
+      "field_value": 458,
+      "points_in_cylinder": 3906
+    },
+    {
+      "feature_id": 5035,
+      "field_value": 511,
+      "points_in_cylinder": 2713
+    },
+    {
+      "feature_id": 5036,
+      "field_value": 433,
+      "points_in_cylinder": 4400
+    },
+    {
+      "feature_id": 5037,
+      "field_value": 476,
+      "points_in_cylinder": 9248
+    },
+    {
+      "feature_id": 5038,
+      "field_value": 232,
+      "points_in_cylinder": 1326
+    },
+    {
+      "feature_id": 5039,
+      "field_value": 732,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5042,
+      "field_value": 785,
+      "points_in_cylinder": 2491
+    },
+    {
+      "feature_id": 5044,
+      "field_value": 832,
+      "points_in_cylinder": 1996
+    },
+    {
+      "feature_id": 5045,
+      "field_value": 891,
+      "points_in_cylinder": 248
+    },
+    {
+      "feature_id": 5047,
+      "field_value": 930,
+      "points_in_cylinder": 497
+    },
+    {
+      "feature_id": 5048,
+      "field_value": 365,
+      "points_in_cylinder": 3963
+    },
+    {
+      "feature_id": 5049,
+      "field_value": 570,
+      "points_in_cylinder": 77
+    },
+    {
+      "feature_id": 5050,
+      "field_value": 583,
+      "points_in_cylinder": 1207
+    },
+    {
+      "feature_id": 5051,
+      "field_value": 200,
+      "points_in_cylinder": 3138
+    },
+    {
+      "feature_id": 5052,
+      "field_value": 914,
+      "points_in_cylinder": 1466
+    },
+    {
+      "feature_id": 5054,
+      "field_value": 646,
+      "points_in_cylinder": 11
+    },
+    {
+      "feature_id": 5055,
+      "field_value": 868,
+      "points_in_cylinder": 1568
+    },
+    {
+      "feature_id": 5056,
+      "field_value": 880,
+      "points_in_cylinder": 858
+    },
+    {
+      "feature_id": 5057,
+      "field_value": 6,
+      "points_in_cylinder": 11590
+    },
+    {
+      "feature_id": 5058,
+      "field_value": 471,
+      "points_in_cylinder": 2560
+    },
+    {
+      "feature_id": 5059,
+      "field_value": 197,
+      "points_in_cylinder": 735
+    },
+    {
+      "feature_id": 5061,
+      "field_value": 682,
+      "points_in_cylinder": 1967
+    },
+    {
+      "feature_id": 5062,
+      "field_value": 517,
+      "points_in_cylinder": 5627
+    },
+    {
+      "feature_id": 5063,
+      "field_value": 582,
+      "points_in_cylinder": 2108
+    },
+    {
+      "feature_id": 5064,
+      "field_value": 407,
+      "points_in_cylinder": 1178
+    },
+    {
+      "feature_id": 5065,
+      "field_value": 805,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5066,
+      "field_value": 487,
+      "points_in_cylinder": 8300
+    },
+    {
+      "feature_id": 5067,
+      "field_value": 623,
+      "points_in_cylinder": 609
+    },
+    {
+      "feature_id": 5068,
+      "field_value": 38,
+      "points_in_cylinder": 5511
+    },
+    {
+      "feature_id": 5069,
+      "field_value": 839,
+      "points_in_cylinder": 22
+    },
+    {
+      "feature_id": 5070,
+      "field_value": 20,
+      "points_in_cylinder": 6801
+    },
+    {
+      "feature_id": 5071,
+      "field_value": 829,
+      "points_in_cylinder": 529
+    },
+    {
+      "feature_id": 5072,
+      "field_value": 204,
+      "points_in_cylinder": 10406
+    },
+    {
+      "feature_id": 5073,
+      "field_value": 608,
+      "points_in_cylinder": 945
+    },
+    {
+      "feature_id": 5074,
+      "field_value": 630,
+      "points_in_cylinder": 5268
+    },
+    {
+      "feature_id": 5075,
+      "field_value": 532,
+      "points_in_cylinder": 1396
+    },
+    {
+      "feature_id": 5076,
+      "field_value": 833,
+      "points_in_cylinder": 1111
+    },
+    {
+      "feature_id": 5077,
+      "field_value": 574,
+      "points_in_cylinder": 4515
+    },
+    {
+      "feature_id": 5079,
+      "field_value": 100,
+      "points_in_cylinder": 585
+    },
+    {
+      "feature_id": 5080,
+      "field_value": 282,
+      "points_in_cylinder": 31
+    },
+    {
+      "feature_id": 5081,
+      "field_value": 760,
+      "points_in_cylinder": 2606
+    },
+    {
+      "feature_id": 5082,
+      "field_value": 452,
+      "points_in_cylinder": 583
+    },
+    {
+      "feature_id": 5083,
+      "field_value": 680,
+      "points_in_cylinder": 935
+    },
+    {
+      "feature_id": 5084,
+      "field_value": 556,
+      "points_in_cylinder": 331
+    },
+    {
+      "feature_id": 5085,
+      "field_value": 530,
+      "points_in_cylinder": 40
+    },
+    {
+      "feature_id": 5087,
+      "field_value": 233,
+      "points_in_cylinder": 613
+    },
+    {
+      "feature_id": 5089,
+      "field_value": 718,
+      "points_in_cylinder": 1619
+    },
+    {
+      "feature_id": 5090,
+      "field_value": 554,
+      "points_in_cylinder": 383
+    },
+    {
+      "feature_id": 5091,
+      "field_value": 239,
+      "points_in_cylinder": 1489
+    },
+    {
+      "feature_id": 5092,
+      "field_value": 752,
+      "points_in_cylinder": 354
+    },
+    {
+      "feature_id": 5093,
+      "field_value": 188,
+      "points_in_cylinder": 3717
+    },
+    {
+      "feature_id": 5094,
+      "field_value": 432,
+      "points_in_cylinder": 2560
+    },
+    {
+      "feature_id": 5095,
+      "field_value": 521,
+      "points_in_cylinder": 212
+    },
+    {
+      "feature_id": 5096,
+      "field_value": 483,
+      "points_in_cylinder": 4559
+    },
+    {
+      "feature_id": 5097,
+      "field_value": 368,
+      "points_in_cylinder": 7176
+    },
+    {
+      "feature_id": 5098,
+      "field_value": 547,
+      "points_in_cylinder": 581
+    },
+    {
+      "feature_id": 5099,
+      "field_value": 223,
+      "points_in_cylinder": 2231
+    },
+    {
+      "feature_id": 5100,
+      "field_value": 444,
+      "points_in_cylinder": 9662
+    },
+    {
+      "feature_id": 5101,
+      "field_value": 490,
+      "points_in_cylinder": 6856
+    },
+    {
+      "feature_id": 5102,
+      "field_value": 475,
+      "points_in_cylinder": 63
+    },
+    {
+      "feature_id": 5103,
+      "field_value": 704,
+      "points_in_cylinder": 2343
+    },
+    {
+      "feature_id": 5104,
+      "field_value": 898,
+      "points_in_cylinder": 507
+    },
+    {
+      "feature_id": 5105,
+      "field_value": 191,
+      "points_in_cylinder": 298
+    },
+    {
+      "feature_id": 5106,
+      "field_value": 186,
+      "points_in_cylinder": 444
+    },
+    {
+      "feature_id": 5107,
+      "field_value": 820,
+      "points_in_cylinder": 164
+    },
+    {
+      "feature_id": 5108,
+      "field_value": 668,
+      "points_in_cylinder": 1708
+    },
+    {
+      "feature_id": 5109,
+      "field_value": 802,
+      "points_in_cylinder": 937
+    },
+    {
+      "feature_id": 5110,
+      "field_value": 501,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5111,
+      "field_value": 227,
+      "points_in_cylinder": 2237
+    },
+    {
+      "feature_id": 5112,
+      "field_value": 270,
+      "points_in_cylinder": 4432
+    },
+    {
+      "feature_id": 5114,
+      "field_value": 700,
+      "points_in_cylinder": 1995
+    },
+    {
+      "feature_id": 5115,
+      "field_value": 610,
+      "points_in_cylinder": 2626
+    },
+    {
+      "feature_id": 5116,
+      "field_value": 419,
+      "points_in_cylinder": 4196
+    },
+    {
+      "feature_id": 5117,
+      "field_value": 862,
+      "points_in_cylinder": 1279
+    },
+    {
+      "feature_id": 5118,
+      "field_value": 135,
+      "points_in_cylinder": 4494
+    },
+    {
+      "feature_id": 5119,
+      "field_value": 145,
+      "points_in_cylinder": 791
+    },
+    {
+      "feature_id": 5120,
+      "field_value": 39,
+      "points_in_cylinder": 4712
+    },
+    {
+      "feature_id": 5121,
+      "field_value": 51,
+      "points_in_cylinder": 5795
+    },
+    {
+      "feature_id": 5122,
+      "field_value": 430,
+      "points_in_cylinder": 6613
+    },
+    {
+      "feature_id": 5125,
+      "field_value": 345,
+      "points_in_cylinder": 4277
+    },
+    {
+      "feature_id": 5127,
+      "field_value": 592,
+      "points_in_cylinder": 5691
+    },
+    {
+      "feature_id": 5128,
+      "field_value": 806,
+      "points_in_cylinder": 926
+    },
+    {
+      "feature_id": 5129,
+      "field_value": 473,
+      "points_in_cylinder": 131
+    },
+    {
+      "feature_id": 5130,
+      "field_value": 359,
+      "points_in_cylinder": 4120
+    },
+    {
+      "feature_id": 5131,
+      "field_value": 209,
+      "points_in_cylinder": 230
+    },
+    {
+      "feature_id": 5132,
+      "field_value": 291,
+      "points_in_cylinder": 1433
+    },
+    {
+      "feature_id": 5133,
+      "field_value": 313,
+      "points_in_cylinder": 491
+    },
+    {
+      "feature_id": 5134,
+      "field_value": 35,
+      "points_in_cylinder": 467
+    },
+    {
+      "feature_id": 5136,
+      "field_value": 960,
+      "points_in_cylinder": 882
+    },
+    {
+      "feature_id": 5137,
+      "field_value": 892,
+      "points_in_cylinder": 2888
+    },
+    {
+      "feature_id": 5138,
+      "field_value": 605,
+      "points_in_cylinder": 158
+    },
+    {
+      "feature_id": 5140,
+      "field_value": 342,
+      "points_in_cylinder": 9830
+    },
+    {
+      "feature_id": 5144,
+      "field_value": 283,
+      "points_in_cylinder": 299
+    },
+    {
+      "feature_id": 5145,
+      "field_value": 535,
+      "points_in_cylinder": 4147
+    },
+    {
+      "feature_id": 5146,
+      "field_value": 976,
+      "points_in_cylinder": 423
+    },
+    {
+      "feature_id": 5147,
+      "field_value": 872,
+      "points_in_cylinder": 1453
+    },
+    {
+      "feature_id": 5148,
+      "field_value": 901,
+      "points_in_cylinder": 1523
+    },
+    {
+      "feature_id": 5149,
+      "field_value": 381,
+      "points_in_cylinder": 3181
+    },
+    {
+      "feature_id": 5151,
+      "field_value": 42,
+      "points_in_cylinder": 11408
+    },
+    {
+      "feature_id": 5152,
+      "field_value": 611,
+      "points_in_cylinder": 1165
+    },
+    {
+      "feature_id": 5153,
+      "field_value": 285,
+      "points_in_cylinder": 10976
+    },
+    {
+      "feature_id": 5155,
+      "field_value": 977,
+      "points_in_cylinder": 71
+    },
+    {
+      "feature_id": 5156,
+      "field_value": 201,
+      "points_in_cylinder": 8526
+    },
+    {
+      "feature_id": 5157,
+      "field_value": 304,
+      "points_in_cylinder": 8251
+    },
+    {
+      "feature_id": 5158,
+      "field_value": 382,
+      "points_in_cylinder": 4846
+    },
+    {
+      "feature_id": 5159,
+      "field_value": 603,
+      "points_in_cylinder": 2730
+    },
+    {
+      "feature_id": 5160,
+      "field_value": 617,
+      "points_in_cylinder": 9114
+    },
+    {
+      "feature_id": 5161,
+      "field_value": 192,
+      "points_in_cylinder": 1701
+    },
+    {
+      "feature_id": 5162,
+      "field_value": 424,
+      "points_in_cylinder": 2216
+    },
+    {
+      "feature_id": 5163,
+      "field_value": 910,
+      "points_in_cylinder": 472
+    },
+    {
+      "feature_id": 5167,
+      "field_value": 853,
+      "points_in_cylinder": 135
+    },
+    {
+      "feature_id": 5168,
+      "field_value": 5,
+      "points_in_cylinder": 10264
+    },
+    {
+      "feature_id": 5169,
+      "field_value": 955,
+      "points_in_cylinder": 1202
+    },
+    {
+      "feature_id": 5170,
+      "field_value": 108,
+      "points_in_cylinder": 2198
+    },
+    {
+      "feature_id": 5171,
+      "field_value": 25,
+      "points_in_cylinder": 10044
+    },
+    {
+      "feature_id": 5172,
+      "field_value": 840,
+      "points_in_cylinder": 1479
+    },
+    {
+      "feature_id": 5173,
+      "field_value": 922,
+      "points_in_cylinder": 1029
+    },
+    {
+      "feature_id": 5174,
+      "field_value": 500,
+      "points_in_cylinder": 3412
+    },
+    {
+      "feature_id": 5175,
+      "field_value": 256,
+      "points_in_cylinder": 12207
+    },
+    {
+      "feature_id": 5176,
+      "field_value": 50,
+      "points_in_cylinder": 9817
+    },
+    {
+      "feature_id": 5177,
+      "field_value": 7,
+      "points_in_cylinder": 20919
+    },
+    {
+      "feature_id": 5178,
+      "field_value": 27,
+      "points_in_cylinder": 13781
+    },
+    {
+      "feature_id": 5179,
+      "field_value": 507,
+      "points_in_cylinder": 1948
+    },
+    {
+      "feature_id": 5180,
+      "field_value": 442,
+      "points_in_cylinder": 4355
+    },
+    {
+      "feature_id": 5181,
+      "field_value": 124,
+      "points_in_cylinder": 12145
+    },
+    {
+      "feature_id": 5182,
+      "field_value": 309,
+      "points_in_cylinder": 4636
+    },
+    {
+      "feature_id": 5183,
+      "field_value": 66,
+      "points_in_cylinder": 13751
+    },
+    {
+      "feature_id": 5184,
+      "field_value": 627,
+      "points_in_cylinder": 1274
+    },
+    {
+      "feature_id": 5185,
+      "field_value": 710,
+      "points_in_cylinder": 4298
+    },
+    {
+      "feature_id": 5186,
+      "field_value": 245,
+      "points_in_cylinder": 4231
+    },
+    {
+      "feature_id": 5187,
+      "field_value": 855,
+      "points_in_cylinder": 252
+    },
+    {
+      "feature_id": 5188,
+      "field_value": 770,
+      "points_in_cylinder": 53
+    },
+    {
+      "feature_id": 5189,
+      "field_value": 505,
+      "points_in_cylinder": 4160
+    },
+    {
+      "feature_id": 5190,
+      "field_value": 255,
+      "points_in_cylinder": 2696
+    },
+    {
+      "feature_id": 5191,
+      "field_value": 685,
+      "points_in_cylinder": 1412
+    },
+    {
+      "feature_id": 5192,
+      "field_value": 205,
+      "points_in_cylinder": 5679
+    },
+    {
+      "feature_id": 5193,
+      "field_value": 367,
+      "points_in_cylinder": 4332
+    },
+    {
+      "feature_id": 5194,
+      "field_value": 761,
+      "points_in_cylinder": 331
+    },
+    {
+      "feature_id": 5195,
+      "field_value": 469,
+      "points_in_cylinder": 3943
+    },
+    {
+      "feature_id": 5196,
+      "field_value": 349,
+      "points_in_cylinder": 4419
+    },
+    {
+      "feature_id": 5197,
+      "field_value": 329,
+      "points_in_cylinder": 2672
+    },
+    {
+      "feature_id": 5198,
+      "field_value": 484,
+      "points_in_cylinder": 30
+    },
+    {
+      "feature_id": 5199,
+      "field_value": 620,
+      "points_in_cylinder": 366
+    },
+    {
+      "feature_id": 5200,
+      "field_value": 707,
+      "points_in_cylinder": 856
+    },
+    {
+      "feature_id": 5201,
+      "field_value": 297,
+      "points_in_cylinder": 7016
+    },
+    {
+      "feature_id": 5202,
+      "field_value": 421,
+      "points_in_cylinder": 87
+    },
+    {
+      "feature_id": 5203,
+      "field_value": 974,
+      "points_in_cylinder": 138
+    },
+    {
+      "feature_id": 5204,
+      "field_value": 225,
+      "points_in_cylinder": 978
+    },
+    {
+      "feature_id": 5205,
+      "field_value": 251,
+      "points_in_cylinder": 1683
+    },
+    {
+      "feature_id": 5206,
+      "field_value": 185,
+      "points_in_cylinder": 769
+    },
+    {
+      "feature_id": 5207,
+      "field_value": 653,
+      "points_in_cylinder": 42
+    },
+    {
+      "feature_id": 5208,
+      "field_value": 48,
+      "points_in_cylinder": 2182
+    },
+    {
+      "feature_id": 5209,
+      "field_value": 648,
+      "points_in_cylinder": 1150
+    },
+    {
+      "feature_id": 5210,
+      "field_value": 598,
+      "points_in_cylinder": 750
+    },
+    {
+      "feature_id": 5211,
+      "field_value": 615,
+      "points_in_cylinder": 1607
+    },
+    {
+      "feature_id": 5212,
+      "field_value": 460,
+      "points_in_cylinder": 118
+    },
+    {
+      "feature_id": 5213,
+      "field_value": 138,
+      "points_in_cylinder": 5
+    },
+    {
+      "feature_id": 5214,
+      "field_value": 162,
+      "points_in_cylinder": 18
+    },
+    {
+      "feature_id": 5215,
+      "field_value": 64,
+      "points_in_cylinder": 7
+    },
+    {
+      "feature_id": 5216,
+      "field_value": 338,
+      "points_in_cylinder": 2294
+    },
+    {
+      "feature_id": 5217,
+      "field_value": 702,
+      "points_in_cylinder": 771
+    },
+    {
+      "feature_id": 5218,
+      "field_value": 983,
+      "points_in_cylinder": 385
+    },
+    {
+      "feature_id": 5219,
+      "field_value": 91,
+      "points_in_cylinder": 1854
+    },
+    {
+      "feature_id": 5220,
+      "field_value": 558,
+      "points_in_cylinder": 1
+    },
+    {
+      "feature_id": 5221,
+      "field_value": 415,
+      "points_in_cylinder": 2935
+    },
+    {
+      "feature_id": 5222,
+      "field_value": 597,
+      "points_in_cylinder": 150
+    },
+    {
+      "feature_id": 5223,
+      "field_value": 99,
+      "points_in_cylinder": 19
+    },
+    {
+      "feature_id": 5224,
+      "field_value": 677,
+      "points_in_cylinder": 122
+    },
+    {
+      "feature_id": 5225,
+      "field_value": 793,
+      "points_in_cylinder": 38
+    },
+    {
+      "feature_id": 5226,
+      "field_value": 175,
+      "points_in_cylinder": 124
+    },
+    {
+      "feature_id": 5227,
+      "field_value": 683,
+      "points_in_cylinder": 199
+    },
+    {
+      "feature_id": 5228,
+      "field_value": 551,
+      "points_in_cylinder": 5523
+    },
+    {
+      "feature_id": 5229,
+      "field_value": 782,
+      "points_in_cylinder": 282
+    },
+    {
+      "feature_id": 5230,
+      "field_value": 392,
+      "points_in_cylinder": 4711
+    },
+    {
+      "feature_id": 5231,
+      "field_value": 198,
+      "points_in_cylinder": 2097
+    },
+    {
+      "feature_id": 5232,
+      "field_value": 26,
+      "points_in_cylinder": 1419
+    },
+    {
+      "feature_id": 5233,
+      "field_value": 644,
+      "points_in_cylinder": 211
+    },
+    {
+      "feature_id": 5234,
+      "field_value": 857,
+      "points_in_cylinder": 5
+    },
+    {
+      "feature_id": 5235,
+      "field_value": 157,
+      "points_in_cylinder": 6402
+    },
+    {
+      "feature_id": 5236,
+      "field_value": 391,
+      "points_in_cylinder": 14003
+    },
+    {
+      "feature_id": 5237,
+      "field_value": 104,
+      "points_in_cylinder": 11841
+    },
+    {
+      "feature_id": 5238,
+      "field_value": 326,
+      "points_in_cylinder": 8332
+    },
+    {
+      "feature_id": 5239,
+      "field_value": 905,
+      "points_in_cylinder": 1005
+    },
+    {
+      "feature_id": 5240,
+      "field_value": 841,
+      "points_in_cylinder": 310
+    },
+    {
+      "feature_id": 5241,
+      "field_value": 867,
+      "points_in_cylinder": 252
+    },
+    {
+      "feature_id": 5242,
+      "field_value": 405,
+      "points_in_cylinder": 6569
+    },
+    {
+      "feature_id": 5243,
+      "field_value": 190,
+      "points_in_cylinder": 2535
+    },
+    {
+      "feature_id": 5244,
+      "field_value": 62,
+      "points_in_cylinder": 5642
+    },
+    {
+      "feature_id": 5245,
+      "field_value": 93,
+      "points_in_cylinder": 4865
+    },
+    {
+      "feature_id": 5246,
+      "field_value": 208,
+      "points_in_cylinder": 3880
+    },
+    {
+      "feature_id": 5247,
+      "field_value": 559,
+      "points_in_cylinder": 1356
+    },
+    {
+      "feature_id": 5248,
+      "field_value": 228,
+      "points_in_cylinder": 2886
+    },
+    {
+      "feature_id": 5249,
+      "field_value": 564,
+      "points_in_cylinder": 2583
+    },
+    {
+      "feature_id": 5250,
+      "field_value": 306,
+      "points_in_cylinder": 6436
+    },
+    {
+      "feature_id": 5251,
+      "field_value": 446,
+      "points_in_cylinder": 3146
+    },
+    {
+      "feature_id": 5252,
+      "field_value": 425,
+      "points_in_cylinder": 4150
+    },
+    {
+      "feature_id": 5253,
+      "field_value": 277,
+      "points_in_cylinder": 2792
+    },
+    {
+      "feature_id": 5256,
+      "field_value": 238,
+      "points_in_cylinder": 36
+    },
+    {
+      "feature_id": 5257,
+      "field_value": 673,
+      "points_in_cylinder": 1589
+    },
+    {
+      "feature_id": 5258,
+      "field_value": 739,
+      "points_in_cylinder": 2081
+    },
+    {
+      "feature_id": 5259,
+      "field_value": 625,
+      "points_in_cylinder": 1965
+    },
+    {
+      "feature_id": 5260,
+      "field_value": 295,
+      "points_in_cylinder": 5244
+    },
+    {
+      "feature_id": 5261,
+      "field_value": 92,
+      "points_in_cylinder": 10528
+    },
+    {
+      "feature_id": 5262,
+      "field_value": 450,
+      "points_in_cylinder": 4018
+    },
+    {
+      "feature_id": 5263,
+      "field_value": 531,
+      "points_in_cylinder": 3620
+    },
+    {
+      "feature_id": 5264,
+      "field_value": 461,
+      "points_in_cylinder": 6744
+    },
+    {
+      "feature_id": 5265,
+      "field_value": 860,
+      "points_in_cylinder": 4500
+    },
+    {
+      "feature_id": 5266,
+      "field_value": 466,
+      "points_in_cylinder": 1540
+    },
+    {
+      "feature_id": 5267,
+      "field_value": 722,
+      "points_in_cylinder": 9
+    },
+    {
+      "feature_id": 5268,
+      "field_value": 263,
+      "points_in_cylinder": 5074
+    },
+    {
+      "feature_id": 5269,
+      "field_value": 721,
+      "points_in_cylinder": 152
+    },
+    {
+      "feature_id": 5270,
+      "field_value": 438,
+      "points_in_cylinder": 1132
+    },
+    {
+      "feature_id": 5271,
+      "field_value": 152,
+      "points_in_cylinder": 418
+    },
+    {
+      "feature_id": 5272,
+      "field_value": 498,
+      "points_in_cylinder": 144
+    },
+    {
+      "feature_id": 5273,
+      "field_value": 305,
+      "points_in_cylinder": 6126
+    },
+    {
+      "feature_id": 5274,
+      "field_value": 731,
+      "points_in_cylinder": 670
+    },
+    {
+      "feature_id": 5275,
+      "field_value": 797,
+      "points_in_cylinder": 623
+    },
+    {
+      "feature_id": 5276,
+      "field_value": 506,
+      "points_in_cylinder": 3879
+    },
+    {
+      "feature_id": 5277,
+      "field_value": 847,
+      "points_in_cylinder": 559
+    },
+    {
+      "feature_id": 5278,
+      "field_value": 961,
+      "points_in_cylinder": 20
+    },
+    {
+      "feature_id": 5279,
+      "field_value": 14,
+      "points_in_cylinder": 8339
+    },
+    {
+      "feature_id": 5280,
+      "field_value": 41,
+      "points_in_cylinder": 9093
+    },
+    {
+      "feature_id": 5281,
+      "field_value": 945,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5283,
+      "field_value": 144,
+      "points_in_cylinder": 2325
+    },
+    {
+      "feature_id": 5284,
+      "field_value": 107,
+      "points_in_cylinder": 1606
+    },
+    {
+      "feature_id": 5285,
+      "field_value": 902,
+      "points_in_cylinder": 228
+    },
+    {
+      "feature_id": 5286,
+      "field_value": 272,
+      "points_in_cylinder": 1553
+    },
+    {
+      "feature_id": 5287,
+      "field_value": 775,
+      "points_in_cylinder": 122
+    },
+    {
+      "feature_id": 5288,
+      "field_value": 307,
+      "points_in_cylinder": 1074
+    },
+    {
+      "feature_id": 5289,
+      "field_value": 360,
+      "points_in_cylinder": 15
+    },
+    {
+      "feature_id": 5290,
+      "field_value": 226,
+      "points_in_cylinder": 9226
+    },
+    {
+      "feature_id": 5291,
+      "field_value": 568,
+      "points_in_cylinder": 18
+    },
+    {
+      "feature_id": 5292,
+      "field_value": 886,
+      "points_in_cylinder": 132
+    },
+    {
+      "feature_id": 5293,
+      "field_value": 268,
+      "points_in_cylinder": 9603
+    },
+    {
+      "feature_id": 5294,
+      "field_value": 783,
+      "points_in_cylinder": 1267
+    },
+    {
+      "feature_id": 5295,
+      "field_value": 588,
+      "points_in_cylinder": 26
+    },
+    {
+      "feature_id": 5296,
+      "field_value": 294,
+      "points_in_cylinder": 647
+    },
+    {
+      "feature_id": 5298,
+      "field_value": 65,
+      "points_in_cylinder": 65
+    },
+    {
+      "feature_id": 5300,
+      "field_value": 542,
+      "points_in_cylinder": 14
+    },
+    {
+      "feature_id": 5301,
+      "field_value": 692,
+      "points_in_cylinder": 3382
+    },
+    {
+      "feature_id": 5302,
+      "field_value": 544,
+      "points_in_cylinder": 17
+    },
+    {
+      "feature_id": 5303,
+      "field_value": 448,
+      "points_in_cylinder": 2590
+    },
+    {
+      "feature_id": 5304,
+      "field_value": 123,
+      "points_in_cylinder": 7975
+    },
+    {
+      "feature_id": 5305,
+      "field_value": 903,
+      "points_in_cylinder": 364
+    },
+    {
+      "feature_id": 5306,
+      "field_value": 463,
+      "points_in_cylinder": 1173
+    },
+    {
+      "feature_id": 5307,
+      "field_value": 103,
+      "points_in_cylinder": 10092
+    },
+    {
+      "feature_id": 5308,
+      "field_value": 716,
+      "points_in_cylinder": 11
+    },
+    {
+      "feature_id": 5309,
+      "field_value": 453,
+      "points_in_cylinder": 97
+    },
+    {
+      "feature_id": 5310,
+      "field_value": 180,
+      "points_in_cylinder": 4359
+    },
+    {
+      "feature_id": 5311,
+      "field_value": 534,
+      "points_in_cylinder": 3905
+    },
+    {
+      "feature_id": 5312,
+      "field_value": 59,
+      "points_in_cylinder": 8053
+    },
+    {
+      "feature_id": 5313,
+      "field_value": 706,
+      "points_in_cylinder": 1559
+    },
+    {
+      "feature_id": 5314,
+      "field_value": 379,
+      "points_in_cylinder": 230
+    },
+    {
+      "feature_id": 5315,
+      "field_value": 649,
+      "points_in_cylinder": 242
+    },
+    {
+      "feature_id": 5316,
+      "field_value": 193,
+      "points_in_cylinder": 4994
+    },
+    {
+      "feature_id": 5317,
+      "field_value": 647,
+      "points_in_cylinder": 5746
+    },
+    {
+      "feature_id": 5318,
+      "field_value": 456,
+      "points_in_cylinder": 130
+    },
+    {
+      "feature_id": 5319,
+      "field_value": 629,
+      "points_in_cylinder": 4163
+    },
+    {
+      "feature_id": 5320,
+      "field_value": 111,
+      "points_in_cylinder": 5507
+    },
+    {
+      "feature_id": 5321,
+      "field_value": 80,
+      "points_in_cylinder": 6095
+    },
+    {
+      "feature_id": 5322,
+      "field_value": 78,
+      "points_in_cylinder": 8139
+    },
+    {
+      "feature_id": 5323,
+      "field_value": 218,
+      "points_in_cylinder": 7211
+    },
+    {
+      "feature_id": 5324,
+      "field_value": 562,
+      "points_in_cylinder": 448
+    },
+    {
+      "feature_id": 5325,
+      "field_value": 75,
+      "points_in_cylinder": 12608
+    },
+    {
+      "feature_id": 5326,
+      "field_value": 864,
+      "points_in_cylinder": 106
+    },
+    {
+      "feature_id": 5327,
+      "field_value": 907,
+      "points_in_cylinder": 541
+    },
+    {
+      "feature_id": 5328,
+      "field_value": 777,
+      "points_in_cylinder": 2003
+    },
+    {
+      "feature_id": 5329,
+      "field_value": 98,
+      "points_in_cylinder": 4490
+    },
+    {
+      "feature_id": 5330,
+      "field_value": 4,
+      "points_in_cylinder": 3996
+    },
+    {
+      "feature_id": 5331,
+      "field_value": 735,
+      "points_in_cylinder": 726
+    },
+    {
+      "feature_id": 5332,
+      "field_value": 949,
+      "points_in_cylinder": 19
+    },
+    {
+      "feature_id": 5333,
+      "field_value": 230,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5334,
+      "field_value": 624,
+      "points_in_cylinder": 672
+    },
+    {
+      "feature_id": 5335,
+      "field_value": 733,
+      "points_in_cylinder": 2994
+    },
+    {
+      "feature_id": 5336,
+      "field_value": 63,
+      "points_in_cylinder": 3895
+    },
+    {
+      "feature_id": 5337,
+      "field_value": 964,
+      "points_in_cylinder": 811
+    },
+    {
+      "feature_id": 5338,
+      "field_value": 371,
+      "points_in_cylinder": 5992
+    },
+    {
+      "feature_id": 5339,
+      "field_value": 417,
+      "points_in_cylinder": 3784
+    },
+    {
+      "feature_id": 5341,
+      "field_value": 13,
+      "points_in_cylinder": 13600
+    },
+    {
+      "feature_id": 5343,
+      "field_value": 516,
+      "points_in_cylinder": 813
+    },
+    {
+      "feature_id": 5344,
+      "field_value": 248,
+      "points_in_cylinder": 3750
+    },
+    {
+      "feature_id": 5345,
+      "field_value": 82,
+      "points_in_cylinder": 2787
+    },
+    {
+      "feature_id": 5347,
+      "field_value": 236,
+      "points_in_cylinder": 2190
+    },
+    {
+      "feature_id": 5348,
+      "field_value": 212,
+      "points_in_cylinder": 2592
+    },
+    {
+      "feature_id": 5350,
+      "field_value": 726,
+      "points_in_cylinder": 2295
+    },
+    {
+      "feature_id": 5351,
+      "field_value": 767,
+      "points_in_cylinder": 10
+    },
+    {
+      "feature_id": 5352,
+      "field_value": 112,
+      "points_in_cylinder": 3972
+    },
+    {
+      "feature_id": 5353,
+      "field_value": 809,
+      "points_in_cylinder": 1010
+    },
+    {
+      "feature_id": 5354,
+      "field_value": 284,
+      "points_in_cylinder": 6410
+    },
+    {
+      "feature_id": 5355,
+      "field_value": 115,
+      "points_in_cylinder": 3371
+    },
+    {
+      "feature_id": 5356,
+      "field_value": 672,
+      "points_in_cylinder": 180
+    },
+    {
+      "feature_id": 5357,
+      "field_value": 243,
+      "points_in_cylinder": 7768
+    },
+    {
+      "feature_id": 5358,
+      "field_value": 838,
+      "points_in_cylinder": 1317
+    },
+    {
+      "feature_id": 5359,
+      "field_value": 787,
+      "points_in_cylinder": 4273
+    },
+    {
+      "feature_id": 5360,
+      "field_value": 113,
+      "points_in_cylinder": 12541
+    },
+    {
+      "feature_id": 5361,
+      "field_value": 179,
+      "points_in_cylinder": 29
+    },
+    {
+      "feature_id": 5362,
+      "field_value": 83,
+      "points_in_cylinder": 5238
+    },
+    {
+      "feature_id": 5363,
+      "field_value": 142,
+      "points_in_cylinder": 11426
+    },
+    {
+      "feature_id": 5364,
+      "field_value": 711,
+      "points_in_cylinder": 287
+    },
+    {
+      "feature_id": 5365,
+      "field_value": 636,
+      "points_in_cylinder": 4140
+    },
+    {
+      "feature_id": 5366,
+      "field_value": 918,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5367,
+      "field_value": 812,
+      "points_in_cylinder": 6
+    },
+    {
+      "feature_id": 5368,
+      "field_value": 47,
+      "points_in_cylinder": 5701
+    },
+    {
+      "feature_id": 5369,
+      "field_value": 697,
+      "points_in_cylinder": 2592
+    },
+    {
+      "feature_id": 5370,
+      "field_value": 71,
+      "points_in_cylinder": 14446
+    },
+    {
+      "feature_id": 5371,
+      "field_value": 715,
+      "points_in_cylinder": 834
+    },
+    {
+      "feature_id": 5372,
+      "field_value": 852,
+      "points_in_cylinder": 1730
+    },
+    {
+      "feature_id": 5373,
+      "field_value": 963,
+      "points_in_cylinder": 279
+    },
+    {
+      "feature_id": 5374,
+      "field_value": 899,
+      "points_in_cylinder": 395
+    },
+    {
+      "feature_id": 5375,
+      "field_value": 211,
+      "points_in_cylinder": 1395
+    },
+    {
+      "feature_id": 5376,
+      "field_value": 596,
+      "points_in_cylinder": 6188
+    },
+    {
+      "feature_id": 5377,
+      "field_value": 253,
+      "points_in_cylinder": 10440
+    },
+    {
+      "feature_id": 5378,
+      "field_value": 3,
+      "points_in_cylinder": 7116
+    },
+    {
+      "feature_id": 5379,
+      "field_value": 821,
+      "points_in_cylinder": 1111
+    },
+    {
+      "feature_id": 5380,
+      "field_value": 376,
+      "points_in_cylinder": 4588
+    },
+    {
+      "feature_id": 5381,
+      "field_value": 24,
+      "points_in_cylinder": 4058
+    },
+    {
+      "feature_id": 5382,
+      "field_value": 172,
+      "points_in_cylinder": 2433
+    },
+    {
+      "feature_id": 5383,
+      "field_value": 168,
+      "points_in_cylinder": 7530
+    },
+    {
+      "feature_id": 5384,
+      "field_value": 133,
+      "points_in_cylinder": 6228
+    },
+    {
+      "feature_id": 5385,
+      "field_value": 167,
+      "points_in_cylinder": 2658
+    },
+    {
+      "feature_id": 5386,
+      "field_value": 454,
+      "points_in_cylinder": 25
+    },
+    {
+      "feature_id": 5387,
+      "field_value": 343,
+      "points_in_cylinder": 6
+    },
+    {
+      "feature_id": 5388,
+      "field_value": 116,
+      "points_in_cylinder": 751
+    },
+    {
+      "feature_id": 5389,
+      "field_value": 196,
+      "points_in_cylinder": 631
+    },
+    {
+      "feature_id": 5390,
+      "field_value": 266,
+      "points_in_cylinder": 925
+    },
+    {
+      "feature_id": 5391,
+      "field_value": 423,
+      "points_in_cylinder": 964
+    },
+    {
+      "feature_id": 5392,
+      "field_value": 485,
+      "points_in_cylinder": 1051
+    },
+    {
+      "feature_id": 5393,
+      "field_value": 136,
+      "points_in_cylinder": 5438
+    },
+    {
+      "feature_id": 5394,
+      "field_value": 499,
+      "points_in_cylinder": 2396
+    },
+    {
+      "feature_id": 5395,
+      "field_value": 496,
+      "points_in_cylinder": 131
+    },
+    {
+      "feature_id": 5396,
+      "field_value": 271,
+      "points_in_cylinder": 2888
+    },
+    {
+      "feature_id": 5397,
+      "field_value": 906,
+      "points_in_cylinder": 1
+    },
+    {
+      "feature_id": 5398,
+      "field_value": 19,
+      "points_in_cylinder": 33
+    },
+    {
+      "feature_id": 5399,
+      "field_value": 645,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5400,
+      "field_value": 273,
+      "points_in_cylinder": 350
+    },
+    {
+      "feature_id": 5401,
+      "field_value": 129,
+      "points_in_cylinder": 14024
+    },
+    {
+      "feature_id": 5402,
+      "field_value": 202,
+      "points_in_cylinder": 434
+    },
+    {
+      "feature_id": 5403,
+      "field_value": 744,
+      "points_in_cylinder": 2279
+    },
+    {
+      "feature_id": 5404,
+      "field_value": 781,
+      "points_in_cylinder": 231
+    },
+    {
+      "feature_id": 5405,
+      "field_value": 361,
+      "points_in_cylinder": 629
+    },
+    {
+      "feature_id": 5406,
+      "field_value": 557,
+      "points_in_cylinder": 31
+    },
+    {
+      "feature_id": 5407,
+      "field_value": 998,
+      "points_in_cylinder": 60
+    },
+    {
+      "feature_id": 5408,
+      "field_value": 763,
+      "points_in_cylinder": 198
+    },
+    {
+      "feature_id": 5409,
+      "field_value": 494,
+      "points_in_cylinder": 6791
+    },
+    {
+      "feature_id": 5410,
+      "field_value": 578,
+      "points_in_cylinder": 12
+    },
+    {
+      "feature_id": 5411,
+      "field_value": 489,
+      "points_in_cylinder": 5550
+    },
+    {
+      "feature_id": 5412,
+      "field_value": 790,
+      "points_in_cylinder": 251
+    },
+    {
+      "feature_id": 5413,
+      "field_value": 437,
+      "points_in_cylinder": 3872
+    },
+    {
+      "feature_id": 5414,
+      "field_value": 17,
+      "points_in_cylinder": 5870
+    },
+    {
+      "feature_id": 5415,
+      "field_value": 606,
+      "points_in_cylinder": 36
+    },
+    {
+      "feature_id": 5416,
+      "field_value": 916,
+      "points_in_cylinder": 1218
+    },
+    {
+      "feature_id": 5417,
+      "field_value": 411,
+      "points_in_cylinder": 7368
+    },
+    {
+      "feature_id": 5418,
+      "field_value": 772,
+      "points_in_cylinder": 181
+    },
+    {
+      "feature_id": 5419,
+      "field_value": 602,
+      "points_in_cylinder": 2371
+    },
+    {
+      "feature_id": 5420,
+      "field_value": 756,
+      "points_in_cylinder": 1799
+    },
+    {
+      "feature_id": 5421,
+      "field_value": 317,
+      "points_in_cylinder": 13
+    },
+    {
+      "feature_id": 5422,
+      "field_value": 652,
+      "points_in_cylinder": 388
+    },
+    {
+      "feature_id": 5423,
+      "field_value": 870,
+      "points_in_cylinder": 4
+    },
+    {
+      "feature_id": 5424,
+      "field_value": 799,
+      "points_in_cylinder": 1680
+    },
+    {
+      "feature_id": 5425,
+      "field_value": 86,
+      "points_in_cylinder": 19559
+    },
+    {
+      "feature_id": 5426,
+      "field_value": 879,
+      "points_in_cylinder": 1477
+    },
+    {
+      "feature_id": 5427,
+      "field_value": 408,
+      "points_in_cylinder": 3459
+    },
+    {
+      "feature_id": 5428,
+      "field_value": 982,
+      "points_in_cylinder": 154
+    },
+    {
+      "feature_id": 5429,
+      "field_value": 686,
+      "points_in_cylinder": 2183
+    },
+    {
+      "feature_id": 5431,
+      "field_value": 385,
+      "points_in_cylinder": 7150
+    },
+    {
+      "feature_id": 5432,
+      "field_value": 555,
+      "points_in_cylinder": 103
+    },
+    {
+      "feature_id": 5433,
+      "field_value": 730,
+      "points_in_cylinder": 1115
+    },
+    {
+      "feature_id": 5434,
+      "field_value": 257,
+      "points_in_cylinder": 4663
+    },
+    {
+      "feature_id": 5436,
+      "field_value": 643,
+      "points_in_cylinder": 146
+    },
+    {
+      "feature_id": 5437,
+      "field_value": 844,
+      "points_in_cylinder": 1019
+    },
+    {
+      "feature_id": 5439,
+      "field_value": 818,
+      "points_in_cylinder": 1699
+    },
+    {
+      "feature_id": 5440,
+      "field_value": 729,
+      "points_in_cylinder": 109
+    },
+    {
+      "feature_id": 5441,
+      "field_value": 569,
+      "points_in_cylinder": 61
+    },
+    {
+      "feature_id": 5442,
+      "field_value": 176,
+      "points_in_cylinder": 6035
+    },
+    {
+      "feature_id": 5443,
+      "field_value": 529,
+      "points_in_cylinder": 5
+    },
+    {
+      "feature_id": 5444,
+      "field_value": 519,
+      "points_in_cylinder": 4196
+    },
+    {
+      "feature_id": 5445,
+      "field_value": 276,
+      "points_in_cylinder": 4743
+    },
+    {
+      "feature_id": 5446,
+      "field_value": 318,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5447,
+      "field_value": 344,
+      "points_in_cylinder": 7080
+    },
+    {
+      "feature_id": 5448,
+      "field_value": 616,
+      "points_in_cylinder": 2734
+    },
+    {
+      "feature_id": 5449,
+      "field_value": 695,
+      "points_in_cylinder": 666
+    },
+    {
+      "feature_id": 5450,
+      "field_value": 747,
+      "points_in_cylinder": 439
+    },
+    {
+      "feature_id": 5451,
+      "field_value": 356,
+      "points_in_cylinder": 272
+    },
+    {
+      "feature_id": 5452,
+      "field_value": 470,
+      "points_in_cylinder": 1936
+    },
+    {
+      "feature_id": 5453,
+      "field_value": 667,
+      "points_in_cylinder": 677
+    },
+    {
+      "feature_id": 5454,
+      "field_value": 327,
+      "points_in_cylinder": 44
+    },
+    {
+      "feature_id": 5455,
+      "field_value": 527,
+      "points_in_cylinder": 1329
+    },
+    {
+      "feature_id": 5456,
+      "field_value": 533,
+      "points_in_cylinder": 840
+    },
+    {
+      "feature_id": 5457,
+      "field_value": 579,
+      "points_in_cylinder": 71
+    },
+    {
+      "feature_id": 5458,
+      "field_value": 237,
+      "points_in_cylinder": 10701
+    },
+    {
+      "feature_id": 5459,
+      "field_value": 76,
+      "points_in_cylinder": 6216
+    },
+    {
+      "feature_id": 5460,
+      "field_value": 482,
+      "points_in_cylinder": 1298
+    },
+    {
+      "feature_id": 5461,
+      "field_value": 915,
+      "points_in_cylinder": 3
+    },
+    {
+      "feature_id": 5462,
+      "field_value": 804,
+      "points_in_cylinder": 32
+    },
+    {
+      "feature_id": 5463,
+      "field_value": 780,
+      "points_in_cylinder": 60
+    },
+    {
+      "feature_id": 5464,
+      "field_value": 403,
+      "points_in_cylinder": 894
+    },
+    {
+      "feature_id": 5465,
+      "field_value": 340,
+      "points_in_cylinder": 282
+    },
+    {
+      "feature_id": 5466,
+      "field_value": 843,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5468,
+      "field_value": 449,
+      "points_in_cylinder": 6
+    },
+    {
+      "feature_id": 5469,
+      "field_value": 754,
+      "points_in_cylinder": 272
+    },
+    {
+      "feature_id": 5470,
+      "field_value": 771,
+      "points_in_cylinder": 178
+    },
+    {
+      "feature_id": 5471,
+      "field_value": 21,
+      "points_in_cylinder": 12306
+    },
+    {
+      "feature_id": 5472,
+      "field_value": 44,
+      "points_in_cylinder": 9791
+    },
+    {
+      "feature_id": 5473,
+      "field_value": 215,
+      "points_in_cylinder": 4355
+    },
+    {
+      "feature_id": 5474,
+      "field_value": 416,
+      "points_in_cylinder": 3400
+    },
+    {
+      "feature_id": 5475,
+      "field_value": 479,
+      "points_in_cylinder": 3815
+    },
+    {
+      "feature_id": 5476,
+      "field_value": 280,
+      "points_in_cylinder": 4301
+    },
+    {
+      "feature_id": 5477,
+      "field_value": 315,
+      "points_in_cylinder": 2005
+    },
+    {
+      "feature_id": 5478,
+      "field_value": 128,
+      "points_in_cylinder": 3579
+    },
+    {
+      "feature_id": 5479,
+      "field_value": 303,
+      "points_in_cylinder": 1130
+    },
+    {
+      "feature_id": 5480,
+      "field_value": 634,
+      "points_in_cylinder": 2296
+    },
+    {
+      "feature_id": 5481,
+      "field_value": 426,
+      "points_in_cylinder": 3560
+    },
+    {
+      "feature_id": 5482,
+      "field_value": 789,
+      "points_in_cylinder": 578
+    },
+    {
+      "feature_id": 5483,
+      "field_value": 332,
+      "points_in_cylinder": 4278
+    },
+    {
+      "feature_id": 5484,
+      "field_value": 57,
+      "points_in_cylinder": 6504
+    },
+    {
+      "feature_id": 5485,
+      "field_value": 428,
+      "points_in_cylinder": 3460
+    },
+    {
+      "feature_id": 5486,
+      "field_value": 541,
+      "points_in_cylinder": 3855
+    },
+    {
+      "feature_id": 5487,
+      "field_value": 2,
+      "points_in_cylinder": 456
+    },
+    {
+      "feature_id": 5488,
+      "field_value": 11,
+      "points_in_cylinder": 6560
+    },
+    {
+      "feature_id": 5489,
+      "field_value": 274,
+      "points_in_cylinder": 3427
+    },
+    {
+      "feature_id": 5490,
+      "field_value": 613,
+      "points_in_cylinder": 1196
+    },
+    {
+      "feature_id": 5491,
+      "field_value": 40,
+      "points_in_cylinder": 8693
+    },
+    {
+      "feature_id": 5492,
+      "field_value": 786,
+      "points_in_cylinder": 2073
+    },
+    {
+      "feature_id": 5493,
+      "field_value": 691,
+      "points_in_cylinder": 1098
+    },
+    {
+      "feature_id": 5494,
+      "field_value": 96,
+      "points_in_cylinder": 5531
+    },
+    {
+      "feature_id": 5495,
+      "field_value": 525,
+      "points_in_cylinder": 88
+    },
+    {
+      "feature_id": 5496,
+      "field_value": 214,
+      "points_in_cylinder": 4810
+    },
+    {
+      "feature_id": 5497,
+      "field_value": 199,
+      "points_in_cylinder": 7684
+    },
+    {
+      "feature_id": 5498,
+      "field_value": 478,
+      "points_in_cylinder": 116
+    },
+    {
+      "feature_id": 5499,
+      "field_value": 513,
+      "points_in_cylinder": 3949
+    },
+    {
+      "feature_id": 5500,
+      "field_value": 224,
+      "points_in_cylinder": 7690
+    },
+    {
+      "feature_id": 5501,
+      "field_value": 552,
+      "points_in_cylinder": 4937
+    },
+    {
+      "feature_id": 5502,
+      "field_value": 220,
+      "points_in_cylinder": 100
+    },
+    {
+      "feature_id": 5503,
+      "field_value": 335,
+      "points_in_cylinder": 8370
+    },
+    {
+      "feature_id": 5504,
+      "field_value": 15,
+      "points_in_cylinder": 4393
+    },
+    {
+      "feature_id": 5505,
+      "field_value": 873,
+      "points_in_cylinder": 22
+    },
+    {
+      "feature_id": 5506,
+      "field_value": 607,
+      "points_in_cylinder": 43
+    },
+    {
+      "feature_id": 5507,
+      "field_value": 803,
+      "points_in_cylinder": 3210
+    },
+    {
+      "feature_id": 5508,
+      "field_value": 929,
+      "points_in_cylinder": 317
+    },
+    {
+      "feature_id": 5509,
+      "field_value": 187,
+      "points_in_cylinder": 4331
+    },
+    {
+      "feature_id": 5510,
+      "field_value": 312,
+      "points_in_cylinder": 8014
+    },
+    {
+      "feature_id": 5511,
+      "field_value": 125,
+      "points_in_cylinder": 364
+    },
+    {
+      "feature_id": 5512,
+      "field_value": 370,
+      "points_in_cylinder": 1114
+    },
+    {
+      "feature_id": 5513,
+      "field_value": 127,
+      "points_in_cylinder": 191
+    },
+    {
+      "feature_id": 5514,
+      "field_value": 207,
+      "points_in_cylinder": 7750
+    },
+    {
+      "feature_id": 5515,
+      "field_value": 147,
+      "points_in_cylinder": 6477
+    },
+    {
+      "feature_id": 5516,
+      "field_value": 383,
+      "points_in_cylinder": 2744
+    },
+    {
+      "feature_id": 5517,
+      "field_value": 703,
+      "points_in_cylinder": 3665
+    },
+    {
+      "feature_id": 5518,
+      "field_value": 641,
+      "points_in_cylinder": 7153
+    },
+    {
+      "feature_id": 5519,
+      "field_value": 823,
+      "points_in_cylinder": 1025
+    },
+    {
+      "feature_id": 5520,
+      "field_value": 119,
+      "points_in_cylinder": 1098
+    },
+    {
+      "feature_id": 5521,
+      "field_value": 149,
+      "points_in_cylinder": 2055
+    },
+    {
+      "feature_id": 5522,
+      "field_value": 139,
+      "points_in_cylinder": 2232
+    },
+    {
+      "feature_id": 5523,
+      "field_value": 203,
+      "points_in_cylinder": 183
+    },
+    {
+      "feature_id": 5524,
+      "field_value": 194,
+      "points_in_cylinder": 4898
+    },
+    {
+      "feature_id": 5525,
+      "field_value": 439,
+      "points_in_cylinder": 2245
+    },
+    {
+      "feature_id": 5526,
+      "field_value": 765,
+      "points_in_cylinder": 530
+    },
+    {
+      "feature_id": 5527,
+      "field_value": 759,
+      "points_in_cylinder": 968
+    },
+    {
+      "feature_id": 5528,
+      "field_value": 650,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5529,
+      "field_value": 462,
+      "points_in_cylinder": 2793
+    },
+    {
+      "feature_id": 5530,
+      "field_value": 351,
+      "points_in_cylinder": 2181
+    },
+    {
+      "feature_id": 5531,
+      "field_value": 402,
+      "points_in_cylinder": 1411
+    },
+    {
+      "feature_id": 5532,
+      "field_value": 353,
+      "points_in_cylinder": 5626
+    },
+    {
+      "feature_id": 5533,
+      "field_value": 60,
+      "points_in_cylinder": 9805
+    },
+    {
+      "feature_id": 5534,
+      "field_value": 30,
+      "points_in_cylinder": 6977
+    },
+    {
+      "feature_id": 5535,
+      "field_value": 32,
+      "points_in_cylinder": 6978
+    },
+    {
+      "feature_id": 5536,
+      "field_value": 52,
+      "points_in_cylinder": 6475
+    },
+    {
+      "feature_id": 5537,
+      "field_value": 401,
+      "points_in_cylinder": 7933
+    },
+    {
+      "feature_id": 5538,
+      "field_value": 130,
+      "points_in_cylinder": 14519
+    },
+    {
+      "feature_id": 5539,
+      "field_value": 189,
+      "points_in_cylinder": 15092
+    },
+    {
+      "feature_id": 5540,
+      "field_value": 480,
+      "points_in_cylinder": 51
+    },
+    {
+      "feature_id": 5541,
+      "field_value": 737,
+      "points_in_cylinder": 2311
+    },
+    {
+      "feature_id": 5542,
+      "field_value": 28,
+      "points_in_cylinder": 2714
+    },
+    {
+      "feature_id": 5543,
+      "field_value": 788,
+      "points_in_cylinder": 1627
+    },
+    {
+      "feature_id": 5544,
+      "field_value": 250,
+      "points_in_cylinder": 4249
+    },
+    {
+      "feature_id": 5545,
+      "field_value": 328,
+      "points_in_cylinder": 7124
+    },
+    {
+      "feature_id": 5546,
+      "field_value": 265,
+      "points_in_cylinder": 115
+    },
+    {
+      "feature_id": 5547,
+      "field_value": 8,
+      "points_in_cylinder": 15657
+    },
+    {
+      "feature_id": 5548,
+      "field_value": 572,
+      "points_in_cylinder": 3692
+    },
+    {
+      "feature_id": 5549,
+      "field_value": 372,
+      "points_in_cylinder": 6548
+    },
+    {
+      "feature_id": 5550,
+      "field_value": 684,
+      "points_in_cylinder": 2011
+    },
+    {
+      "feature_id": 5551,
+      "field_value": 593,
+      "points_in_cylinder": 2163
+    },
+    {
+      "feature_id": 5552,
+      "field_value": 778,
+      "points_in_cylinder": 1513
+    },
+    {
+      "feature_id": 5553,
+      "field_value": 795,
+      "points_in_cylinder": 2355
+    },
+    {
+      "feature_id": 5554,
+      "field_value": 18,
+      "points_in_cylinder": 3688
+    },
+    {
+      "feature_id": 5555,
+      "field_value": 837,
+      "points_in_cylinder": 1848
+    },
+    {
+      "feature_id": 5556,
+      "field_value": 757,
+      "points_in_cylinder": 1484
+    },
+    {
+      "feature_id": 5558,
+      "field_value": 29,
+      "points_in_cylinder": 13323
+    },
+    {
+      "feature_id": 5559,
+      "field_value": 36,
+      "points_in_cylinder": 4900
+    },
+    {
+      "feature_id": 5560,
+      "field_value": 77,
+      "points_in_cylinder": 5799
+    },
+    {
+      "feature_id": 5561,
+      "field_value": 435,
+      "points_in_cylinder": 1918
+    },
+    {
+      "feature_id": 5562,
+      "field_value": 467,
+      "points_in_cylinder": 2566
+    },
+    {
+      "feature_id": 5563,
+      "field_value": 545,
+      "points_in_cylinder": 3753
+    },
+    {
+      "feature_id": 5564,
+      "field_value": 46,
+      "points_in_cylinder": 2640
+    },
+    {
+      "feature_id": 5565,
+      "field_value": 210,
+      "points_in_cylinder": 2181
+    },
+    {
+      "feature_id": 5566,
+      "field_value": 488,
+      "points_in_cylinder": 1925
+    },
+    {
+      "feature_id": 5567,
+      "field_value": 509,
+      "points_in_cylinder": 1603
+    },
+    {
+      "feature_id": 5568,
+      "field_value": 662,
+      "points_in_cylinder": 203
+    },
+    {
+      "feature_id": 5569,
+      "field_value": 287,
+      "points_in_cylinder": 2052
+    },
+    {
+      "feature_id": 5570,
+      "field_value": 206,
+      "points_in_cylinder": 159
+    },
+    {
+      "feature_id": 5571,
+      "field_value": 626,
+      "points_in_cylinder": 3414
+    },
+    {
+      "feature_id": 5572,
+      "field_value": 457,
+      "points_in_cylinder": 249
+    },
+    {
+      "feature_id": 5574,
+      "field_value": 275,
+      "points_in_cylinder": 3132
+    },
+    {
+      "feature_id": 5575,
+      "field_value": 61,
+      "points_in_cylinder": 5361
+    },
+    {
+      "feature_id": 5576,
+      "field_value": 714,
+      "points_in_cylinder": 138
+    },
+    {
+      "feature_id": 5577,
+      "field_value": 154,
+      "points_in_cylinder": 3256
+    },
+    {
+      "feature_id": 5578,
+      "field_value": 355,
+      "points_in_cylinder": 2365
+    },
+    {
+      "feature_id": 5579,
+      "field_value": 728,
+      "points_in_cylinder": 75
+    },
+    {
+      "feature_id": 5580,
+      "field_value": 863,
+      "points_in_cylinder": 56
+    },
+    {
+      "feature_id": 5581,
+      "field_value": 311,
+      "points_in_cylinder": 558
+    },
+    {
+      "feature_id": 5582,
+      "field_value": 290,
+      "points_in_cylinder": 4704
+    },
+    {
+      "feature_id": 5584,
+      "field_value": 320,
+      "points_in_cylinder": 2787
+    },
+    {
+      "feature_id": 5585,
+      "field_value": 165,
+      "points_in_cylinder": 2552
+    },
+    {
+      "feature_id": 5586,
+      "field_value": 599,
+      "points_in_cylinder": 1884
+    },
+    {
+      "feature_id": 5587,
+      "field_value": 815,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5588,
+      "field_value": 749,
+      "points_in_cylinder": 176
+    },
+    {
+      "feature_id": 5589,
+      "field_value": 23,
+      "points_in_cylinder": 18345
+    },
+    {
+      "feature_id": 5590,
+      "field_value": 410,
+      "points_in_cylinder": 6908
+    },
+    {
+      "feature_id": 5591,
+      "field_value": 642,
+      "points_in_cylinder": 5120
+    },
+    {
+      "feature_id": 5592,
+      "field_value": 390,
+      "points_in_cylinder": 1865
+    },
+    {
+      "feature_id": 5593,
+      "field_value": 148,
+      "points_in_cylinder": 1429
+    },
+    {
+      "feature_id": 5594,
+      "field_value": 170,
+      "points_in_cylinder": 3666
+    },
+    {
+      "feature_id": 5595,
+      "field_value": 249,
+      "points_in_cylinder": 3319
+    },
+    {
+      "feature_id": 5596,
+      "field_value": 330,
+      "points_in_cylinder": 252
+    },
+    {
+      "feature_id": 5597,
+      "field_value": 565,
+      "points_in_cylinder": 1247
+    },
+    {
+      "feature_id": 5598,
+      "field_value": 324,
+      "points_in_cylinder": 30
+    },
+    {
+      "feature_id": 5599,
+      "field_value": 374,
+      "points_in_cylinder": 12
+    },
+    {
+      "feature_id": 5600,
+      "field_value": 503,
+      "points_in_cylinder": 81
+    },
+    {
+      "feature_id": 5601,
+      "field_value": 33,
+      "points_in_cylinder": 138
+    },
+    {
+      "feature_id": 5602,
+      "field_value": 890,
+      "points_in_cylinder": 62
+    },
+    {
+      "feature_id": 5603,
+      "field_value": 526,
+      "points_in_cylinder": 69
+    },
+    {
+      "feature_id": 5605,
+      "field_value": 580,
+      "points_in_cylinder": 3029
+    },
+    {
+      "feature_id": 5606,
+      "field_value": 143,
+      "points_in_cylinder": 3060
+    },
+    {
+      "feature_id": 5607,
+      "field_value": 708,
+      "points_in_cylinder": 3839
+    },
+    {
+      "feature_id": 5608,
+      "field_value": 337,
+      "points_in_cylinder": 3969
+    },
+    {
+      "feature_id": 5609,
+      "field_value": 563,
+      "points_in_cylinder": 2544
+    },
+    {
+      "feature_id": 5610,
+      "field_value": 495,
+      "points_in_cylinder": 3473
+    },
+    {
+      "feature_id": 5613,
+      "field_value": 560,
+      "points_in_cylinder": 1364
+    },
+    {
+      "feature_id": 5614,
+      "field_value": 566,
+      "points_in_cylinder": 100
+    },
+    {
+      "feature_id": 5615,
+      "field_value": 431,
+      "points_in_cylinder": 3766
+    },
+    {
+      "feature_id": 5616,
+      "field_value": 459,
+      "points_in_cylinder": 9
+    },
+    {
+      "feature_id": 5617,
+      "field_value": 779,
+      "points_in_cylinder": 1305
+    },
+    {
+      "feature_id": 5618,
+      "field_value": 639,
+      "points_in_cylinder": 1404
+    },
+    {
+      "feature_id": 5619,
+      "field_value": 325,
+      "points_in_cylinder": 28
+    },
+    {
+      "feature_id": 5620,
+      "field_value": 585,
+      "points_in_cylinder": 3329
+    },
+    {
+      "feature_id": 5621,
+      "field_value": 769,
+      "points_in_cylinder": 1862
+    },
+    {
+      "feature_id": 5622,
+      "field_value": 678,
+      "points_in_cylinder": 1201
+    },
+    {
+      "feature_id": 5623,
+      "field_value": 762,
+      "points_in_cylinder": 203
+    },
+    {
+      "feature_id": 5624,
+      "field_value": 151,
+      "points_in_cylinder": 6651
+    },
+    {
+      "feature_id": 5625,
+      "field_value": 679,
+      "points_in_cylinder": 3487
+    },
+    {
+      "feature_id": 5626,
+      "field_value": 404,
+      "points_in_cylinder": 4079
+    },
+    {
+      "feature_id": 5627,
+      "field_value": 510,
+      "points_in_cylinder": 3773
+    },
+    {
+      "feature_id": 5628,
+      "field_value": 323,
+      "points_in_cylinder": 12118
+    },
+    {
+      "feature_id": 5629,
+      "field_value": 826,
+      "points_in_cylinder": 1143
+    },
+    {
+      "feature_id": 5630,
+      "field_value": 987,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5631,
+      "field_value": 380,
+      "points_in_cylinder": 1149
+    },
+    {
+      "feature_id": 5633,
+      "field_value": 95,
+      "points_in_cylinder": 10599
+    },
+    {
+      "feature_id": 5634,
+      "field_value": 414,
+      "points_in_cylinder": 3734
+    },
+    {
+      "feature_id": 5635,
+      "field_value": 267,
+      "points_in_cylinder": 2391
+    },
+    {
+      "feature_id": 5636,
+      "field_value": 817,
+      "points_in_cylinder": 348
+    },
+    {
+      "feature_id": 5637,
+      "field_value": 174,
+      "points_in_cylinder": 3815
+    },
+    {
+      "feature_id": 5639,
+      "field_value": 222,
+      "points_in_cylinder": 11812
+    },
+    {
+      "feature_id": 5640,
+      "field_value": 54,
+      "points_in_cylinder": 6678
+    },
+    {
+      "feature_id": 5641,
+      "field_value": 810,
+      "points_in_cylinder": 2
+    },
+    {
+      "feature_id": 5642,
+      "field_value": 575,
+      "points_in_cylinder": 54
+    },
+    {
+      "feature_id": 5643,
+      "field_value": 736,
+      "points_in_cylinder": 2644
+    },
+    {
+      "feature_id": 5644,
+      "field_value": 74,
+      "points_in_cylinder": 4269
+    },
+    {
+      "feature_id": 5645,
+      "field_value": 455,
+      "points_in_cylinder": 2852
+    },
+    {
+      "feature_id": 5646,
+      "field_value": 378,
+      "points_in_cylinder": 4107
+    },
+    {
+      "feature_id": 5647,
+      "field_value": 589,
+      "points_in_cylinder": 1065
+    },
+    {
+      "feature_id": 5648,
+      "field_value": 418,
+      "points_in_cylinder": 5
+    },
+    {
+      "feature_id": 5650,
+      "field_value": 481,
+      "points_in_cylinder": 316
+    },
+    {
+      "feature_id": 5651,
+      "field_value": 85,
+      "points_in_cylinder": 7303
+    },
+    {
+      "feature_id": 5652,
+      "field_value": 120,
+      "points_in_cylinder": 5480
+    },
+    {
+      "feature_id": 5653,
+      "field_value": 389,
+      "points_in_cylinder": 1130
+    },
+    {
+      "feature_id": 5654,
+      "field_value": 660,
+      "points_in_cylinder": 708
+    },
+    {
+      "feature_id": 5655,
+      "field_value": 567,
+      "points_in_cylinder": 3199
+    },
+    {
+      "feature_id": 5656,
+      "field_value": 553,
+      "points_in_cylinder": 1835
+    },
+    {
+      "feature_id": 5657,
+      "field_value": 712,
+      "points_in_cylinder": 3915
+    },
+    {
+      "feature_id": 5658,
+      "field_value": 31,
+      "points_in_cylinder": 14341
+    },
+    {
+      "feature_id": 5659,
+      "field_value": 659,
+      "points_in_cylinder": 1
+    },
+    {
+      "feature_id": 5660,
+      "field_value": 262,
+      "points_in_cylinder": 1561
+    },
+    {
+      "feature_id": 5661,
+      "field_value": 387,
+      "points_in_cylinder": 20
+    },
+    {
+      "feature_id": 5662,
+      "field_value": 664,
+      "points_in_cylinder": 3768
+    },
+    {
+      "feature_id": 5663,
+      "field_value": 81,
+      "points_in_cylinder": 6466
     }
   ],
   "unmatched_features": [
-    4810,
-    4811,
-    4835,
-    4859,
-    4860,
-    4861,
-    4864,
-    4866,
-    4867,
-    4882,
-    4887,
-    4891,
-    4892,
     4893,
-    4905,
     4913,
-    4915,
-    4918,
-    4922,
-    4923,
-    4924,
-    4927,
+    4931,
+    4940,
+    4941,
     4942,
     4943,
+    4944,
+    4945,
     4947,
-    4953,
-    4993,
-    5012,
-    5013,
-    5019,
-    5027,
-    5032,
+    4959,
+    4962,
+    4963,
+    4969,
+    4970,
+    4971,
+    4972,
+    4973,
+    4980,
+    4985,
+    5005,
+    5006,
+    5040,
     5041,
-    5045,
+    5043,
     5046,
-    5047,
-    5051,
-    5052,
-    5056,
-    5063,
-    5075,
-    5080,
+    5053,
+    5060,
+    5078,
     5086,
-    5092,
-    5105,
-    5106,
-    5109,
-    5117,
+    5088,
+    5113,
+    5123,
+    5124,
     5126,
-    5131,
-    5132,
-    5134,
     5135,
-    5136,
-    5137,
-    5144,
-    5146,
-    5148,
+    5139,
     5150,
-    5159,
-    5161,
-    5162,
-    5163,
-    5170,
-    5172,
-    5173,
-    5190,
-    5196,
-    5202,
-    5203,
-    5204,
-    5211,
-    5212,
-    5213,
-    5214,
-    5216,
-    5219,
-    5220,
-    5222,
-    5223,
-    5229,
-    5234,
-    5243,
-    5247,
-    5256,
-    5265,
-    5268,
-    5274,
-    5275,
-    5281,
-    5283,
-    5285,
-    5292,
-    5294,
-    5296,
+    5154,
+    5164,
+    5165,
+    5166,
+    5254,
+    5255,
+    5282,
     5297,
-    5298,
-    5304,
-    5305,
-    5308,
-    5309,
-    5314,
-    5315,
-    5326,
-    5327,
-    5328,
-    5336,
+    5299,
     5340,
+    5342,
+    5346,
     5349,
-    5352,
-    5367,
-    5373,
-    5375,
-    5382,
-    5388,
-    5389,
-    5393,
-    5394,
-    5396,
-    5434,
-    5450,
-    5502,
-    5520,
-    5526,
-    5531,
-    5541,
-    5544,
-    5548,
+    5430,
+    5435,
+    5438,
     5557,
-    5561,
-    5562,
-    5566,
-    5568,
     5573,
-    5576,
-    5582,
-    5594,
-    5602,
-    5606,
-    5607,
+    5583,
+    5604,
+    5611,
+    5612,
     5632,
-    5635,
-    5642,
-    5643,
-    5647,
-    5649,
-    5650,
-    5656
+    5638,
+    5649
   ],
-  "unmatched_field_values": [
-    26,
-    27,
-    29,
-    36,
-    38,
-    53,
-    54,
-    56,
-    59,
-    76,
-    77,
-    84,
-    90,
-    93,
+  "unassigned_field_values": [
+    10,
+    22,
+    43,
+    49,
+    79,
+    97,
+    101,
     105,
-    109,
-    110,
-    112,
-    114,
-    116,
-    123,
-    129,
-    135,
-    140,
-    143,
-    145,
-    170,
-    176,
-    179,
-    186,
-    190,
-    197,
-    203,
-    205,
-    207,
-    214,
-    216,
-    229,
-    230,
+    118,
+    122,
+    134,
+    153,
+    160,
+    177,
+    219,
     235,
-    239,
-    254,
-    263,
-    266,
-    272,
-    285,
+    242,
     286,
-    289,
-    311,
-    316,
-    320,
-    322,
-    327,
-    329,
-    330,
-    335,
-    336,
-    337,
-    358,
-    360,
-    362,
-    370,
-    381,
-    384,
-    387,
-    393,
-    394,
-    410,
-    415,
-    419,
-    421,
+    288,
+    302,
+    331,
+    333,
+    354,
+    357,
+    369,
+    375,
+    397,
+    399,
+    406,
+    412,
     422,
-    429,
-    430,
-    432,
-    433,
-    434,
-    444,
-    449,
-    451,
-    455,
-    458,
-    459,
-    462,
+    445,
     472,
-    473,
-    481,
-    484,
-    492,
-    495,
-    507,
-    508,
-    509,
-    510,
-    512,
+    474,
+    486,
     514,
-    517,
-    518,
-    522,
-    523,
-    527,
-    528,
-    532,
-    534,
-    543,
-    548,
-    552,
-    554,
-    558,
-    584,
-    586,
+    536,
+    539,
+    546,
+    576,
+    587,
     590,
-    593,
-    596,
-    597,
-    602,
-    608,
-    612,
-    613,
+    594,
+    601,
+    604,
     614,
-    620,
-    622,
-    626,
-    627,
-    628,
-    636,
-    638,
-    639,
-    642,
-    647,
-    653,
+    618,
+    632,
+    633,
+    635,
+    640,
+    651,
+    655,
+    656,
     657,
-    667,
-    668,
-    672,
-    673,
+    665,
+    666,
+    669,
     674,
-    677,
-    684,
-    689,
-    692,
-    695,
-    697,
-    704,
-    705,
-    706,
-    707,
+    675,
+    690,
+    693,
+    694,
+    696,
+    698,
+    699,
+    701,
     717,
-    721,
+    719,
+    720,
     724,
     725,
-    726,
-    739,
-    741,
+    734,
+    740,
     742,
     743,
     745,
+    750,
     751,
-    753,
-    759,
-    762,
+    755,
+    758,
+    764,
     766,
-    767,
-    770,
-    782,
+    768,
+    776,
     791,
-    795,
-    798,
-    808,
-    809,
+    792,
+    794,
+    801,
+    807,
+    811,
+    814,
+    816,
+    819,
+    822,
+    824,
+    828,
     830,
-    836,
-    839,
-    844,
-    847,
+    831,
+    834,
+    842,
+    845,
+    848,
     849,
-    855,
+    850,
     856,
     858,
-    860,
-    865,
-    867,
-    871,
-    876,
+    859,
+    861,
+    866,
+    869,
+    875,
     877,
-    880,
+    881,
     882,
+    883,
     884,
-    890,
-    891,
+    887,
+    888,
+    893,
+    894,
+    895,
+    896,
     897,
-    898,
     900,
     904,
-    905,
-    911,
-    913
-  ]
+    913,
+    921,
+    923,
+    925,
+    926,
+    927,
+    928,
+    931,
+    934,
+    936,
+    937,
+    938,
+    939,
+    940,
+    941,
+    942,
+    944,
+    947,
+    948,
+    952,
+    954,
+    957,
+    959,
+    966,
+    968,
+    969,
+    971,
+    973,
+    975,
+    978,
+    979,
+    981,
+    984,
+    985,
+    989,
+    992,
+    993,
+    995,
+    997,
+    999
+  ],
+  "feature_id_dimension": "feature_id",
+  "unassigned_feature_id_value": 0
 }

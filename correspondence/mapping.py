@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Set, Tuple
 
 import laspy
+from laspy import ExtraBytesParams
 import numpy as np
 from scipy.spatial import cKDTree
 
@@ -16,14 +17,14 @@ from scipy.spatial import cKDTree
 #
 
 # Accepts absolute paths or glob patterns, relative to the repository root.
-LAS_GLOB = r"dataset/435_tree_itc.laz"
+LAS_GLOB = r"dataset/resegmented_cloud.laz"
 GEOJSON_GLOB = (
     r"dataset/summer_irkutsk2025/complete_CH435/"
     r"complete_BUR1_CH435_PROB1_markup_GIRLS.geojson"
 )
 
 # Name of the LAS point attribute to use for matching (e.g. "final_segs").
-FIELD_NAME = "pred_itc"
+FIELD_NAME = "treeID"
 
 
 @dataclass
@@ -31,6 +32,7 @@ class PairCandidate:
     feature_id: int
     field_value: int
     count: int
+    share: float
 
 
 def _repo_root() -> Path:
@@ -144,13 +146,19 @@ def _build_cylinder_candidates(
                 continue
 
         vals = field_values[idx]
+        total_points = vals.size
+        if total_points == 0:
+            continue
         labels, counts = np.unique(vals, return_counts=True)
         for v, c in zip(labels, counts):
             iv = int(v)
             ic = int(c)
             if ic <= 0:
                 continue
-            candidates.append(PairCandidate(feature_id=feature_id, field_value=iv, count=ic))
+            share = ic / float(total_points)
+            candidates.append(
+                PairCandidate(feature_id=feature_id, field_value=iv, count=ic, share=share)
+            )
             field_values_seen.add(iv)
 
     return candidates, feature_ids, field_values_seen
@@ -158,24 +166,116 @@ def _build_cylinder_candidates(
 
 def _greedy_match(candidates: List[PairCandidate]) -> Tuple[List[PairCandidate], Set[int], Set[int]]:
     """
-    Greedy 1:1 matching between feature_ids and field_values based on counts.
-    Sorts all candidates by descending count and takes the first available pair
-    where both feature_id and field_value are unused.
-    """
-    sorted_candidates = sorted(candidates, key=lambda c: c.count, reverse=True)
+    Maximum-cardinality 1:1 matching between feature_ids and field_values,
+    using only pairs where there are points inside the cylinder.
 
+    This uses a Hopcroft–Karp style algorithm on the bipartite graph where
+    an edge (feature, field_value) exists iff that pair has at least one
+    point in the cylinder. Among multiple maximum matchings, the neighbor
+    order is biased by descending share (then count) so "purer" cylinders
+    are preferred when possible.
+    """
+    if not candidates:
+        return [], set(), set()
+
+    # Deduplicate pairs and keep the best (highest share, then count)
+    edge_by_pair: Dict[Tuple[int, int], PairCandidate] = {}
+    feature_ids: Set[int] = set()
+    field_ids: Set[int] = set()
+
+    for c in candidates:
+        key = (c.feature_id, c.field_value)
+        best = edge_by_pair.get(key)
+        if best is None or (c.share, c.count) > (best.share, best.count):
+            edge_by_pair[key] = c
+        feature_ids.add(c.feature_id)
+        field_ids.add(c.field_value)
+
+    feat_list = sorted(feature_ids)
+    field_list = sorted(field_ids)
+
+    # Map ids to indices
+    feat_to_idx: Dict[int, int] = {fid: i for i, fid in enumerate(feat_list)}
+    field_to_idx: Dict[int, int] = {vid: i for i, vid in enumerate(field_list)}
+
+    n_left = len(feat_list)
+    n_right = len(field_list)
+
+    # Build adjacency with neighbors sorted by (share, count) descending
+    adj: List[List[int]] = [[] for _ in range(n_left)]
+    for (fid, vid), pc in edge_by_pair.items():
+        u = feat_to_idx[fid]
+        v = field_to_idx[vid]
+        adj[u].append(v)
+
+    for u in range(n_left):
+        adj[u].sort(
+            key=lambda v: (
+                edge_by_pair[(feat_list[u], field_list[v])].share,
+                edge_by_pair[(feat_list[u], field_list[v])].count,
+            ),
+            reverse=True,
+        )
+
+    # Hopcroft–Karp maximum matching
+    INF = 10 ** 9
+
+    pair_u = [-1] * n_left   # feature index -> field index
+    pair_v = [-1] * n_right  # field index -> feature index
+    dist = [INF] * n_left
+
+    from collections import deque
+
+    def bfs() -> bool:
+        q: deque[int] = deque()
+        for u in range(n_left):
+            if pair_u[u] == -1:
+                dist[u] = 0
+                q.append(u)
+            else:
+                dist[u] = INF
+
+        found_free = False
+        while q:
+            u = q.popleft()
+            for v in adj[u]:
+                pu = pair_v[v]
+                if pu != -1 and dist[pu] == INF:
+                    dist[pu] = dist[u] + 1
+                    q.append(pu)
+                if pu == -1:
+                    found_free = True
+        return found_free
+
+    def dfs(u: int) -> bool:
+        for v in adj[u]:
+            pu = pair_v[v]
+            if pu == -1 or (dist[pu] == dist[u] + 1 and dfs(pu)):
+                pair_u[u] = v
+                pair_v[v] = u
+                return True
+        dist[u] = INF
+        return False
+
+    while bfs():
+        for u in range(n_left):
+            if pair_u[u] == -1:
+                dfs(u)
+
+    # Build assignments from the matching
+    assignments: List[PairCandidate] = []
     used_features: Set[int] = set()
     used_field_values: Set[int] = set()
-    assignments: List[PairCandidate] = []
 
-    for cand in sorted_candidates:
-        if cand.feature_id in used_features:
+    for u, v in enumerate(pair_u):
+        if v == -1:
             continue
-        if cand.field_value in used_field_values:
-            continue
-        assignments.append(cand)
-        used_features.add(cand.feature_id)
-        used_field_values.add(cand.field_value)
+        fid = feat_list[u]
+        vid = field_list[v]
+        pc = edge_by_pair[(fid, vid)]
+        assignments.append(pc)
+        used_features.add(fid)
+        used_field_values.add(vid)
 
     return assignments, used_features, used_field_values
 
@@ -210,7 +310,29 @@ def main() -> None:
         int(v) for v in field_values_seen if v not in used_field_values
     )
 
-    # Prepare output
+    # Build mapping from LAS field values to feature_ids for assigned pairs
+    value_to_feature_id: Dict[int, int] = {
+        a.field_value: a.feature_id for a in assignments
+    }
+
+    # For each point, assign the corresponding feature_id (0 means "unassigned")
+    feature_id_per_point = np.zeros_like(field_values, dtype=np.int64)
+    for field_val, feat_id in value_to_feature_id.items():
+        mask = field_values == field_val
+        if np.any(mask):
+            feature_id_per_point[mask] = feat_id
+
+    # Attach the feature_id as an extra LAS dimension and write out a new file
+    if "feature_id" not in las.point_format.dimension_names:
+        las.add_extra_dim(ExtraBytesParams(name="feature_id", type=np.int32))
+    las["feature_id"] = feature_id_per_point.astype(np.int32, copy=False)
+
+    out_las_path = las_path.with_name(
+        f"{las_path.stem}_with_feature_ids{las_path.suffix}"
+    )
+    las.write(str(out_las_path))
+
+    # Also keep a JSON summary of the mapping (optional, but can be useful for debugging)
     output = {
         "las_path": str(las_path.relative_to(repo_root)) if las_path.is_relative_to(repo_root) else str(las_path),
         "geojson_path": str(geojson_path.relative_to(repo_root)) if geojson_path.is_relative_to(repo_root) else str(geojson_path),
@@ -224,14 +346,19 @@ def main() -> None:
             for a in assignments
         ],
         "unmatched_features": unmatched_features,
-        "unmatched_field_values": unmatched_values,
+        "unassigned_field_values": unmatched_values,
+        "feature_id_dimension": "feature_id",
+        "unassigned_feature_id_value": 0,
     }
 
-    out_path = repo_root / "correspondence" / "feature_field_pairs.json"
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_json_path = repo_root / "correspondence" / "feature_field_pairs.json"
+    out_json_path.parent.mkdir(parents=True, exist_ok=True)
+    out_json_path.write_text(
+        json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
-    print(f"Wrote assignments to: {out_path}")
+    print(f"Wrote LAS with feature IDs to: {out_las_path}")
+    print(f"Wrote assignments summary to: {out_json_path}")
     print(f"Total assignments: {len(assignments)}")
     print(f"Unmatched features: {len(unmatched_features)}")
     print(f"Unmatched field values: {len(unmatched_values)}")
