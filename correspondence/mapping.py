@@ -17,14 +17,14 @@ from scipy.spatial import cKDTree
 #
 
 # Accepts absolute paths or glob patterns, relative to the repository root.
-LAS_GLOB = r"dataset/resegmented_cloud.laz"
+LAS_GLOB = r"train/435_treeiso.laz"
 GEOJSON_GLOB = (
     r"dataset/summer_irkutsk2025/complete_CH435/"
     r"complete_BUR1_CH435_PROB1_markup_GIRLS.geojson"
 )
 
 # Name of the LAS point attribute to use for matching (e.g. "final_segs").
-FIELD_NAME = "treeID"
+FIELD_NAME = "final_segs"
 
 
 @dataclass
@@ -310,10 +310,43 @@ def main() -> None:
         int(v) for v in field_values_seen if v not in used_field_values
     )
 
+    # Build mapping from feature_id to species information
+    feature_id_to_species: Dict[int, Dict[str, str]] = {}
+    for feat in features:
+        props = feat.get("properties") or {}
+        feature_id = int(props.get("id", -1))
+        if feature_id >= 0:
+            species_info = {
+                "species": props.get("species", ""),
+                "species_eng": props.get("species_eng", ""),
+            }
+            feature_id_to_species[feature_id] = species_info
+
     # Build mapping from LAS field values to feature_ids for assigned pairs
     value_to_feature_id: Dict[int, int] = {
         a.field_value: a.feature_id for a in assignments
     }
+
+    # Create species-to-integer mapping for encoding
+    all_species_pairs = set()
+    for feat_id in value_to_feature_id.values():
+        species_info = feature_id_to_species.get(feat_id, {})
+        species_pair = (
+            species_info.get("species", ""),
+            species_info.get("species_eng", ""),
+        )
+        all_species_pairs.add(species_pair)
+    
+    # Sort for consistent encoding (0 = unassigned/unknown)
+    sorted_species = sorted(all_species_pairs)
+    species_to_id: Dict[Tuple[str, str], int] = {
+        pair: idx + 1 for idx, pair in enumerate(sorted_species)
+    }
+    id_to_species: Dict[int, Dict[str, str]] = {
+        idx + 1: {"species": pair[0], "species_eng": pair[1]}
+        for idx, pair in enumerate(sorted_species)
+    }
+    id_to_species[0] = {"species": "", "species_eng": ""}  # unassigned
 
     # For each point, assign the corresponding feature_id (0 means "unassigned")
     feature_id_per_point = np.zeros_like(field_values, dtype=np.int64)
@@ -322,10 +355,28 @@ def main() -> None:
         if np.any(mask):
             feature_id_per_point[mask] = feat_id
 
+    # For each point, assign the corresponding species_id (0 means "unassigned")
+    species_id_per_point = np.zeros_like(field_values, dtype=np.int64)
+    for field_val, feat_id in value_to_feature_id.items():
+        species_info = feature_id_to_species.get(feat_id, {})
+        species_pair = (
+            species_info.get("species", ""),
+            species_info.get("species_eng", ""),
+        )
+        species_id = species_to_id.get(species_pair, 0)
+        mask = field_values == field_val
+        if np.any(mask):
+            species_id_per_point[mask] = species_id
+
     # Attach the feature_id as an extra LAS dimension and write out a new file
     if "feature_id" not in las.point_format.dimension_names:
         las.add_extra_dim(ExtraBytesParams(name="feature_id", type=np.int32))
     las["feature_id"] = feature_id_per_point.astype(np.int32, copy=False)
+
+    # Attach the species_id as an extra LAS dimension
+    if "species_id" not in las.point_format.dimension_names:
+        las.add_extra_dim(ExtraBytesParams(name="species_id", type=np.int32))
+    las["species_id"] = species_id_per_point.astype(np.int32, copy=False)
 
     out_las_path = las_path.with_name(
         f"{las_path.stem}_with_feature_ids{las_path.suffix}"
@@ -342,6 +393,8 @@ def main() -> None:
                 "feature_id": a.feature_id,
                 "field_value": a.field_value,
                 "points_in_cylinder": a.count,
+                "species": feature_id_to_species.get(a.feature_id, {}).get("species", ""),
+                "species_eng": feature_id_to_species.get(a.feature_id, {}).get("species_eng", ""),
             }
             for a in assignments
         ],
@@ -349,6 +402,12 @@ def main() -> None:
         "unassigned_field_values": unmatched_values,
         "feature_id_dimension": "feature_id",
         "unassigned_feature_id_value": 0,
+        "species_id_dimension": "species_id",
+        "unassigned_species_id_value": 0,
+        "species_mapping": {
+            str(species_id): species_info
+            for species_id, species_info in sorted(id_to_species.items())
+        },
     }
 
     out_json_path = repo_root / "correspondence" / "feature_field_pairs.json"

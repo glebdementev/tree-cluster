@@ -101,7 +101,8 @@ def run_viewer(state: ViewerState) -> None:
     # Ensure Z is world-up and look at the centroid
     center = np.array(mesh.center)
     plotter.camera.up = (0.0, 0.0, 1.0)
-    plotter.reset_camera(mesh.bounds)
+    # Use keyword for 'bounds' to avoid PyVista deprecation warning about positional args.
+    plotter.reset_camera(bounds=mesh.bounds, render=True)
     # Re-center camera on centroid to avoid initial panning offset
     cam = plotter.camera
     direction = np.array(cam.position) - np.array(cam.focal_point)
