@@ -3,7 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
-from correspondence.mapping import FIELD_NAME, _repo_root, process_pair
+# Support running both as a module and as a script
+try:
+    from correspondence.mapping import FIELD_NAME, _repo_root, process_pair
+except ModuleNotFoundError:
+    import sys as _sys
+    from pathlib import Path as _Path
+    _sys.path.insert(0, str(_Path(__file__).resolve().parents[1]))
+    from correspondence.mapping import FIELD_NAME, _repo_root, process_pair
 
 
 def _find_dataset_root() -> Path:
@@ -11,10 +18,16 @@ def _find_dataset_root() -> Path:
     Locate the dataset root.
 
     Preference order:
-    1. ../dataset (sibling of the repo root), which matches
+    1. /home/gleb/dev/dataset on Ubuntu
+    2. ../dataset (sibling of the repo root), which matches
        C:\\Users\\Gleb\\Work\\OpenForest\\dev\\dataset
-    2. ./dataset inside the repo, as a fallback.
+    3. ./dataset inside the repo, as a fallback.
     """
+    # Explicit Ubuntu path if present
+    ubuntu_dataset = Path("/home/gleb/dev/dataset")
+    if ubuntu_dataset.is_dir():
+        return ubuntu_dataset
+
     repo_root = _repo_root()
     parent_dataset = repo_root.parent / "dataset"
     if parent_dataset.is_dir():
