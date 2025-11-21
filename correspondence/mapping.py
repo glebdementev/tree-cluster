@@ -4,7 +4,7 @@ import json
 import math
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Iterable, List, Set, Tuple
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 import laspy
 from laspy import ExtraBytesParams
@@ -17,7 +17,7 @@ from scipy.spatial import cKDTree
 #
 
 # Accepts absolute paths or glob patterns, relative to the repository root.
-LAS_GLOB = r"train/435_treeiso.laz"
+LAS_GLOB = r"train/435_iso.laz"
 GEOJSON_GLOB = (
     r"dataset/summer_irkutsk2025/complete_CH435/"
     r"complete_BUR1_CH435_PROB1_markup_GIRLS.geojson"
@@ -25,6 +25,24 @@ GEOJSON_GLOB = (
 
 # Name of the LAS point attribute to use for matching (e.g. "final_segs").
 FIELD_NAME = "final_segs"
+
+
+# Fixed species mapping used for all files.
+# Mirrors the mapping stored in correspondence/feature_field_pairs.json (lines 6103–6133).
+SPECIES_ID_TO_INFO: Dict[int, Dict[str, str]] = {
+    0: {"species": "", "species_eng": ""},
+    1: {"species": "Берёза", "species_eng": "birch"},
+    2: {"species": "Ель", "species_eng": "spruce"},
+    3: {"species": "Кедр", "species_eng": "cedar"},
+    4: {"species": "Лиственница", "species_eng": "listvennitsa"},
+    5: {"species": "Пихта", "species_eng": "fir"},
+    6: {"species": "Сосна", "species_eng": "pine"},
+}
+
+SPECIES_PAIR_TO_ID: Dict[Tuple[str, str], int] = {
+    (info["species"], info["species_eng"]): sid
+    for sid, info in SPECIES_ID_TO_INFO.items()
+}
 
 
 @dataclass
@@ -280,18 +298,32 @@ def _greedy_match(candidates: List[PairCandidate]) -> Tuple[List[PairCandidate],
     return assignments, used_features, used_field_values
 
 
-def main() -> None:
-    repo_root = _repo_root()
+def process_pair(
+    las_path: Path,
+    geojson_path: Path,
+    *,
+    field_name: str = FIELD_NAME,
+    out_las_path: Optional[Path] = None,
+    write_json_summary: bool = True,
+) -> Optional[Dict[str, object]]:
+    """
+    Core implementation that maps LAS segments to GeoJSON features and species.
 
-    las_path = _resolve_single_path(LAS_GLOB)
-    geojson_path = _resolve_single_path(GEOJSON_GLOB)
+    - Reads LAS and GeoJSON.
+    - Computes a 1:1 mapping between feature ids and field values.
+    - Writes a LAS file with extra dimensions 'feature_id' and 'species_id'.
+    - Optionally writes a JSON summary (same format as before).
+
+    Returns a summary dict, or None if no candidates were found.
+    """
+    repo_root = _repo_root()
 
     print(f"Using LAS: {las_path}")
     print(f"Using GeoJSON: {geojson_path}")
-    print(f"Using field: {FIELD_NAME}")
+    print(f"Using field: {field_name}")
 
     las = laspy.read(str(las_path))
-    field_values = _load_las_field(las, FIELD_NAME)
+    field_values = _load_las_field(las, field_name)
 
     features = _load_features(geojson_path)
 
@@ -301,7 +333,7 @@ def main() -> None:
 
     if not candidates:
         print("No candidate feature/field pairs with points inside cylinders.")
-        return
+        return None
 
     assignments, used_features, used_field_values = _greedy_match(candidates)
 
@@ -327,27 +359,6 @@ def main() -> None:
         a.field_value: a.feature_id for a in assignments
     }
 
-    # Create species-to-integer mapping for encoding
-    all_species_pairs = set()
-    for feat_id in value_to_feature_id.values():
-        species_info = feature_id_to_species.get(feat_id, {})
-        species_pair = (
-            species_info.get("species", ""),
-            species_info.get("species_eng", ""),
-        )
-        all_species_pairs.add(species_pair)
-    
-    # Sort for consistent encoding (0 = unassigned/unknown)
-    sorted_species = sorted(all_species_pairs)
-    species_to_id: Dict[Tuple[str, str], int] = {
-        pair: idx + 1 for idx, pair in enumerate(sorted_species)
-    }
-    id_to_species: Dict[int, Dict[str, str]] = {
-        idx + 1: {"species": pair[0], "species_eng": pair[1]}
-        for idx, pair in enumerate(sorted_species)
-    }
-    id_to_species[0] = {"species": "", "species_eng": ""}  # unassigned
-
     # For each point, assign the corresponding feature_id (0 means "unassigned")
     feature_id_per_point = np.zeros_like(field_values, dtype=np.int64)
     for field_val, feat_id in value_to_feature_id.items():
@@ -363,7 +374,7 @@ def main() -> None:
             species_info.get("species", ""),
             species_info.get("species_eng", ""),
         )
-        species_id = species_to_id.get(species_pair, 0)
+        species_id = SPECIES_PAIR_TO_ID.get(species_pair, 0)
         mask = field_values == field_val
         if np.any(mask):
             species_id_per_point[mask] = species_id
@@ -378,23 +389,31 @@ def main() -> None:
         las.add_extra_dim(ExtraBytesParams(name="species_id", type=np.int32))
     las["species_id"] = species_id_per_point.astype(np.int32, copy=False)
 
-    out_las_path = las_path.with_name(
-        f"{las_path.stem}_with_feature_ids{las_path.suffix}"
-    )
+    if out_las_path is None:
+        out_las_path = las_path.with_name(
+            f"{las_path.stem}_with_feature_ids{las_path.suffix}"
+        )
     las.write(str(out_las_path))
 
-    # Also keep a JSON summary of the mapping (optional, but can be useful for debugging)
-    output = {
-        "las_path": str(las_path.relative_to(repo_root)) if las_path.is_relative_to(repo_root) else str(las_path),
-        "geojson_path": str(geojson_path.relative_to(repo_root)) if geojson_path.is_relative_to(repo_root) else str(geojson_path),
-        "field_name": FIELD_NAME,
+    summary: Dict[str, object] = {
+        "las_path": str(las_path.relative_to(repo_root))
+        if las_path.is_relative_to(repo_root)
+        else str(las_path),
+        "geojson_path": str(geojson_path.relative_to(repo_root))
+        if geojson_path.is_relative_to(repo_root)
+        else str(geojson_path),
+        "field_name": field_name,
         "assignments": [
             {
                 "feature_id": a.feature_id,
                 "field_value": a.field_value,
                 "points_in_cylinder": a.count,
-                "species": feature_id_to_species.get(a.feature_id, {}).get("species", ""),
-                "species_eng": feature_id_to_species.get(a.feature_id, {}).get("species_eng", ""),
+                "species": feature_id_to_species.get(a.feature_id, {}).get(
+                    "species", ""
+                ),
+                "species_eng": feature_id_to_species.get(a.feature_id, {}).get(
+                    "species_eng", ""
+                ),
             }
             for a in assignments
         ],
@@ -406,21 +425,38 @@ def main() -> None:
         "unassigned_species_id_value": 0,
         "species_mapping": {
             str(species_id): species_info
-            for species_id, species_info in sorted(id_to_species.items())
+            for species_id, species_info in sorted(SPECIES_ID_TO_INFO.items())
         },
+        "out_las_path": str(out_las_path),
     }
 
-    out_json_path = repo_root / "correspondence" / "feature_field_pairs.json"
-    out_json_path.parent.mkdir(parents=True, exist_ok=True)
-    out_json_path.write_text(
-        json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8"
-    )
+    if write_json_summary:
+        out_json_path = repo_root / "correspondence" / "feature_field_pairs.json"
+        out_json_path.parent.mkdir(parents=True, exist_ok=True)
+        out_json_path.write_text(
+            json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+        summary["summary_json_path"] = str(out_json_path)
 
-    print(f"Wrote LAS with feature IDs to: {out_las_path}")
-    print(f"Wrote assignments summary to: {out_json_path}")
+    print(f"Wrote LAS with feature and species IDs to: {out_las_path}")
     print(f"Total assignments: {len(assignments)}")
     print(f"Unmatched features: {len(unmatched_features)}")
     print(f"Unmatched field values: {len(unmatched_values)}")
+
+    return summary
+
+
+def main() -> None:
+    las_path = _resolve_single_path(LAS_GLOB)
+    geojson_path = _resolve_single_path(GEOJSON_GLOB)
+
+    process_pair(
+        las_path,
+        geojson_path,
+        field_name=FIELD_NAME,
+        out_las_path=None,
+        write_json_summary=True,
+    )
 
 
 if __name__ == "__main__":

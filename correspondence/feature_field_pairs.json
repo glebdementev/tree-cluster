@@ -1,6089 +1,6100 @@
 {
-  "las_path": "train\\435_treeiso.laz",
+  "las_path": "train\\435_iso.laz",
   "geojson_path": "dataset\\summer_irkutsk2025\\complete_CH435\\complete_BUR1_CH435_PROB1_markup_GIRLS.geojson",
   "field_name": "final_segs",
   "assignments": [
     {
       "feature_id": 4796,
-      "field_value": 494,
-      "points_in_cylinder": 5137,
+      "field_value": 42,
+      "points_in_cylinder": 4726,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4797,
-      "field_value": 266,
-      "points_in_cylinder": 43,
+      "field_value": 199,
+      "points_in_cylinder": 6184,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4798,
-      "field_value": 715,
-      "points_in_cylinder": 13,
+      "field_value": 143,
+      "points_in_cylinder": 20,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4799,
-      "field_value": 876,
-      "points_in_cylinder": 7679,
+      "field_value": 103,
+      "points_in_cylinder": 9376,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4800,
-      "field_value": 576,
-      "points_in_cylinder": 1120,
+      "field_value": 493,
+      "points_in_cylinder": 2348,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4801,
-      "field_value": 725,
-      "points_in_cylinder": 2090,
+      "field_value": 514,
+      "points_in_cylinder": 1135,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4802,
-      "field_value": 197,
-      "points_in_cylinder": 90,
+      "field_value": 599,
+      "points_in_cylinder": 5721,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4803,
-      "field_value": 765,
+      "field_value": 619,
       "points_in_cylinder": 3549,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4804,
-      "field_value": 1032,
-      "points_in_cylinder": 4553,
+      "field_value": 484,
+      "points_in_cylinder": 4401,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4805,
-      "field_value": 1035,
-      "points_in_cylinder": 8255,
+      "field_value": 659,
+      "points_in_cylinder": 6535,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4806,
-      "field_value": 437,
-      "points_in_cylinder": 4186,
+      "field_value": 286,
+      "points_in_cylinder": 4177,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4807,
-      "field_value": 147,
-      "points_in_cylinder": 6975,
+      "field_value": 175,
+      "points_in_cylinder": 12,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4808,
-      "field_value": 64,
-      "points_in_cylinder": 2857,
+      "field_value": 691,
+      "points_in_cylinder": 1182,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4809,
-      "field_value": 771,
-      "points_in_cylinder": 66,
+      "field_value": 979,
+      "points_in_cylinder": 50,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4810,
-      "field_value": 137,
+      "field_value": 634,
       "points_in_cylinder": 2062,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4811,
-      "field_value": 495,
-      "points_in_cylinder": 90,
+      "field_value": 624,
+      "points_in_cylinder": 3108,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4812,
-      "field_value": 386,
-      "points_in_cylinder": 739,
+      "field_value": 186,
+      "points_in_cylinder": 10887,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4813,
-      "field_value": 684,
-      "points_in_cylinder": 354,
+      "field_value": 160,
+      "points_in_cylinder": 258,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4814,
-      "field_value": 499,
-      "points_in_cylinder": 561,
+      "field_value": 1046,
+      "points_in_cylinder": 5678,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4815,
-      "field_value": 535,
-      "points_in_cylinder": 5076,
+      "field_value": 70,
+      "points_in_cylinder": 3838,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4816,
-      "field_value": 677,
-      "points_in_cylinder": 109,
+      "field_value": 672,
+      "points_in_cylinder": 2487,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4817,
-      "field_value": 1082,
+      "field_value": 313,
       "points_in_cylinder": 2717,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4818,
-      "field_value": 848,
-      "points_in_cylinder": 48,
+      "field_value": 648,
+      "points_in_cylinder": 3586,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4819,
-      "field_value": 891,
-      "points_in_cylinder": 5250,
+      "field_value": 988,
+      "points_in_cylinder": 5205,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4820,
-      "field_value": 410,
-      "points_in_cylinder": 53,
+      "field_value": 566,
+      "points_in_cylinder": 7307,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4821,
-      "field_value": 1049,
-      "points_in_cylinder": 384,
+      "field_value": 152,
+      "points_in_cylinder": 1458,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4822,
-      "field_value": 922,
+      "field_value": 1050,
       "points_in_cylinder": 8347,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4823,
-      "field_value": 303,
-      "points_in_cylinder": 8063,
+      "field_value": 50,
+      "points_in_cylinder": 484,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4824,
-      "field_value": 466,
+      "field_value": 961,
       "points_in_cylinder": 8546,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4825,
-      "field_value": 686,
-      "points_in_cylinder": 399,
+      "field_value": 491,
+      "points_in_cylinder": 414,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4826,
-      "field_value": 953,
-      "points_in_cylinder": 1761,
+      "field_value": 210,
+      "points_in_cylinder": 9689,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4827,
-      "field_value": 1039,
-      "points_in_cylinder": 829,
+      "field_value": 128,
+      "points_in_cylinder": 5511,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4828,
-      "field_value": 300,
-      "points_in_cylinder": 6315,
+      "field_value": 170,
+      "points_in_cylinder": 4899,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4829,
-      "field_value": 1037,
+      "field_value": 178,
       "points_in_cylinder": 11437,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4830,
-      "field_value": 364,
-      "points_in_cylinder": 6642,
+      "field_value": 417,
+      "points_in_cylinder": 4710,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4831,
-      "field_value": 522,
-      "points_in_cylinder": 1157,
+      "field_value": 428,
+      "points_in_cylinder": 2923,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4832,
-      "field_value": 743,
-      "points_in_cylinder": 572,
+      "field_value": 156,
+      "points_in_cylinder": 4233,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4833,
-      "field_value": 187,
-      "points_in_cylinder": 9775,
+      "field_value": 460,
+      "points_in_cylinder": 9548,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4834,
-      "field_value": 1012,
-      "points_in_cylinder": 4159,
+      "field_value": 981,
+      "points_in_cylinder": 2362,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4835,
-      "field_value": 1030,
-      "points_in_cylinder": 2181,
+      "field_value": 542,
+      "points_in_cylinder": 2143,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4836,
-      "field_value": 131,
-      "points_in_cylinder": 793,
+      "field_value": 880,
+      "points_in_cylinder": 780,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4837,
-      "field_value": 577,
-      "points_in_cylinder": 2,
+      "field_value": 994,
+      "points_in_cylinder": 1207,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4838,
-      "field_value": 901,
-      "points_in_cylinder": 10383,
+      "field_value": 949,
+      "points_in_cylinder": 12,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4839,
-      "field_value": 998,
-      "points_in_cylinder": 31,
+      "field_value": 532,
+      "points_in_cylinder": 8357,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4840,
-      "field_value": 298,
-      "points_in_cylinder": 356,
+      "field_value": 946,
+      "points_in_cylinder": 14982,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4841,
-      "field_value": 184,
-      "points_in_cylinder": 3232,
+      "field_value": 467,
+      "points_in_cylinder": 1925,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4842,
-      "field_value": 78,
-      "points_in_cylinder": 4353,
+      "field_value": 1007,
+      "points_in_cylinder": 4364,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4843,
-      "field_value": 798,
-      "points_in_cylinder": 3788,
+      "field_value": 763,
+      "points_in_cylinder": 4209,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4844,
-      "field_value": 395,
-      "points_in_cylinder": 3826,
+      "field_value": 502,
+      "points_in_cylinder": 3870,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4845,
-      "field_value": 655,
-      "points_in_cylinder": 4830,
+      "field_value": 877,
+      "points_in_cylinder": 4437,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4846,
-      "field_value": 101,
-      "points_in_cylinder": 2848,
+      "field_value": 49,
+      "points_in_cylinder": 649,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4847,
-      "field_value": 821,
-      "points_in_cylinder": 134,
+      "field_value": 196,
+      "points_in_cylinder": 1630,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4848,
-      "field_value": 927,
-      "points_in_cylinder": 1463,
+      "field_value": 235,
+      "points_in_cylinder": 376,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4849,
-      "field_value": 309,
-      "points_in_cylinder": 368,
+      "field_value": 131,
+      "points_in_cylinder": 626,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4850,
-      "field_value": 871,
-      "points_in_cylinder": 23,
+      "field_value": 405,
+      "points_in_cylinder": 178,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4851,
-      "field_value": 1019,
-      "points_in_cylinder": 2659,
+      "field_value": 124,
+      "points_in_cylinder": 80,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4852,
-      "field_value": 1099,
-      "points_in_cylinder": 9048,
+      "field_value": 569,
+      "points_in_cylinder": 29,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4853,
-      "field_value": 233,
-      "points_in_cylinder": 217,
+      "field_value": 689,
+      "points_in_cylinder": 6609,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4854,
-      "field_value": 479,
-      "points_in_cylinder": 1563,
+      "field_value": 815,
+      "points_in_cylinder": 7870,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4855,
-      "field_value": 850,
-      "points_in_cylinder": 177,
+      "field_value": 74,
+      "points_in_cylinder": 7149,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4856,
-      "field_value": 256,
-      "points_in_cylinder": 7304,
+      "field_value": 729,
+      "points_in_cylinder": 4709,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4857,
-      "field_value": 946,
-      "points_in_cylinder": 207,
+      "field_value": 534,
+      "points_in_cylinder": 4514,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4858,
-      "field_value": 66,
-      "points_in_cylinder": 1199,
+      "field_value": 379,
+      "points_in_cylinder": 2703,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4859,
-      "field_value": 596,
-      "points_in_cylinder": 1796,
+      "field_value": 771,
+      "points_in_cylinder": 1205,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4860,
-      "field_value": 246,
-      "points_in_cylinder": 226,
+      "field_value": 871,
+      "points_in_cylinder": 681,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4861,
-      "field_value": 915,
-      "points_in_cylinder": 3971,
+      "field_value": 387,
+      "points_in_cylinder": 2201,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4862,
-      "field_value": 604,
-      "points_in_cylinder": 17,
+      "field_value": 15,
+      "points_in_cylinder": 6719,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4863,
-      "field_value": 637,
-      "points_in_cylinder": 2160,
+      "field_value": 856,
+      "points_in_cylinder": 3655,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4864,
-      "field_value": 1112,
-      "points_in_cylinder": 288,
+      "field_value": 406,
+      "points_in_cylinder": 5798,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4865,
-      "field_value": 414,
-      "points_in_cylinder": 1528,
+      "field_value": 760,
+      "points_in_cylinder": 1574,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4866,
-      "field_value": 1124,
-      "points_in_cylinder": 278,
+      "field_value": 956,
+      "points_in_cylinder": 517,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4867,
-      "field_value": 1081,
-      "points_in_cylinder": 1285,
+      "field_value": 520,
+      "points_in_cylinder": 154,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4868,
-      "field_value": 913,
-      "points_in_cylinder": 2182,
+      "field_value": 850,
+      "points_in_cylinder": 2029,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4869,
-      "field_value": 608,
-      "points_in_cylinder": 218,
+      "field_value": 587,
+      "points_in_cylinder": 5496,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4870,
-      "field_value": 548,
-      "points_in_cylinder": 5,
+      "field_value": 645,
+      "points_in_cylinder": 7347,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4871,
-      "field_value": 1126,
-      "points_in_cylinder": 57,
+      "field_value": 593,
+      "points_in_cylinder": 4963,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4872,
-      "field_value": 332,
-      "points_in_cylinder": 5000,
+      "field_value": 778,
+      "points_in_cylinder": 1233,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4873,
-      "field_value": 718,
-      "points_in_cylinder": 7414,
+      "field_value": 764,
+      "points_in_cylinder": 8793,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4874,
-      "field_value": 834,
-      "points_in_cylinder": 832,
+      "field_value": 159,
+      "points_in_cylinder": 8578,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4875,
-      "field_value": 885,
-      "points_in_cylinder": 3215,
+      "field_value": 166,
+      "points_in_cylinder": 172,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4876,
-      "field_value": 539,
-      "points_in_cylinder": 1835,
+      "field_value": 189,
+      "points_in_cylinder": 1592,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4877,
-      "field_value": 458,
-      "points_in_cylinder": 2553,
+      "field_value": 454,
+      "points_in_cylinder": 2007,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4878,
-      "field_value": 422,
-      "points_in_cylinder": 574,
+      "field_value": 517,
+      "points_in_cylinder": 557,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4879,
-      "field_value": 172,
-      "points_in_cylinder": 716,
+      "field_value": 528,
+      "points_in_cylinder": 2363,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4880,
-      "field_value": 1128,
-      "points_in_cylinder": 3502,
+      "field_value": 964,
+      "points_in_cylinder": 4005,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4881,
-      "field_value": 366,
-      "points_in_cylinder": 7884,
+      "field_value": 908,
+      "points_in_cylinder": 322,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4882,
-      "field_value": 776,
-      "points_in_cylinder": 1369,
+      "field_value": 39,
+      "points_in_cylinder": 1164,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4883,
-      "field_value": 123,
-      "points_in_cylinder": 69,
+      "field_value": 259,
+      "points_in_cylinder": 6786,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4884,
-      "field_value": 792,
-      "points_in_cylinder": 6444,
+      "field_value": 25,
+      "points_in_cylinder": 323,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4885,
-      "field_value": 571,
-      "points_in_cylinder": 2554,
+      "field_value": 115,
+      "points_in_cylinder": 1745,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4886,
-      "field_value": 41,
-      "points_in_cylinder": 2767,
+      "field_value": 894,
+      "points_in_cylinder": 202,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4887,
-      "field_value": 920,
-      "points_in_cylinder": 2110,
+      "field_value": 146,
+      "points_in_cylinder": 229,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4888,
-      "field_value": 352,
-      "points_in_cylinder": 1343,
+      "field_value": 785,
+      "points_in_cylinder": 19,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4889,
-      "field_value": 112,
-      "points_in_cylinder": 126,
+      "field_value": 710,
+      "points_in_cylinder": 508,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4890,
-      "field_value": 1130,
+      "field_value": 315,
       "points_in_cylinder": 60,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4891,
-      "field_value": 643,
-      "points_in_cylinder": 50,
+      "field_value": 340,
+      "points_in_cylinder": 228,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4892,
-      "field_value": 653,
-      "points_in_cylinder": 80,
+      "field_value": 75,
+      "points_in_cylinder": 934,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
+      "feature_id": 4893,
+      "field_value": 640,
+      "points_in_cylinder": 981,
+      "species": "Берёза",
+      "species_eng": "birch"
+    },
+    {
       "feature_id": 4894,
-      "field_value": 24,
-      "points_in_cylinder": 3281,
+      "field_value": 999,
+      "points_in_cylinder": 3269,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4895,
-      "field_value": 1123,
-      "points_in_cylinder": 4579,
+      "field_value": 816,
+      "points_in_cylinder": 4351,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4896,
-      "field_value": 822,
+      "field_value": 740,
       "points_in_cylinder": 9,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4897,
-      "field_value": 6,
-      "points_in_cylinder": 167,
+      "field_value": 398,
+      "points_in_cylinder": 737,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
+      "feature_id": 4898,
+      "field_value": 727,
+      "points_in_cylinder": 96,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
       "feature_id": 4899,
-      "field_value": 797,
-      "points_in_cylinder": 424,
+      "field_value": 320,
+      "points_in_cylinder": 1496,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4900,
-      "field_value": 851,
-      "points_in_cylinder": 5918,
+      "field_value": 139,
+      "points_in_cylinder": 2943,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4901,
-      "field_value": 663,
-      "points_in_cylinder": 2967,
+      "field_value": 486,
+      "points_in_cylinder": 2667,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4902,
-      "field_value": 464,
-      "points_in_cylinder": 2264,
+      "field_value": 112,
+      "points_in_cylinder": 113,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4903,
-      "field_value": 956,
-      "points_in_cylinder": 21,
+      "field_value": 615,
+      "points_in_cylinder": 375,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4904,
-      "field_value": 568,
-      "points_in_cylinder": 1947,
+      "field_value": 474,
+      "points_in_cylinder": 46,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4905,
-      "field_value": 759,
-      "points_in_cylinder": 138,
+      "field_value": 204,
+      "points_in_cylinder": 1045,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4906,
-      "field_value": 990,
-      "points_in_cylinder": 3041,
+      "field_value": 1034,
+      "points_in_cylinder": 1327,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 4907,
-      "field_value": 858,
-      "points_in_cylinder": 1551,
+      "field_value": 556,
+      "points_in_cylinder": 1335,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4908,
-      "field_value": 219,
-      "points_in_cylinder": 12,
+      "field_value": 1037,
+      "points_in_cylinder": 262,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
+      "feature_id": 4909,
+      "field_value": 32,
+      "points_in_cylinder": 4611,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
       "feature_id": 4910,
-      "field_value": 816,
-      "points_in_cylinder": 73,
+      "field_value": 870,
+      "points_in_cylinder": 29,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 4912,
+      "field_value": 424,
+      "points_in_cylinder": 4869,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 4913,
+      "field_value": 666,
+      "points_in_cylinder": 3776,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 4914,
+      "field_value": 1040,
+      "points_in_cylinder": 1573,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
       "feature_id": 4916,
-      "field_value": 1088,
-      "points_in_cylinder": 1493,
+      "field_value": 117,
+      "points_in_cylinder": 1498,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4917,
-      "field_value": 896,
+      "field_value": 547,
       "points_in_cylinder": 3350,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4918,
-      "field_value": 119,
-      "points_in_cylinder": 1070,
+      "field_value": 957,
+      "points_in_cylinder": 638,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4919,
-      "field_value": 370,
-      "points_in_cylinder": 253,
+      "field_value": 588,
+      "points_in_cylinder": 323,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4920,
-      "field_value": 719,
-      "points_in_cylinder": 11,
+      "field_value": 884,
+      "points_in_cylinder": 226,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4921,
-      "field_value": 306,
+      "field_value": 686,
       "points_in_cylinder": 4539,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4922,
-      "field_value": 307,
-      "points_in_cylinder": 1252,
+      "field_value": 393,
+      "points_in_cylinder": 2,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4923,
-      "field_value": 341,
-      "points_in_cylinder": 1796,
+      "field_value": 475,
+      "points_in_cylinder": 1746,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4924,
-      "field_value": 676,
-      "points_in_cylinder": 64,
+      "field_value": 970,
+      "points_in_cylinder": 1846,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4925,
-      "field_value": 120,
-      "points_in_cylinder": 4503,
+      "field_value": 758,
+      "points_in_cylinder": 15,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4926,
-      "field_value": 940,
-      "points_in_cylinder": 34,
+      "field_value": 252,
+      "points_in_cylinder": 1324,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4927,
-      "field_value": 552,
-      "points_in_cylinder": 291,
+      "field_value": 343,
+      "points_in_cylinder": 3061,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4928,
-      "field_value": 537,
-      "points_in_cylinder": 8,
+      "field_value": 439,
+      "points_in_cylinder": 13,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4929,
-      "field_value": 392,
-      "points_in_cylinder": 21,
+      "field_value": 319,
+      "points_in_cylinder": 29,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4930,
-      "field_value": 1120,
-      "points_in_cylinder": 414,
+      "field_value": 846,
+      "points_in_cylinder": 5155,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4931,
-      "field_value": 899,
-      "points_in_cylinder": 1509,
+      "field_value": 854,
+      "points_in_cylinder": 1350,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4932,
-      "field_value": 11,
+      "field_value": 798,
       "points_in_cylinder": 4900,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4933,
-      "field_value": 982,
-      "points_in_cylinder": 4065,
+      "field_value": 912,
+      "points_in_cylinder": 4030,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4934,
-      "field_value": 1137,
-      "points_in_cylinder": 2035,
+      "field_value": 1042,
+      "points_in_cylinder": 132,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4935,
-      "field_value": 566,
-      "points_in_cylinder": 2965,
+      "field_value": 942,
+      "points_in_cylinder": 123,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4936,
-      "field_value": 311,
-      "points_in_cylinder": 30,
+      "field_value": 1043,
+      "points_in_cylinder": 187,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4937,
-      "field_value": 556,
-      "points_in_cylinder": 2684,
+      "field_value": 789,
+      "points_in_cylinder": 1523,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 4938,
+      "field_value": 933,
+      "points_in_cylinder": 5497,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
       "feature_id": 4939,
-      "field_value": 925,
-      "points_in_cylinder": 3143,
+      "field_value": 352,
+      "points_in_cylinder": 2674,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4940,
-      "field_value": 1014,
-      "points_in_cylinder": 41,
+      "field_value": 564,
+      "points_in_cylinder": 183,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 4941,
+      "field_value": 126,
+      "points_in_cylinder": 1323,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
       "feature_id": 4942,
-      "field_value": 289,
-      "points_in_cylinder": 23,
+      "field_value": 329,
+      "points_in_cylinder": 48,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4945,
-      "field_value": 299,
-      "points_in_cylinder": 5,
+      "field_value": 626,
+      "points_in_cylinder": 2465,
+      "species": "Берёза",
+      "species_eng": "birch"
+    },
+    {
+      "feature_id": 4946,
+      "field_value": 986,
+      "points_in_cylinder": 3286,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
+      "feature_id": 4947,
+      "field_value": 663,
+      "points_in_cylinder": 15,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4948,
-      "field_value": 381,
-      "points_in_cylinder": 2426,
+      "field_value": 89,
+      "points_in_cylinder": 2443,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4949,
-      "field_value": 77,
-      "points_in_cylinder": 733,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
-      "feature_id": 4950,
-      "field_value": 141,
-      "points_in_cylinder": 310,
+      "field_value": 948,
+      "points_in_cylinder": 558,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4951,
-      "field_value": 509,
-      "points_in_cylinder": 8116,
+      "field_value": 445,
+      "points_in_cylinder": 879,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4952,
-      "field_value": 809,
-      "points_in_cylinder": 3211,
+      "field_value": 677,
+      "points_in_cylinder": 34,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
+      "feature_id": 4953,
+      "field_value": 171,
+      "points_in_cylinder": 87,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4954,
-      "field_value": 14,
-      "points_in_cylinder": 9769,
+      "field_value": 605,
+      "points_in_cylinder": 406,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4955,
-      "field_value": 401,
-      "points_in_cylinder": 86,
+      "field_value": 968,
+      "points_in_cylinder": 2863,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4956,
-      "field_value": 960,
-      "points_in_cylinder": 1742,
+      "field_value": 818,
+      "points_in_cylinder": 52,
+      "species": "Берёза",
+      "species_eng": "birch"
+    },
+    {
+      "feature_id": 4957,
+      "field_value": 685,
+      "points_in_cylinder": 1689,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4958,
-      "field_value": 2,
-      "points_in_cylinder": 4,
+      "field_value": 233,
+      "points_in_cylinder": 83,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4959,
-      "field_value": 879,
+      "field_value": 325,
       "points_in_cylinder": 48,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
+      "feature_id": 4960,
+      "field_value": 1056,
+      "points_in_cylinder": 3,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
       "feature_id": 4961,
-      "field_value": 518,
-      "points_in_cylinder": 565,
+      "field_value": 525,
+      "points_in_cylinder": 1624,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4962,
-      "field_value": 938,
-      "points_in_cylinder": 96,
+      "field_value": 655,
+      "points_in_cylinder": 189,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4963,
-      "field_value": 425,
-      "points_in_cylinder": 733,
+      "field_value": 107,
+      "points_in_cylinder": 114,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 4964,
-      "field_value": 878,
-      "points_in_cylinder": 58,
+      "field_value": 629,
+      "points_in_cylinder": 5969,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4965,
-      "field_value": 823,
-      "points_in_cylinder": 768,
+      "field_value": 826,
+      "points_in_cylinder": 28,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4966,
-      "field_value": 669,
-      "points_in_cylinder": 689,
+      "field_value": 26,
+      "points_in_cylinder": 224,
       "species": "Сосна",
       "species_eng": "pine"
+    },
+    {
+      "feature_id": 4967,
+      "field_value": 495,
+      "points_in_cylinder": 54,
+      "species": "Ель",
+      "species_eng": "spruce"
     },
     {
       "feature_id": 4968,
-      "field_value": 618,
-      "points_in_cylinder": 1461,
+      "field_value": 444,
+      "points_in_cylinder": 51,
       "species": "Сосна",
       "species_eng": "pine"
-    },
-    {
-      "feature_id": 4969,
-      "field_value": 849,
-      "points_in_cylinder": 224,
-      "species": "Пихта",
-      "species_eng": "fir"
     },
     {
       "feature_id": 4970,
-      "field_value": 189,
-      "points_in_cylinder": 2,
+      "field_value": 822,
+      "points_in_cylinder": 1260,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
-      "feature_id": 4971,
-      "field_value": 764,
-      "points_in_cylinder": 37,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
       "feature_id": 4973,
-      "field_value": 1047,
-      "points_in_cylinder": 57,
+      "field_value": 154,
+      "points_in_cylinder": 23,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4974,
-      "field_value": 895,
-      "points_in_cylinder": 41,
+      "field_value": 59,
+      "points_in_cylinder": 36,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4975,
-      "field_value": 336,
+      "field_value": 845,
       "points_in_cylinder": 1191,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4976,
-      "field_value": 417,
+      "field_value": 447,
       "points_in_cylinder": 135,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4977,
-      "field_value": 1029,
-      "points_in_cylinder": 37,
+      "field_value": 47,
+      "points_in_cylinder": 3,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4978,
-      "field_value": 226,
-      "points_in_cylinder": 2,
+      "field_value": 16,
+      "points_in_cylinder": 44,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4979,
-      "field_value": 702,
-      "points_in_cylinder": 191,
+      "field_value": 800,
+      "points_in_cylinder": 2576,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4980,
-      "field_value": 34,
-      "points_in_cylinder": 273,
+      "field_value": 253,
+      "points_in_cylinder": 6,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4981,
-      "field_value": 407,
-      "points_in_cylinder": 4622,
+      "field_value": 934,
+      "points_in_cylinder": 4670,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4982,
-      "field_value": 852,
-      "points_in_cylinder": 1930,
+      "field_value": 945,
+      "points_in_cylinder": 1994,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4983,
-      "field_value": 259,
-      "points_in_cylinder": 4378,
+      "field_value": 422,
+      "points_in_cylinder": 4360,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4984,
-      "field_value": 80,
-      "points_in_cylinder": 450,
+      "field_value": 232,
+      "points_in_cylinder": 3213,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4985,
-      "field_value": 55,
-      "points_in_cylinder": 2,
+      "field_value": 331,
+      "points_in_cylinder": 38,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4986,
-      "field_value": 788,
-      "points_in_cylinder": 1790,
+      "field_value": 250,
+      "points_in_cylinder": 1781,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4987,
-      "field_value": 640,
-      "points_in_cylinder": 2,
+      "field_value": 309,
+      "points_in_cylinder": 192,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4988,
-      "field_value": 632,
-      "points_in_cylinder": 77,
+      "field_value": 540,
+      "points_in_cylinder": 183,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4989,
-      "field_value": 755,
-      "points_in_cylinder": 469,
+      "field_value": 768,
+      "points_in_cylinder": 4099,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4990,
-      "field_value": 980,
-      "points_in_cylinder": 2,
+      "field_value": 222,
+      "points_in_cylinder": 858,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4991,
-      "field_value": 520,
-      "points_in_cylinder": 1215,
+      "field_value": 66,
+      "points_in_cylinder": 235,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 4992,
-      "field_value": 762,
-      "points_in_cylinder": 101,
+      "field_value": 731,
+      "points_in_cylinder": 554,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4993,
-      "field_value": 262,
-      "points_in_cylinder": 90,
+      "field_value": 304,
+      "points_in_cylinder": 92,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 4994,
-      "field_value": 462,
-      "points_in_cylinder": 76,
+      "field_value": 667,
+      "points_in_cylinder": 2017,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4995,
-      "field_value": 411,
-      "points_in_cylinder": 1488,
+      "field_value": 819,
+      "points_in_cylinder": 57,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4996,
-      "field_value": 541,
+      "field_value": 378,
       "points_in_cylinder": 2,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4997,
-      "field_value": 623,
-      "points_in_cylinder": 37,
+      "field_value": 318,
+      "points_in_cylinder": 70,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 4998,
-      "field_value": 989,
+      "field_value": 765,
       "points_in_cylinder": 927,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 4999,
-      "field_value": 94,
+      "field_value": 255,
       "points_in_cylinder": 1335,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5000,
-      "field_value": 96,
-      "points_in_cylinder": 23,
+      "field_value": 450,
+      "points_in_cylinder": 1562,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5001,
-      "field_value": 216,
-      "points_in_cylinder": 2818,
+      "field_value": 978,
+      "points_in_cylinder": 81,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5002,
-      "field_value": 153,
-      "points_in_cylinder": 1637,
+      "field_value": 51,
+      "points_in_cylinder": 1327,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5003,
-      "field_value": 418,
-      "points_in_cylinder": 154,
+      "field_value": 290,
+      "points_in_cylinder": 1088,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5004,
-      "field_value": 836,
-      "points_in_cylinder": 35,
+      "field_value": 385,
+      "points_in_cylinder": 330,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5005,
-      "field_value": 521,
-      "points_in_cylinder": 107,
+      "field_value": 814,
+      "points_in_cylinder": 2638,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5006,
-      "field_value": 689,
-      "points_in_cylinder": 420,
+      "field_value": 841,
+      "points_in_cylinder": 4188,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5007,
-      "field_value": 1031,
-      "points_in_cylinder": 1127,
+      "field_value": 198,
+      "points_in_cylinder": 1099,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5008,
-      "field_value": 337,
-      "points_in_cylinder": 6095,
+      "field_value": 1028,
+      "points_in_cylinder": 785,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5009,
-      "field_value": 1023,
-      "points_in_cylinder": 2790,
+      "field_value": 546,
+      "points_in_cylinder": 117,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5010,
-      "field_value": 1072,
-      "points_in_cylinder": 74,
+      "field_value": 425,
+      "points_in_cylinder": 282,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5011,
-      "field_value": 142,
-      "points_in_cylinder": 4852,
+      "field_value": 699,
+      "points_in_cylinder": 567,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5012,
-      "field_value": 679,
+      "field_value": 1004,
       "points_in_cylinder": 675,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5013,
-      "field_value": 810,
-      "points_in_cylinder": 2111,
+      "field_value": 1,
+      "points_in_cylinder": 2145,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5014,
-      "field_value": 239,
-      "points_in_cylinder": 156,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
-      "feature_id": 5015,
-      "field_value": 40,
-      "points_in_cylinder": 5660,
+      "field_value": 1035,
+      "points_in_cylinder": 21,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5016,
-      "field_value": 354,
-      "points_in_cylinder": 6,
+      "field_value": 172,
+      "points_in_cylinder": 1112,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5017,
-      "field_value": 1114,
-      "points_in_cylinder": 723,
+      "field_value": 858,
+      "points_in_cylinder": 2812,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5018,
-      "field_value": 694,
-      "points_in_cylinder": 52,
+      "field_value": 240,
+      "points_in_cylinder": 217,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5019,
-      "field_value": 398,
-      "points_in_cylinder": 2468,
+      "field_value": 897,
+      "points_in_cylinder": 5,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5020,
-      "field_value": 853,
-      "points_in_cylinder": 9021,
+      "field_value": 793,
+      "points_in_cylinder": 61,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 5021,
+      "field_value": 732,
+      "points_in_cylinder": 2364,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
       "feature_id": 5022,
-      "field_value": 662,
-      "points_in_cylinder": 7,
+      "field_value": 138,
+      "points_in_cylinder": 11228,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5023,
-      "field_value": 285,
-      "points_in_cylinder": 2884,
+      "field_value": 661,
+      "points_in_cylinder": 2820,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5024,
-      "field_value": 941,
-      "points_in_cylinder": 564,
+      "field_value": 404,
+      "points_in_cylinder": 1890,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5025,
-      "field_value": 117,
-      "points_in_cylinder": 425,
+      "field_value": 774,
+      "points_in_cylinder": 417,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5026,
-      "field_value": 875,
-      "points_in_cylinder": 35,
+      "field_value": 842,
+      "points_in_cylinder": 1016,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5027,
-      "field_value": 1045,
-      "points_in_cylinder": 674,
+      "field_value": 72,
+      "points_in_cylinder": 731,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5028,
-      "field_value": 1016,
-      "points_in_cylinder": 20,
+      "field_value": 630,
+      "points_in_cylinder": 478,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5029,
-      "field_value": 182,
-      "points_in_cylinder": 232,
+      "field_value": 55,
+      "points_in_cylinder": 369,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5030,
-      "field_value": 726,
-      "points_in_cylinder": 979,
+      "field_value": 238,
+      "points_in_cylinder": 974,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5031,
-      "field_value": 397,
-      "points_in_cylinder": 58,
+      "field_value": 497,
+      "points_in_cylinder": 123,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
-      "feature_id": 5032,
-      "field_value": 1106,
-      "points_in_cylinder": 509,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
       "feature_id": 5033,
-      "field_value": 770,
-      "points_in_cylinder": 2722,
+      "field_value": 787,
+      "points_in_cylinder": 2145,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5034,
-      "field_value": 897,
+      "field_value": 749,
       "points_in_cylinder": 3608,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5035,
-      "field_value": 565,
-      "points_in_cylinder": 1785,
+      "field_value": 955,
+      "points_in_cylinder": 1708,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5036,
-      "field_value": 723,
-      "points_in_cylinder": 2825,
+      "field_value": 411,
+      "points_in_cylinder": 2613,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5037,
-      "field_value": 103,
-      "points_in_cylinder": 2873,
+      "field_value": 472,
+      "points_in_cylinder": 3342,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5038,
-      "field_value": 890,
+      "field_value": 751,
       "points_in_cylinder": 1128,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5039,
-      "field_value": 1121,
-      "points_in_cylinder": 2282,
+      "field_value": 23,
+      "points_in_cylinder": 2670,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5040,
-      "field_value": 813,
-      "points_in_cylinder": 1665,
+      "field_value": 682,
+      "points_in_cylinder": 710,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5041,
-      "field_value": 761,
-      "points_in_cylinder": 19,
+      "field_value": 834,
+      "points_in_cylinder": 1356,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5042,
-      "field_value": 162,
-      "points_in_cylinder": 1771,
+      "field_value": 563,
+      "points_in_cylinder": 1753,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5043,
-      "field_value": 892,
-      "points_in_cylinder": 904,
+      "field_value": 625,
+      "points_in_cylinder": 140,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5044,
-      "field_value": 697,
-      "points_in_cylinder": 156,
+      "field_value": 622,
+      "points_in_cylinder": 1307,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5045,
-      "field_value": 758,
-      "points_in_cylinder": 302,
+      "field_value": 322,
+      "points_in_cylinder": 400,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5046,
-      "field_value": 365,
-      "points_in_cylinder": 294,
+      "field_value": 76,
+      "points_in_cylinder": 276,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5047,
-      "field_value": 881,
+      "field_value": 641,
       "points_in_cylinder": 493,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5048,
-      "field_value": 573,
-      "points_in_cylinder": 2709,
+      "field_value": 432,
+      "points_in_cylinder": 2095,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5049,
-      "field_value": 532,
-      "points_in_cylinder": 824,
+      "field_value": 62,
+      "points_in_cylinder": 799,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5050,
-      "field_value": 631,
-      "points_in_cylinder": 47,
+      "field_value": 823,
+      "points_in_cylinder": 836,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5051,
-      "field_value": 1133,
-      "points_in_cylinder": 2057,
+      "field_value": 759,
+      "points_in_cylinder": 2006,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5052,
-      "field_value": 979,
-      "points_in_cylinder": 1203,
+      "field_value": 747,
+      "points_in_cylinder": 1209,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5053,
-      "field_value": 135,
+      "field_value": 476,
       "points_in_cylinder": 1622,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5054,
-      "field_value": 228,
-      "points_in_cylinder": 352,
+      "field_value": 464,
+      "points_in_cylinder": 4190,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5055,
-      "field_value": 1050,
-      "points_in_cylinder": 93,
+      "field_value": 1029,
+      "points_in_cylinder": 81,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5056,
-      "field_value": 784,
-      "points_in_cylinder": 44,
+      "field_value": 1016,
+      "points_in_cylinder": 256,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5057,
-      "field_value": 65,
-      "points_in_cylinder": 1684,
+      "field_value": 260,
+      "points_in_cylinder": 4551,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5058,
-      "field_value": 1063,
-      "points_in_cylinder": 2159,
+      "field_value": 551,
+      "points_in_cylinder": 2150,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5059,
-      "field_value": 1058,
-      "points_in_cylinder": 556,
+      "field_value": 86,
+      "points_in_cylinder": 466,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5060,
-      "field_value": 745,
-      "points_in_cylinder": 1935,
+      "field_value": 736,
+      "points_in_cylinder": 1893,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5061,
-      "field_value": 215,
-      "points_in_cylinder": 3,
+      "field_value": 181,
+      "points_in_cylinder": 77,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5062,
-      "field_value": 322,
-      "points_in_cylinder": 4979,
+      "field_value": 535,
+      "points_in_cylinder": 4977,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5063,
-      "field_value": 163,
-      "points_in_cylinder": 265,
+      "field_value": 317,
+      "points_in_cylinder": 3124,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5064,
-      "field_value": 0,
-      "points_in_cylinder": 540,
+      "field_value": 1006,
+      "points_in_cylinder": 4,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5065,
-      "field_value": 1008,
-      "points_in_cylinder": 1378,
+      "field_value": 71,
+      "points_in_cylinder": 1265,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5066,
-      "field_value": 691,
-      "points_in_cylinder": 835,
+      "field_value": 227,
+      "points_in_cylinder": 3141,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5067,
-      "field_value": 1011,
-      "points_in_cylinder": 73,
+      "field_value": 716,
+      "points_in_cylinder": 1415,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5068,
-      "field_value": 222,
-      "points_in_cylinder": 94,
-      "species": "Пихта",
-      "species_eng": "fir"
-    },
-    {
-      "feature_id": 5069,
-      "field_value": 351,
-      "points_in_cylinder": 6807,
+      "field_value": 649,
+      "points_in_cylinder": 4913,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5070,
-      "field_value": 942,
-      "points_in_cylinder": 146,
+      "field_value": 595,
+      "points_in_cylinder": 1426,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5071,
-      "field_value": 402,
-      "points_in_cylinder": 451,
+      "field_value": 1009,
+      "points_in_cylinder": 53,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5072,
-      "field_value": 992,
-      "points_in_cylinder": 1057,
+      "field_value": 602,
+      "points_in_cylinder": 9466,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5073,
-      "field_value": 27,
-      "points_in_cylinder": 17,
+      "field_value": 550,
+      "points_in_cylinder": 30,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5074,
-      "field_value": 1103,
-      "points_in_cylinder": 124,
+      "field_value": 1038,
+      "points_in_cylinder": 152,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5075,
-      "field_value": 1110,
-      "points_in_cylinder": 1338,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5076,
-      "field_value": 1119,
-      "points_in_cylinder": 63,
+      "field_value": 1032,
+      "points_in_cylinder": 1292,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5077,
-      "field_value": 180,
-      "points_in_cylinder": 61,
+      "field_value": 449,
+      "points_in_cylinder": 7378,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5078,
-      "field_value": 763,
-      "points_in_cylinder": 20,
+      "field_value": 971,
+      "points_in_cylinder": 499,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5079,
-      "field_value": 177,
-      "points_in_cylinder": 14,
+      "field_value": 68,
+      "points_in_cylinder": 4292,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5080,
-      "field_value": 995,
-      "points_in_cylinder": 46,
+      "field_value": 782,
+      "points_in_cylinder": 47,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5081,
-      "field_value": 1060,
-      "points_in_cylinder": 27,
+      "field_value": 878,
+      "points_in_cylinder": 1940,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5082,
-      "field_value": 703,
-      "points_in_cylinder": 89,
+      "field_value": 123,
+      "points_in_cylinder": 624,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5083,
-      "field_value": 773,
-      "points_in_cylinder": 11,
+      "field_value": 811,
+      "points_in_cylinder": 845,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5084,
-      "field_value": 530,
-      "points_in_cylinder": 404,
+      "field_value": 358,
+      "points_in_cylinder": 8176,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5085,
-      "field_value": 674,
-      "points_in_cylinder": 748,
+      "field_value": 954,
+      "points_in_cylinder": 859,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5086,
-      "field_value": 732,
-      "points_in_cylinder": 1,
+      "field_value": 132,
+      "points_in_cylinder": 2301,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5087,
-      "field_value": 1027,
-      "points_in_cylinder": 129,
+      "field_value": 326,
+      "points_in_cylinder": 57,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5088,
-      "field_value": 385,
-      "points_in_cylinder": 5511,
+      "field_value": 57,
+      "points_in_cylinder": 1334,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5089,
-      "field_value": 1070,
-      "points_in_cylinder": 2327,
+      "field_value": 888,
+      "points_in_cylinder": 2625,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5090,
-      "field_value": 824,
-      "points_in_cylinder": 5187,
+      "field_value": 711,
+      "points_in_cylinder": 1208,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5091,
-      "field_value": 49,
-      "points_in_cylinder": 54,
+      "field_value": 900,
+      "points_in_cylinder": 593,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5092,
-      "field_value": 873,
-      "points_in_cylinder": 53,
+      "field_value": 334,
+      "points_in_cylinder": 72,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5093,
-      "field_value": 545,
-      "points_in_cylinder": 3512,
+      "field_value": 366,
+      "points_in_cylinder": 715,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5094,
-      "field_value": 949,
-      "points_in_cylinder": 383,
+      "field_value": 246,
+      "points_in_cylinder": 224,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5095,
-      "field_value": 801,
-      "points_in_cylinder": 27,
+      "field_value": 45,
+      "points_in_cylinder": 30,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5096,
-      "field_value": 470,
-      "points_in_cylinder": 56,
+      "field_value": 1000,
+      "points_in_cylinder": 2599,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5097,
-      "field_value": 453,
-      "points_in_cylinder": 1414,
+      "field_value": 715,
+      "points_in_cylinder": 4751,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5098,
-      "field_value": 198,
-      "points_in_cylinder": 85,
+      "field_value": 267,
+      "points_in_cylinder": 690,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5099,
-      "field_value": 482,
-      "points_in_cylinder": 1976,
+      "field_value": 121,
+      "points_in_cylinder": 4509,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5100,
-      "field_value": 829,
+      "field_value": 543,
       "points_in_cylinder": 4,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5101,
-      "field_value": 129,
-      "points_in_cylinder": 4198,
+      "field_value": 632,
+      "points_in_cylinder": 134,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
-      "feature_id": 5102,
-      "field_value": 964,
-      "points_in_cylinder": 14,
-      "species": "Пихта",
-      "species_eng": "fir"
-    },
-    {
       "feature_id": 5103,
-      "field_value": 1013,
-      "points_in_cylinder": 19,
+      "field_value": 804,
+      "points_in_cylinder": 43,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5104,
-      "field_value": 316,
-      "points_in_cylinder": 271,
+      "field_value": 1030,
+      "points_in_cylinder": 4373,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5105,
-      "field_value": 413,
-      "points_in_cylinder": 184,
+      "field_value": 976,
+      "points_in_cylinder": 243,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5106,
-      "field_value": 357,
-      "points_in_cylinder": 69,
+      "field_value": 442,
+      "points_in_cylinder": 1100,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5107,
-      "field_value": 486,
-      "points_in_cylinder": 170,
+      "field_value": 429,
+      "points_in_cylinder": 146,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5108,
-      "field_value": 369,
-      "points_in_cylinder": 20,
+      "field_value": 314,
+      "points_in_cylinder": 510,
       "species": "Сосна",
       "species_eng": "pine"
     },
     {
       "feature_id": 5109,
-      "field_value": 388,
-      "points_in_cylinder": 2260,
+      "field_value": 41,
+      "points_in_cylinder": 618,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5110,
-      "field_value": 932,
-      "points_in_cylinder": 53,
+      "field_value": 975,
+      "points_in_cylinder": 515,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5111,
-      "field_value": 497,
-      "points_in_cylinder": 2030,
+      "field_value": 269,
+      "points_in_cylinder": 2077,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5112,
-      "field_value": 152,
-      "points_in_cylinder": 3309,
+      "field_value": 263,
+      "points_in_cylinder": 4038,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5113,
-      "field_value": 1093,
-      "points_in_cylinder": 1414,
+      "field_value": 613,
+      "points_in_cylinder": 469,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5114,
-      "field_value": 138,
-      "points_in_cylinder": 1672,
+      "field_value": 597,
+      "points_in_cylinder": 1887,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5115,
-      "field_value": 122,
-      "points_in_cylinder": 192,
+      "field_value": 1003,
+      "points_in_cylinder": 93,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5116,
+      "field_value": 899,
+      "points_in_cylinder": 3916,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
+      "feature_id": 5117,
       "field_value": 639,
       "points_in_cylinder": 52,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
-      "feature_id": 5117,
-      "field_value": 86,
-      "points_in_cylinder": 1280,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
       "feature_id": 5118,
-      "field_value": 383,
-      "points_in_cylinder": 7496,
+      "field_value": 308,
+      "points_in_cylinder": 135,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5119,
-      "field_value": 508,
-      "points_in_cylinder": 66,
+      "field_value": 500,
+      "points_in_cylinder": 13,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5120,
-      "field_value": 611,
-      "points_in_cylinder": 3453,
+      "field_value": 631,
+      "points_in_cylinder": 3455,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5121,
-      "field_value": 737,
-      "points_in_cylinder": 4232,
+      "field_value": 470,
+      "points_in_cylinder": 4553,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5122,
-      "field_value": 248,
-      "points_in_cylinder": 6058,
+      "field_value": 87,
+      "points_in_cylinder": 5787,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5123,
-      "field_value": 594,
-      "points_in_cylinder": 15,
+      "field_value": 97,
+      "points_in_cylinder": 46,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5124,
-      "field_value": 912,
-      "points_in_cylinder": 2533,
+      "field_value": 375,
+      "points_in_cylinder": 2899,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5125,
-      "field_value": 281,
+      "field_value": 874,
       "points_in_cylinder": 78,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5126,
-      "field_value": 265,
+      "field_value": 228,
       "points_in_cylinder": 558,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5127,
-      "field_value": 165,
-      "points_in_cylinder": 5059,
+      "field_value": 683,
+      "points_in_cylinder": 58,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5128,
-      "field_value": 567,
-      "points_in_cylinder": 2982,
+      "field_value": 944,
+      "points_in_cylinder": 1191,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5129,
-      "field_value": 856,
-      "points_in_cylinder": 2677,
+      "field_value": 88,
+      "points_in_cylinder": 60,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5130,
-      "field_value": 1135,
-      "points_in_cylinder": 3850,
+      "field_value": 28,
+      "points_in_cylinder": 157,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5131,
-      "field_value": 845,
-      "points_in_cylinder": 122,
+      "field_value": 1014,
+      "points_in_cylinder": 134,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5132,
-      "field_value": 1003,
-      "points_in_cylinder": 624,
+      "field_value": 12,
+      "points_in_cylinder": 3618,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5133,
-      "field_value": 186,
-      "points_in_cylinder": 30,
+      "field_value": 997,
+      "points_in_cylinder": 118,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5134,
-      "field_value": 1051,
-      "points_in_cylinder": 34,
+      "field_value": 553,
+      "points_in_cylinder": 1709,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5135,
-      "field_value": 616,
-      "points_in_cylinder": 117,
+      "field_value": 560,
+      "points_in_cylinder": 93,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5136,
-      "field_value": 76,
-      "points_in_cylinder": 862,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5137,
-      "field_value": 786,
-      "points_in_cylinder": 2746,
+      "field_value": 208,
+      "points_in_cylinder": 8,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5138,
-      "field_value": 342,
-      "points_in_cylinder": 2145,
+      "field_value": 243,
+      "points_in_cylinder": 67,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5139,
-      "field_value": 1054,
-      "points_in_cylinder": 108,
+      "field_value": 101,
+      "points_in_cylinder": 403,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5140,
-      "field_value": 1090,
-      "points_in_cylinder": 277,
+      "field_value": 78,
+      "points_in_cylinder": 7801,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5144,
-      "field_value": 236,
-      "points_in_cylinder": 1082,
+      "field_value": 521,
+      "points_in_cylinder": 1078,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5145,
-      "field_value": 673,
-      "points_in_cylinder": 3135,
+      "field_value": 911,
+      "points_in_cylinder": 2910,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5146,
-      "field_value": 1108,
-      "points_in_cylinder": 1632,
+      "field_value": 875,
+      "points_in_cylinder": 66,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5147,
-      "field_value": 275,
-      "points_in_cylinder": 1511,
+      "field_value": 194,
+      "points_in_cylinder": 1512,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5148,
-      "field_value": 105,
-      "points_in_cylinder": 1686,
+      "field_value": 330,
+      "points_in_cylinder": 1717,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5149,
-      "field_value": 379,
-      "points_in_cylinder": 2825,
+      "field_value": 694,
+      "points_in_cylinder": 2097,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
-      "feature_id": 5150,
-      "field_value": 952,
-      "points_in_cylinder": 16,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
       "feature_id": 5151,
-      "field_value": 30,
-      "points_in_cylinder": 474,
+      "field_value": 612,
+      "points_in_cylinder": 9365,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5152,
-      "field_value": 485,
-      "points_in_cylinder": 222,
+      "field_value": 598,
+      "points_in_cylinder": 2977,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5153,
-      "field_value": 645,
-      "points_in_cylinder": 1506,
+      "field_value": 536,
+      "points_in_cylinder": 9,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
-    },
-    {
-      "feature_id": 5154,
-      "field_value": 102,
-      "points_in_cylinder": 172,
-      "species": "Лиственница",
-      "species_eng": "listvennitsa"
-    },
-    {
-      "feature_id": 5155,
-      "field_value": 409,
-      "points_in_cylinder": 1222,
-      "species": "Кедр",
-      "species_eng": "cedar"
     },
     {
       "feature_id": 5156,
-      "field_value": 463,
+      "field_value": 656,
       "points_in_cylinder": 344,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5157,
-      "field_value": 148,
-      "points_in_cylinder": 7097,
+      "field_value": 415,
+      "points_in_cylinder": 7094,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5158,
-      "field_value": 434,
-      "points_in_cylinder": 133,
+      "field_value": 872,
+      "points_in_cylinder": 208,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5159,
-      "field_value": 7,
-      "points_in_cylinder": 2063,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5160,
-      "field_value": 149,
-      "points_in_cylinder": 105,
+      "field_value": 212,
+      "points_in_cylinder": 2083,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5161,
-      "field_value": 493,
-      "points_in_cylinder": 1290,
+      "field_value": 184,
+      "points_in_cylinder": 972,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5162,
-      "field_value": 1134,
-      "points_in_cylinder": 488,
+      "field_value": 851,
+      "points_in_cylinder": 1506,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5163,
-      "field_value": 605,
-      "points_in_cylinder": 253,
+      "field_value": 866,
+      "points_in_cylinder": 489,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
-      "feature_id": 5165,
-      "field_value": 682,
-      "points_in_cylinder": 53,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5166,
-      "field_value": 1122,
-      "points_in_cylinder": 108,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
       "feature_id": 5167,
-      "field_value": 140,
-      "points_in_cylinder": 8484,
+      "field_value": 733,
+      "points_in_cylinder": 8114,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5168,
-      "field_value": 668,
-      "points_in_cylinder": 7665,
+      "field_value": 262,
+      "points_in_cylinder": 7636,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5169,
-      "field_value": 157,
-      "points_in_cylinder": 731,
+      "field_value": 885,
+      "points_in_cylinder": 352,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5170,
-      "field_value": 561,
+      "field_value": 522,
       "points_in_cylinder": 1969,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5171,
-      "field_value": 830,
-      "points_in_cylinder": 9047,
+      "field_value": 60,
+      "points_in_cylinder": 8001,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5172,
-      "field_value": 143,
+      "field_value": 827,
       "points_in_cylinder": 858,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5173,
-      "field_value": 667,
+      "field_value": 30,
       "points_in_cylinder": 1375,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5174,
-      "field_value": 347,
-      "points_in_cylinder": 3982,
+      "field_value": 242,
+      "points_in_cylinder": 4179,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5175,
-      "field_value": 657,
-      "points_in_cylinder": 1668,
+      "field_value": 947,
+      "points_in_cylinder": 9765,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5176,
-      "field_value": 527,
-      "points_in_cylinder": 8338,
+      "field_value": 130,
+      "points_in_cylinder": 8264,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5177,
-      "field_value": 176,
-      "points_in_cylinder": 1625,
+      "field_value": 839,
+      "points_in_cylinder": 22558,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5178,
-      "field_value": 31,
-      "points_in_cylinder": 9225,
+      "field_value": 591,
+      "points_in_cylinder": 1165,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5179,
-      "field_value": 886,
-      "points_in_cylinder": 956,
+      "field_value": 316,
+      "points_in_cylinder": 1097,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5180,
-      "field_value": 115,
-      "points_in_cylinder": 61,
+      "field_value": 151,
+      "points_in_cylinder": 4047,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5181,
-      "field_value": 211,
-      "points_in_cylinder": 195,
+      "field_value": 99,
+      "points_in_cylinder": 10758,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5182,
-      "field_value": 752,
-      "points_in_cylinder": 618,
+      "field_value": 958,
+      "points_in_cylinder": 2569,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5183,
-      "field_value": 136,
-      "points_in_cylinder": 218,
+      "field_value": 461,
+      "points_in_cylinder": 11044,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5184,
-      "field_value": 93,
-      "points_in_cylinder": 19,
+      "field_value": 788,
+      "points_in_cylinder": 519,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5185,
-      "field_value": 188,
-      "points_in_cylinder": 3783,
+      "field_value": 18,
+      "points_in_cylinder": 3692,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5186,
-      "field_value": 1034,
-      "points_in_cylinder": 6879,
+      "field_value": 865,
+      "points_in_cylinder": 3420,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5187,
-      "field_value": 579,
-      "points_in_cylinder": 3133,
+      "field_value": 102,
+      "points_in_cylinder": 36,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5188,
-      "field_value": 581,
+      "field_value": 438,
       "points_in_cylinder": 5772,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5189,
-      "field_value": 546,
+      "field_value": 898,
       "points_in_cylinder": 2101,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5190,
-      "field_value": 432,
-      "points_in_cylinder": 253,
+      "field_value": 257,
+      "points_in_cylinder": 2115,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5191,
-      "field_value": 1061,
-      "points_in_cylinder": 3128,
+      "field_value": 907,
+      "points_in_cylinder": 181,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5192,
-      "field_value": 854,
-      "points_in_cylinder": 773,
+      "field_value": 1010,
+      "points_in_cylinder": 461,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5193,
-      "field_value": 860,
-      "points_in_cylinder": 11,
+      "field_value": 581,
+      "points_in_cylinder": 685,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5194,
-      "field_value": 251,
-      "points_in_cylinder": 2837,
+      "field_value": 795,
+      "points_in_cylinder": 311,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5195,
-      "field_value": 601,
-      "points_in_cylinder": 192,
+      "field_value": 905,
+      "points_in_cylinder": 779,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5196,
-      "field_value": 79,
-      "points_in_cylinder": 3207,
+      "field_value": 140,
+      "points_in_cylinder": 3405,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5197,
-      "field_value": 1080,
-      "points_in_cylinder": 5,
+      "field_value": 761,
+      "points_in_cylinder": 168,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5198,
-      "field_value": 476,
-      "points_in_cylinder": 3844,
+      "field_value": 673,
+      "points_in_cylinder": 3457,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5199,
-      "field_value": 675,
-      "points_in_cylinder": 1353,
+      "field_value": 510,
+      "points_in_cylinder": 553,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5200,
-      "field_value": 936,
-      "points_in_cylinder": 1175,
+      "field_value": 365,
+      "points_in_cylinder": 752,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5201,
-      "field_value": 167,
-      "points_in_cylinder": 1818,
+      "field_value": 695,
+      "points_in_cylinder": 1658,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
-      "feature_id": 5202,
-      "field_value": 799,
-      "points_in_cylinder": 175,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
       "feature_id": 5203,
-      "field_value": 254,
-      "points_in_cylinder": 3204,
+      "field_value": 1052,
+      "points_in_cylinder": 3280,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5204,
-      "field_value": 688,
-      "points_in_cylinder": 52,
+      "field_value": 226,
+      "points_in_cylinder": 20,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5205,
-      "field_value": 754,
-      "points_in_cylinder": 2327,
+      "field_value": 468,
+      "points_in_cylinder": 456,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5206,
-      "field_value": 1091,
-      "points_in_cylinder": 494,
+      "field_value": 364,
+      "points_in_cylinder": 47,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5207,
-      "field_value": 412,
-      "points_in_cylinder": 4003,
+      "field_value": 201,
+      "points_in_cylinder": 4607,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5208,
-      "field_value": 483,
-      "points_in_cylinder": 93,
+      "field_value": 321,
+      "points_in_cylinder": 1464,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5209,
-      "field_value": 87,
-      "points_in_cylinder": 91,
+      "field_value": 904,
+      "points_in_cylinder": 63,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5210,
-      "field_value": 461,
-      "points_in_cylinder": 28,
+      "field_value": 423,
+      "points_in_cylinder": 791,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5211,
-      "field_value": 294,
-      "points_in_cylinder": 102,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
-      "feature_id": 5212,
-      "field_value": 333,
-      "points_in_cylinder": 482,
+      "field_value": 794,
+      "points_in_cylinder": 1258,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5213,
-      "field_value": 633,
+      "field_value": 825,
       "points_in_cylinder": 2002,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5214,
-      "field_value": 274,
-      "points_in_cylinder": 509,
+      "field_value": 220,
+      "points_in_cylinder": 242,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
-      "feature_id": 5215,
-      "field_value": 1048,
-      "points_in_cylinder": 27,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
-      "feature_id": 5217,
-      "field_value": 768,
-      "points_in_cylinder": 561,
-      "species": "Пихта",
-      "species_eng": "fir"
-    },
-    {
       "feature_id": 5218,
-      "field_value": 89,
-      "points_in_cylinder": 348,
+      "field_value": 367,
+      "points_in_cylinder": 318,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5219,
-      "field_value": 558,
-      "points_in_cylinder": 883,
+      "field_value": 742,
+      "points_in_cylinder": 207,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5220,
-      "field_value": 739,
+      "field_value": 873,
       "points_in_cylinder": 1,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5221,
-      "field_value": 308,
-      "points_in_cylinder": 518,
+      "field_value": 479,
+      "points_in_cylinder": 322,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5222,
-      "field_value": 12,
-      "points_in_cylinder": 1510,
+      "field_value": 499,
+      "points_in_cylinder": 1084,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5223,
-      "field_value": 378,
-      "points_in_cylinder": 75,
+      "field_value": 380,
+      "points_in_cylinder": 660,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5224,
-      "field_value": 83,
-      "points_in_cylinder": 697,
+      "field_value": 44,
+      "points_in_cylinder": 76,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5225,
-      "field_value": 1131,
-      "points_in_cylinder": 559,
+      "field_value": 161,
+      "points_in_cylinder": 526,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5226,
-      "field_value": 56,
-      "points_in_cylinder": 1148,
+      "field_value": 1060,
+      "points_in_cylinder": 38,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 5227,
+      "field_value": 697,
+      "points_in_cylinder": 93,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
       "feature_id": 5228,
-      "field_value": 837,
-      "points_in_cylinder": 150,
+      "field_value": 950,
+      "points_in_cylinder": 4676,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5229,
-      "field_value": 1068,
-      "points_in_cylinder": 18,
+      "field_value": 346,
+      "points_in_cylinder": 6,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5230,
-      "field_value": 276,
-      "points_in_cylinder": 1521,
+      "field_value": 698,
+      "points_in_cylinder": 2461,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5232,
-      "field_value": 48,
-      "points_in_cylinder": 9740,
+      "field_value": 582,
+      "points_in_cylinder": 1265,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 5233,
+      "field_value": 621,
+      "points_in_cylinder": 474,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
       "feature_id": 5234,
-      "field_value": 1046,
-      "points_in_cylinder": 148,
+      "field_value": 862,
+      "points_in_cylinder": 27,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5235,
-      "field_value": 110,
-      "points_in_cylinder": 5926,
+      "field_value": 354,
+      "points_in_cylinder": 5825,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5236,
-      "field_value": 326,
-      "points_in_cylinder": 11021,
+      "field_value": 1048,
+      "points_in_cylinder": 8760,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5237,
-      "field_value": 1127,
-      "points_in_cylinder": 158,
+      "field_value": 654,
+      "points_in_cylinder": 10496,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5238,
-      "field_value": 1076,
-      "points_in_cylinder": 2567,
+      "field_value": 857,
+      "points_in_cylinder": 7453,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5239,
-      "field_value": 400,
-      "points_in_cylinder": 33,
+      "field_value": 164,
+      "points_in_cylinder": 849,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5240,
-      "field_value": 39,
-      "points_in_cylinder": 12,
+      "field_value": 163,
+      "points_in_cylinder": 398,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5241,
-      "field_value": 575,
+      "field_value": 585,
       "points_in_cylinder": 184,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5242,
-      "field_value": 683,
-      "points_in_cylinder": 4827,
+      "field_value": 519,
+      "points_in_cylinder": 4721,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5243,
-      "field_value": 699,
-      "points_in_cylinder": 1536,
+      "field_value": 895,
+      "points_in_cylinder": 18,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5244,
-      "field_value": 515,
-      "points_in_cylinder": 1313,
+      "field_value": 913,
+      "points_in_cylinder": 908,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5245,
-      "field_value": 261,
-      "points_in_cylinder": 1272,
+      "field_value": 234,
+      "points_in_cylinder": 237,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5246,
-      "field_value": 551,
-      "points_in_cylinder": 3320,
+      "field_value": 105,
+      "points_in_cylinder": 2905,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5247,
-      "field_value": 817,
-      "points_in_cylinder": 22,
+      "field_value": 983,
+      "points_in_cylinder": 358,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5248,
-      "field_value": 10,
-      "points_in_cylinder": 164,
+      "field_value": 127,
+      "points_in_cylinder": 93,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5249,
-      "field_value": 991,
-      "points_in_cylinder": 347,
+      "field_value": 886,
+      "points_in_cylinder": 1967,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5250,
-      "field_value": 355,
-      "points_in_cylinder": 12,
+      "field_value": 737,
+      "points_in_cylinder": 5438,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5251,
-      "field_value": 943,
-      "points_in_cylinder": 243,
+      "field_value": 610,
+      "points_in_cylinder": 612,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5252,
-      "field_value": 502,
-      "points_in_cylinder": 3648,
+      "field_value": 188,
+      "points_in_cylinder": 242,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5253,
-      "field_value": 1009,
-      "points_in_cylinder": 2092,
+      "field_value": 1023,
+      "points_in_cylinder": 72,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5254,
-      "field_value": 582,
-      "points_in_cylinder": 85,
+      "field_value": 608,
+      "points_in_cylinder": 1827,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5255,
-      "field_value": 1066,
-      "points_in_cylinder": 858,
+      "field_value": 24,
+      "points_in_cylinder": 128,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5256,
-      "field_value": 63,
-      "points_in_cylinder": 74,
+      "field_value": 305,
+      "points_in_cylinder": 56,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5257,
-      "field_value": 869,
-      "points_in_cylinder": 1453,
+      "field_value": 1012,
+      "points_in_cylinder": 1789,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5258,
-      "field_value": 868,
-      "points_in_cylinder": 550,
+      "field_value": 453,
+      "points_in_cylinder": 213,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5259,
-      "field_value": 209,
-      "points_in_cylinder": 1296,
+      "field_value": 833,
+      "points_in_cylinder": 37,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5260,
-      "field_value": 84,
-      "points_in_cylinder": 412,
+      "field_value": 297,
+      "points_in_cylinder": 171,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5261,
-      "field_value": 524,
-      "points_in_cylinder": 62,
+      "field_value": 725,
+      "points_in_cylinder": 9299,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5262,
-      "field_value": 827,
-      "points_in_cylinder": 2185,
+      "field_value": 601,
+      "points_in_cylinder": 3243,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5263,
-      "field_value": 71,
-      "points_in_cylinder": 3024,
+      "field_value": 176,
+      "points_in_cylinder": 2893,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5264,
-      "field_value": 930,
-      "points_in_cylinder": 65,
+      "field_value": 531,
+      "points_in_cylinder": 1999,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5265,
-      "field_value": 709,
-      "points_in_cylinder": 485,
+      "field_value": 803,
+      "points_in_cylinder": 4274,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5266,
-      "field_value": 975,
-      "points_in_cylinder": 523,
+      "field_value": 106,
+      "points_in_cylinder": 352,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5267,
-      "field_value": 678,
+      "field_value": 360,
       "points_in_cylinder": 21,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5268,
-      "field_value": 706,
-      "points_in_cylinder": 3800,
+      "field_value": 837,
+      "points_in_cylinder": 2575,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5269,
-      "field_value": 919,
-      "points_in_cylinder": 70,
+      "field_value": 962,
+      "points_in_cylinder": 2734,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5270,
-      "field_value": 724,
-      "points_in_cylinder": 831,
+      "field_value": 741,
+      "points_in_cylinder": 1252,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5271,
-      "field_value": 390,
-      "points_in_cylinder": 4,
+      "field_value": 224,
+      "points_in_cylinder": 217,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5272,
-      "field_value": 178,
-      "points_in_cylinder": 70,
+      "field_value": 927,
+      "points_in_cylinder": 11,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5273,
-      "field_value": 1010,
-      "points_in_cylinder": 385,
+      "field_value": 805,
+      "points_in_cylinder": 4252,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5274,
-      "field_value": 607,
-      "points_in_cylinder": 12,
+      "field_value": 287,
+      "points_in_cylinder": 333,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5275,
-      "field_value": 70,
-      "points_in_cylinder": 4012,
+      "field_value": 996,
+      "points_in_cylinder": 2774,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5276,
-      "field_value": 22,
-      "points_in_cylinder": 1065,
+      "field_value": 34,
+      "points_in_cylinder": 4432,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5277,
-      "field_value": 99,
-      "points_in_cylinder": 766,
+      "field_value": 574,
+      "points_in_cylinder": 815,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5278,
-      "field_value": 831,
-      "points_in_cylinder": 6541,
+      "field_value": 399,
+      "points_in_cylinder": 6421,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5279,
-      "field_value": 492,
-      "points_in_cylinder": 255,
+      "field_value": 984,
+      "points_in_cylinder": 95,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5280,
-      "field_value": 264,
+      "field_value": 443,
       "points_in_cylinder": 4,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5281,
-      "field_value": 210,
-      "points_in_cylinder": 6,
+      "field_value": 142,
+      "points_in_cylinder": 1921,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5282,
-      "field_value": 168,
-      "points_in_cylinder": 9,
+      "field_value": 400,
+      "points_in_cylinder": 1753,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5283,
-      "field_value": 993,
-      "points_in_cylinder": 15,
+      "field_value": 893,
+      "points_in_cylinder": 201,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5284,
-      "field_value": 245,
-      "points_in_cylinder": 1343,
+      "field_value": 679,
+      "points_in_cylinder": 1349,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5285,
-      "field_value": 692,
-      "points_in_cylinder": 112,
+      "field_value": 932,
+      "points_in_cylinder": 488,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5286,
-      "field_value": 833,
-      "points_in_cylinder": 173,
+      "field_value": 403,
+      "points_in_cylinder": 8034,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5287,
-      "field_value": 656,
-      "points_in_cylinder": 6898,
+      "field_value": 490,
+      "points_in_cylinder": 6925,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5288,
-      "field_value": 660,
-      "points_in_cylinder": 475,
+      "field_value": 374,
+      "points_in_cylinder": 924,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5289,
-      "field_value": 1041,
-      "points_in_cylinder": 544,
+      "field_value": 31,
+      "points_in_cylinder": 830,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5290,
-      "field_value": 772,
-      "points_in_cylinder": 49,
+      "field_value": 754,
+      "points_in_cylinder": 77,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5291,
-      "field_value": 1086,
-      "points_in_cylinder": 12363,
+      "field_value": 192,
+      "points_in_cylinder": 260,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5292,
-      "field_value": 249,
-      "points_in_cylinder": 7,
+      "field_value": 568,
+      "points_in_cylinder": 207,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5293,
-      "field_value": 696,
-      "points_in_cylinder": 105,
+      "field_value": 609,
+      "points_in_cylinder": 2451,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5294,
-      "field_value": 803,
-      "points_in_cylinder": 97,
+      "field_value": 410,
+      "points_in_cylinder": 60,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5295,
-      "field_value": 296,
-      "points_in_cylinder": 46,
+      "field_value": 278,
+      "points_in_cylinder": 222,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5296,
-      "field_value": 161,
+      "field_value": 813,
       "points_in_cylinder": 431,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5297,
-      "field_value": 302,
+      "field_value": 606,
       "points_in_cylinder": 1810,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5298,
-      "field_value": 353,
-      "points_in_cylinder": 92,
+      "field_value": 180,
+      "points_in_cylinder": 67,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5299,
-      "field_value": 1004,
-      "points_in_cylinder": 4652,
+      "field_value": 869,
+      "points_in_cylinder": 1600,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5300,
-      "field_value": 224,
-      "points_in_cylinder": 253,
+      "field_value": 604,
+      "points_in_cylinder": 187,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5301,
-      "field_value": 681,
-      "points_in_cylinder": 2402,
+      "field_value": 197,
+      "points_in_cylinder": 2353,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5302,
-      "field_value": 999,
-      "points_in_cylinder": 50,
+      "field_value": 508,
+      "points_in_cylinder": 32,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5303,
-      "field_value": 203,
+      "field_value": 539,
       "points_in_cylinder": 2293,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5304,
-      "field_value": 785,
-      "points_in_cylinder": 61,
+      "field_value": 98,
+      "points_in_cylinder": 264,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5305,
-      "field_value": 1095,
-      "points_in_cylinder": 1625,
+      "field_value": 430,
+      "points_in_cylinder": 1300,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5306,
-      "field_value": 746,
-      "points_in_cylinder": 51,
+      "field_value": 611,
+      "points_in_cylinder": 131,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5307,
-      "field_value": 966,
+      "field_value": 408,
       "points_in_cylinder": 9314,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5308,
-      "field_value": 610,
-      "points_in_cylinder": 3528,
+      "field_value": 974,
+      "points_in_cylinder": 63,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5309,
-      "field_value": 212,
-      "points_in_cylinder": 1776,
+      "field_value": 218,
+      "points_in_cylinder": 79,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5310,
-      "field_value": 271,
-      "points_in_cylinder": 4041,
+      "field_value": 129,
+      "points_in_cylinder": 4022,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5311,
-      "field_value": 593,
-      "points_in_cylinder": 3864,
+      "field_value": 36,
+      "points_in_cylinder": 2617,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5312,
-      "field_value": 695,
-      "points_in_cylinder": 7955,
+      "field_value": 1015,
+      "points_in_cylinder": 8500,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5313,
-      "field_value": 229,
-      "points_in_cylinder": 1193,
+      "field_value": 38,
+      "points_in_cylinder": 788,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5314,
-      "field_value": 372,
-      "points_in_cylinder": 2409,
+      "field_value": 960,
+      "points_in_cylinder": 413,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5315,
-      "field_value": 28,
-      "points_in_cylinder": 2771,
+      "field_value": 264,
+      "points_in_cylinder": 1931,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5316,
-      "field_value": 690,
-      "points_in_cylinder": 9313,
+      "field_value": 687,
+      "points_in_cylinder": 1697,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5317,
-      "field_value": 538,
-      "points_in_cylinder": 4552,
+      "field_value": 54,
+      "points_in_cylinder": 3872,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5318,
-      "field_value": 716,
-      "points_in_cylinder": 3454,
+      "field_value": 977,
+      "points_in_cylinder": 3370,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5319,
-      "field_value": 606,
-      "points_in_cylinder": 1442,
+      "field_value": 294,
+      "points_in_cylinder": 1605,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5320,
-      "field_value": 931,
-      "points_in_cylinder": 4521,
+      "field_value": 369,
+      "points_in_cylinder": 4477,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5321,
-      "field_value": 1111,
-      "points_in_cylinder": 2137,
+      "field_value": 703,
+      "points_in_cylinder": 3468,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5322,
-      "field_value": 590,
-      "points_in_cylinder": 805,
+      "field_value": 750,
+      "points_in_cylinder": 5515,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5323,
-      "field_value": 603,
-      "points_in_cylinder": 103,
+      "field_value": 993,
+      "points_in_cylinder": 7313,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5324,
-      "field_value": 555,
+      "field_value": 855,
       "points_in_cylinder": 441,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5325,
-      "field_value": 490,
-      "points_in_cylinder": 143,
+      "field_value": 469,
+      "points_in_cylinder": 633,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5326,
-      "field_value": 253,
-      "points_in_cylinder": 4,
+      "field_value": 496,
+      "points_in_cylinder": 1358,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
-      "feature_id": 5327,
-      "field_value": 547,
-      "points_in_cylinder": 585,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
       "feature_id": 5328,
-      "field_value": 480,
-      "points_in_cylinder": 1822,
+      "field_value": 299,
+      "points_in_cylinder": 1712,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5329,
-      "field_value": 500,
-      "points_in_cylinder": 83,
+      "field_value": 133,
+      "points_in_cylinder": 35,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5330,
-      "field_value": 272,
-      "points_in_cylinder": 57,
+      "field_value": 1039,
+      "points_in_cylinder": 2023,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5331,
-      "field_value": 358,
-      "points_in_cylinder": 977,
+      "field_value": 52,
+      "points_in_cylinder": 693,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5332,
-      "field_value": 747,
-      "points_in_cylinder": 63,
+      "field_value": 963,
+      "points_in_cylinder": 17,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5333,
-      "field_value": 612,
-      "points_in_cylinder": 1165,
+      "field_value": 1062,
+      "points_in_cylinder": 524,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5334,
-      "field_value": 760,
-      "points_in_cylinder": 38,
+      "field_value": 79,
+      "points_in_cylinder": 105,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5335,
-      "field_value": 625,
-      "points_in_cylinder": 1181,
+      "field_value": 987,
+      "points_in_cylinder": 746,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5336,
-      "field_value": 205,
-      "points_in_cylinder": 3220,
+      "field_value": 881,
+      "points_in_cylinder": 3218,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5337,
-      "field_value": 282,
-      "points_in_cylinder": 106,
+      "field_value": 909,
+      "points_in_cylinder": 954,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5338,
-      "field_value": 98,
-      "points_in_cylinder": 4830,
+      "field_value": 1036,
+      "points_in_cylinder": 1241,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5339,
-      "field_value": 981,
-      "points_in_cylinder": 3293,
+      "field_value": 936,
+      "points_in_cylinder": 3125,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5340,
-      "field_value": 649,
+      "field_value": 277,
       "points_in_cylinder": 26,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5341,
-      "field_value": 666,
-      "points_in_cylinder": 10994,
+      "field_value": 441,
+      "points_in_cylinder": 218,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5342,
-      "field_value": 1094,
-      "points_in_cylinder": 40,
+      "field_value": 533,
+      "points_in_cylinder": 55,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5343,
-      "field_value": 972,
-      "points_in_cylinder": 344,
+      "field_value": 702,
+      "points_in_cylinder": 9,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5344,
-      "field_value": 214,
-      "points_in_cylinder": 3238,
+      "field_value": 628,
+      "points_in_cylinder": 588,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5345,
-      "field_value": 389,
-      "points_in_cylinder": 8,
+      "field_value": 37,
+      "points_in_cylinder": 1858,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5346,
-      "field_value": 1074,
-      "points_in_cylinder": 433,
+      "field_value": 643,
+      "points_in_cylinder": 254,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5347,
-      "field_value": 241,
-      "points_in_cylinder": 18,
+      "field_value": 773,
+      "points_in_cylinder": 114,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5348,
-      "field_value": 917,
-      "points_in_cylinder": 1773,
+      "field_value": 53,
+      "points_in_cylinder": 8,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5349,
-      "field_value": 585,
-      "points_in_cylinder": 68,
+      "field_value": 995,
+      "points_in_cylinder": 512,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5350,
-      "field_value": 234,
-      "points_in_cylinder": 11,
+      "field_value": 273,
+      "points_in_cylinder": 333,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5351,
-      "field_value": 937,
-      "points_in_cylinder": 301,
+      "field_value": 577,
+      "points_in_cylinder": 2125,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5352,
-      "field_value": 872,
-      "points_in_cylinder": 59,
+      "field_value": 701,
+      "points_in_cylinder": 80,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5353,
-      "field_value": 192,
-      "points_in_cylinder": 670,
+      "field_value": 435,
+      "points_in_cylinder": 15,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5354,
-      "field_value": 808,
-      "points_in_cylinder": 18,
+      "field_value": 135,
+      "points_in_cylinder": 1362,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5355,
-      "field_value": 185,
-      "points_in_cylinder": 329,
+      "field_value": 265,
+      "points_in_cylinder": 7,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5356,
-      "field_value": 310,
+      "field_value": 333,
       "points_in_cylinder": 16,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5357,
-      "field_value": 202,
-      "points_in_cylinder": 338,
+      "field_value": 807,
+      "points_in_cylinder": 8199,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5358,
-      "field_value": 1059,
-      "points_in_cylinder": 976,
+      "field_value": 887,
+      "points_in_cylinder": 598,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5359,
-      "field_value": 267,
-      "points_in_cylinder": 3829,
+      "field_value": 296,
+      "points_in_cylinder": 3828,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5360,
-      "field_value": 54,
-      "points_in_cylinder": 12252,
+      "field_value": 824,
+      "points_in_cylinder": 12100,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5361,
-      "field_value": 857,
-      "points_in_cylinder": 136,
+      "field_value": 623,
+      "points_in_cylinder": 558,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5362,
-      "field_value": 820,
+      "field_value": 923,
       "points_in_cylinder": 3797,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5363,
-      "field_value": 777,
+      "field_value": 515,
       "points_in_cylinder": 436,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5364,
-      "field_value": 47,
-      "points_in_cylinder": 45,
+      "field_value": 903,
+      "points_in_cylinder": 365,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5365,
-      "field_value": 452,
-      "points_in_cylinder": 73,
+      "field_value": 157,
+      "points_in_cylinder": 26,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5367,
-      "field_value": 958,
-      "points_in_cylinder": 60,
+      "field_value": 494,
+      "points_in_cylinder": 2236,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5368,
-      "field_value": 473,
-      "points_in_cylinder": 5119,
+      "field_value": 1024,
+      "points_in_cylinder": 4858,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5369,
-      "field_value": 496,
-      "points_in_cylinder": 2462,
+      "field_value": 594,
+      "points_in_cylinder": 1679,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5370,
-      "field_value": 113,
-      "points_in_cylinder": 14360,
+      "field_value": 384,
+      "points_in_cylinder": 5082,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5371,
-      "field_value": 977,
-      "points_in_cylinder": 32,
+      "field_value": 104,
+      "points_in_cylinder": 71,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5372,
-      "field_value": 939,
-      "points_in_cylinder": 5024,
+      "field_value": 205,
+      "points_in_cylinder": 1287,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5373,
-      "field_value": 317,
-      "points_in_cylinder": 603,
+      "field_value": 678,
+      "points_in_cylinder": 43,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5374,
-      "field_value": 150,
+      "field_value": 589,
       "points_in_cylinder": 318,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5375,
-      "field_value": 634,
-      "points_in_cylinder": 1466,
+      "field_value": 303,
+      "points_in_cylinder": 700,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5376,
-      "field_value": 767,
-      "points_in_cylinder": 134,
+      "field_value": 113,
+      "points_in_cylinder": 4934,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5377,
-      "field_value": 183,
-      "points_in_cylinder": 54,
+      "field_value": 283,
+      "points_in_cylinder": 3916,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5378,
-      "field_value": 1101,
-      "points_in_cylinder": 5985,
+      "field_value": 202,
+      "points_in_cylinder": 832,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5379,
-      "field_value": 635,
-      "points_in_cylinder": 1883,
+      "field_value": 586,
+      "points_in_cylinder": 1804,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5380,
-      "field_value": 118,
-      "points_in_cylinder": 878,
+      "field_value": 806,
+      "points_in_cylinder": 649,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5381,
-      "field_value": 295,
-      "points_in_cylinder": 3564,
+      "field_value": 506,
+      "points_in_cylinder": 4577,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5382,
-      "field_value": 862,
-      "points_in_cylinder": 58,
+      "field_value": 524,
+      "points_in_cylinder": 2114,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5383,
-      "field_value": 33,
-      "points_in_cylinder": 1034,
+      "field_value": 302,
+      "points_in_cylinder": 5826,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5384,
-      "field_value": 855,
-      "points_in_cylinder": 175,
+      "field_value": 285,
+      "points_in_cylinder": 303,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5385,
-      "field_value": 984,
-      "points_in_cylinder": 1,
+      "field_value": 452,
+      "points_in_cylinder": 1868,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5386,
-      "field_value": 802,
-      "points_in_cylinder": 75,
+      "field_value": 829,
+      "points_in_cylinder": 241,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5387,
-      "field_value": 807,
-      "points_in_cylinder": 4853,
+      "field_value": 77,
+      "points_in_cylinder": 1,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5388,
-      "field_value": 393,
-      "points_in_cylinder": 205,
+      "field_value": 19,
+      "points_in_cylinder": 271,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5389,
-      "field_value": 540,
-      "points_in_cylinder": 2487,
+      "field_value": 518,
+      "points_in_cylinder": 847,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5390,
-      "field_value": 698,
-      "points_in_cylinder": 4680,
+      "field_value": 943,
+      "points_in_cylinder": 8,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5391,
-      "field_value": 714,
-      "points_in_cylinder": 1200,
+      "field_value": 772,
+      "points_in_cylinder": 365,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5392,
-      "field_value": 128,
-      "points_in_cylinder": 2905,
+      "field_value": 119,
+      "points_in_cylinder": 318,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5393,
-      "field_value": 1129,
-      "points_in_cylinder": 133,
+      "field_value": 80,
+      "points_in_cylinder": 151,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5394,
-      "field_value": 787,
-      "points_in_cylinder": 26,
+      "field_value": 879,
+      "points_in_cylinder": 13,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5395,
-      "field_value": 1036,
-      "points_in_cylinder": 439,
+      "field_value": 65,
+      "points_in_cylinder": 365,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5396,
-      "field_value": 638,
-      "points_in_cylinder": 2711,
+      "field_value": 1001,
+      "points_in_cylinder": 511,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5397,
-      "field_value": 199,
-      "points_in_cylinder": 2283,
+      "field_value": 477,
+      "points_in_cylinder": 10,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5398,
-      "field_value": 976,
-      "points_in_cylinder": 59,
+      "field_value": 492,
+      "points_in_cylinder": 1,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5399,
-      "field_value": 221,
-      "points_in_cylinder": 7,
+      "field_value": 22,
+      "points_in_cylinder": 174,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5400,
-      "field_value": 609,
-      "points_in_cylinder": 1150,
+      "field_value": 249,
+      "points_in_cylinder": 7633,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5401,
-      "field_value": 804,
-      "points_in_cylinder": 456,
+      "field_value": 578,
+      "points_in_cylinder": 13413,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5402,
-      "field_value": 756,
-      "points_in_cylinder": 145,
+      "field_value": 20,
+      "points_in_cylinder": 22165,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5403,
-      "field_value": 217,
-      "points_in_cylinder": 204,
+      "field_value": 153,
+      "points_in_cylinder": 1620,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5404,
-      "field_value": 82,
-      "points_in_cylinder": 91,
+      "field_value": 545,
+      "points_in_cylinder": 4628,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5405,
-      "field_value": 887,
-      "points_in_cylinder": 115,
+      "field_value": 381,
+      "points_in_cylinder": 113,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5406,
-      "field_value": 240,
-      "points_in_cylinder": 2164,
+      "field_value": 921,
+      "points_in_cylinder": 19,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5407,
-      "field_value": 947,
-      "points_in_cylinder": 982,
+      "field_value": 349,
+      "points_in_cylinder": 1117,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5408,
-      "field_value": 705,
-      "points_in_cylinder": 4047,
+      "field_value": 637,
+      "points_in_cylinder": 5269,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5409,
-      "field_value": 1125,
-      "points_in_cylinder": 408,
+      "field_value": 216,
+      "points_in_cylinder": 308,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5410,
-      "field_value": 50,
-      "points_in_cylinder": 230,
+      "field_value": 770,
+      "points_in_cylinder": 11847,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5411,
-      "field_value": 589,
-      "points_in_cylinder": 46,
+      "field_value": 730,
+      "points_in_cylinder": 117,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5412,
-      "field_value": 433,
-      "points_in_cylinder": 1221,
+      "field_value": 348,
+      "points_in_cylinder": 259,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5413,
-      "field_value": 615,
-      "points_in_cylinder": 2993,
+      "field_value": 14,
+      "points_in_cylinder": 53,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5414,
-      "field_value": 602,
-      "points_in_cylinder": 4,
+      "field_value": 324,
+      "points_in_cylinder": 110,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5415,
-      "field_value": 16,
-      "points_in_cylinder": 9,
+      "field_value": 1049,
+      "points_in_cylinder": 3407,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5416,
-      "field_value": 382,
-      "points_in_cylinder": 1591,
+      "field_value": 342,
+      "points_in_cylinder": 4533,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5417,
-      "field_value": 91,
-      "points_in_cylinder": 90,
+      "field_value": 752,
+      "points_in_cylinder": 4872,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5418,
-      "field_value": 273,
-      "points_in_cylinder": 4983,
+      "field_value": 125,
+      "points_in_cylinder": 1347,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5419,
-      "field_value": 144,
+      "field_value": 328,
       "points_in_cylinder": 968,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5420,
-      "field_value": 415,
-      "points_in_cylinder": 387,
+      "field_value": 891,
+      "points_in_cylinder": 1376,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5421,
-      "field_value": 613,
-      "points_in_cylinder": 414,
+      "field_value": 876,
+      "points_in_cylinder": 13,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5422,
-      "field_value": 572,
-      "points_in_cylinder": 7629,
+      "field_value": 136,
+      "points_in_cylinder": 98,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5423,
-      "field_value": 324,
-      "points_in_cylinder": 243,
+      "field_value": 688,
+      "points_in_cylinder": 5104,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5424,
-      "field_value": 516,
-      "points_in_cylinder": 71,
+      "field_value": 426,
+      "points_in_cylinder": 1598,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5425,
-      "field_value": 440,
-      "points_in_cylinder": 1418,
+      "field_value": 757,
+      "points_in_cylinder": 2321,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5426,
-      "field_value": 1132,
+      "field_value": 48,
       "points_in_cylinder": 1152,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
-      "feature_id": 5428,
-      "field_value": 967,
-      "points_in_cylinder": 404,
-      "species": "Берёза",
-      "species_eng": "birch"
+      "feature_id": 5427,
+      "field_value": 1051,
+      "points_in_cylinder": 2857,
+      "species": "Ель",
+      "species_eng": "spruce"
     },
     {
       "feature_id": 5429,
-      "field_value": 109,
-      "points_in_cylinder": 13,
+      "field_value": 723,
+      "points_in_cylinder": 1776,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5430,
-      "field_value": 429,
-      "points_in_cylinder": 1220,
+      "field_value": 592,
+      "points_in_cylinder": 105,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5431,
-      "field_value": 842,
-      "points_in_cylinder": 293,
+      "field_value": 213,
+      "points_in_cylinder": 1136,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5432,
-      "field_value": 620,
-      "points_in_cylinder": 4504,
+      "field_value": 718,
+      "points_in_cylinder": 727,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5433,
-      "field_value": 204,
-      "points_in_cylinder": 3345,
+      "field_value": 840,
+      "points_in_cylinder": 4225,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5434,
-      "field_value": 301,
-      "points_in_cylinder": 4354,
+      "field_value": 17,
+      "points_in_cylinder": 881,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5435,
-      "field_value": 169,
-      "points_in_cylinder": 34,
+      "field_value": 345,
+      "points_in_cylinder": 3439,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5436,
-      "field_value": 362,
-      "points_in_cylinder": 177,
+      "field_value": 481,
+      "points_in_cylinder": 83,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5437,
-      "field_value": 962,
+      "field_value": 636,
       "points_in_cylinder": 806,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5438,
-      "field_value": 775,
-      "points_in_cylinder": 619,
+      "field_value": 1058,
+      "points_in_cylinder": 10,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5439,
-      "field_value": 252,
-      "points_in_cylinder": 12,
+      "field_value": 223,
+      "points_in_cylinder": 1144,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5440,
-      "field_value": 814,
-      "points_in_cylinder": 8108,
+      "field_value": 1005,
+      "points_in_cylinder": 5745,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5441,
-      "field_value": 416,
-      "points_in_cylinder": 492,
+      "field_value": 344,
+      "points_in_cylinder": 536,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5442,
-      "field_value": 477,
-      "points_in_cylinder": 29,
+      "field_value": 185,
+      "points_in_cylinder": 16,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5443,
-      "field_value": 405,
+      "field_value": 245,
       "points_in_cylinder": 308,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5444,
-      "field_value": 846,
-      "points_in_cylinder": 71,
+      "field_value": 511,
+      "points_in_cylinder": 3832,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5445,
-      "field_value": 974,
-      "points_in_cylinder": 4451,
+      "field_value": 4,
+      "points_in_cylinder": 4491,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5446,
-      "field_value": 843,
-      "points_in_cylinder": 158,
+      "field_value": 762,
+      "points_in_cylinder": 264,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5447,
-      "field_value": 528,
-      "points_in_cylinder": 533,
+      "field_value": 282,
+      "points_in_cylinder": 1,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5448,
-      "field_value": 795,
-      "points_in_cylinder": 51,
+      "field_value": 35,
+      "points_in_cylinder": 269,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5449,
-      "field_value": 258,
-      "points_in_cylinder": 520,
+      "field_value": 991,
+      "points_in_cylinder": 708,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5450,
-      "field_value": 269,
-      "points_in_cylinder": 1332,
+      "field_value": 145,
+      "points_in_cylinder": 1324,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5451,
-      "field_value": 21,
-      "points_in_cylinder": 962,
+      "field_value": 796,
+      "points_in_cylinder": 1007,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5452,
-      "field_value": 107,
-      "points_in_cylinder": 1527,
+      "field_value": 83,
+      "points_in_cylinder": 1625,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5453,
-      "field_value": 75,
-      "points_in_cylinder": 600,
+      "field_value": 327,
+      "points_in_cylinder": 761,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5454,
-      "field_value": 650,
-      "points_in_cylinder": 1983,
+      "field_value": 421,
+      "points_in_cylinder": 1726,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5455,
-      "field_value": 1055,
+      "field_value": 436,
       "points_in_cylinder": 15,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5456,
-      "field_value": 712,
-      "points_in_cylinder": 113,
+      "field_value": 849,
+      "points_in_cylinder": 21,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5457,
-      "field_value": 227,
-      "points_in_cylinder": 223,
+      "field_value": 307,
+      "points_in_cylinder": 217,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5458,
-      "field_value": 969,
-      "points_in_cylinder": 9407,
+      "field_value": 206,
+      "points_in_cylinder": 9139,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5459,
-      "field_value": 207,
-      "points_in_cylinder": 231,
+      "field_value": 671,
+      "points_in_cylinder": 10695,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5460,
-      "field_value": 734,
-      "points_in_cylinder": 133,
+      "field_value": 433,
+      "points_in_cylinder": 748,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5461,
-      "field_value": 840,
-      "points_in_cylinder": 10,
+      "field_value": 930,
+      "points_in_cylinder": 4734,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5462,
-      "field_value": 924,
-      "points_in_cylinder": 254,
+      "field_value": 523,
+      "points_in_cylinder": 28,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5463,
-      "field_value": 1097,
-      "points_in_cylinder": 3623,
+      "field_value": 389,
+      "points_in_cylinder": 102,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5464,
-      "field_value": 190,
-      "points_in_cylinder": 445,
+      "field_value": 746,
+      "points_in_cylinder": 190,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5465,
-      "field_value": 367,
-      "points_in_cylinder": 7564,
-      "species": "Берёза",
-      "species_eng": "birch"
-    },
-    {
-      "feature_id": 5466,
-      "field_value": 406,
-      "points_in_cylinder": 107,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5468,
-      "field_value": 512,
-      "points_in_cylinder": 9,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5469,
-      "field_value": 805,
-      "points_in_cylinder": 1597,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5470,
-      "field_value": 42,
-      "points_in_cylinder": 5152,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5471,
-      "field_value": 586,
-      "points_in_cylinder": 10380,
-      "species": "Лиственница",
-      "species_eng": "listvennitsa"
-    },
-    {
-      "feature_id": 5472,
-      "field_value": 363,
-      "points_in_cylinder": 7018,
-      "species": "Лиственница",
-      "species_eng": "listvennitsa"
-    },
-    {
-      "feature_id": 5473,
-      "field_value": 1113,
-      "points_in_cylinder": 2996,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5474,
-      "field_value": 894,
-      "points_in_cylinder": 835,
-      "species": "Ель",
-      "species_eng": "spruce"
-    },
-    {
-      "feature_id": 5475,
-      "field_value": 963,
-      "points_in_cylinder": 176,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5476,
-      "field_value": 923,
-      "points_in_cylinder": 2289,
-      "species": "Пихта",
-      "species_eng": "fir"
-    },
-    {
-      "feature_id": 5477,
-      "field_value": 971,
-      "points_in_cylinder": 609,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5478,
-      "field_value": 426,
-      "points_in_cylinder": 3388,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5479,
-      "field_value": 806,
-      "points_in_cylinder": 1281,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5480,
-      "field_value": 67,
-      "points_in_cylinder": 33,
-      "species": "Кедр",
-      "species_eng": "cedar"
-    },
-    {
-      "feature_id": 5481,
-      "field_value": 8,
+      "field_value": 482,
       "points_in_cylinder": 4,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
+      "feature_id": 5466,
+      "field_value": 457,
+      "points_in_cylinder": 88,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
+      "feature_id": 5468,
+      "field_value": 288,
+      "points_in_cylinder": 3988,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5469,
+      "field_value": 95,
+      "points_in_cylinder": 1630,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5470,
+      "field_value": 926,
+      "points_in_cylinder": 3213,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5471,
+      "field_value": 293,
+      "points_in_cylinder": 967,
+      "species": "Лиственница",
+      "species_eng": "listvennitsa"
+    },
+    {
+      "feature_id": 5472,
+      "field_value": 251,
+      "points_in_cylinder": 972,
+      "species": "Лиственница",
+      "species_eng": "listvennitsa"
+    },
+    {
+      "feature_id": 5473,
+      "field_value": 882,
+      "points_in_cylinder": 3089,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
+      "feature_id": 5474,
+      "field_value": 137,
+      "points_in_cylinder": 2769,
+      "species": "Ель",
+      "species_eng": "spruce"
+    },
+    {
+      "feature_id": 5475,
+      "field_value": 239,
+      "points_in_cylinder": 321,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5476,
+      "field_value": 755,
+      "points_in_cylinder": 2400,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
+      "feature_id": 5477,
+      "field_value": 248,
+      "points_in_cylinder": 1780,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5478,
+      "field_value": 1054,
+      "points_in_cylinder": 39,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5479,
+      "field_value": 451,
+      "points_in_cylinder": 3032,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5480,
+      "field_value": 10,
+      "points_in_cylinder": 552,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5481,
+      "field_value": 790,
+      "points_in_cylinder": 3858,
+      "species": "Берёза",
+      "species_eng": "birch"
+    },
+    {
       "feature_id": 5482,
-      "field_value": 533,
-      "points_in_cylinder": 1322,
+      "field_value": 646,
+      "points_in_cylinder": 156,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5483,
-      "field_value": 1069,
-      "points_in_cylinder": 1237,
+      "field_value": 505,
+      "points_in_cylinder": 1126,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5484,
-      "field_value": 45,
-      "points_in_cylinder": 346,
+      "field_value": 182,
+      "points_in_cylinder": 5540,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5485,
-      "field_value": 1040,
-      "points_in_cylinder": 3345,
+      "field_value": 707,
+      "points_in_cylinder": 2807,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5486,
-      "field_value": 793,
-      "points_in_cylinder": 3988,
+      "field_value": 690,
+      "points_in_cylinder": 2262,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5487,
-      "field_value": 238,
-      "points_in_cylinder": 330,
+      "field_value": 844,
+      "points_in_cylinder": 1320,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5488,
-      "field_value": 124,
-      "points_in_cylinder": 7118,
+      "field_value": 714,
+      "points_in_cylinder": 5190,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5489,
-      "field_value": 1092,
-      "points_in_cylinder": 2466,
+      "field_value": 726,
+      "points_in_cylinder": 2338,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5490,
-      "field_value": 506,
+      "field_value": 347,
       "points_in_cylinder": 920,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5491,
-      "field_value": 517,
-      "points_in_cylinder": 151,
+      "field_value": 144,
+      "points_in_cylinder": 8981,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5492,
-      "field_value": 292,
-      "points_in_cylinder": 4,
+      "field_value": 120,
+      "points_in_cylinder": 1871,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5493,
-      "field_value": 376,
-      "points_in_cylinder": 959,
+      "field_value": 211,
+      "points_in_cylinder": 960,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5494,
-      "field_value": 1087,
-      "points_in_cylinder": 300,
+      "field_value": 743,
+      "points_in_cylinder": 6026,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5495,
-      "field_value": 467,
-      "points_in_cylinder": 6706,
+      "field_value": 719,
+      "points_in_cylinder": 7,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5496,
-      "field_value": 1021,
-      "points_in_cylinder": 65,
+      "field_value": 512,
+      "points_in_cylinder": 2967,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5497,
-      "field_value": 387,
-      "points_in_cylinder": 20,
+      "field_value": 717,
+      "points_in_cylinder": 6756,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5498,
-      "field_value": 208,
-      "points_in_cylinder": 6451,
+      "field_value": 141,
+      "points_in_cylinder": 2749,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5499,
-      "field_value": 907,
-      "points_in_cylinder": 865,
+      "field_value": 301,
+      "points_in_cylinder": 3062,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5500,
-      "field_value": 175,
-      "points_in_cylinder": 7057,
+      "field_value": 830,
+      "points_in_cylinder": 15,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5501,
-      "field_value": 1022,
-      "points_in_cylinder": 45,
+      "field_value": 859,
+      "points_in_cylinder": 6,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5502,
-      "field_value": 60,
-      "points_in_cylinder": 9,
+      "field_value": 46,
+      "points_in_cylinder": 443,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5503,
-      "field_value": 753,
-      "points_in_cylinder": 7260,
+      "field_value": 69,
+      "points_in_cylinder": 5907,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5504,
-      "field_value": 488,
-      "points_in_cylinder": 6762,
+      "field_value": 200,
+      "points_in_cylinder": 5650,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5505,
-      "field_value": 263,
-      "points_in_cylinder": 2943,
+      "field_value": 941,
+      "points_in_cylinder": 2931,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5506,
-      "field_value": 847,
-      "points_in_cylinder": 1333,
+      "field_value": 651,
+      "points_in_cylinder": 340,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5507,
-      "field_value": 278,
-      "points_in_cylinder": 2932,
+      "field_value": 323,
+      "points_in_cylinder": 17232,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5508,
-      "field_value": 320,
-      "points_in_cylinder": 8411,
+      "field_value": 463,
+      "points_in_cylinder": 8368,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5509,
-      "field_value": 595,
-      "points_in_cylinder": 14,
+      "field_value": 647,
+      "points_in_cylinder": 36,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5510,
-      "field_value": 1062,
-      "points_in_cylinder": 285,
+      "field_value": 11,
+      "points_in_cylinder": 4654,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5511,
-      "field_value": 206,
-      "points_in_cylinder": 11919,
+      "field_value": 339,
+      "points_in_cylinder": 7157,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5512,
-      "field_value": 489,
-      "points_in_cylinder": 3771,
+      "field_value": 230,
+      "points_in_cylinder": 16853,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5513,
-      "field_value": 139,
-      "points_in_cylinder": 8371,
+      "field_value": 291,
+      "points_in_cylinder": 7749,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5514,
-      "field_value": 1067,
-      "points_in_cylinder": 3,
+      "field_value": 193,
+      "points_in_cylinder": 4704,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5515,
-      "field_value": 844,
-      "points_in_cylinder": 3807,
+      "field_value": 810,
+      "points_in_cylinder": 3871,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5516,
-      "field_value": 1026,
-      "points_in_cylinder": 2208,
+      "field_value": 1008,
+      "points_in_cylinder": 679,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5517,
-      "field_value": 231,
-      "points_in_cylinder": 80,
+      "field_value": 372,
+      "points_in_cylinder": 347,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5518,
-      "field_value": 408,
-      "points_in_cylinder": 730,
+      "field_value": 155,
+      "points_in_cylinder": 1,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5519,
-      "field_value": 484,
-      "points_in_cylinder": 2230,
+      "field_value": 270,
+      "points_in_cylinder": 575,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5520,
-      "field_value": 909,
+      "field_value": 959,
       "points_in_cylinder": 150,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5521,
-      "field_value": 978,
-      "points_in_cylinder": 250,
+      "field_value": 890,
+      "points_in_cylinder": 2212,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5522,
-      "field_value": 664,
-      "points_in_cylinder": 236,
+      "field_value": 388,
+      "points_in_cylinder": 107,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5523,
-      "field_value": 419,
-      "points_in_cylinder": 2,
+      "field_value": 236,
+      "points_in_cylinder": 1350,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5524,
-      "field_value": 957,
-      "points_in_cylinder": 719,
+      "field_value": 85,
+      "points_in_cylinder": 2832,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5525,
-      "field_value": 59,
-      "points_in_cylinder": 717,
+      "field_value": 620,
+      "points_in_cylinder": 241,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5526,
-      "field_value": 934,
-      "points_in_cylinder": 379,
+      "field_value": 409,
+      "points_in_cylinder": 414,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5527,
-      "field_value": 711,
-      "points_in_cylinder": 27,
+      "field_value": 504,
+      "points_in_cylinder": 849,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5528,
-      "field_value": 778,
-      "points_in_cylinder": 505,
+      "field_value": 359,
+      "points_in_cylinder": 1,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5529,
-      "field_value": 475,
-      "points_in_cylinder": 3140,
+      "field_value": 1047,
+      "points_in_cylinder": 2763,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5530,
-      "field_value": 794,
-      "points_in_cylinder": 2060,
+      "field_value": 797,
+      "points_in_cylinder": 1871,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5531,
-      "field_value": 749,
-      "points_in_cylinder": 699,
+      "field_value": 489,
+      "points_in_cylinder": 1244,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5532,
-      "field_value": 293,
-      "points_in_cylinder": 3564,
+      "field_value": 579,
+      "points_in_cylinder": 699,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5533,
-      "field_value": 536,
-      "points_in_cylinder": 1467,
+      "field_value": 376,
+      "points_in_cylinder": 275,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5534,
-      "field_value": 728,
-      "points_in_cylinder": 141,
+      "field_value": 3,
+      "points_in_cylinder": 224,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5535,
-      "field_value": 782,
-      "points_in_cylinder": 6424,
+      "field_value": 33,
+      "points_in_cylinder": 6227,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5536,
-      "field_value": 906,
-      "points_in_cylinder": 2550,
+      "field_value": 953,
+      "points_in_cylinder": 741,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5537,
-      "field_value": 304,
-      "points_in_cylinder": 7794,
+      "field_value": 418,
+      "points_in_cylinder": 4,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5538,
-      "field_value": 1015,
-      "points_in_cylinder": 123,
+      "field_value": 776,
+      "points_in_cylinder": 1408,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5539,
-      "field_value": 1043,
-      "points_in_cylinder": 369,
+      "field_value": 407,
+      "points_in_cylinder": 13069,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5540,
-      "field_value": 534,
-      "points_in_cylinder": 429,
+      "field_value": 681,
+      "points_in_cylinder": 502,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5541,
-      "field_value": 97,
+      "field_value": 498,
       "points_in_cylinder": 2,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5542,
-      "field_value": 557,
-      "points_in_cylinder": 86,
+      "field_value": 401,
+      "points_in_cylinder": 1491,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5543,
-      "field_value": 916,
-      "points_in_cylinder": 6046,
+      "field_value": 915,
+      "points_in_cylinder": 1021,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5544,
-      "field_value": 929,
-      "points_in_cylinder": 943,
+      "field_value": 644,
+      "points_in_cylinder": 387,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5545,
-      "field_value": 959,
-      "points_in_cylinder": 2844,
+      "field_value": 158,
+      "points_in_cylinder": 310,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5546,
-      "field_value": 1115,
-      "points_in_cylinder": 78,
+      "field_value": 853,
+      "points_in_cylinder": 407,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5547,
-      "field_value": 194,
-      "points_in_cylinder": 11295,
+      "field_value": 607,
+      "points_in_cylinder": 103,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5548,
-      "field_value": 391,
-      "points_in_cylinder": 733,
+      "field_value": 350,
+      "points_in_cylinder": 138,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5549,
-      "field_value": 685,
-      "points_in_cylinder": 154,
+      "field_value": 548,
+      "points_in_cylinder": 184,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5550,
-      "field_value": 671,
-      "points_in_cylinder": 590,
+      "field_value": 848,
+      "points_in_cylinder": 1961,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5551,
-      "field_value": 191,
+      "field_value": 306,
       "points_in_cylinder": 1767,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5552,
-      "field_value": 52,
-      "points_in_cylinder": 166,
+      "field_value": 2,
+      "points_in_cylinder": 1055,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5553,
-      "field_value": 454,
-      "points_in_cylinder": 1281,
+      "field_value": 820,
+      "points_in_cylinder": 1593,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5554,
-      "field_value": 781,
-      "points_in_cylinder": 52,
+      "field_value": 394,
+      "points_in_cylinder": 180,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5555,
-      "field_value": 344,
-      "points_in_cylinder": 2151,
+      "field_value": 728,
+      "points_in_cylinder": 76,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5556,
-      "field_value": 835,
-      "points_in_cylinder": 200,
+      "field_value": 108,
+      "points_in_cylinder": 1380,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5557,
-      "field_value": 156,
-      "points_in_cylinder": 47,
+      "field_value": 0,
+      "points_in_cylinder": 5687,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5558,
-      "field_value": 478,
-      "points_in_cylinder": 14736,
+      "field_value": 557,
+      "points_in_cylinder": 12449,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5559,
-      "field_value": 861,
-      "points_in_cylinder": 3180,
+      "field_value": 312,
+      "points_in_cylinder": 4287,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5560,
-      "field_value": 290,
-      "points_in_cylinder": 65,
+      "field_value": 992,
+      "points_in_cylinder": 3512,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5561,
-      "field_value": 864,
-      "points_in_cylinder": 1858,
+      "field_value": 929,
+      "points_in_cylinder": 184,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5562,
-      "field_value": 446,
-      "points_in_cylinder": 298,
+      "field_value": 271,
+      "points_in_cylinder": 9,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5563,
-      "field_value": 883,
-      "points_in_cylinder": 57,
+      "field_value": 973,
+      "points_in_cylinder": 2798,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5564,
-      "field_value": 181,
-      "points_in_cylinder": 48,
+      "field_value": 584,
+      "points_in_cylinder": 4435,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5565,
-      "field_value": 1052,
-      "points_in_cylinder": 1722,
+      "field_value": 1027,
+      "points_in_cylinder": 1769,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5566,
-      "field_value": 445,
-      "points_in_cylinder": 13,
+      "field_value": 965,
+      "points_in_cylinder": 2045,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5567,
-      "field_value": 994,
-      "points_in_cylinder": 340,
+      "field_value": 396,
+      "points_in_cylinder": 262,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5568,
-      "field_value": 114,
-      "points_in_cylinder": 39,
+      "field_value": 462,
+      "points_in_cylinder": 24,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5569,
-      "field_value": 329,
-      "points_in_cylinder": 81,
+      "field_value": 1041,
+      "points_in_cylinder": 668,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5570,
-      "field_value": 13,
-      "points_in_cylinder": 1331,
+      "field_value": 952,
+      "points_in_cylinder": 1309,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5571,
-      "field_value": 654,
-      "points_in_cylinder": 246,
+      "field_value": 709,
+      "points_in_cylinder": 1873,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5572,
-      "field_value": 29,
-      "points_in_cylinder": 2721,
+      "field_value": 861,
+      "points_in_cylinder": 91,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5573,
-      "field_value": 910,
+      "field_value": 402,
       "points_in_cylinder": 33,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5574,
-      "field_value": 727,
-      "points_in_cylinder": 108,
+      "field_value": 916,
+      "points_in_cylinder": 1770,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5575,
-      "field_value": 903,
-      "points_in_cylinder": 3779,
+      "field_value": 724,
+      "points_in_cylinder": 471,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5576,
-      "field_value": 1020,
-      "points_in_cylinder": 961,
+      "field_value": 507,
+      "points_in_cylinder": 914,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5577,
-      "field_value": 888,
-      "points_in_cylinder": 2357,
+      "field_value": 860,
+      "points_in_cylinder": 2110,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5578,
-      "field_value": 338,
-      "points_in_cylinder": 2055,
+      "field_value": 562,
+      "points_in_cylinder": 54,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5579,
-      "field_value": 237,
-      "points_in_cylinder": 8,
+      "field_value": 148,
+      "points_in_cylinder": 1936,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5580,
-      "field_value": 399,
-      "points_in_cylinder": 254,
+      "field_value": 231,
+      "points_in_cylinder": 722,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5581,
-      "field_value": 828,
-      "points_in_cylinder": 332,
+      "field_value": 272,
+      "points_in_cylinder": 95,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
+      "feature_id": 5582,
+      "field_value": 1045,
+      "points_in_cylinder": 3790,
+      "species": "Пихта",
+      "species_eng": "fir"
+    },
+    {
+      "feature_id": 5583,
+      "field_value": 229,
+      "points_in_cylinder": 11,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5584,
-      "field_value": 242,
-      "points_in_cylinder": 508,
+      "field_value": 596,
+      "points_in_cylinder": 663,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5585,
-      "field_value": 145,
+      "field_value": 617,
       "points_in_cylinder": 137,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5586,
-      "field_value": 900,
-      "points_in_cylinder": 1321,
+      "field_value": 831,
+      "points_in_cylinder": 1042,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5587,
-      "field_value": 330,
-      "points_in_cylinder": 328,
+      "field_value": 357,
+      "points_in_cylinder": 334,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5588,
-      "field_value": 92,
-      "points_in_cylinder": 1077,
+      "field_value": 883,
+      "points_in_cylinder": 1416,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5589,
-      "field_value": 58,
-      "points_in_cylinder": 16800,
+      "field_value": 576,
+      "points_in_cylinder": 1965,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5590,
-      "field_value": 132,
-      "points_in_cylinder": 5056,
+      "field_value": 914,
+      "points_in_cylinder": 4757,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5591,
-      "field_value": 780,
-      "points_in_cylinder": 4756,
+      "field_value": 537,
+      "points_in_cylinder": 4275,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5592,
-      "field_value": 783,
-      "points_in_cylinder": 4500,
+      "field_value": 81,
+      "points_in_cylinder": 5676,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5593,
-      "field_value": 948,
-      "points_in_cylinder": 11,
+      "field_value": 781,
+      "points_in_cylinder": 9483,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5594,
-      "field_value": 825,
-      "points_in_cylinder": 95,
+      "field_value": 221,
+      "points_in_cylinder": 187,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5595,
-      "field_value": 104,
-      "points_in_cylinder": 97,
+      "field_value": 391,
+      "points_in_cylinder": 543,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5596,
-      "field_value": 174,
-      "points_in_cylinder": 80,
+      "field_value": 473,
+      "points_in_cylinder": 888,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5597,
-      "field_value": 90,
+      "field_value": 455,
       "points_in_cylinder": 757,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5598,
-      "field_value": 832,
-      "points_in_cylinder": 44,
+      "field_value": 940,
+      "points_in_cylinder": 3002,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5599,
-      "field_value": 1107,
-      "points_in_cylinder": 1774,
+      "field_value": 356,
+      "points_in_cylinder": 3240,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5600,
-      "field_value": 672,
-      "points_in_cylinder": 6473,
+      "field_value": 676,
+      "points_in_cylinder": 5336,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5601,
-      "field_value": 950,
-      "points_in_cylinder": 4238,
+      "field_value": 919,
+      "points_in_cylinder": 199,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5602,
-      "field_value": 1025,
-      "points_in_cylinder": 29,
+      "field_value": 756,
+      "points_in_cylinder": 1310,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5603,
-      "field_value": 584,
+      "field_value": 465,
       "points_in_cylinder": 65,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5604,
-      "field_value": 158,
-      "points_in_cylinder": 3578,
+      "field_value": 247,
+      "points_in_cylinder": 3182,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5605,
-      "field_value": 1098,
+      "field_value": 440,
       "points_in_cylinder": 2805,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5606,
-      "field_value": 35,
-      "points_in_cylinder": 1295,
+      "field_value": 214,
+      "points_in_cylinder": 2170,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5607,
-      "field_value": 36,
-      "points_in_cylinder": 2128,
+      "field_value": 116,
+      "points_in_cylinder": 3211,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5608,
-      "field_value": 514,
-      "points_in_cylinder": 548,
+      "field_value": 338,
+      "points_in_cylinder": 149,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5609,
-      "field_value": 170,
-      "points_in_cylinder": 37,
+      "field_value": 561,
+      "points_in_cylinder": 940,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5610,
-      "field_value": 877,
-      "points_in_cylinder": 344,
+      "field_value": 147,
+      "points_in_cylinder": 62,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5611,
-      "field_value": 501,
-      "points_in_cylinder": 2288,
+      "field_value": 456,
+      "points_in_cylinder": 2136,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5612,
-      "field_value": 291,
-      "points_in_cylinder": 9,
+      "field_value": 368,
+      "points_in_cylinder": 35,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5613,
-      "field_value": 3,
-      "points_in_cylinder": 1022,
+      "field_value": 843,
+      "points_in_cylinder": 1418,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5614,
-      "field_value": 769,
-      "points_in_cylinder": 1179,
+      "field_value": 203,
+      "points_in_cylinder": 257,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5615,
-      "field_value": 196,
-      "points_in_cylinder": 10259,
+      "field_value": 355,
+      "points_in_cylinder": 7187,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5616,
-      "field_value": 1117,
-      "points_in_cylinder": 19,
+      "field_value": 420,
+      "points_in_cylinder": 7,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5617,
-      "field_value": 628,
-      "points_in_cylinder": 963,
+      "field_value": 567,
+      "points_in_cylinder": 962,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5618,
-      "field_value": 1017,
-      "points_in_cylinder": 2345,
+      "field_value": 237,
+      "points_in_cylinder": 2260,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5619,
-      "field_value": 288,
-      "points_in_cylinder": 73,
+      "field_value": 292,
+      "points_in_cylinder": 70,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5620,
-      "field_value": 257,
-      "points_in_cylinder": 3088,
+      "field_value": 377,
+      "points_in_cylinder": 3005,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5621,
-      "field_value": 898,
+      "field_value": 268,
       "points_in_cylinder": 153,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5622,
-      "field_value": 423,
-      "points_in_cylinder": 153,
+      "field_value": 570,
+      "points_in_cylinder": 899,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5623,
-      "field_value": 1102,
+      "field_value": 658,
       "points_in_cylinder": 268,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5624,
-      "field_value": 151,
-      "points_in_cylinder": 6046,
+      "field_value": 662,
+      "points_in_cylinder": 28,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5625,
-      "field_value": 318,
-      "points_in_cylinder": 2943,
+      "field_value": 966,
+      "points_in_cylinder": 3054,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5626,
-      "field_value": 1018,
-      "points_in_cylinder": 3669,
+      "field_value": 414,
+      "points_in_cylinder": 3737,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5627,
-      "field_value": 1038,
-      "points_in_cylinder": 148,
+      "field_value": 821,
+      "points_in_cylinder": 3115,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5628,
-      "field_value": 335,
-      "points_in_cylinder": 327,
+      "field_value": 397,
+      "points_in_cylinder": 189,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5629,
-      "field_value": 442,
-      "points_in_cylinder": 165,
+      "field_value": 664,
+      "points_in_cylinder": 411,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5630,
-      "field_value": 935,
-      "points_in_cylinder": 11,
+      "field_value": 1033,
+      "points_in_cylinder": 676,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5631,
-      "field_value": 621,
-      "points_in_cylinder": 39,
+      "field_value": 187,
+      "points_in_cylinder": 1259,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5632,
-      "field_value": 116,
-      "points_in_cylinder": 117,
+      "field_value": 43,
+      "points_in_cylinder": 111,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5633,
-      "field_value": 550,
-      "points_in_cylinder": 181,
+      "field_value": 40,
+      "points_in_cylinder": 9260,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5634,
-      "field_value": 32,
-      "points_in_cylinder": 77,
+      "field_value": 448,
+      "points_in_cylinder": 3218,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5635,
-      "field_value": 865,
-      "points_in_cylinder": 89,
+      "field_value": 179,
+      "points_in_cylinder": 339,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5636,
-      "field_value": 914,
-      "points_in_cylinder": 263,
+      "field_value": 1063,
+      "points_in_cylinder": 517,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5637,
-      "field_value": 201,
-      "points_in_cylinder": 630,
+      "field_value": 363,
+      "points_in_cylinder": 595,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5638,
-      "field_value": 468,
-      "points_in_cylinder": 3,
+      "field_value": 828,
+      "points_in_cylinder": 3089,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5639,
-      "field_value": 968,
-      "points_in_cylinder": 964,
+      "field_value": 847,
+      "points_in_cylinder": 4276,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5640,
-      "field_value": 838,
-      "points_in_cylinder": 78,
+      "field_value": 529,
+      "points_in_cylinder": 5061,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5641,
-      "field_value": 1,
-      "points_in_cylinder": 1774,
+      "field_value": 362,
+      "points_in_cylinder": 1744,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5642,
-      "field_value": 25,
-      "points_in_cylinder": 27,
+      "field_value": 90,
+      "points_in_cylinder": 446,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5643,
-      "field_value": 933,
-      "points_in_cylinder": 2517,
+      "field_value": 337,
+      "points_in_cylinder": 120,
       "species": "Пихта",
       "species_eng": "fir"
     },
     {
       "feature_id": 5644,
-      "field_value": 154,
-      "points_in_cylinder": 3815,
+      "field_value": 809,
+      "points_in_cylinder": 3717,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5645,
-      "field_value": 680,
-      "points_in_cylinder": 1012,
+      "field_value": 832,
+      "points_in_cylinder": 1610,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5646,
-      "field_value": 884,
-      "points_in_cylinder": 555,
+      "field_value": 706,
+      "points_in_cylinder": 18,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5647,
-      "field_value": 624,
-      "points_in_cylinder": 23,
+      "field_value": 735,
+      "points_in_cylinder": 11,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
+      "feature_id": 5648,
+      "field_value": 190,
+      "points_in_cylinder": 1,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
       "feature_id": 5649,
-      "field_value": 126,
-      "points_in_cylinder": 15,
+      "field_value": 1061,
+      "points_in_cylinder": 577,
+      "species": "Кедр",
+      "species_eng": "cedar"
+    },
+    {
+      "feature_id": 5650,
+      "field_value": 638,
+      "points_in_cylinder": 163,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5651,
-      "field_value": 361,
-      "points_in_cylinder": 56,
+      "field_value": 812,
+      "points_in_cylinder": 1698,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5652,
-      "field_value": 658,
-      "points_in_cylinder": 438,
+      "field_value": 412,
+      "points_in_cylinder": 387,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5653,
-      "field_value": 26,
-      "points_in_cylinder": 348,
+      "field_value": 792,
+      "points_in_cylinder": 5404,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5654,
-      "field_value": 622,
-      "points_in_cylinder": 2150,
+      "field_value": 989,
+      "points_in_cylinder": 4,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5655,
-      "field_value": 5,
-      "points_in_cylinder": 148,
+      "field_value": 896,
+      "points_in_cylinder": 446,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5656,
-      "field_value": 531,
-      "points_in_cylinder": 223,
+      "field_value": 167,
+      "points_in_cylinder": 399,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5657,
-      "field_value": 779,
-      "points_in_cylinder": 2997,
+      "field_value": 209,
+      "points_in_cylinder": 860,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5658,
-      "field_value": 17,
-      "points_in_cylinder": 586,
+      "field_value": 786,
+      "points_in_cylinder": 12630,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5659,
-      "field_value": 279,
-      "points_in_cylinder": 29,
+      "field_value": 982,
+      "points_in_cylinder": 50,
       "species": "Лиственница",
       "species_eng": "listvennitsa"
     },
     {
       "feature_id": 5660,
-      "field_value": 1006,
-      "points_in_cylinder": 4758,
+      "field_value": 5,
+      "points_in_cylinder": 805,
       "species": "Берёза",
       "species_eng": "birch"
     },
     {
       "feature_id": 5661,
-      "field_value": 647,
-      "points_in_cylinder": 9,
+      "field_value": 353,
+      "points_in_cylinder": 73,
       "species": "Кедр",
       "species_eng": "cedar"
     },
     {
       "feature_id": 5662,
-      "field_value": 636,
-      "points_in_cylinder": 2911,
+      "field_value": 483,
+      "points_in_cylinder": 2873,
       "species": "Ель",
       "species_eng": "spruce"
     },
     {
       "feature_id": 5663,
-      "field_value": 232,
-      "points_in_cylinder": 1606,
+      "field_value": 64,
+      "points_in_cylinder": 4,
       "species": "Кедр",
       "species_eng": "cedar"
     }
   ],
   "unmatched_features": [
-    4893,
-    4898,
-    4909,
-    4912,
-    4913,
-    4914,
     4915,
-    4938,
-    4941,
     4943,
     4944,
-    4946,
-    4947,
-    4953,
-    4957,
-    4960,
-    4967,
+    4950,
+    4969,
+    4971,
     4972,
-    5021,
+    5015,
+    5032,
+    5069,
+    5076,
+    5102,
+    5137,
+    5150,
+    5154,
+    5155,
+    5160,
     5164,
+    5165,
+    5166,
+    5202,
+    5212,
+    5215,
     5216,
-    5227,
+    5217,
     5231,
-    5233,
+    5327,
     5366,
-    5427,
-    5582,
-    5583,
-    5648,
-    5650
+    5428
   ],
   "unassigned_field_values": [
-    4,
+    6,
+    7,
+    8,
     9,
-    15,
-    19,
-    20,
-    23,
-    43,
-    44,
-    46,
-    53,
-    57,
-    62,
-    68,
-    69,
-    72,
+    13,
+    21,
+    29,
+    58,
+    61,
+    63,
+    67,
     73,
-    74,
-    81,
-    85,
-    88,
-    95,
+    82,
+    84,
+    91,
+    92,
+    93,
+    96,
     100,
-    106,
+    109,
+    110,
     111,
-    121,
-    125,
-    127,
-    130,
-    133,
-    146,
-    159,
-    160,
-    164,
-    166,
-    171,
+    114,
+    118,
+    122,
+    134,
+    149,
+    150,
+    162,
+    165,
+    168,
+    169,
     173,
-    179,
-    193,
+    174,
+    177,
+    183,
+    191,
     195,
-    200,
-    218,
-    223,
+    207,
+    215,
+    219,
     225,
-    230,
-    235,
-    243,
+    241,
     244,
-    247,
-    255,
-    268,
-    270,
+    254,
+    256,
+    258,
+    261,
+    266,
+    274,
+    275,
+    276,
+    279,
     280,
-    283,
+    281,
     284,
-    287,
-    305,
-    313,
-    314,
-    319,
-    321,
-    323,
-    325,
-    328,
-    339,
-    340,
-    343,
-    345,
-    346,
-    348,
-    349,
-    356,
-    368,
+    289,
+    295,
+    298,
+    300,
+    310,
+    311,
+    336,
+    341,
+    351,
+    361,
+    370,
     371,
-    374,
-    375,
-    377,
-    394,
-    396,
-    403,
-    404,
-    421,
-    424,
-    428,
-    430,
-    436,
-    438,
-    443,
-    448,
-    451,
-    455,
-    456,
-    457,
-    460,
-    465,
-    469,
+    373,
+    382,
+    383,
+    386,
+    390,
+    392,
+    395,
+    413,
+    416,
+    419,
+    427,
+    431,
+    434,
+    437,
+    446,
+    458,
+    459,
+    466,
     471,
-    474,
+    478,
+    480,
+    485,
     487,
-    491,
-    498,
+    488,
+    501,
     503,
-    504,
-    505,
-    507,
-    510,
+    509,
     513,
-    519,
-    523,
-    525,
-    542,
-    543,
+    516,
+    526,
+    527,
+    530,
+    538,
+    541,
     544,
     549,
+    552,
+    554,
+    555,
+    558,
     559,
-    560,
-    562,
-    563,
-    564,
-    569,
-    574,
-    578,
+    565,
+    571,
+    572,
+    573,
+    575,
     580,
     583,
-    587,
-    591,
-    592,
+    590,
     600,
+    603,
     614,
-    629,
-    630,
-    644,
-    646,
-    648,
+    616,
+    618,
+    627,
+    633,
+    635,
+    642,
+    650,
     652,
-    659,
-    661,
+    653,
+    657,
+    660,
     665,
+    668,
+    669,
     670,
+    674,
+    675,
+    680,
+    684,
+    692,
     693,
+    696,
     700,
     704,
+    705,
     708,
-    710,
+    712,
     713,
     720,
     721,
     722,
-    730,
-    731,
-    733,
-    736,
+    734,
     738,
-    740,
-    741,
-    742,
+    739,
     744,
+    745,
     748,
-    750,
-    751,
-    757,
+    753,
     766,
-    774,
-    789,
-    790,
+    767,
+    769,
+    775,
+    777,
+    779,
+    780,
+    783,
+    784,
     791,
-    796,
-    800,
-    811,
-    812,
-    815,
-    818,
-    819,
-    826,
-    841,
-    859,
+    801,
+    802,
+    808,
+    817,
+    835,
+    836,
+    838,
+    852,
     863,
-    866,
+    864,
     867,
-    870,
-    874,
     889,
+    892,
+    901,
     902,
-    905,
-    908,
+    910,
+    917,
     918,
-    944,
-    945,
+    920,
+    922,
+    924,
+    928,
+    931,
+    935,
+    937,
+    938,
+    939,
     951,
-    954,
-    961,
-    973,
+    967,
+    969,
+    972,
+    980,
     985,
-    986,
-    988,
-    996,
-    997,
-    1000,
+    990,
+    998,
     1002,
-    1007,
-    1024,
-    1028,
-    1042,
+    1011,
+    1013,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1025,
+    1026,
+    1031,
     1044,
-    1056,
-    1065,
-    1071,
-    1077,
-    1079,
-    1083,
-    1084,
-    1089,
-    1096,
-    1105,
-    1109,
-    1116,
-    1118
+    1053,
+    1055,
+    1057,
+    1059,
+    1064,
+    1065
   ],
   "feature_id_dimension": "feature_id",
   "unassigned_feature_id_value": 0,
